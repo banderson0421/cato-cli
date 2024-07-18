@@ -1,0 +1,3 @@
+include catocli/*/README.md
+prune venv/
+prune test/
