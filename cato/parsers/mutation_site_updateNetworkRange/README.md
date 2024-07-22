@@ -10,9 +10,9 @@
 
 `cato mutation site updateNetworkRange 12345 $(cat < updateNetworkRange.json)`
 
-`cato mutation site updateNetworkRange 12345 '{"networkRangeId": "ID", "updateNetworkRangeInput": {"azureFloatingIp": {"azureFloatingIp": "IPAddress"}, "gateway": {"gateway": "IPAddress"}, "localIp": {"localIp": "IPAddress"}, "name": {"name": "String"}, "networkDhcpSettingsInput": {"dhcpType": {"dhcpType": "enum(DhcpType)"}, "ipRange": {"ipRange": "IPRange"}, "relayGroupId": {"relayGroupId": "ID"}}, "rangeType": {"rangeType": "enum(SubnetType)"}, "subnet": {"subnet": "IPSubnet"}, "translatedSubnet": {"translatedSubnet": "IPSubnet"}, "vlan": {"vlan": "Int"}}}'`
+`cato mutation site updateNetworkRange 12345 '{"networkRangeId": "ID", "updateNetworkRangeInput": {"name": {"name": "String"}, "rangeType": {"rangeType": "enum(SubnetType)"}, "subnet": {"subnet": "IPSubnet"}, "translatedSubnet": {"translatedSubnet": "IPSubnet"}, "localIp": {"localIp": "IPAddress"}, "gateway": {"gateway": "IPAddress"}, "vlan": {"vlan": "Int"}, "azureFloatingIp": {"azureFloatingIp": "IPAddress"}, "networkDhcpSettingsInput": {"dhcpType": {"dhcpType": "enum(DhcpType)"}, "ipRange": {"ipRange": "IPRange"}, "relayGroupId": {"relayGroupId": "ID"}}}}'`
 
 #### Operation Arguments for mutation.site.updateNetworkRange ####
-`accountId` [ID] - (required) N/A 
 `networkRangeId` [ID] - (required) N/A 
 `updateNetworkRangeInput` [UpdateNetworkRangeInput] - (required) N/A 
+`accountId` [ID] - (required) N/A 

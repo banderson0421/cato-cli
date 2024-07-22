@@ -10,9 +10,9 @@
 
 `cato mutation policy internetFirewall removeSection 12345 $(cat < removeSection.json)`
 
-`cato mutation policy internetFirewall removeSection 12345 '{"internetFirewallPolicyMutationInput": {"policyMutationRevisionInput": {"id": {"id": "ID"}}}, "policyRemoveSectionInput": {"id": {"id": "ID"}}}'`
+`cato mutation policy internetFirewall removeSection 12345 '{"policyRemoveSectionInput": {"id": {"id": "ID"}}, "internetFirewallPolicyMutationInput": {"policyMutationRevisionInput": {"id": {"id": "ID"}}}}'`
 
 #### Operation Arguments for mutation.policy.internetFirewall.removeSection ####
-`accountId` [ID] - (required) N/A 
-`internetFirewallPolicyMutationInput` [InternetFirewallPolicyMutationInput] - (optional) N/A 
 `policyRemoveSectionInput` [PolicyRemoveSectionInput] - (required) N/A 
+`internetFirewallPolicyMutationInput` [InternetFirewallPolicyMutationInput] - (optional) N/A 
+`accountId` [ID] - (required) N/A 

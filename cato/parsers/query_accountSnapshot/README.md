@@ -13,6 +13,6 @@
 `cato query accountSnapshot 12345 '{"siteIDs": ["ID"], "userIDs": ["ID"]}'`
 
 #### Operation Arguments for query.accountSnapshot ####
-`accountID` [ID] - (optional) Unique Identifier of Account. 
 `siteIDs` [ID[]] - (optional) List of Unique Site Identifiers. If specified, only sites in list will be returned 
 `userIDs` [ID[]] - (optional) request specific IDs, regardless of if connected or not 
+`accountID` [ID] - (optional) Unique Identifier of Account. 

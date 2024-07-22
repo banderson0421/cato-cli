@@ -10,9 +10,9 @@
 
 `cato mutation policy internetFirewall updateSection 12345 $(cat < updateSection.json)`
 
-`cato mutation policy internetFirewall updateSection 12345 '{"internetFirewallPolicyMutationInput": {"policyMutationRevisionInput": {"id": {"id": "ID"}}}, "policyUpdateSectionInput": {"id": {"id": "ID"}, "policyUpdateSectionInfoInput": {"name": {"name": "String"}}}}'`
+`cato mutation policy internetFirewall updateSection 12345 '{"policyUpdateSectionInput": {"id": {"id": "ID"}, "policyUpdateSectionInfoInput": {"name": {"name": "String"}}}, "internetFirewallPolicyMutationInput": {"policyMutationRevisionInput": {"id": {"id": "ID"}}}}'`
 
 #### Operation Arguments for mutation.policy.internetFirewall.updateSection ####
-`accountId` [ID] - (required) N/A 
-`internetFirewallPolicyMutationInput` [InternetFirewallPolicyMutationInput] - (optional) N/A 
 `policyUpdateSectionInput` [PolicyUpdateSectionInput] - (required) N/A 
+`internetFirewallPolicyMutationInput` [InternetFirewallPolicyMutationInput] - (optional) N/A 
+`accountId` [ID] - (required) N/A 

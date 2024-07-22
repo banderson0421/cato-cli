@@ -179,6 +179,12 @@
                                                         },
                                                         {
                                                             "deprecationReason": null,
+                                                            "description": "Static host",
+                                                            "isDeprecated": false,
+                                                            "name": "static_host"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
                                                             "description": "User ID",
                                                             "isDeprecated": false,
                                                             "name": "user_id"
@@ -875,6 +881,12 @@
                                                         },
                                                         {
                                                             "deprecationReason": null,
+                                                            "description": "For SaaS Security API, id of the connector",
+                                                            "isDeprecated": false,
+                                                            "name": "connector_id"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
                                                             "description": "For SaaS Security API, parent Microsoft 365 connector",
                                                             "isDeprecated": false,
                                                             "name": "parent_connector_name"
@@ -956,6 +968,12 @@
                                                             "description": null,
                                                             "isDeprecated": false,
                                                             "name": "object_type"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": null,
+                                                            "isDeprecated": false,
+                                                            "name": "object_id"
                                                         },
                                                         {
                                                             "deprecationReason": null,
@@ -1334,6 +1352,72 @@
                                                             "description": "Tunnel Protocol TCP/UDP",
                                                             "isDeprecated": false,
                                                             "name": "tunnel_ip_protocol"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "For SaaS Security API, description of Apps Security Notification",
+                                                            "isDeprecated": false,
+                                                            "name": "notification_description"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "For SaaS Security API, API Error of Apps Security Notification",
+                                                            "isDeprecated": false,
+                                                            "name": "notification_api_error"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "The URL that links directly to the object involved in the activity",
+                                                            "isDeprecated": false,
+                                                            "name": "reference_url"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "SaaS user activities into categories.",
+                                                            "isDeprecated": false,
+                                                            "name": "app_activity_category"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "Indicates whether an activity requires administrative permissions.",
+                                                            "isDeprecated": false,
+                                                            "name": "is_admin_activity"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "Classifies users based on their permissions.",
+                                                            "isDeprecated": false,
+                                                            "name": "is_admin"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "Shows the display name of the target user involved in an activity",
+                                                            "isDeprecated": false,
+                                                            "name": "collaborator_name"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "The unique identifier by the SaaS vendor for the target group in an activity.",
+                                                            "isDeprecated": false,
+                                                            "name": "dest_group_id"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "Identifies the target group involved in an activity",
+                                                            "isDeprecated": false,
+                                                            "name": "dest_group_name"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "Identifies system access software or device",
+                                                            "isDeprecated": false,
+                                                            "name": "access_method"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "Shows the id of the target user involved in an activity",
+                                                            "isDeprecated": false,
+                                                            "name": "vendor_collaborator_id"
                                                         }
                                                     ],
                                                     "fields": null,
@@ -1713,6 +1797,12 @@
                                                         },
                                                         {
                                                             "deprecationReason": null,
+                                                            "description": "Static host",
+                                                            "isDeprecated": false,
+                                                            "name": "static_host"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
                                                             "description": "User ID",
                                                             "isDeprecated": false,
                                                             "name": "user_id"
@@ -2409,6 +2499,12 @@
                                                         },
                                                         {
                                                             "deprecationReason": null,
+                                                            "description": "For SaaS Security API, id of the connector",
+                                                            "isDeprecated": false,
+                                                            "name": "connector_id"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
                                                             "description": "For SaaS Security API, parent Microsoft 365 connector",
                                                             "isDeprecated": false,
                                                             "name": "parent_connector_name"
@@ -2490,6 +2586,12 @@
                                                             "description": null,
                                                             "isDeprecated": false,
                                                             "name": "object_type"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": null,
+                                                            "isDeprecated": false,
+                                                            "name": "object_id"
                                                         },
                                                         {
                                                             "deprecationReason": null,
@@ -2868,6 +2970,72 @@
                                                             "description": "Tunnel Protocol TCP/UDP",
                                                             "isDeprecated": false,
                                                             "name": "tunnel_ip_protocol"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "For SaaS Security API, description of Apps Security Notification",
+                                                            "isDeprecated": false,
+                                                            "name": "notification_description"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "For SaaS Security API, API Error of Apps Security Notification",
+                                                            "isDeprecated": false,
+                                                            "name": "notification_api_error"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "The URL that links directly to the object involved in the activity",
+                                                            "isDeprecated": false,
+                                                            "name": "reference_url"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "SaaS user activities into categories.",
+                                                            "isDeprecated": false,
+                                                            "name": "app_activity_category"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "Indicates whether an activity requires administrative permissions.",
+                                                            "isDeprecated": false,
+                                                            "name": "is_admin_activity"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "Classifies users based on their permissions.",
+                                                            "isDeprecated": false,
+                                                            "name": "is_admin"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "Shows the display name of the target user involved in an activity",
+                                                            "isDeprecated": false,
+                                                            "name": "collaborator_name"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "The unique identifier by the SaaS vendor for the target group in an activity.",
+                                                            "isDeprecated": false,
+                                                            "name": "dest_group_id"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "Identifies the target group involved in an activity",
+                                                            "isDeprecated": false,
+                                                            "name": "dest_group_name"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "Identifies system access software or device",
+                                                            "isDeprecated": false,
+                                                            "name": "access_method"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "Shows the id of the target user involved in an activity",
+                                                            "isDeprecated": false,
+                                                            "name": "vendor_collaborator_id"
                                                         }
                                                     ],
                                                     "fields": null,
@@ -3491,6 +3659,12 @@
                                                                                                 },
                                                                                                 {
                                                                                                     "deprecationReason": null,
+                                                                                                    "description": null,
+                                                                                                    "isDeprecated": false,
+                                                                                                    "name": "location"
+                                                                                                },
+                                                                                                {
+                                                                                                    "deprecationReason": null,
                                                                                                     "description": "An account administrator (user in Cato Console)",
                                                                                                     "isDeprecated": false,
                                                                                                     "name": "admin"
@@ -3774,6 +3948,12 @@
                                                                                 },
                                                                                 {
                                                                                     "deprecationReason": null,
+                                                                                    "description": null,
+                                                                                    "isDeprecated": false,
+                                                                                    "name": "location"
+                                                                                },
+                                                                                {
+                                                                                    "deprecationReason": null,
                                                                                     "description": "An account administrator (user in Cato Console)",
                                                                                     "isDeprecated": false,
                                                                                     "name": "admin"
@@ -4016,6 +4196,12 @@
                                                                                     "description": "A reference to the configured VPN User within Account",
                                                                                     "isDeprecated": false,
                                                                                     "name": "vpnUser"
+                                                                                },
+                                                                                {
+                                                                                    "deprecationReason": null,
+                                                                                    "description": null,
+                                                                                    "isDeprecated": false,
+                                                                                    "name": "location"
                                                                                 },
                                                                                 {
                                                                                     "deprecationReason": null,
@@ -4284,6 +4470,12 @@
                                                                                     "description": "A reference to the configured VPN User within Account",
                                                                                     "isDeprecated": false,
                                                                                     "name": "vpnUser"
+                                                                                },
+                                                                                {
+                                                                                    "deprecationReason": null,
+                                                                                    "description": null,
+                                                                                    "isDeprecated": false,
+                                                                                    "name": "location"
                                                                                 },
                                                                                 {
                                                                                     "deprecationReason": null,

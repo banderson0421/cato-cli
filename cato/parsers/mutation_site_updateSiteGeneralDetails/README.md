@@ -10,9 +10,9 @@
 
 `cato mutation site updateSiteGeneralDetails 12345 $(cat < updateSiteGeneralDetails.json)`
 
-`cato mutation site updateSiteGeneralDetails 12345 '{"siteId": "ID", "updateSiteGeneralDetailsInput": {"description": {"description": "String"}, "name": {"name": "String"}, "siteType": {"siteType": "enum(SiteType)"}, "updateSiteLocationInput": {"address": {"address": "String"}, "countryCode": {"countryCode": "String"}, "stateCode": {"stateCode": "String"}, "timezone": {"timezone": "String"}}}}'`
+`cato mutation site updateSiteGeneralDetails 12345 '{"siteId": "ID", "updateSiteGeneralDetailsInput": {"name": {"name": "String"}, "siteType": {"siteType": "enum(SiteType)"}, "description": {"description": "String"}, "updateSiteLocationInput": {"countryCode": {"countryCode": "String"}, "stateCode": {"stateCode": "String"}, "timezone": {"timezone": "String"}, "address": {"address": "String"}}}}'`
 
 #### Operation Arguments for mutation.site.updateSiteGeneralDetails ####
-`accountId` [ID] - (required) N/A 
 `siteId` [ID] - (required) N/A 
 `updateSiteGeneralDetailsInput` [UpdateSiteGeneralDetailsInput] - (required) N/A 
+`accountId` [ID] - (required) N/A 

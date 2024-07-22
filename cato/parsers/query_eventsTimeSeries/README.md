@@ -10,14 +10,14 @@
 
 `cato query eventsTimeSeries 12345 $(cat < eventsTimeSeries.json)`
 
-`cato query eventsTimeSeries 12345 '{"buckets": "Int", "eventsDimension": {"fieldName": {"fieldName": "enum(EventFieldName)"}}, "eventsFilter": {"fieldName": {"fieldName": "enum(EventFieldName)"}, "operator": {"operator": "enum(FilterOperator)"}, "values": {"values": ["String"]}}, "eventsMeasure": {"aggType": {"aggType": "enum(AggregationType)"}, "fieldName": {"fieldName": "enum(EventFieldName)"}, "trend": {"trend": "Boolean"}}, "perSecond": "Boolean", "timeFrame": "TimeFrame", "withMissingData": "Boolean"}'`
+`cato query eventsTimeSeries 12345 '{"perSecond": "Boolean", "withMissingData": "Boolean", "buckets": "Int", "timeFrame": "TimeFrame", "eventsMeasure": {"fieldName": {"fieldName": "enum(EventFieldName)"}, "aggType": {"aggType": "enum(AggregationType)"}, "trend": {"trend": "Boolean"}}, "eventsDimension": {"fieldName": {"fieldName": "enum(EventFieldName)"}}, "eventsFilter": {"fieldName": {"fieldName": "enum(EventFieldName)"}, "operator": {"operator": "enum(FilterOperator)"}, "values": {"values": ["String"]}}}'`
 
 #### Operation Arguments for query.eventsTimeSeries ####
-`accountID` [ID] - (required) Account ID 
+`perSecond` [Boolean] - (optional) whether to normalize the data into per second (i.e. divide by granularity) 
+`withMissingData` [Boolean] - (optional) If false, the data field will be set to '0' for buckets with no reported data. Otherwise it will be set to -1 
 `buckets` [Int] - (required) N/A 
+`accountID` [ID] - (required) Account ID 
+`timeFrame` [TimeFrame] - (required) N/A 
+`eventsMeasure` [EventsMeasure[]] - (optional) N/A 
 `eventsDimension` [EventsDimension[]] - (optional) N/A 
 `eventsFilter` [EventsFilter[]] - (optional) N/A 
-`eventsMeasure` [EventsMeasure[]] - (optional) N/A 
-`perSecond` [Boolean] - (optional) whether to normalize the data into per second (i.e. divide by granularity) 
-`timeFrame` [TimeFrame] - (required) N/A 
-`withMissingData` [Boolean] - (optional) If false, the data field will be set to '0' for buckets with no reported data. Otherwise it will be set to -1 

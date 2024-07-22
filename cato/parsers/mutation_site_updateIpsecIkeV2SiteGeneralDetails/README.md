@@ -1,0 +1,18 @@
+
+## CATO-CLI - mutation.site.updateIpsecIkeV2SiteGeneralDetails:
+[Click here](https://api.catonetworks.com/documentation/#mutation-updateIpsecIkeV2SiteGeneralDetails) for documentation on this operation.
+
+### Usage for mutation.site.updateIpsecIkeV2SiteGeneralDetails:
+
+`cato mutation site updateIpsecIkeV2SiteGeneralDetails -h`
+
+`cato mutation site updateIpsecIkeV2SiteGeneralDetails <accountID> <json>`
+
+`cato mutation site updateIpsecIkeV2SiteGeneralDetails 12345 $(cat < updateIpsecIkeV2SiteGeneralDetails.json)`
+
+`cato mutation site updateIpsecIkeV2SiteGeneralDetails 12345 '{"siteId": "ID", "updateIpsecIkeV2SiteGeneralDetailsInput": {"connectionMode": {"connectionMode": "enum(ConnectionMode)"}, "identificationType": {"identificationType": "enum(IdentificationType)"}, "ipsecIkeV2MessageInput": {"cipher": {"cipher": "enum(IpSecCipher)"}, "dhGroup": {"dhGroup": "enum(IpSecDHGroup)"}, "integrity": {"integrity": "enum(IpSecHash)"}, "prf": {"prf": "enum(IpSecHash)"}}, "networkRanges": {"networkRanges": ["IPSubnet"]}}}'`
+
+#### Operation Arguments for mutation.site.updateIpsecIkeV2SiteGeneralDetails ####
+`siteId` [ID] - (required) N/A 
+`updateIpsecIkeV2SiteGeneralDetailsInput` [UpdateIpsecIkeV2SiteGeneralDetailsInput] - (required) N/A 
+`accountId` [ID] - (required) N/A 

@@ -249,6 +249,12 @@
                                                                                 },
                                                                                 {
                                                                                     "deprecationReason": null,
+                                                                                    "description": null,
+                                                                                    "isDeprecated": false,
+                                                                                    "name": "location"
+                                                                                },
+                                                                                {
+                                                                                    "deprecationReason": null,
                                                                                     "description": "An account administrator (user in Cato Console)",
                                                                                     "isDeprecated": false,
                                                                                     "name": "admin"
@@ -640,6 +646,12 @@
                                                                                     "description": "A reference to the configured VPN User within Account",
                                                                                     "isDeprecated": false,
                                                                                     "name": "vpnUser"
+                                                                                },
+                                                                                {
+                                                                                    "deprecationReason": null,
+                                                                                    "description": null,
+                                                                                    "isDeprecated": false,
+                                                                                    "name": "location"
                                                                                 },
                                                                                 {
                                                                                     "deprecationReason": null,
@@ -1130,6 +1142,12 @@
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
+                                                                            "description": null,
+                                                                            "isDeprecated": false,
+                                                                            "name": "location"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
                                                                             "description": "An account administrator (user in Cato Console)",
                                                                             "isDeprecated": false,
                                                                             "name": "admin"
@@ -1521,6 +1539,12 @@
                                                                             "description": "A reference to the configured VPN User within Account",
                                                                             "isDeprecated": false,
                                                                             "name": "vpnUser"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": null,
+                                                                            "isDeprecated": false,
+                                                                            "name": "location"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -1977,6 +2001,12 @@
                                                                                         },
                                                                                         {
                                                                                             "deprecationReason": null,
+                                                                                            "description": null,
+                                                                                            "isDeprecated": false,
+                                                                                            "name": "location"
+                                                                                        },
+                                                                                        {
+                                                                                            "deprecationReason": null,
                                                                                             "description": "An account administrator (user in Cato Console)",
                                                                                             "isDeprecated": false,
                                                                                             "name": "admin"
@@ -2368,6 +2398,12 @@
                                                                                             "description": "A reference to the configured VPN User within Account",
                                                                                             "isDeprecated": false,
                                                                                             "name": "vpnUser"
+                                                                                        },
+                                                                                        {
+                                                                                            "deprecationReason": null,
+                                                                                            "description": null,
+                                                                                            "isDeprecated": false,
+                                                                                            "name": "location"
                                                                                         },
                                                                                         {
                                                                                             "deprecationReason": null,
