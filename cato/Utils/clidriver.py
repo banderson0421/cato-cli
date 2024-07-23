@@ -72,17 +72,15 @@ mutation_admin_parser = mutation_admin_parse(mutation_subparsers)
 mutation_policy_parser = mutation_policy_parse(mutation_subparsers)
 mutation_site_parser = mutation_site_parse(mutation_subparsers)
 
-
 def main(args=None):
 	args = parser.parse_args(args=args)
 	try:
 		response = args.func(args, configuration)
-
 		if type(response) == ApiException:
 			print("ERROR! Status code: {}".format(response.status))
 			print(response)
 		else:
 			if response!=None:
-				print(json.dumps(response[0], sort_keys=True, indent=4))
+				print(json.dumps(response[0], sort_keys=True, indent=4))		
 	except AttributeError:
 		print('Missing arguments. Usage: cato <operation> -h')

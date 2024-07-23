@@ -9,7 +9,11 @@ def createRequest(args, configuration):
 	instance = CallApi(ApiClient(configuration))
 	operationName = params["operation_name"]
 	operation = loadJSON("models/"+operationName+".json")
-	variablesObj = json.loads(params["json"])
+	try:
+		variablesObj = json.loads(params["json"])	
+	except ValueError as e:
+		print("ERROR: Query argument must be valid json in quotes. ",e,'\n\nExample: \'{"yourKey":"yourValue"}\'')
+		exit()
 	if "accountID" in operation["operationArgs"]:
 		variablesObj["accountID"] = params["accountID"]	
 	elif "accountId" in operation["args"]:
