@@ -13,5 +13,5 @@
 `cato mutation site removeSite 12345 '{"siteId": "ID"}'`
 
 #### Operation Arguments for mutation.site.removeSite ####
-`siteId` [ID] - (required) N/A 
 `accountId` [ID] - (required) N/A 
+`siteId` [ID] - (required) N/A 

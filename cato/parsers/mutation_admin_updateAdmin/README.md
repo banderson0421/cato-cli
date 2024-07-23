@@ -10,9 +10,9 @@
 
 `cato mutation admin updateAdmin 12345 $(cat < updateAdmin.json)`
 
-`cato mutation admin updateAdmin 12345 '{"adminID": "ID", "updateAdminInput": {"firstName": {"firstName": "String"}, "lastName": {"lastName": "String"}, "passwordNeverExpires": {"passwordNeverExpires": "Boolean"}, "mfaEnabled": {"mfaEnabled": "Boolean"}, "updateAdminRoleInput": {"role": {"id": {"id": "ID"}, "name": {"name": "String"}}, "allowedEntities": {"id": {"id": "ID"}, "name": {"name": "String"}, "type": {"type": "enum(EntityType)"}}, "allowedAccounts": {"allowedAccounts": ["ID"]}}}}'`
+`cato mutation admin updateAdmin 12345 '{"adminID": "ID", "updateAdminInput": {"firstName": {"firstName": "String"}, "lastName": {"lastName": "String"}, "mfaEnabled": {"mfaEnabled": "Boolean"}, "passwordNeverExpires": {"passwordNeverExpires": "Boolean"}, "updateAdminRoleInput": {"allowedAccounts": {"allowedAccounts": ["ID"]}, "allowedEntities": {"id": {"id": "ID"}, "name": {"name": "String"}, "type": {"type": "enum(EntityType)"}}, "role": {"id": {"id": "ID"}, "name": {"name": "String"}}}}}'`
 
 #### Operation Arguments for mutation.admin.updateAdmin ####
+`accountId` [ID] - (required) N/A 
 `adminID` [ID] - (required) N/A 
 `updateAdminInput` [UpdateAdminInput] - (required) N/A 
-`accountId` [ID] - (required) N/A 

@@ -13,5 +13,5 @@
 `cato mutation admin removeAdmin 12345 '{"adminID": "ID"}'`
 
 #### Operation Arguments for mutation.admin.removeAdmin ####
-`adminID` [ID] - (required) N/A 
 `accountId` [ID] - (required) N/A 
+`adminID` [ID] - (required) N/A 

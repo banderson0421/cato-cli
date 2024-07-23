@@ -10,8 +10,8 @@
 
 `cato mutation site addIpsecIkeV2Site 12345 $(cat < addIpsecIkeV2Site.json)`
 
-`cato mutation site addIpsecIkeV2Site 12345 '{"addIpsecIkeV2SiteInput": {"name": {"name": "String"}, "siteType": {"siteType": "enum(SiteType)"}, "description": {"description": "String"}, "nativeNetworkRange": {"nativeNetworkRange": "IPSubnet"}, "addSiteLocationInput": {"countryCode": {"countryCode": "String"}, "stateCode": {"stateCode": "String"}, "timezone": {"timezone": "String"}, "address": {"address": "String"}, "city": {"city": "String"}}}}'`
+`cato mutation site addIpsecIkeV2Site 12345 '{"addIpsecIkeV2SiteInput": {"addSiteLocationInput": {"address": {"address": "String"}, "city": {"city": "String"}, "countryCode": {"countryCode": "String"}, "stateCode": {"stateCode": "String"}, "timezone": {"timezone": "String"}}, "description": {"description": "String"}, "name": {"name": "String"}, "nativeNetworkRange": {"nativeNetworkRange": "IPSubnet"}, "siteType": {"siteType": "enum(SiteType)"}}}'`
 
 #### Operation Arguments for mutation.site.addIpsecIkeV2Site ####
-`addIpsecIkeV2SiteInput` [AddIpsecIkeV2SiteInput] - (required) N/A 
 `accountId` [ID] - (required) N/A 
+`addIpsecIkeV2SiteInput` [AddIpsecIkeV2SiteInput] - (required) N/A 

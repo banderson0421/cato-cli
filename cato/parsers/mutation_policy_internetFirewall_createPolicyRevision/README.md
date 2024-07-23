@@ -10,9 +10,9 @@
 
 `cato mutation policy internetFirewall createPolicyRevision 12345 $(cat < createPolicyRevision.json)`
 
-`cato mutation policy internetFirewall createPolicyRevision 12345 '{"policyCreateRevisionInput": {"name": {"name": "String"}, "description": {"description": "String"}}, "internetFirewallPolicyMutationInput": {"policyMutationRevisionInput": {"id": {"id": "ID"}}}}'`
+`cato mutation policy internetFirewall createPolicyRevision 12345 '{"internetFirewallPolicyMutationInput": {"policyMutationRevisionInput": {"id": {"id": "ID"}}}, "policyCreateRevisionInput": {"description": {"description": "String"}, "name": {"name": "String"}}}'`
 
 #### Operation Arguments for mutation.policy.internetFirewall.createPolicyRevision ####
-`policyCreateRevisionInput` [PolicyCreateRevisionInput] - (required) N/A 
-`internetFirewallPolicyMutationInput` [InternetFirewallPolicyMutationInput] - (optional) N/A 
 `accountId` [ID] - (required) N/A 
+`internetFirewallPolicyMutationInput` [InternetFirewallPolicyMutationInput] - (optional) N/A 
+`policyCreateRevisionInput` [PolicyCreateRevisionInput] - (required) N/A 

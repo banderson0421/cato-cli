@@ -73,7 +73,10 @@ def generateGraphqlPayload(variablesObj,operation,operationName):
 	for varName in variablesObj:
 		if (varName in operation["operationArgs"]):
 			variableStr += operation["operationArgs"][varName]["requestStr"]
-	queryStr = renderParentOperation(operationName)
+	operationAry = operationName.split(".")
+	operationType = operationAry.pop(0)
+	queryStr = operationType + " "
+	queryStr += renderCamelCase(".".join(operationAry))
 	queryStr += " ( " + variableStr + ") {\n"
 	queryStr += indent + operation["name"] + " ( "			
 	for argName in operation["args"]:
@@ -85,7 +88,7 @@ def generateGraphqlPayload(variablesObj,operation,operationName):
 	body = {
 		"query":queryStr,
 		"variables":variablesObj,
-		"operationName":operation["name"],
+		"operationName":renderCamelCase(".".join(operationAry)),
 	}
 	return body
 
@@ -108,22 +111,24 @@ def get_help(path):
 	# 		new_line += f"{clean_line}\n"
 	return new_line
 
-def renderParentOperation(pathStr):
-	str = ""
-	operationAry = pathStr.split(".")
-	operationType = operationAry.pop(0)
-	str += operationType + " "
-	if (operationType == "query"):
-		str += operationAry[0];
-	else:
-		for operation in operationAry:
-			str += operation[0].upper() + operation[1:]
-			for i, operation in enumerate(operationAry):
-				if i == 0:
-					str += operation
-				else:
-					str += operation[0].upper() + operation[1:]
-	return str
+# def renderParentOperation(pathStr):
+# 	str = ""
+# 	operationAry = pathStr.split(".")
+# 	operationType = operationAry.pop(0)
+# 	str = operationType + " "
+# 	# str += operationType + " "
+# 	# if (operationType == "query"):
+# 	# 	str += operationAry[0]
+# 	# else:
+# 	# for operation in operationAry:
+# 	# 	print("operation",operation)
+# 		# str += operation[0].upper() + operation[1:]
+# 	for i, operation in enumerate(operationAry):
+# 		if i == 0:
+# 			str += operation
+# 		else:
+# 			str += operation[0].upper() + operation[1:]
+# 	return str
 
 def validateArgs(variablesObj,operation):
 	isOk = True

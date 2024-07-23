@@ -10,12 +10,12 @@
 
 `cato query admins 12345 $(cat < admins.json)`
 
-`cato query admins 12345 '{"limit": "Int", "from": "Int", "search": "String", "sortInput": {"field": {"field": "String"}, "order": {"order": "enum(DirectionInput)"}}, "adminIDs": ["ID"]}'`
+`cato query admins 12345 '{"adminIDs": ["ID"], "from": "Int", "limit": "Int", "search": "String", "sortInput": {"field": {"field": "String"}, "order": {"order": "enum(DirectionInput)"}}}'`
 
 #### Operation Arguments for query.admins ####
 `accountID` [ID] - (required) N/A 
-`limit` [Int] - (optional) N/A 
+`adminIDs` [ID[]] - (optional) N/A 
 `from` [Int] - (optional) N/A 
+`limit` [Int] - (optional) N/A 
 `search` [String] - (optional) N/A 
 `sortInput` [SortInput[]] - (optional) N/A 
-`adminIDs` [ID[]] - (optional) N/A 

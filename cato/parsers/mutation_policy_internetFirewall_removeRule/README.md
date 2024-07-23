@@ -10,9 +10,9 @@
 
 `cato mutation policy internetFirewall removeRule 12345 $(cat < removeRule.json)`
 
-`cato mutation policy internetFirewall removeRule 12345 '{"internetFirewallRemoveRuleInput": {"id": {"id": "ID"}}, "internetFirewallPolicyMutationInput": {"policyMutationRevisionInput": {"id": {"id": "ID"}}}}'`
+`cato mutation policy internetFirewall removeRule 12345 '{"internetFirewallPolicyMutationInput": {"policyMutationRevisionInput": {"id": {"id": "ID"}}}, "internetFirewallRemoveRuleInput": {"id": {"id": "ID"}}}'`
 
 #### Operation Arguments for mutation.policy.internetFirewall.removeRule ####
-`internetFirewallRemoveRuleInput` [InternetFirewallRemoveRuleInput] - (required) N/A 
-`internetFirewallPolicyMutationInput` [InternetFirewallPolicyMutationInput] - (optional) N/A 
 `accountId` [ID] - (required) N/A 
+`internetFirewallPolicyMutationInput` [InternetFirewallPolicyMutationInput] - (optional) N/A 
+`internetFirewallRemoveRuleInput` [InternetFirewallRemoveRuleInput] - (required) N/A 

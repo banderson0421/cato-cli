@@ -49,3 +49,6 @@ Thumbs.db
 *.wmv
 
 examples.txt
+schema/catoApiIntrospection.json
+schema/catoApiSchema.json
+schema/introspection.json

@@ -10,9 +10,9 @@
 
 `cato mutation policy internetFirewall discardPolicyRevision 12345 $(cat < discardPolicyRevision.json)`
 
-`cato mutation policy internetFirewall discardPolicyRevision 12345 '{"policyDiscardRevisionInput": {"id": {"id": "ID"}}, "internetFirewallPolicyMutationInput": {"policyMutationRevisionInput": {"id": {"id": "ID"}}}}'`
+`cato mutation policy internetFirewall discardPolicyRevision 12345 '{"internetFirewallPolicyMutationInput": {"policyMutationRevisionInput": {"id": {"id": "ID"}}}, "policyDiscardRevisionInput": {"id": {"id": "ID"}}}'`
 
 #### Operation Arguments for mutation.policy.internetFirewall.discardPolicyRevision ####
-`policyDiscardRevisionInput` [PolicyDiscardRevisionInput] - (optional) N/A 
-`internetFirewallPolicyMutationInput` [InternetFirewallPolicyMutationInput] - (optional) N/A 
 `accountId` [ID] - (required) N/A 
+`internetFirewallPolicyMutationInput` [InternetFirewallPolicyMutationInput] - (optional) N/A 
+`policyDiscardRevisionInput` [PolicyDiscardRevisionInput] - (optional) N/A 
