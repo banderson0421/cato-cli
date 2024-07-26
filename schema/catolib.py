@@ -516,6 +516,7 @@ if "CATO_TOKEN" not in os.environ:
 CATO_TOKEN = os.getenv("CATO_TOKEN")
 CATO_DEBUG = bool(os.getenv("CATO_DEBUG", False))
 from ..parsers.raw import raw_parse
+from ..parsers.query_siteLocation import query_siteLocation_parse
 """
 	for parserName in parsers:
 		cliDriverStr += "from ..parsers."+parserName+" import "+parserName+"_parse\n"
@@ -534,6 +535,7 @@ raw_parsers = subparsers.add_parser('raw', help='Raw GraphQL', usage=get_help("r
 raw_parser = raw_parse(raw_parsers)
 query_parser = subparsers.add_parser('query', help='Query', usage='cato query <operationName> [options]')
 query_subparsers = query_parser.add_subparsers(description='valid subcommands', help='additional help')
+query_siteLocation_parser = query_siteLocation_parse(query_subparsers)
 mutation_parser = subparsers.add_parser('mutation', help='Mutation', usage='cato mutation <operationName> [options]')
 mutation_subparsers = mutation_parser.add_subparsers(description='valid subcommands', help='additional help')
 
@@ -576,7 +578,33 @@ def raw_parse(raw_parser):
 	if not os.path.exists(parserPath):
 		os.makedirs(parserPath)
 	writeFile(parserPath+"/__init__.py",cliDriverStr)
-	
+
+	## Write the siteLocation query parser ##
+	cliDriverStr =f"""
+from ..parserApiClient import querySiteLocation, get_help
+
+def query_siteLocation_parse(query_subparsers):
+	query_siteLocation_parser = query_subparsers.add_parser('siteLocation', 
+			help='siteLocation', 
+			usage=get_help("query_siteLocation"))
+
+	query_siteLocation_parser.add_argument('accountID', help='The Account ID.')
+	query_siteLocation_parser.add_argument('json', help='Variables in JSON format.')
+	query_siteLocation_parser.add_argument('-t', const=True, default=False, nargs='?', 
+		help='Print test request preview without sending api call')
+	query_siteLocation_parser.add_argument('-v', const=True, default=False, nargs='?', 
+		help='Verbose output')
+	query_siteLocation_parser.add_argument('-p', const=True, default=False, nargs='?', 
+		help='Pretty print')
+	query_siteLocation_parser.set_defaults(func=querySiteLocation,operation_name='query.siteLocation')
+"""
+	parserPath = "../cato/parsers/query_siteLocation"
+	if not os.path.exists(parserPath):
+		os.makedirs(parserPath)
+	writeFile(parserPath+"/__init__.py",cliDriverStr)
+
+
+
 	for operationType in parserMapping:
 		operationAry = catoApiSchema[operationType]
 		for operationName in operationAry:
@@ -662,6 +690,39 @@ def writeReadmes(catoApiSchema):
 `cato raw '{ "query": "mutation operationNameHere($yourArgument:String!) { field1 field2 }", "variables": { "yourArgument": "string", "accountID": "10949" }, "operationName": "operationNameHere" } '`
 """
 	parserPath = "../cato/parsers/raw"
+	if not os.path.exists(parserPath):
+		os.makedirs(parserPath)
+	writeFile(parserPath+"/README.md",readmeStr)
+	
+		## Write the query.siteLocation readme ##
+	readmeStr = """
+
+## CATO-CLI - query.siteLocation:
+
+### Usage for query.siteLocation:
+
+`cato query siteLocation -h`
+
+`cato query siteLocation <accountID> <json>`
+
+`cato query siteLocation 12345 $(cat < siteLocation.json)`
+
+`cato query siteLocation 12345 '{filters:[{"search": "Your city here","field":"city","opeation":"exact"}}'`
+
+`cato query siteLocation 12345 '{"search": "Your Country here",filters:[{"field":"countryName","operation":"startsWith"}}'`
+
+`cato query siteLocation 12345 '{"search": "Your stateName here",filters:[{"field":"stateName","operation":"endsWith"}}'`
+
+`cato query siteLocation 12345 '{filters:[{"search": "Your City here","field":"city","operation":"startsWith"},{"search": "Your StateName here","field":"stateName","operation":"endsWith"},{"search": "Your Country here","field":"countryName","operation":"contains"}}'`
+
+#### Operation Arguments for query.siteLocation ####
+`accountID` [ID] - (optional) Unique Identifier of Account. 
+`filters[]` [Array] - (optional) Array of objects consisting of `search`, `field` and `operation` attributes.
+`filters[].search` [String] - (required) String to match countryName, stateName, or city specificed in `filters[].field`.
+`filters[].field` [String] - (required) Specify field to match query against, defaults to look for any.  Possible values: `countryName`, `stateName`, or `city`.
+`filters[].operation` [string] - (required) If a field is specified, operation to match the field value.  Possible values: `startsWith`,`endsWith`,`exact`, `contains`.
+"""
+	parserPath = "../cato/parsers/query_siteLocation"
 	if not os.path.exists(parserPath):
 		os.makedirs(parserPath)
 	writeFile(parserPath+"/README.md",readmeStr)

@@ -14,6 +14,7 @@ if "CATO_TOKEN" not in os.environ:
 CATO_TOKEN = os.getenv("CATO_TOKEN")
 CATO_DEBUG = bool(os.getenv("CATO_DEBUG", False))
 from ..parsers.raw import raw_parse
+from ..parsers.query_siteLocation import query_siteLocation_parse
 from ..parsers.mutation_admin import mutation_admin_parse
 from ..parsers.mutation_policy import mutation_policy_parse
 from ..parsers.mutation_site import mutation_site_parse
@@ -48,6 +49,7 @@ raw_parsers = subparsers.add_parser('raw', help='Raw GraphQL', usage=get_help("r
 raw_parser = raw_parse(raw_parsers)
 query_parser = subparsers.add_parser('query', help='Query', usage='cato query <operationName> [options]')
 query_subparsers = query_parser.add_subparsers(description='valid subcommands', help='additional help')
+query_siteLocation_parser = query_siteLocation_parse(query_subparsers)
 mutation_parser = subparsers.add_parser('mutation', help='Mutation', usage='cato mutation <operationName> [options]')
 mutation_subparsers = mutation_parser.add_subparsers(description='valid subcommands', help='additional help')
 

@@ -1,3 +1,4 @@
+import codecs
 import json
 from graphql_client import ApiClient, CallApi
 from graphql_client.api_client import ApiException
@@ -35,6 +36,76 @@ def createRequest(args, configuration):
 	else:
 		print("ERROR: "+message,", ".join(invalidVars))
 
+def querySiteLocation(args, configuration):
+	params = vars(args)
+	operationName = params["operation_name"]
+	operation = loadJSON("models/"+operationName+".json")
+	try:
+		variablesObj = json.loads(params["json"])	
+	except ValueError as e:
+		print("ERROR: Query argument must be valid json in quotes. ",e,'\n\nExample: \'{filters:[{"search": "Your city here","field":"city","opeation":"exact"}}\'')
+		exit()
+	if not variablesObj.get("filters"):
+		print("ERROR: Missing argument, must include filters array. ",e,'\n\nExample: \'{filters:[{"search": "Your city here","field":"city","opeation":"exact"}}\'')
+		exit()
+	if not isinstance(variablesObj.get("filters"), list):
+		print("ERROR: Invalid argument, must include filters array. ",e,'\n\nExample: \'{filters:[{"search": "Your city here","field":"city","opeation":"exact"}}\'')
+		exit()
+	requiredFields = ["search","field","operation"]
+	for filter in variablesObj["filters"]:
+		if not isinstance(filter, dict):
+			print("ERROR: Invalid filter '"+str(filter)+"', filters must be valid json and include 'search', 'field', and 'operation'. ",'\n\nExample: \'{filters:[{"search": "Your city here","field":"city","opeation":"exact"}}\'',type(filter))
+			exit()	
+		for param in filter:
+			if param not in requiredFields:
+				print("ERROR: Invalid field '"+param+"', filters must include 'search', 'field', and 'operation'. ",'\n\nExample: \'{filters:[{"search": "Your city here","field":"city","opeation":"exact"}}\'')
+				exit()	
+	for filter in variablesObj["filters"]:
+		for param in filter:
+			val = filter.get(param)
+			if param=="search" and (not isinstance(val, str) or len(val)<3):
+				print("ERROR: Invalid search '"+val+"', must be a string value and at least 3 characters in lengh. ",'\n\nExample: \'{filters:[{"search": "Your city here","field":"city","opeation":"exact"}}\'')
+				exit()
+			if param=="field" and (not isinstance(val, str) or val not in [ 'countryName', 'stateName', 'city']):
+				print("ERROR: Invalid field '"+val+"', must be one of the following: 'countryName', 'stateName', or 'city'.",'\n\nExample: \'{"search":"your query here","field":"city"}\'')
+				exit()		
+			if param=="operation" and (not isinstance(val, str) or val not in [ 'startsWith', 'endsWith', 'exact', 'contains' ]):
+				print("ERROR: Invalid operation '"+val+"', must be one of the following: 'startsWith', 'endsWith', 'exact', 'contains'.",'\n\nExample: \'{"search": "Your search here","field":"city","operation":"exact"}\'')
+				exit()
+	response = {"data":[]}
+	for key, siteObj in operation.items():
+		isOk = True
+		for filter in variablesObj["filters"]:
+			search = filter.get("search")
+			field = filter.get("field")
+			operation = filter.get("operation")
+			if field in siteObj:
+				if operation=="startsWith" and not siteObj[field].startswith(search):
+					isOk = False
+					break
+				elif operation=="endsWith" and not siteObj[field].endswith(search):
+					isOk = False
+					break
+				elif operation=="exact" and not siteObj[field]==search:
+					isOk = False
+					break
+				elif operation=="contains" and not search in siteObj[field]:
+					isOk = False
+					break
+			else:
+				isOk = False
+				break
+			if isOk==False:
+				break
+		if isOk==True:
+			response["data"].append(siteObj)
+	if params["p"]==True:
+		responseStr = json.dumps(response,indent=2,sort_keys=True,ensure_ascii=False).encode('utf8')
+		print(responseStr.decode())
+	else:
+		responseStr = json.dumps(response,ensure_ascii=False).encode('utf8')
+		print(responseStr.decode())
+		
 def createRawRequest(args, configuration):
 	params = vars(args)
 	instance = CallApi(ApiClient(configuration))
@@ -42,10 +113,6 @@ def createRawRequest(args, configuration):
 	try:
 		body = json.loads(params["json"])
 		isOk = True
-		# if "variables" in body and "query" in body and "operationName" in body:
-		# 	isOk = True
-		# else:
-		# 	print("Invalid request, argument must be valid json including 'variables', 'query', and 'operationName' keys")
 	except ValueError as e:
 		print("ERROR: Argument must be valid json. ",e)
 		isOk=False	
@@ -110,25 +177,6 @@ def get_help(path):
 	# 		clean_line = line.replace("<br /><br />", "").replace("`","")
 	# 		new_line += f"{clean_line}\n"
 	return new_line
-
-# def renderParentOperation(pathStr):
-# 	str = ""
-# 	operationAry = pathStr.split(".")
-# 	operationType = operationAry.pop(0)
-# 	str = operationType + " "
-# 	# str += operationType + " "
-# 	# if (operationType == "query"):
-# 	# 	str += operationAry[0]
-# 	# else:
-# 	# for operation in operationAry:
-# 	# 	print("operation",operation)
-# 		# str += operation[0].upper() + operation[1:]
-# 	for i, operation in enumerate(operationAry):
-# 		if i == 0:
-# 			str += operation
-# 		else:
-# 			str += operation[0].upper() + operation[1:]
-# 	return str
 
 def validateArgs(variablesObj,operation):
 	isOk = True
