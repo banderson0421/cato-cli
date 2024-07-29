@@ -8,9 +8,10 @@ The package provides a simple to use CLI that reflects industry standards (such 
 ## Authentication - Setting up the required environment variables:
 Set [environment variables](https://en.wikipedia.org/wiki/Environment_variable) to configure a token for authentication, and the specific hub endpoint, example:  
 
-	export CATO_API_KEY="12345-abcde"  
+	export CATO_TOKEN="12345-abcde"  
+    export CATO_HOST="12345-abcde" (defaults to https://api.catonetworks.com/api/v1/graphql2, add this environment variable for developoment purposes to specify alternative cato host)  
     export CATO_DEBUG=True (Optional to see cli debug logs in terminal output) 
-
+	
 [CLICK HERE](https://support.catonetworks.com/hc/en-us/articles/4413280536081-Generating-API-Keys-for-the-Cato-API) to see how create an API key to authenticate.
 
 ## Running the CLI

@@ -12,6 +12,7 @@ if "CATO_TOKEN" not in os.environ:
 	print("Missing authentication, please set the CATO_TOKEN environment variable with your api key.")
 	exit()
 CATO_TOKEN = os.getenv("CATO_TOKEN")
+CATO_HOST = os.getenv("CATO_HOST")
 CATO_DEBUG = bool(os.getenv("CATO_DEBUG", False))
 from ..parsers.raw import raw_parse
 from ..parsers.query_siteLocation import query_siteLocation_parse
@@ -39,7 +40,7 @@ from ..parsers.query_xdr import query_xdr_parse
 configuration = Configuration()
 configuration.verify_ssl = False
 configuration.api_key["x-api-key"] = CATO_TOKEN
-configuration.host = "{}".format(cato.__cato_host__)
+configuration.host = "{}".format(cato.__cato_host__ if CATO_HOST==None else CATO_HOST)
 configuration.debug = CATO_DEBUG
 
 parser = argparse.ArgumentParser(prog='cato', usage='%(prog)s <operationType> <operationName> [options]', description="CLI for query on CATO via API.")
