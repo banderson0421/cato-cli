@@ -166,9 +166,9 @@
                                                     "description": null,
                                                     "enumValues": [
                                                         {
-                                                            "deprecationReason": "use src_site_id/src_site_name instead",
+                                                            "deprecationReason": null,
                                                             "description": "Name of site or user initiating the connection",
-                                                            "isDeprecated": true,
+                                                            "isDeprecated": false,
                                                             "name": "src_site"
                                                         },
                                                         {
@@ -664,9 +664,9 @@
                                                             "name": "incident_id"
                                                         },
                                                         {
-                                                            "deprecationReason": "use application_id/application_name instead",
+                                                            "deprecationReason": null,
                                                             "description": "For Internet firewall, app for this event",
-                                                            "isDeprecated": true,
+                                                            "isDeprecated": false,
                                                             "name": "application"
                                                         },
                                                         {
@@ -818,6 +818,12 @@
                                                             "description": "Name of application activity",
                                                             "isDeprecated": false,
                                                             "name": "app_activity"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "Activity type",
+                                                            "isDeprecated": false,
+                                                            "name": "app_activity_type"
                                                         },
                                                         {
                                                             "deprecationReason": null,
@@ -1784,9 +1790,9 @@
                                                     "description": null,
                                                     "enumValues": [
                                                         {
-                                                            "deprecationReason": "use src_site_id/src_site_name instead",
+                                                            "deprecationReason": null,
                                                             "description": "Name of site or user initiating the connection",
-                                                            "isDeprecated": true,
+                                                            "isDeprecated": false,
                                                             "name": "src_site"
                                                         },
                                                         {
@@ -2282,9 +2288,9 @@
                                                             "name": "incident_id"
                                                         },
                                                         {
-                                                            "deprecationReason": "use application_id/application_name instead",
+                                                            "deprecationReason": null,
                                                             "description": "For Internet firewall, app for this event",
-                                                            "isDeprecated": true,
+                                                            "isDeprecated": false,
                                                             "name": "application"
                                                         },
                                                         {
@@ -2436,6 +2442,12 @@
                                                             "description": "Name of application activity",
                                                             "isDeprecated": false,
                                                             "name": "app_activity"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "Activity type",
+                                                            "isDeprecated": false,
+                                                            "name": "app_activity_type"
                                                         },
                                                         {
                                                             "deprecationReason": null,

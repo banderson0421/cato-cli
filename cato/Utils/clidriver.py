@@ -12,9 +12,9 @@ if "CATO_TOKEN" not in os.environ:
 	print("Missing authentication, please set the CATO_TOKEN environment variable with your api key.")
 	exit()
 CATO_TOKEN = os.getenv("CATO_TOKEN")
-CATO_HOST = os.getenv("CATO_HOST")
 CATO_DEBUG = bool(os.getenv("CATO_DEBUG", False))
 from ..parsers.raw import raw_parse
+#from ..parsers.custom import custom_parse
 from ..parsers.query_siteLocation import query_siteLocation_parse
 from ..parsers.mutation_admin import mutation_admin_parse
 from ..parsers.mutation_policy import mutation_policy_parse
@@ -32,6 +32,7 @@ from ..parsers.query_entityLookup import query_entityLookup_parse
 from ..parsers.query_events import query_events_parse
 from ..parsers.query_eventsFeed import query_eventsFeed_parse
 from ..parsers.query_eventsTimeSeries import query_eventsTimeSeries_parse
+from ..parsers.query_hardwareManagement import query_hardwareManagement_parse
 from ..parsers.query_licensing import query_licensing_parse
 from ..parsers.query_policy import query_policy_parse
 from ..parsers.query_subDomains import query_subDomains_parse
@@ -40,12 +41,13 @@ from ..parsers.query_xdr import query_xdr_parse
 configuration = Configuration()
 configuration.verify_ssl = False
 configuration.api_key["x-api-key"] = CATO_TOKEN
-configuration.host = "{}".format(cato.__cato_host__ if CATO_HOST==None else CATO_HOST)
+configuration.host = "{}".format(cato.__cato_host__)
 configuration.debug = CATO_DEBUG
 
 parser = argparse.ArgumentParser(prog='cato', usage='%(prog)s <operationType> <operationName> [options]', description="CLI for query on CATO via API.")
 parser.add_argument('--version', action='version', version=cato.__version__)
 subparsers = parser.add_subparsers()
+#custom_parsers = custom_parse(subparsers)
 raw_parsers = subparsers.add_parser('raw', help='Raw GraphQL', usage=get_help("raw"))
 raw_parser = raw_parse(raw_parsers)
 query_parser = subparsers.add_parser('query', help='Query', usage='cato query <operationName> [options]')
@@ -70,6 +72,7 @@ query_entityLookup_parser = query_entityLookup_parse(query_subparsers)
 query_events_parser = query_events_parse(query_subparsers)
 query_eventsFeed_parser = query_eventsFeed_parse(query_subparsers)
 query_eventsTimeSeries_parser = query_eventsTimeSeries_parse(query_subparsers)
+query_hardwareManagement_parser = query_hardwareManagement_parse(query_subparsers)
 query_licensing_parser = query_licensing_parse(query_subparsers)
 query_policy_parser = query_policy_parse(query_subparsers)
 query_subDomains_parser = query_subDomains_parse(query_subparsers)

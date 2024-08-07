@@ -516,6 +516,7 @@ if "CATO_TOKEN" not in os.environ:
 CATO_TOKEN = os.getenv("CATO_TOKEN")
 CATO_DEBUG = bool(os.getenv("CATO_DEBUG", False))
 from ..parsers.raw import raw_parse
+#from ..parsers.custom import custom_parse
 from ..parsers.query_siteLocation import query_siteLocation_parse
 """
 	for parserName in parsers:
@@ -531,6 +532,7 @@ configuration.debug = CATO_DEBUG
 parser = argparse.ArgumentParser(prog='cato', usage='%(prog)s <operationType> <operationName> [options]', description="CLI for query on CATO via API.")
 parser.add_argument('--version', action='version', version=cato.__version__)
 subparsers = parser.add_subparsers()
+#custom_parsers = custom_parse(subparsers)
 raw_parsers = subparsers.add_parser('raw', help='Raw GraphQL', usage=get_help("raw"))
 raw_parser = raw_parse(raw_parsers)
 query_parser = subparsers.add_parser('query', help='Query', usage='cato query <operationName> [options]')
