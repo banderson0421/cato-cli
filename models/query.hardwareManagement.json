@@ -34,6 +34,8 @@
         "SocketInventoryOrderInput": true,
         "SocketInventoryPayload": true,
         "SocketPlatform": true,
+        "SocketRegistrationStatus": true,
+        "SocketUpgradeStatus": true,
         "SortOrder": true,
         "SortOrderInput": true
     },
@@ -2062,6 +2064,29 @@
                                                     },
                                                     "varName": "accountRef"
                                                 },
+                                                "availableUpgradeVersions": {
+                                                    "args": {},
+                                                    "deprecationReason": null,
+                                                    "description": "Available upgrade versions",
+                                                    "id_str": "socketInventory___items___availableUpgradeVersions",
+                                                    "isDeprecated": false,
+                                                    "name": "availableUpgradeVersions",
+                                                    "path": "socketInventory.items.availableUpgradeVersions",
+                                                    "requestStr": "$availableUpgradeVersions:[String]! ",
+                                                    "required": true,
+                                                    "responseStr": "availableUpgradeVersions:$availableUpgradeVersions ",
+                                                    "type": {
+                                                        "kind": [
+                                                            "NON_NULL",
+                                                            "LIST",
+                                                            "NON_NULL",
+                                                            "SCALAR"
+                                                        ],
+                                                        "name": "String",
+                                                        "non_null": false
+                                                    },
+                                                    "varName": "availableUpgradeVersions"
+                                                },
                                                 "deliverySiteName": {
                                                     "args": {},
                                                     "deprecationReason": null,
@@ -2122,6 +2147,102 @@
                                                         "non_null": false
                                                     },
                                                     "varName": "id"
+                                                },
+                                                "isPrimary": {
+                                                    "args": {},
+                                                    "deprecationReason": null,
+                                                    "description": "Is primary socket",
+                                                    "id_str": "socketInventory___items___isPrimary",
+                                                    "isDeprecated": false,
+                                                    "name": "isPrimary",
+                                                    "path": "socketInventory.items.isPrimary",
+                                                    "requestStr": "$isPrimary:Boolean! ",
+                                                    "required": true,
+                                                    "responseStr": "isPrimary:$isPrimary ",
+                                                    "type": {
+                                                        "kind": [
+                                                            "NON_NULL",
+                                                            "SCALAR"
+                                                        ],
+                                                        "name": "Boolean",
+                                                        "non_null": false
+                                                    },
+                                                    "varName": "isPrimary"
+                                                },
+                                                "registrationStatus": {
+                                                    "alias": "socketRegistrationStatusRegistrationStatus: registrationStatus",
+                                                    "args": {},
+                                                    "deprecationReason": null,
+                                                    "description": "Registration status",
+                                                    "id_str": "socketInventory___items___registrationStatus",
+                                                    "isDeprecated": false,
+                                                    "name": "registrationStatus",
+                                                    "path": "socketInventory.items.registrationStatus",
+                                                    "requestStr": "$registrationStatus:SocketRegistrationStatus ",
+                                                    "required": false,
+                                                    "responseStr": "registrationStatus:$registrationStatus ",
+                                                    "type": {
+                                                        "definition": {
+                                                            "description": null,
+                                                            "enumValues": [
+                                                                {
+                                                                    "deprecationReason": null,
+                                                                    "description": null,
+                                                                    "isDeprecated": false,
+                                                                    "name": "NEW"
+                                                                },
+                                                                {
+                                                                    "deprecationReason": null,
+                                                                    "description": null,
+                                                                    "isDeprecated": false,
+                                                                    "name": "PENDING"
+                                                                },
+                                                                {
+                                                                    "deprecationReason": null,
+                                                                    "description": null,
+                                                                    "isDeprecated": false,
+                                                                    "name": "ASSIGNED_SITE"
+                                                                },
+                                                                {
+                                                                    "deprecationReason": null,
+                                                                    "description": null,
+                                                                    "isDeprecated": false,
+                                                                    "name": "REGISTERED"
+                                                                },
+                                                                {
+                                                                    "deprecationReason": null,
+                                                                    "description": null,
+                                                                    "isDeprecated": false,
+                                                                    "name": "REJECTED"
+                                                                },
+                                                                {
+                                                                    "deprecationReason": null,
+                                                                    "description": null,
+                                                                    "isDeprecated": false,
+                                                                    "name": "UNASSIGNING"
+                                                                },
+                                                                {
+                                                                    "deprecationReason": null,
+                                                                    "description": null,
+                                                                    "isDeprecated": false,
+                                                                    "name": "ASSIGNED_SITE_PENDING_REGISTER"
+                                                                }
+                                                            ],
+                                                            "fields": null,
+                                                            "inputFields": null,
+                                                            "interfaces": null,
+                                                            "kind": "ENUM",
+                                                            "name": "SocketRegistrationStatus",
+                                                            "possibleTypes": null
+                                                        },
+                                                        "indexType": "enum",
+                                                        "kind": [
+                                                            "ENUM"
+                                                        ],
+                                                        "name": "SocketRegistrationStatus",
+                                                        "non_null": false
+                                                    },
+                                                    "varName": "registrationStatus"
                                                 },
                                                 "serialNumber": {
                                                     "args": {},
@@ -2493,6 +2614,120 @@
                                                         "non_null": false
                                                     },
                                                     "varName": "trackingUrl"
+                                                },
+                                                "upgradeStatus": {
+                                                    "alias": "socketUpgradeStatusUpgradeStatus: upgradeStatus",
+                                                    "args": {},
+                                                    "deprecationReason": null,
+                                                    "description": "Upgrade status",
+                                                    "id_str": "socketInventory___items___upgradeStatus",
+                                                    "isDeprecated": false,
+                                                    "name": "upgradeStatus",
+                                                    "path": "socketInventory.items.upgradeStatus",
+                                                    "requestStr": "$upgradeStatus:SocketUpgradeStatus ",
+                                                    "required": false,
+                                                    "responseStr": "upgradeStatus:$upgradeStatus ",
+                                                    "type": {
+                                                        "definition": {
+                                                            "description": null,
+                                                            "enumValues": [
+                                                                {
+                                                                    "deprecationReason": null,
+                                                                    "description": null,
+                                                                    "isDeprecated": false,
+                                                                    "name": "PENDING"
+                                                                },
+                                                                {
+                                                                    "deprecationReason": null,
+                                                                    "description": null,
+                                                                    "isDeprecated": false,
+                                                                    "name": "PENDING_REBOOT"
+                                                                },
+                                                                {
+                                                                    "deprecationReason": null,
+                                                                    "description": null,
+                                                                    "isDeprecated": false,
+                                                                    "name": "STARTING"
+                                                                },
+                                                                {
+                                                                    "deprecationReason": null,
+                                                                    "description": null,
+                                                                    "isDeprecated": false,
+                                                                    "name": "STARTED"
+                                                                },
+                                                                {
+                                                                    "deprecationReason": null,
+                                                                    "description": null,
+                                                                    "isDeprecated": false,
+                                                                    "name": "SUCCESS"
+                                                                },
+                                                                {
+                                                                    "deprecationReason": null,
+                                                                    "description": null,
+                                                                    "isDeprecated": false,
+                                                                    "name": "FAIL"
+                                                                },
+                                                                {
+                                                                    "deprecationReason": null,
+                                                                    "description": null,
+                                                                    "isDeprecated": false,
+                                                                    "name": "SKIP"
+                                                                },
+                                                                {
+                                                                    "deprecationReason": null,
+                                                                    "description": null,
+                                                                    "isDeprecated": false,
+                                                                    "name": "CANCEL"
+                                                                },
+                                                                {
+                                                                    "deprecationReason": null,
+                                                                    "description": null,
+                                                                    "isDeprecated": false,
+                                                                    "name": "FATAL"
+                                                                },
+                                                                {
+                                                                    "deprecationReason": null,
+                                                                    "description": null,
+                                                                    "isDeprecated": false,
+                                                                    "name": "RETRY"
+                                                                }
+                                                            ],
+                                                            "fields": null,
+                                                            "inputFields": null,
+                                                            "interfaces": null,
+                                                            "kind": "ENUM",
+                                                            "name": "SocketUpgradeStatus",
+                                                            "possibleTypes": null
+                                                        },
+                                                        "indexType": "enum",
+                                                        "kind": [
+                                                            "ENUM"
+                                                        ],
+                                                        "name": "SocketUpgradeStatus",
+                                                        "non_null": false
+                                                    },
+                                                    "varName": "upgradeStatus"
+                                                },
+                                                "upgradesPaused": {
+                                                    "args": {},
+                                                    "deprecationReason": null,
+                                                    "description": "Are automatic upgrade paused",
+                                                    "id_str": "socketInventory___items___upgradesPaused",
+                                                    "isDeprecated": false,
+                                                    "name": "upgradesPaused",
+                                                    "path": "socketInventory.items.upgradesPaused",
+                                                    "requestStr": "$upgradesPaused:Boolean! ",
+                                                    "required": true,
+                                                    "responseStr": "upgradesPaused:$upgradesPaused ",
+                                                    "type": {
+                                                        "kind": [
+                                                            "NON_NULL",
+                                                            "SCALAR"
+                                                        ],
+                                                        "name": "Boolean",
+                                                        "non_null": false
+                                                    },
+                                                    "varName": "upgradesPaused"
                                                 }
                                             },
                                             "inputFields": null,

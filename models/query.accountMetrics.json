@@ -3843,7 +3843,7 @@
                                                 "remoteIP": {
                                                     "args": {},
                                                     "deprecationReason": null,
-                                                    "description": "IP address of the PoP that the link is connected to",
+                                                    "description": "IP address the ISP allocates to the WAN link",
                                                     "id_str": "sites___interfaces___remoteIP",
                                                     "isDeprecated": false,
                                                     "name": "remoteIP",
@@ -9401,7 +9401,7 @@
                                                 "remoteIP": {
                                                     "args": {},
                                                     "deprecationReason": null,
-                                                    "description": "IP address of the PoP that the link is connected to",
+                                                    "description": "IP address the ISP allocates to the WAN link",
                                                     "id_str": "users___interfaces___remoteIP",
                                                     "isDeprecated": false,
                                                     "name": "remoteIP",

@@ -176,9 +176,15 @@
         "Extra": true,
         "FileDetails": true,
         "Gaussian": true,
+        "IlmmContact": true,
+        "IlmmDetails": true,
+        "IlmmIspDetails": true,
+        "IlmmLinkDetails": true,
+        "IlmmOnboardingStatus": true,
         "IncidentFlow": true,
         "IncidentTargetRep": true,
         "IncidentTimeseries": true,
+        "IspLoaFile": true,
         "LinkConfigPrecedenceEnum": true,
         "LinkQualityIssue": true,
         "LinkQualityIssueTypeEnum": true,
@@ -17935,6 +17941,564 @@
                                                                 "non_null": false
                                                             },
                                                             "varName": "id"
+                                                        },
+                                                        "ilmmDetails": {
+                                                            "args": {},
+                                                            "deprecationReason": null,
+                                                            "description": null,
+                                                            "id_str": "story___incident___NetworkXDRIncident___ilmmDetails",
+                                                            "isDeprecated": false,
+                                                            "name": "ilmmDetails",
+                                                            "path": "story.incident.NetworkXDRIncident.ilmmDetails",
+                                                            "requestStr": "$ilmmDetails:IlmmDetails ",
+                                                            "required": false,
+                                                            "responseStr": "ilmmDetails:$ilmmDetails ",
+                                                            "type": {
+                                                                "definition": {
+                                                                    "description": null,
+                                                                    "enumValues": null,
+                                                                    "fields": {
+                                                                        "contacts": {
+                                                                            "args": {},
+                                                                            "deprecationReason": null,
+                                                                            "description": null,
+                                                                            "id_str": "story___incident___NetworkXDRIncident___ilmmDetails___contacts",
+                                                                            "isDeprecated": false,
+                                                                            "name": "contacts",
+                                                                            "path": "story.incident.NetworkXDRIncident.ilmmDetails.contacts",
+                                                                            "requestStr": "$ilmmContact:[IlmmContact] ",
+                                                                            "required": false,
+                                                                            "responseStr": "contacts:$ilmmContact ",
+                                                                            "type": {
+                                                                                "definition": {
+                                                                                    "description": null,
+                                                                                    "enumValues": null,
+                                                                                    "fields": {
+                                                                                        "email": {
+                                                                                            "args": {},
+                                                                                            "deprecationReason": null,
+                                                                                            "description": null,
+                                                                                            "id_str": "story___incident___NetworkXDRIncident___ilmmDetails___contacts___email",
+                                                                                            "isDeprecated": false,
+                                                                                            "name": "email",
+                                                                                            "path": "story.incident.NetworkXDRIncident.ilmmDetails.contacts.email",
+                                                                                            "requestStr": "$email:String ",
+                                                                                            "required": false,
+                                                                                            "responseStr": "email:$email ",
+                                                                                            "type": {
+                                                                                                "kind": [
+                                                                                                    "SCALAR"
+                                                                                                ],
+                                                                                                "name": "String",
+                                                                                                "non_null": false
+                                                                                            },
+                                                                                            "varName": "email"
+                                                                                        },
+                                                                                        "name": {
+                                                                                            "args": {},
+                                                                                            "deprecationReason": null,
+                                                                                            "description": null,
+                                                                                            "id_str": "story___incident___NetworkXDRIncident___ilmmDetails___contacts___name",
+                                                                                            "isDeprecated": false,
+                                                                                            "name": "name",
+                                                                                            "path": "story.incident.NetworkXDRIncident.ilmmDetails.contacts.name",
+                                                                                            "requestStr": "$name:String ",
+                                                                                            "required": false,
+                                                                                            "responseStr": "name:$name ",
+                                                                                            "type": {
+                                                                                                "kind": [
+                                                                                                    "SCALAR"
+                                                                                                ],
+                                                                                                "name": "String",
+                                                                                                "non_null": false
+                                                                                            },
+                                                                                            "varName": "name"
+                                                                                        },
+                                                                                        "phone": {
+                                                                                            "args": {},
+                                                                                            "deprecationReason": null,
+                                                                                            "description": null,
+                                                                                            "id_str": "story___incident___NetworkXDRIncident___ilmmDetails___contacts___phone",
+                                                                                            "isDeprecated": false,
+                                                                                            "name": "phone",
+                                                                                            "path": "story.incident.NetworkXDRIncident.ilmmDetails.contacts.phone",
+                                                                                            "requestStr": "$phone:String ",
+                                                                                            "required": false,
+                                                                                            "responseStr": "phone:$phone ",
+                                                                                            "type": {
+                                                                                                "kind": [
+                                                                                                    "SCALAR"
+                                                                                                ],
+                                                                                                "name": "String",
+                                                                                                "non_null": false
+                                                                                            },
+                                                                                            "varName": "phone"
+                                                                                        }
+                                                                                    },
+                                                                                    "inputFields": null,
+                                                                                    "interfaces": {},
+                                                                                    "kind": "OBJECT",
+                                                                                    "name": "IlmmContact",
+                                                                                    "possibleTypes": null
+                                                                                },
+                                                                                "indexType": "object",
+                                                                                "kind": [
+                                                                                    "LIST",
+                                                                                    "NON_NULL",
+                                                                                    "OBJECT"
+                                                                                ],
+                                                                                "name": "IlmmContact",
+                                                                                "non_null": false
+                                                                            },
+                                                                            "varName": "ilmmContact"
+                                                                        },
+                                                                        "ispDetails": {
+                                                                            "args": {},
+                                                                            "deprecationReason": null,
+                                                                            "description": null,
+                                                                            "id_str": "story___incident___NetworkXDRIncident___ilmmDetails___ispDetails",
+                                                                            "isDeprecated": false,
+                                                                            "name": "ispDetails",
+                                                                            "path": "story.incident.NetworkXDRIncident.ilmmDetails.ispDetails",
+                                                                            "requestStr": "$ilmmIspDetails:IlmmIspDetails ",
+                                                                            "required": false,
+                                                                            "responseStr": "ispDetails:$ilmmIspDetails ",
+                                                                            "type": {
+                                                                                "definition": {
+                                                                                    "description": null,
+                                                                                    "enumValues": null,
+                                                                                    "fields": {
+                                                                                        "countryCode": {
+                                                                                            "args": {},
+                                                                                            "deprecationReason": null,
+                                                                                            "description": null,
+                                                                                            "id_str": "story___incident___NetworkXDRIncident___ilmmDetails___ispDetails___countryCode",
+                                                                                            "isDeprecated": false,
+                                                                                            "name": "countryCode",
+                                                                                            "path": "story.incident.NetworkXDRIncident.ilmmDetails.ispDetails.countryCode",
+                                                                                            "requestStr": "$countryCode:String ",
+                                                                                            "required": false,
+                                                                                            "responseStr": "countryCode:$countryCode ",
+                                                                                            "type": {
+                                                                                                "kind": [
+                                                                                                    "SCALAR"
+                                                                                                ],
+                                                                                                "name": "String",
+                                                                                                "non_null": false
+                                                                                            },
+                                                                                            "varName": "countryCode"
+                                                                                        },
+                                                                                        "description": {
+                                                                                            "args": {},
+                                                                                            "deprecationReason": null,
+                                                                                            "description": null,
+                                                                                            "id_str": "story___incident___NetworkXDRIncident___ilmmDetails___ispDetails___description",
+                                                                                            "isDeprecated": false,
+                                                                                            "name": "description",
+                                                                                            "path": "story.incident.NetworkXDRIncident.ilmmDetails.ispDetails.description",
+                                                                                            "requestStr": "$description:String ",
+                                                                                            "required": false,
+                                                                                            "responseStr": "description:$description ",
+                                                                                            "type": {
+                                                                                                "kind": [
+                                                                                                    "SCALAR"
+                                                                                                ],
+                                                                                                "name": "String",
+                                                                                                "non_null": false
+                                                                                            },
+                                                                                            "varName": "description"
+                                                                                        },
+                                                                                        "ispAccountId": {
+                                                                                            "args": {},
+                                                                                            "deprecationReason": null,
+                                                                                            "description": null,
+                                                                                            "id_str": "story___incident___NetworkXDRIncident___ilmmDetails___ispDetails___ispAccountId",
+                                                                                            "isDeprecated": false,
+                                                                                            "name": "ispAccountId",
+                                                                                            "path": "story.incident.NetworkXDRIncident.ilmmDetails.ispDetails.ispAccountId",
+                                                                                            "requestStr": "$ispAccountId:String ",
+                                                                                            "required": false,
+                                                                                            "responseStr": "ispAccountId:$ispAccountId ",
+                                                                                            "type": {
+                                                                                                "kind": [
+                                                                                                    "SCALAR"
+                                                                                                ],
+                                                                                                "name": "String",
+                                                                                                "non_null": false
+                                                                                            },
+                                                                                            "varName": "ispAccountId"
+                                                                                        },
+                                                                                        "loaFile": {
+                                                                                            "args": {},
+                                                                                            "deprecationReason": null,
+                                                                                            "description": null,
+                                                                                            "id_str": "story___incident___NetworkXDRIncident___ilmmDetails___ispDetails___loaFile",
+                                                                                            "isDeprecated": false,
+                                                                                            "name": "loaFile",
+                                                                                            "path": "story.incident.NetworkXDRIncident.ilmmDetails.ispDetails.loaFile",
+                                                                                            "requestStr": "$ispLoaFile:IspLoaFile ",
+                                                                                            "required": false,
+                                                                                            "responseStr": "loaFile:$ispLoaFile ",
+                                                                                            "type": {
+                                                                                                "definition": {
+                                                                                                    "description": null,
+                                                                                                    "enumValues": null,
+                                                                                                    "fields": {
+                                                                                                        "fileHash": {
+                                                                                                            "args": {},
+                                                                                                            "deprecationReason": null,
+                                                                                                            "description": null,
+                                                                                                            "id_str": "story___incident___NetworkXDRIncident___ilmmDetails___ispDetails___loaFile___fileHash",
+                                                                                                            "isDeprecated": false,
+                                                                                                            "name": "fileHash",
+                                                                                                            "path": "story.incident.NetworkXDRIncident.ilmmDetails.ispDetails.loaFile.fileHash",
+                                                                                                            "requestStr": "$fileHash:String ",
+                                                                                                            "required": false,
+                                                                                                            "responseStr": "fileHash:$fileHash ",
+                                                                                                            "type": {
+                                                                                                                "kind": [
+                                                                                                                    "SCALAR"
+                                                                                                                ],
+                                                                                                                "name": "String",
+                                                                                                                "non_null": false
+                                                                                                            },
+                                                                                                            "varName": "fileHash"
+                                                                                                        },
+                                                                                                        "fileName": {
+                                                                                                            "args": {},
+                                                                                                            "deprecationReason": null,
+                                                                                                            "description": null,
+                                                                                                            "id_str": "story___incident___NetworkXDRIncident___ilmmDetails___ispDetails___loaFile___fileName",
+                                                                                                            "isDeprecated": false,
+                                                                                                            "name": "fileName",
+                                                                                                            "path": "story.incident.NetworkXDRIncident.ilmmDetails.ispDetails.loaFile.fileName",
+                                                                                                            "requestStr": "$fileName:String ",
+                                                                                                            "required": false,
+                                                                                                            "responseStr": "fileName:$fileName ",
+                                                                                                            "type": {
+                                                                                                                "kind": [
+                                                                                                                    "SCALAR"
+                                                                                                                ],
+                                                                                                                "name": "String",
+                                                                                                                "non_null": false
+                                                                                                            },
+                                                                                                            "varName": "fileName"
+                                                                                                        },
+                                                                                                        "uploadedAt": {
+                                                                                                            "args": {},
+                                                                                                            "deprecationReason": null,
+                                                                                                            "description": null,
+                                                                                                            "id_str": "story___incident___NetworkXDRIncident___ilmmDetails___ispDetails___loaFile___uploadedAt",
+                                                                                                            "isDeprecated": false,
+                                                                                                            "name": "uploadedAt",
+                                                                                                            "path": "story.incident.NetworkXDRIncident.ilmmDetails.ispDetails.loaFile.uploadedAt",
+                                                                                                            "requestStr": "$uploadedAt:Time ",
+                                                                                                            "required": false,
+                                                                                                            "responseStr": "uploadedAt:$uploadedAt ",
+                                                                                                            "type": {
+                                                                                                                "kind": [
+                                                                                                                    "SCALAR"
+                                                                                                                ],
+                                                                                                                "name": "Time",
+                                                                                                                "non_null": false
+                                                                                                            },
+                                                                                                            "varName": "uploadedAt"
+                                                                                                        }
+                                                                                                    },
+                                                                                                    "inputFields": null,
+                                                                                                    "interfaces": {},
+                                                                                                    "kind": "OBJECT",
+                                                                                                    "name": "IspLoaFile",
+                                                                                                    "possibleTypes": null
+                                                                                                },
+                                                                                                "indexType": "object",
+                                                                                                "kind": [
+                                                                                                    "OBJECT"
+                                                                                                ],
+                                                                                                "name": "IspLoaFile",
+                                                                                                "non_null": false
+                                                                                            },
+                                                                                            "varName": "ispLoaFile"
+                                                                                        },
+                                                                                        "name": {
+                                                                                            "args": {},
+                                                                                            "deprecationReason": null,
+                                                                                            "description": null,
+                                                                                            "id_str": "story___incident___NetworkXDRIncident___ilmmDetails___ispDetails___name",
+                                                                                            "isDeprecated": false,
+                                                                                            "name": "name",
+                                                                                            "path": "story.incident.NetworkXDRIncident.ilmmDetails.ispDetails.name",
+                                                                                            "requestStr": "$name:String ",
+                                                                                            "required": false,
+                                                                                            "responseStr": "name:$name ",
+                                                                                            "type": {
+                                                                                                "kind": [
+                                                                                                    "SCALAR"
+                                                                                                ],
+                                                                                                "name": "String",
+                                                                                                "non_null": false
+                                                                                            },
+                                                                                            "varName": "name"
+                                                                                        },
+                                                                                        "supportEmail": {
+                                                                                            "args": {},
+                                                                                            "deprecationReason": null,
+                                                                                            "description": null,
+                                                                                            "id_str": "story___incident___NetworkXDRIncident___ilmmDetails___ispDetails___supportEmail",
+                                                                                            "isDeprecated": false,
+                                                                                            "name": "supportEmail",
+                                                                                            "path": "story.incident.NetworkXDRIncident.ilmmDetails.ispDetails.supportEmail",
+                                                                                            "requestStr": "$supportEmail:String ",
+                                                                                            "required": false,
+                                                                                            "responseStr": "supportEmail:$supportEmail ",
+                                                                                            "type": {
+                                                                                                "kind": [
+                                                                                                    "SCALAR"
+                                                                                                ],
+                                                                                                "name": "String",
+                                                                                                "non_null": false
+                                                                                            },
+                                                                                            "varName": "supportEmail"
+                                                                                        },
+                                                                                        "supportPhone": {
+                                                                                            "args": {},
+                                                                                            "deprecationReason": null,
+                                                                                            "description": null,
+                                                                                            "id_str": "story___incident___NetworkXDRIncident___ilmmDetails___ispDetails___supportPhone",
+                                                                                            "isDeprecated": false,
+                                                                                            "name": "supportPhone",
+                                                                                            "path": "story.incident.NetworkXDRIncident.ilmmDetails.ispDetails.supportPhone",
+                                                                                            "requestStr": "$supportPhone:String ",
+                                                                                            "required": false,
+                                                                                            "responseStr": "supportPhone:$supportPhone ",
+                                                                                            "type": {
+                                                                                                "kind": [
+                                                                                                    "SCALAR"
+                                                                                                ],
+                                                                                                "name": "String",
+                                                                                                "non_null": false
+                                                                                            },
+                                                                                            "varName": "supportPhone"
+                                                                                        }
+                                                                                    },
+                                                                                    "inputFields": null,
+                                                                                    "interfaces": {},
+                                                                                    "kind": "OBJECT",
+                                                                                    "name": "IlmmIspDetails",
+                                                                                    "possibleTypes": null
+                                                                                },
+                                                                                "indexType": "object",
+                                                                                "kind": [
+                                                                                    "OBJECT"
+                                                                                ],
+                                                                                "name": "IlmmIspDetails",
+                                                                                "non_null": false
+                                                                            },
+                                                                            "varName": "ilmmIspDetails"
+                                                                        },
+                                                                        "linkDetails": {
+                                                                            "args": {},
+                                                                            "deprecationReason": null,
+                                                                            "description": null,
+                                                                            "id_str": "story___incident___NetworkXDRIncident___ilmmDetails___linkDetails",
+                                                                            "isDeprecated": false,
+                                                                            "name": "linkDetails",
+                                                                            "path": "story.incident.NetworkXDRIncident.ilmmDetails.linkDetails",
+                                                                            "requestStr": "$ilmmLinkDetails:IlmmLinkDetails ",
+                                                                            "required": false,
+                                                                            "responseStr": "linkDetails:$ilmmLinkDetails ",
+                                                                            "type": {
+                                                                                "definition": {
+                                                                                    "description": null,
+                                                                                    "enumValues": null,
+                                                                                    "fields": {
+                                                                                        "activeLicense": {
+                                                                                            "args": {},
+                                                                                            "deprecationReason": null,
+                                                                                            "description": null,
+                                                                                            "id_str": "story___incident___NetworkXDRIncident___ilmmDetails___linkDetails___activeLicense",
+                                                                                            "isDeprecated": false,
+                                                                                            "name": "activeLicense",
+                                                                                            "path": "story.incident.NetworkXDRIncident.ilmmDetails.linkDetails.activeLicense",
+                                                                                            "requestStr": "$activeLicense:Boolean ",
+                                                                                            "required": false,
+                                                                                            "responseStr": "activeLicense:$activeLicense ",
+                                                                                            "type": {
+                                                                                                "kind": [
+                                                                                                    "SCALAR"
+                                                                                                ],
+                                                                                                "name": "Boolean",
+                                                                                                "non_null": false
+                                                                                            },
+                                                                                            "varName": "activeLicense"
+                                                                                        },
+                                                                                        "comments": {
+                                                                                            "args": {},
+                                                                                            "deprecationReason": null,
+                                                                                            "description": null,
+                                                                                            "id_str": "story___incident___NetworkXDRIncident___ilmmDetails___linkDetails___comments",
+                                                                                            "isDeprecated": false,
+                                                                                            "name": "comments",
+                                                                                            "path": "story.incident.NetworkXDRIncident.ilmmDetails.linkDetails.comments",
+                                                                                            "requestStr": "$comments:String ",
+                                                                                            "required": false,
+                                                                                            "responseStr": "comments:$comments ",
+                                                                                            "type": {
+                                                                                                "kind": [
+                                                                                                    "SCALAR"
+                                                                                                ],
+                                                                                                "name": "String",
+                                                                                                "non_null": false
+                                                                                            },
+                                                                                            "varName": "comments"
+                                                                                        },
+                                                                                        "description": {
+                                                                                            "args": {},
+                                                                                            "deprecationReason": null,
+                                                                                            "description": null,
+                                                                                            "id_str": "story___incident___NetworkXDRIncident___ilmmDetails___linkDetails___description",
+                                                                                            "isDeprecated": false,
+                                                                                            "name": "description",
+                                                                                            "path": "story.incident.NetworkXDRIncident.ilmmDetails.linkDetails.description",
+                                                                                            "requestStr": "$description:String ",
+                                                                                            "required": false,
+                                                                                            "responseStr": "description:$description ",
+                                                                                            "type": {
+                                                                                                "kind": [
+                                                                                                    "SCALAR"
+                                                                                                ],
+                                                                                                "name": "String",
+                                                                                                "non_null": false
+                                                                                            },
+                                                                                            "varName": "description"
+                                                                                        },
+                                                                                        "ispLinkId": {
+                                                                                            "args": {},
+                                                                                            "deprecationReason": null,
+                                                                                            "description": null,
+                                                                                            "id_str": "story___incident___NetworkXDRIncident___ilmmDetails___linkDetails___ispLinkId",
+                                                                                            "isDeprecated": false,
+                                                                                            "name": "ispLinkId",
+                                                                                            "path": "story.incident.NetworkXDRIncident.ilmmDetails.linkDetails.ispLinkId",
+                                                                                            "requestStr": "$ispLinkId:String ",
+                                                                                            "required": false,
+                                                                                            "responseStr": "ispLinkId:$ispLinkId ",
+                                                                                            "type": {
+                                                                                                "kind": [
+                                                                                                    "SCALAR"
+                                                                                                ],
+                                                                                                "name": "String",
+                                                                                                "non_null": false
+                                                                                            },
+                                                                                            "varName": "ispLinkId"
+                                                                                        },
+                                                                                        "linkId": {
+                                                                                            "args": {},
+                                                                                            "deprecationReason": null,
+                                                                                            "description": null,
+                                                                                            "id_str": "story___incident___NetworkXDRIncident___ilmmDetails___linkDetails___linkId",
+                                                                                            "isDeprecated": false,
+                                                                                            "name": "linkId",
+                                                                                            "path": "story.incident.NetworkXDRIncident.ilmmDetails.linkDetails.linkId",
+                                                                                            "requestStr": "$linkId:String ",
+                                                                                            "required": false,
+                                                                                            "responseStr": "linkId:$linkId ",
+                                                                                            "type": {
+                                                                                                "kind": [
+                                                                                                    "SCALAR"
+                                                                                                ],
+                                                                                                "name": "String",
+                                                                                                "non_null": false
+                                                                                            },
+                                                                                            "varName": "linkId"
+                                                                                        },
+                                                                                        "onboardingStatus": {
+                                                                                            "args": {},
+                                                                                            "deprecationReason": null,
+                                                                                            "description": null,
+                                                                                            "id_str": "story___incident___NetworkXDRIncident___ilmmDetails___linkDetails___onboardingStatus",
+                                                                                            "isDeprecated": false,
+                                                                                            "name": "onboardingStatus",
+                                                                                            "path": "story.incident.NetworkXDRIncident.ilmmDetails.linkDetails.onboardingStatus",
+                                                                                            "requestStr": "$onboardingStatus:IlmmOnboardingStatus ",
+                                                                                            "required": false,
+                                                                                            "responseStr": "onboardingStatus:$onboardingStatus ",
+                                                                                            "type": {
+                                                                                                "definition": {
+                                                                                                    "description": null,
+                                                                                                    "enumValues": [
+                                                                                                        {
+                                                                                                            "deprecationReason": null,
+                                                                                                            "description": null,
+                                                                                                            "isDeprecated": false,
+                                                                                                            "name": "MISSING"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "deprecationReason": null,
+                                                                                                            "description": null,
+                                                                                                            "isDeprecated": false,
+                                                                                                            "name": "PENDING"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "deprecationReason": null,
+                                                                                                            "description": null,
+                                                                                                            "isDeprecated": false,
+                                                                                                            "name": "FAILED"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "deprecationReason": null,
+                                                                                                            "description": null,
+                                                                                                            "isDeprecated": false,
+                                                                                                            "name": "COMPLETE"
+                                                                                                        }
+                                                                                                    ],
+                                                                                                    "fields": null,
+                                                                                                    "inputFields": null,
+                                                                                                    "interfaces": null,
+                                                                                                    "kind": "ENUM",
+                                                                                                    "name": "IlmmOnboardingStatus",
+                                                                                                    "possibleTypes": null
+                                                                                                },
+                                                                                                "indexType": "enum",
+                                                                                                "kind": [
+                                                                                                    "ENUM"
+                                                                                                ],
+                                                                                                "name": "IlmmOnboardingStatus",
+                                                                                                "non_null": false
+                                                                                            },
+                                                                                            "varName": "onboardingStatus"
+                                                                                        }
+                                                                                    },
+                                                                                    "inputFields": null,
+                                                                                    "interfaces": {},
+                                                                                    "kind": "OBJECT",
+                                                                                    "name": "IlmmLinkDetails",
+                                                                                    "possibleTypes": null
+                                                                                },
+                                                                                "indexType": "object",
+                                                                                "kind": [
+                                                                                    "OBJECT"
+                                                                                ],
+                                                                                "name": "IlmmLinkDetails",
+                                                                                "non_null": false
+                                                                            },
+                                                                            "varName": "ilmmLinkDetails"
+                                                                        }
+                                                                    },
+                                                                    "inputFields": null,
+                                                                    "interfaces": {},
+                                                                    "kind": "OBJECT",
+                                                                    "name": "IlmmDetails",
+                                                                    "possibleTypes": null
+                                                                },
+                                                                "indexType": "object",
+                                                                "kind": [
+                                                                    "OBJECT"
+                                                                ],
+                                                                "name": "IlmmDetails",
+                                                                "non_null": false
+                                                            },
+                                                            "varName": "ilmmDetails"
                                                         },
                                                         "indication": {
                                                             "alias": "networkXDRIncidentIndication: indication",

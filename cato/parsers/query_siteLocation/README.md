@@ -10,11 +10,11 @@
 
 `cato query siteLocation 12345 $(cat < siteLocation.json)`
 
-`cato query siteLocation 12345 '{filters:[{"search": "Your city here","field":"city","opeation":"exact"}}'`
+`cato query siteLocation 12345 '{"filters":[{"search": "Your city here","field":"city","operation":"exact"}]}'`
 
-`cato query siteLocation 12345 '{"search": "Your Country here",filters:[{"field":"countryName","operation":"startsWith"}}'`
+`cato query siteLocation 12345 '{"filters":[{"search": "Your Country here","field":"countryName","operation":"startsWith"}]}'`
 
-`cato query siteLocation 12345 '{"search": "Your stateName here",filters:[{"field":"stateName","operation":"endsWith"}}'`
+`cato query siteLocation 12345 '{"filters":[{"search": "Your stateName here","field":"stateName","operation":"endsWith"}]}'`
 
 `cato query siteLocation 12345 '{filters:[{"search": "Your City here","field":"city","operation":"startsWith"},{"search": "Your StateName here","field":"stateName","operation":"endsWith"},{"search": "Your Country here","field":"countryName","operation":"contains"}}'`
 

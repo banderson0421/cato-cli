@@ -1910,7 +1910,7 @@
                                                                 "remoteIP": {
                                                                     "args": {},
                                                                     "deprecationReason": null,
-                                                                    "description": "IP address of the PoP that the link is connected to",
+                                                                    "description": "IP address the ISP allocates to the WAN link",
                                                                     "id_str": "sites___devices___recentConnections___remoteIP",
                                                                     "isDeprecated": false,
                                                                     "name": "remoteIP",
@@ -5466,7 +5466,7 @@
                                                                 "remoteIP": {
                                                                     "args": {},
                                                                     "deprecationReason": null,
-                                                                    "description": "IP address of the PoP that the link is connected to",
+                                                                    "description": "IP address the ISP allocates to the WAN link",
                                                                     "id_str": "users___devices___recentConnections___remoteIP",
                                                                     "isDeprecated": false,
                                                                     "name": "remoteIP",
@@ -6599,7 +6599,7 @@
                                                 "remoteIP": {
                                                     "args": {},
                                                     "deprecationReason": null,
-                                                    "description": "IP address of the PoP that the link is connected to",
+                                                    "description": "IP address the ISP allocates to the WAN link",
                                                     "id_str": "users___recentConnections___remoteIP",
                                                     "isDeprecated": false,
                                                     "name": "remoteIP",

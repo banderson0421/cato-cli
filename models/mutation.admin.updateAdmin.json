@@ -195,6 +195,18 @@
                                                                             "enumValues": [
                                                                                 {
                                                                                     "deprecationReason": null,
+                                                                                    "description": "A reference to a configured Site within Account",
+                                                                                    "isDeprecated": false,
+                                                                                    "name": "site"
+                                                                                },
+                                                                                {
+                                                                                    "deprecationReason": null,
+                                                                                    "description": "A reference to the configured VPN User within Account",
+                                                                                    "isDeprecated": false,
+                                                                                    "name": "vpnUser"
+                                                                                },
+                                                                                {
+                                                                                    "deprecationReason": null,
                                                                                     "description": "Geographical and political entity recognized internationally",
                                                                                     "isDeprecated": false,
                                                                                     "name": "country"
@@ -213,12 +225,6 @@
                                                                                 },
                                                                                 {
                                                                                     "deprecationReason": null,
-                                                                                    "description": "A reference to a configured Site within Account",
-                                                                                    "isDeprecated": false,
-                                                                                    "name": "site"
-                                                                                },
-                                                                                {
-                                                                                    "deprecationReason": null,
                                                                                     "description": "A reference to the configured Host within Site",
                                                                                     "isDeprecated": false,
                                                                                     "name": "host"
@@ -231,21 +237,9 @@
                                                                                 },
                                                                                 {
                                                                                     "deprecationReason": null,
-                                                                                    "description": "A reference to a configured Account under reseller",
-                                                                                    "isDeprecated": false,
-                                                                                    "name": "account"
-                                                                                },
-                                                                                {
-                                                                                    "deprecationReason": null,
                                                                                     "description": "A reference to the configured Network Interface within Site",
                                                                                     "isDeprecated": false,
                                                                                     "name": "networkInterface"
-                                                                                },
-                                                                                {
-                                                                                    "deprecationReason": null,
-                                                                                    "description": "A reference to the configured VPN User within Account",
-                                                                                    "isDeprecated": false,
-                                                                                    "name": "vpnUser"
                                                                                 },
                                                                                 {
                                                                                     "deprecationReason": null,
@@ -336,6 +330,12 @@
                                                                                     "description": null,
                                                                                     "isDeprecated": false,
                                                                                     "name": "webhookSubscription"
+                                                                                },
+                                                                                {
+                                                                                    "deprecationReason": null,
+                                                                                    "description": "A reference to a configured Account under reseller",
+                                                                                    "isDeprecated": false,
+                                                                                    "name": "account"
                                                                                 }
                                                                             ],
                                                                             "fields": null,
@@ -595,6 +595,18 @@
                                                                             "enumValues": [
                                                                                 {
                                                                                     "deprecationReason": null,
+                                                                                    "description": "A reference to a configured Site within Account",
+                                                                                    "isDeprecated": false,
+                                                                                    "name": "site"
+                                                                                },
+                                                                                {
+                                                                                    "deprecationReason": null,
+                                                                                    "description": "A reference to the configured VPN User within Account",
+                                                                                    "isDeprecated": false,
+                                                                                    "name": "vpnUser"
+                                                                                },
+                                                                                {
+                                                                                    "deprecationReason": null,
                                                                                     "description": "Geographical and political entity recognized internationally",
                                                                                     "isDeprecated": false,
                                                                                     "name": "country"
@@ -613,12 +625,6 @@
                                                                                 },
                                                                                 {
                                                                                     "deprecationReason": null,
-                                                                                    "description": "A reference to a configured Site within Account",
-                                                                                    "isDeprecated": false,
-                                                                                    "name": "site"
-                                                                                },
-                                                                                {
-                                                                                    "deprecationReason": null,
                                                                                     "description": "A reference to the configured Host within Site",
                                                                                     "isDeprecated": false,
                                                                                     "name": "host"
@@ -631,21 +637,9 @@
                                                                                 },
                                                                                 {
                                                                                     "deprecationReason": null,
-                                                                                    "description": "A reference to a configured Account under reseller",
-                                                                                    "isDeprecated": false,
-                                                                                    "name": "account"
-                                                                                },
-                                                                                {
-                                                                                    "deprecationReason": null,
                                                                                     "description": "A reference to the configured Network Interface within Site",
                                                                                     "isDeprecated": false,
                                                                                     "name": "networkInterface"
-                                                                                },
-                                                                                {
-                                                                                    "deprecationReason": null,
-                                                                                    "description": "A reference to the configured VPN User within Account",
-                                                                                    "isDeprecated": false,
-                                                                                    "name": "vpnUser"
                                                                                 },
                                                                                 {
                                                                                     "deprecationReason": null,
@@ -736,6 +730,12 @@
                                                                                     "description": null,
                                                                                     "isDeprecated": false,
                                                                                     "name": "webhookSubscription"
+                                                                                },
+                                                                                {
+                                                                                    "deprecationReason": null,
+                                                                                    "description": "A reference to a configured Account under reseller",
+                                                                                    "isDeprecated": false,
+                                                                                    "name": "account"
                                                                                 }
                                                                             ],
                                                                             "fields": null,
@@ -1088,6 +1088,18 @@
                                                                     "enumValues": [
                                                                         {
                                                                             "deprecationReason": null,
+                                                                            "description": "A reference to a configured Site within Account",
+                                                                            "isDeprecated": false,
+                                                                            "name": "site"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "A reference to the configured VPN User within Account",
+                                                                            "isDeprecated": false,
+                                                                            "name": "vpnUser"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
                                                                             "description": "Geographical and political entity recognized internationally",
                                                                             "isDeprecated": false,
                                                                             "name": "country"
@@ -1106,12 +1118,6 @@
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
-                                                                            "description": "A reference to a configured Site within Account",
-                                                                            "isDeprecated": false,
-                                                                            "name": "site"
-                                                                        },
-                                                                        {
-                                                                            "deprecationReason": null,
                                                                             "description": "A reference to the configured Host within Site",
                                                                             "isDeprecated": false,
                                                                             "name": "host"
@@ -1124,21 +1130,9 @@
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
-                                                                            "description": "A reference to a configured Account under reseller",
-                                                                            "isDeprecated": false,
-                                                                            "name": "account"
-                                                                        },
-                                                                        {
-                                                                            "deprecationReason": null,
                                                                             "description": "A reference to the configured Network Interface within Site",
                                                                             "isDeprecated": false,
                                                                             "name": "networkInterface"
-                                                                        },
-                                                                        {
-                                                                            "deprecationReason": null,
-                                                                            "description": "A reference to the configured VPN User within Account",
-                                                                            "isDeprecated": false,
-                                                                            "name": "vpnUser"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -1229,6 +1223,12 @@
                                                                             "description": null,
                                                                             "isDeprecated": false,
                                                                             "name": "webhookSubscription"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "A reference to a configured Account under reseller",
+                                                                            "isDeprecated": false,
+                                                                            "name": "account"
                                                                         }
                                                                     ],
                                                                     "fields": null,
@@ -1488,6 +1488,18 @@
                                                                     "enumValues": [
                                                                         {
                                                                             "deprecationReason": null,
+                                                                            "description": "A reference to a configured Site within Account",
+                                                                            "isDeprecated": false,
+                                                                            "name": "site"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "A reference to the configured VPN User within Account",
+                                                                            "isDeprecated": false,
+                                                                            "name": "vpnUser"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
                                                                             "description": "Geographical and political entity recognized internationally",
                                                                             "isDeprecated": false,
                                                                             "name": "country"
@@ -1506,12 +1518,6 @@
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
-                                                                            "description": "A reference to a configured Site within Account",
-                                                                            "isDeprecated": false,
-                                                                            "name": "site"
-                                                                        },
-                                                                        {
-                                                                            "deprecationReason": null,
                                                                             "description": "A reference to the configured Host within Site",
                                                                             "isDeprecated": false,
                                                                             "name": "host"
@@ -1524,21 +1530,9 @@
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
-                                                                            "description": "A reference to a configured Account under reseller",
-                                                                            "isDeprecated": false,
-                                                                            "name": "account"
-                                                                        },
-                                                                        {
-                                                                            "deprecationReason": null,
                                                                             "description": "A reference to the configured Network Interface within Site",
                                                                             "isDeprecated": false,
                                                                             "name": "networkInterface"
-                                                                        },
-                                                                        {
-                                                                            "deprecationReason": null,
-                                                                            "description": "A reference to the configured VPN User within Account",
-                                                                            "isDeprecated": false,
-                                                                            "name": "vpnUser"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -1629,6 +1623,12 @@
                                                                             "description": null,
                                                                             "isDeprecated": false,
                                                                             "name": "webhookSubscription"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "A reference to a configured Account under reseller",
+                                                                            "isDeprecated": false,
+                                                                            "name": "account"
                                                                         }
                                                                     ],
                                                                     "fields": null,
@@ -1947,6 +1947,18 @@
                                                                                     "enumValues": [
                                                                                         {
                                                                                             "deprecationReason": null,
+                                                                                            "description": "A reference to a configured Site within Account",
+                                                                                            "isDeprecated": false,
+                                                                                            "name": "site"
+                                                                                        },
+                                                                                        {
+                                                                                            "deprecationReason": null,
+                                                                                            "description": "A reference to the configured VPN User within Account",
+                                                                                            "isDeprecated": false,
+                                                                                            "name": "vpnUser"
+                                                                                        },
+                                                                                        {
+                                                                                            "deprecationReason": null,
                                                                                             "description": "Geographical and political entity recognized internationally",
                                                                                             "isDeprecated": false,
                                                                                             "name": "country"
@@ -1965,12 +1977,6 @@
                                                                                         },
                                                                                         {
                                                                                             "deprecationReason": null,
-                                                                                            "description": "A reference to a configured Site within Account",
-                                                                                            "isDeprecated": false,
-                                                                                            "name": "site"
-                                                                                        },
-                                                                                        {
-                                                                                            "deprecationReason": null,
                                                                                             "description": "A reference to the configured Host within Site",
                                                                                             "isDeprecated": false,
                                                                                             "name": "host"
@@ -1983,21 +1989,9 @@
                                                                                         },
                                                                                         {
                                                                                             "deprecationReason": null,
-                                                                                            "description": "A reference to a configured Account under reseller",
-                                                                                            "isDeprecated": false,
-                                                                                            "name": "account"
-                                                                                        },
-                                                                                        {
-                                                                                            "deprecationReason": null,
                                                                                             "description": "A reference to the configured Network Interface within Site",
                                                                                             "isDeprecated": false,
                                                                                             "name": "networkInterface"
-                                                                                        },
-                                                                                        {
-                                                                                            "deprecationReason": null,
-                                                                                            "description": "A reference to the configured VPN User within Account",
-                                                                                            "isDeprecated": false,
-                                                                                            "name": "vpnUser"
                                                                                         },
                                                                                         {
                                                                                             "deprecationReason": null,
@@ -2088,6 +2082,12 @@
                                                                                             "description": null,
                                                                                             "isDeprecated": false,
                                                                                             "name": "webhookSubscription"
+                                                                                        },
+                                                                                        {
+                                                                                            "deprecationReason": null,
+                                                                                            "description": "A reference to a configured Account under reseller",
+                                                                                            "isDeprecated": false,
+                                                                                            "name": "account"
                                                                                         }
                                                                                     ],
                                                                                     "fields": null,
@@ -2347,6 +2347,18 @@
                                                                                     "enumValues": [
                                                                                         {
                                                                                             "deprecationReason": null,
+                                                                                            "description": "A reference to a configured Site within Account",
+                                                                                            "isDeprecated": false,
+                                                                                            "name": "site"
+                                                                                        },
+                                                                                        {
+                                                                                            "deprecationReason": null,
+                                                                                            "description": "A reference to the configured VPN User within Account",
+                                                                                            "isDeprecated": false,
+                                                                                            "name": "vpnUser"
+                                                                                        },
+                                                                                        {
+                                                                                            "deprecationReason": null,
                                                                                             "description": "Geographical and political entity recognized internationally",
                                                                                             "isDeprecated": false,
                                                                                             "name": "country"
@@ -2365,12 +2377,6 @@
                                                                                         },
                                                                                         {
                                                                                             "deprecationReason": null,
-                                                                                            "description": "A reference to a configured Site within Account",
-                                                                                            "isDeprecated": false,
-                                                                                            "name": "site"
-                                                                                        },
-                                                                                        {
-                                                                                            "deprecationReason": null,
                                                                                             "description": "A reference to the configured Host within Site",
                                                                                             "isDeprecated": false,
                                                                                             "name": "host"
@@ -2383,21 +2389,9 @@
                                                                                         },
                                                                                         {
                                                                                             "deprecationReason": null,
-                                                                                            "description": "A reference to a configured Account under reseller",
-                                                                                            "isDeprecated": false,
-                                                                                            "name": "account"
-                                                                                        },
-                                                                                        {
-                                                                                            "deprecationReason": null,
                                                                                             "description": "A reference to the configured Network Interface within Site",
                                                                                             "isDeprecated": false,
                                                                                             "name": "networkInterface"
-                                                                                        },
-                                                                                        {
-                                                                                            "deprecationReason": null,
-                                                                                            "description": "A reference to the configured VPN User within Account",
-                                                                                            "isDeprecated": false,
-                                                                                            "name": "vpnUser"
                                                                                         },
                                                                                         {
                                                                                             "deprecationReason": null,
@@ -2488,6 +2482,12 @@
                                                                                             "description": null,
                                                                                             "isDeprecated": false,
                                                                                             "name": "webhookSubscription"
+                                                                                        },
+                                                                                        {
+                                                                                            "deprecationReason": null,
+                                                                                            "description": "A reference to a configured Account under reseller",
+                                                                                            "isDeprecated": false,
+                                                                                            "name": "account"
                                                                                         }
                                                                                     ],
                                                                                     "fields": null,
