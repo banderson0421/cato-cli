@@ -29,9 +29,9 @@
                     "id_str": "addSection___input",
                     "name": "input",
                     "path": "addSection.input",
-                    "requestStr": "$policyAddSectionInput:PolicyAddSectionInput! ",
+                    "requestStr": "$PolicyAddSectionInput:PolicyAddSectionInput! ",
                     "required": true,
-                    "responseStr": "input:$policyAddSectionInput ",
+                    "responseStr": "input:$PolicyAddSectionInput ",
                     "type": {
                         "definition": {
                             "description": "Input for adding a section to a policy",
@@ -44,9 +44,9 @@
                                     "id_str": "addSection___input___at",
                                     "name": "at",
                                     "path": "addSection.input.at",
-                                    "requestStr": "$policySectionPositionInput:PolicySectionPositionInput! ",
+                                    "requestStr": "$PolicySectionPositionInput:PolicySectionPositionInput! ",
                                     "required": true,
-                                    "responseStr": "at:$policySectionPositionInput ",
+                                    "responseStr": "at:$PolicySectionPositionInput ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -134,7 +134,7 @@
                                         "name": "PolicySectionPositionInput",
                                         "non_null": false
                                     },
-                                    "varName": "policySectionPositionInput"
+                                    "varName": "PolicySectionPositionInput"
                                 },
                                 "section": {
                                     "defaultValue": null,
@@ -142,9 +142,9 @@
                                     "id_str": "addSection___input___section",
                                     "name": "section",
                                     "path": "addSection.input.section",
-                                    "requestStr": "$policyAddSectionInfoInput:PolicyAddSectionInfoInput! ",
+                                    "requestStr": "$PolicyAddSectionInfoInput:PolicyAddSectionInfoInput! ",
                                     "required": true,
-                                    "responseStr": "section:$policyAddSectionInfoInput ",
+                                    "responseStr": "section:$PolicyAddSectionInfoInput ",
                                     "type": {
                                         "definition": {
                                             "description": "Input for adding section info to a policy",
@@ -184,7 +184,7 @@
                                         "name": "PolicyAddSectionInfoInput",
                                         "non_null": false
                                     },
-                                    "varName": "policyAddSectionInfoInput"
+                                    "varName": "PolicyAddSectionInfoInput"
                                 }
                             },
                             "interfaces": null,
@@ -200,7 +200,7 @@
                         "name": "PolicyAddSectionInput",
                         "non_null": false
                     },
-                    "varName": "policyAddSectionInput"
+                    "varName": "PolicyAddSectionInput"
                 }
             },
             "deprecationReason": null,
@@ -225,9 +225,9 @@
                     "id_str": "internetFirewall___input",
                     "name": "input",
                     "path": "internetFirewall.input",
-                    "requestStr": "$internetFirewallPolicyMutationInput:InternetFirewallPolicyMutationInput ",
+                    "requestStr": "$InternetFirewallPolicyMutationInput:InternetFirewallPolicyMutationInput ",
                     "required": false,
-                    "responseStr": "input:$internetFirewallPolicyMutationInput ",
+                    "responseStr": "input:$InternetFirewallPolicyMutationInput ",
                     "type": {
                         "definition": {
                             "description": null,
@@ -240,9 +240,9 @@
                                     "id_str": "internetFirewall___input___revision",
                                     "name": "revision",
                                     "path": "internetFirewall.input.revision",
-                                    "requestStr": "$policyMutationRevisionInput:PolicyMutationRevisionInput ",
+                                    "requestStr": "$PolicyMutationRevisionInput:PolicyMutationRevisionInput ",
                                     "required": false,
-                                    "responseStr": "revision:$policyMutationRevisionInput ",
+                                    "responseStr": "revision:$PolicyMutationRevisionInput ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -280,7 +280,7 @@
                                         "name": "PolicyMutationRevisionInput",
                                         "non_null": false
                                     },
-                                    "varName": "policyMutationRevisionInput"
+                                    "varName": "PolicyMutationRevisionInput"
                                 }
                             },
                             "interfaces": null,
@@ -295,7 +295,7 @@
                         "name": "InternetFirewallPolicyMutationInput",
                         "non_null": false
                     },
-                    "varName": "internetFirewallPolicyMutationInput"
+                    "varName": "InternetFirewallPolicyMutationInput"
                 }
             },
             "deprecationReason": null,
@@ -328,34 +328,15 @@
     "isDeprecated": false,
     "name": "policy",
     "operationArgs": {
-        "accountId": {
-            "defaultValue": null,
-            "description": null,
-            "id_str": "accountId",
-            "name": "accountId",
-            "path": "accountId",
-            "requestStr": "$accountId:ID! ",
-            "required": true,
-            "responseStr": "accountId:$accountId ",
-            "type": {
-                "kind": [
-                    "NON_NULL",
-                    "SCALAR"
-                ],
-                "name": "ID",
-                "non_null": false
-            },
-            "varName": "accountId"
-        },
-        "internetFirewallPolicyMutationInput": {
+        "InternetFirewallPolicyMutationInput": {
             "defaultValue": null,
             "description": null,
             "id_str": "internetFirewall___input",
             "name": "input",
             "path": "internetFirewall.input",
-            "requestStr": "$internetFirewallPolicyMutationInput:InternetFirewallPolicyMutationInput ",
+            "requestStr": "$InternetFirewallPolicyMutationInput:InternetFirewallPolicyMutationInput ",
             "required": false,
-            "responseStr": "input:$internetFirewallPolicyMutationInput ",
+            "responseStr": "input:$InternetFirewallPolicyMutationInput ",
             "type": {
                 "definition": {
                     "description": null,
@@ -368,9 +349,9 @@
                             "id_str": "internetFirewall___input___revision",
                             "name": "revision",
                             "path": "internetFirewall.input.revision",
-                            "requestStr": "$policyMutationRevisionInput:PolicyMutationRevisionInput ",
+                            "requestStr": "$PolicyMutationRevisionInput:PolicyMutationRevisionInput ",
                             "required": false,
-                            "responseStr": "revision:$policyMutationRevisionInput ",
+                            "responseStr": "revision:$PolicyMutationRevisionInput ",
                             "type": {
                                 "definition": {
                                     "description": null,
@@ -408,7 +389,7 @@
                                 "name": "PolicyMutationRevisionInput",
                                 "non_null": false
                             },
-                            "varName": "policyMutationRevisionInput"
+                            "varName": "PolicyMutationRevisionInput"
                         }
                     },
                     "interfaces": null,
@@ -423,17 +404,17 @@
                 "name": "InternetFirewallPolicyMutationInput",
                 "non_null": false
             },
-            "varName": "internetFirewallPolicyMutationInput"
+            "varName": "InternetFirewallPolicyMutationInput"
         },
-        "policyAddSectionInput": {
+        "PolicyAddSectionInput": {
             "defaultValue": null,
             "description": null,
             "id_str": "addSection___input",
             "name": "input",
             "path": "addSection.input",
-            "requestStr": "$policyAddSectionInput:PolicyAddSectionInput! ",
+            "requestStr": "$PolicyAddSectionInput:PolicyAddSectionInput! ",
             "required": true,
-            "responseStr": "input:$policyAddSectionInput ",
+            "responseStr": "input:$PolicyAddSectionInput ",
             "type": {
                 "definition": {
                     "description": "Input for adding a section to a policy",
@@ -446,9 +427,9 @@
                             "id_str": "addSection___input___at",
                             "name": "at",
                             "path": "addSection.input.at",
-                            "requestStr": "$policySectionPositionInput:PolicySectionPositionInput! ",
+                            "requestStr": "$PolicySectionPositionInput:PolicySectionPositionInput! ",
                             "required": true,
-                            "responseStr": "at:$policySectionPositionInput ",
+                            "responseStr": "at:$PolicySectionPositionInput ",
                             "type": {
                                 "definition": {
                                     "description": null,
@@ -536,7 +517,7 @@
                                 "name": "PolicySectionPositionInput",
                                 "non_null": false
                             },
-                            "varName": "policySectionPositionInput"
+                            "varName": "PolicySectionPositionInput"
                         },
                         "section": {
                             "defaultValue": null,
@@ -544,9 +525,9 @@
                             "id_str": "addSection___input___section",
                             "name": "section",
                             "path": "addSection.input.section",
-                            "requestStr": "$policyAddSectionInfoInput:PolicyAddSectionInfoInput! ",
+                            "requestStr": "$PolicyAddSectionInfoInput:PolicyAddSectionInfoInput! ",
                             "required": true,
-                            "responseStr": "section:$policyAddSectionInfoInput ",
+                            "responseStr": "section:$PolicyAddSectionInfoInput ",
                             "type": {
                                 "definition": {
                                     "description": "Input for adding section info to a policy",
@@ -586,7 +567,7 @@
                                 "name": "PolicyAddSectionInfoInput",
                                 "non_null": false
                             },
-                            "varName": "policyAddSectionInfoInput"
+                            "varName": "PolicyAddSectionInfoInput"
                         }
                     },
                     "interfaces": null,
@@ -602,7 +583,26 @@
                 "name": "PolicyAddSectionInput",
                 "non_null": false
             },
-            "varName": "policyAddSectionInput"
+            "varName": "PolicyAddSectionInput"
+        },
+        "accountId": {
+            "defaultValue": null,
+            "description": null,
+            "id_str": "accountId",
+            "name": "accountId",
+            "path": "accountId",
+            "requestStr": "$accountId:ID! ",
+            "required": true,
+            "responseStr": "accountId:$accountId ",
+            "type": {
+                "kind": [
+                    "NON_NULL",
+                    "SCALAR"
+                ],
+                "name": "ID",
+                "non_null": false
+            },
+            "varName": "accountId"
         }
     },
     "path": "mutation.policy.internetFirewall.addSection",
@@ -619,9 +619,9 @@
                             "id_str": "internetFirewall___input",
                             "name": "input",
                             "path": "internetFirewall.input",
-                            "requestStr": "$internetFirewallPolicyMutationInput:InternetFirewallPolicyMutationInput ",
+                            "requestStr": "$InternetFirewallPolicyMutationInput:InternetFirewallPolicyMutationInput ",
                             "required": false,
-                            "responseStr": "input:$internetFirewallPolicyMutationInput ",
+                            "responseStr": "input:$InternetFirewallPolicyMutationInput ",
                             "type": {
                                 "definition": {
                                     "description": null,
@@ -634,9 +634,9 @@
                                             "id_str": "internetFirewall___input___revision",
                                             "name": "revision",
                                             "path": "internetFirewall.input.revision",
-                                            "requestStr": "$policyMutationRevisionInput:PolicyMutationRevisionInput ",
+                                            "requestStr": "$PolicyMutationRevisionInput:PolicyMutationRevisionInput ",
                                             "required": false,
-                                            "responseStr": "revision:$policyMutationRevisionInput ",
+                                            "responseStr": "revision:$PolicyMutationRevisionInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -674,7 +674,7 @@
                                                 "name": "PolicyMutationRevisionInput",
                                                 "non_null": false
                                             },
-                                            "varName": "policyMutationRevisionInput"
+                                            "varName": "PolicyMutationRevisionInput"
                                         }
                                     },
                                     "interfaces": null,
@@ -689,7 +689,7 @@
                                 "name": "InternetFirewallPolicyMutationInput",
                                 "non_null": false
                             },
-                            "varName": "internetFirewallPolicyMutationInput"
+                            "varName": "InternetFirewallPolicyMutationInput"
                         }
                     },
                     "deprecationReason": null,
@@ -698,9 +698,9 @@
                     "isDeprecated": false,
                     "name": "internetFirewall",
                     "path": "internetFirewall",
-                    "requestStr": "$internetFirewallPolicyMutations:InternetFirewallPolicyMutations ",
+                    "requestStr": "$InternetFirewallPolicyMutations:InternetFirewallPolicyMutations ",
                     "required": false,
-                    "responseStr": "internetFirewall:$internetFirewallPolicyMutations ",
+                    "responseStr": "internetFirewall:$InternetFirewallPolicyMutations ",
                     "type": {
                         "definition": {
                             "description": "The Internet firewall Policy information returned to the caller in the API response.",
@@ -714,9 +714,9 @@
                                             "id_str": "addSection___input",
                                             "name": "input",
                                             "path": "addSection.input",
-                                            "requestStr": "$policyAddSectionInput:PolicyAddSectionInput! ",
+                                            "requestStr": "$PolicyAddSectionInput:PolicyAddSectionInput! ",
                                             "required": true,
-                                            "responseStr": "input:$policyAddSectionInput ",
+                                            "responseStr": "input:$PolicyAddSectionInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": "Input for adding a section to a policy",
@@ -729,9 +729,9 @@
                                                             "id_str": "addSection___input___at",
                                                             "name": "at",
                                                             "path": "addSection.input.at",
-                                                            "requestStr": "$policySectionPositionInput:PolicySectionPositionInput! ",
+                                                            "requestStr": "$PolicySectionPositionInput:PolicySectionPositionInput! ",
                                                             "required": true,
-                                                            "responseStr": "at:$policySectionPositionInput ",
+                                                            "responseStr": "at:$PolicySectionPositionInput ",
                                                             "type": {
                                                                 "definition": {
                                                                     "description": null,
@@ -819,7 +819,7 @@
                                                                 "name": "PolicySectionPositionInput",
                                                                 "non_null": false
                                                             },
-                                                            "varName": "policySectionPositionInput"
+                                                            "varName": "PolicySectionPositionInput"
                                                         },
                                                         "section": {
                                                             "defaultValue": null,
@@ -827,9 +827,9 @@
                                                             "id_str": "addSection___input___section",
                                                             "name": "section",
                                                             "path": "addSection.input.section",
-                                                            "requestStr": "$policyAddSectionInfoInput:PolicyAddSectionInfoInput! ",
+                                                            "requestStr": "$PolicyAddSectionInfoInput:PolicyAddSectionInfoInput! ",
                                                             "required": true,
-                                                            "responseStr": "section:$policyAddSectionInfoInput ",
+                                                            "responseStr": "section:$PolicyAddSectionInfoInput ",
                                                             "type": {
                                                                 "definition": {
                                                                     "description": "Input for adding section info to a policy",
@@ -869,7 +869,7 @@
                                                                 "name": "PolicyAddSectionInfoInput",
                                                                 "non_null": false
                                                             },
-                                                            "varName": "policyAddSectionInfoInput"
+                                                            "varName": "PolicyAddSectionInfoInput"
                                                         }
                                                     },
                                                     "interfaces": null,
@@ -885,7 +885,7 @@
                                                 "name": "PolicyAddSectionInput",
                                                 "non_null": false
                                             },
-                                            "varName": "policyAddSectionInput"
+                                            "varName": "PolicyAddSectionInput"
                                         }
                                     },
                                     "deprecationReason": null,
@@ -894,16 +894,16 @@
                                     "isDeprecated": false,
                                     "name": "addSection",
                                     "path": "internetFirewall.addSection",
-                                    "requestStr": "$policySectionMutationPayload:PolicySectionMutationPayload! ",
+                                    "requestStr": "$PolicySectionMutationPayload:PolicySectionMutationPayload! ",
                                     "required": true,
-                                    "responseStr": "addSection:$policySectionMutationPayload ",
+                                    "responseStr": "addSection:$PolicySectionMutationPayload ",
                                     "type": {
                                         "definition": {
                                             "description": null,
                                             "enumValues": null,
                                             "fields": {
                                                 "errors": {
-                                                    "alias": "policyMutationErrorErrors: errors",
+                                                    "alias": "PolicyMutationErrorErrors: errors",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": null,
@@ -911,9 +911,9 @@
                                                     "isDeprecated": false,
                                                     "name": "errors",
                                                     "path": "internetFirewall.addSection.errors",
-                                                    "requestStr": "$policyMutationError:[PolicyMutationError]! ",
+                                                    "requestStr": "$PolicyMutationError:[PolicyMutationError]! ",
                                                     "required": true,
-                                                    "responseStr": "errors:$policyMutationError ",
+                                                    "responseStr": "errors:$PolicyMutationError ",
                                                     "type": {
                                                         "definition": {
                                                             "description": "The `PolicyMutationError` enum defines various error messages related to policy publishing in the policy platform service.\n\n## Policy Errors\n\n### `ConcurrentPolicyPublish`\n- **Error Message:** \"Another policy is currently publishing\"\n\n### `PolicyRevisionMismatch`\n- **Error Message:** \"Revision is not owned by the admin\"\n\n### `PolicyRevisionNotFound`\n- **Error Message:** \"Revision was not found\"\n\n### `PolicyInvalidEntity`\n- **Error Message:** \"Invalid entity\"\n\n### `DuplicateRuleName`\n- **Error Message:** \"Rule with the same name already exists\"\n\n### `DuplicateSectionName`\n- **Error Message:** \"Section with the same name already exists\"\n\n### `PolicyFailure`\n- **Error Message:** \"Can\u2019t publish policy due to an internal error. Please try again in a few minutes\"\n\n\n## Rule Errors\n\n### `ruleIsLocked`\n- **Error Message:** \"Rule is locked by another revision\"\n\n### `ruleWasRemoved`\n- **Error Message:** \"Rule was already removed\"\n\n### `ruleNotExist`\n- **Error Message:** \"Rule does not exist\"\n\n### `ruleSectionNotExist`\n- **Error Message:** \"Section does not exist\"\n\n### `ruleSectionIsLocked`\n- **Error Message:** \"Section is locked by another revision\"\n\n### `rulePositionInvalid`\n- **Error Message:** \"Rule position is invalid\"\n\n### `ruleNameIsEmpty`\n- **Error Message:** \"Rule name can't be empty\"\n\n### `ruleNameAlreadyExists`\n- **Error Message:** \"Rule with the same name already exists\"\n\n### `ruleSystemModification`\n- **Error Message:** \"Can't modify a system rule\"\n\n### `ruleSystemMove`\n- **Error Message:** \"Can't add a rule above the system rules\"\n\n### `ruleHasInvalidEntity`\n- **Error Message:** \"Rule has an invalid entity\"\n\n### `failedValidatingRule`\n- **Error Message:** \"Something went wrong, couldn't validate rule\"\n\n\n## Section Errors\n\n### `sectionIsLocked`\n- **Error Message:** \"Section is locked by another revision\"\n\n### `sectionSystemMove`\n- **Error Message:** \"Section with system rules cannot be moved or removed\"\n\n### `sectionNotExist`\n- **Error Message:** \"Section does not exist\"\n\n### `sectionPositionInvalid`\n- **Error Message:** \"Section position is invalid\"",
@@ -976,10 +976,10 @@
                                                         "name": "PolicyMutationError",
                                                         "non_null": false
                                                     },
-                                                    "varName": "policyMutationError"
+                                                    "varName": "PolicyMutationError"
                                                 },
                                                 "section": {
-                                                    "alias": "policySectionPayloadSection: section",
+                                                    "alias": "PolicySectionPayloadSection: section",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": null,
@@ -987,9 +987,9 @@
                                                     "isDeprecated": false,
                                                     "name": "section",
                                                     "path": "internetFirewall.addSection.section",
-                                                    "requestStr": "$policySectionPayload:PolicySectionPayload ",
+                                                    "requestStr": "$PolicySectionPayload:PolicySectionPayload ",
                                                     "required": false,
-                                                    "responseStr": "section:$policySectionPayload ",
+                                                    "responseStr": "section:$PolicySectionPayload ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -1003,9 +1003,9 @@
                                                                     "isDeprecated": false,
                                                                     "name": "audit",
                                                                     "path": "internetFirewall.addSection.section.audit",
-                                                                    "requestStr": "$policyElementAudit:PolicyElementAudit! ",
+                                                                    "requestStr": "$PolicyElementAudit:PolicyElementAudit! ",
                                                                     "required": true,
-                                                                    "responseStr": "audit:$policyElementAudit ",
+                                                                    "responseStr": "audit:$PolicyElementAudit ",
                                                                     "type": {
                                                                         "definition": {
                                                                             "description": null,
@@ -1068,7 +1068,7 @@
                                                                         "name": "PolicyElementAudit",
                                                                         "non_null": false
                                                                     },
-                                                                    "varName": "policyElementAudit"
+                                                                    "varName": "PolicyElementAudit"
                                                                 },
                                                                 "properties": {
                                                                     "args": {},
@@ -1155,9 +1155,9 @@
                                                                     "isDeprecated": false,
                                                                     "name": "section",
                                                                     "path": "internetFirewall.addSection.section.section",
-                                                                    "requestStr": "$policySectionInfo:PolicySectionInfo! ",
+                                                                    "requestStr": "$PolicySectionInfo:PolicySectionInfo! ",
                                                                     "required": true,
-                                                                    "responseStr": "section:$policySectionInfo ",
+                                                                    "responseStr": "section:$PolicySectionInfo ",
                                                                     "type": {
                                                                         "definition": {
                                                                             "description": "Define settings for a policy section",
@@ -1220,7 +1220,7 @@
                                                                         "name": "PolicySectionInfo",
                                                                         "non_null": false
                                                                     },
-                                                                    "varName": "policySectionInfo"
+                                                                    "varName": "PolicySectionInfo"
                                                                 }
                                                             },
                                                             "inputFields": null,
@@ -1236,10 +1236,10 @@
                                                         "name": "PolicySectionPayload",
                                                         "non_null": false
                                                     },
-                                                    "varName": "policySectionPayload"
+                                                    "varName": "PolicySectionPayload"
                                                 },
                                                 "status": {
-                                                    "alias": "policyMutationStatusStatus: status",
+                                                    "alias": "PolicyMutationStatusStatus: status",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": null,
@@ -1299,7 +1299,7 @@
                                         "name": "PolicySectionMutationPayload",
                                         "non_null": false
                                     },
-                                    "varName": "policySectionMutationPayload"
+                                    "varName": "PolicySectionMutationPayload"
                                 }
                             },
                             "inputFields": null,
@@ -1315,7 +1315,7 @@
                         "name": "InternetFirewallPolicyMutations",
                         "non_null": false
                     },
-                    "varName": "internetFirewallPolicyMutations"
+                    "varName": "InternetFirewallPolicyMutations"
                 }
             },
             "inputFields": null,
@@ -1332,20 +1332,20 @@
         "non_null": false
     },
     "variablesPayload": {
-        "internetFirewallPolicyMutationInput": {
-            "policyMutationRevisionInput": {
+        "InternetFirewallPolicyMutationInput": {
+            "PolicyMutationRevisionInput": {
                 "id": {
                     "id": "ID"
                 }
             }
         },
-        "policyAddSectionInput": {
-            "policyAddSectionInfoInput": {
+        "PolicyAddSectionInput": {
+            "PolicyAddSectionInfoInput": {
                 "name": {
                     "name": "String"
                 }
             },
-            "policySectionPositionInput": {
+            "PolicySectionPositionInput": {
                 "position": {
                     "position": "enum(PolicySectionPositionEnum)"
                 },

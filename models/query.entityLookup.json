@@ -45,9 +45,9 @@
             "id_str": "filters",
             "name": "filters",
             "path": "filters",
-            "requestStr": "$lookupFilterInput:[LookupFilterInput] ",
+            "requestStr": "$LookupFilterInput:[LookupFilterInput] ",
             "required": false,
-            "responseStr": "filters:$lookupFilterInput ",
+            "responseStr": "filters:$LookupFilterInput ",
             "type": {
                 "definition": {
                     "description": null,
@@ -158,7 +158,7 @@
                 "name": "LookupFilterInput",
                 "non_null": false
             },
-            "varName": "lookupFilterInput"
+            "varName": "LookupFilterInput"
         },
         "from": {
             "defaultValue": "0",
@@ -222,9 +222,9 @@
             "id_str": "parent",
             "name": "parent",
             "path": "parent",
-            "requestStr": "$entityInput:EntityInput ",
+            "requestStr": "$EntityInput:EntityInput ",
             "required": false,
-            "responseStr": "parent:$entityInput ",
+            "responseStr": "parent:$EntityInput ",
             "type": {
                 "definition": {
                     "description": null,
@@ -456,7 +456,7 @@
                 "name": "EntityInput",
                 "non_null": false
             },
-            "varName": "entityInput"
+            "varName": "EntityInput"
         },
         "search": {
             "defaultValue": "\"\"",
@@ -482,9 +482,9 @@
             "id_str": "sort",
             "name": "sort",
             "path": "sort",
-            "requestStr": "$sortInput:[SortInput] ",
+            "requestStr": "$SortInput:[SortInput] ",
             "required": false,
-            "responseStr": "sort:$sortInput ",
+            "responseStr": "sort:$SortInput ",
             "type": {
                 "definition": {
                     "description": null,
@@ -565,7 +565,7 @@
                 "name": "SortInput",
                 "non_null": false
             },
-            "varName": "sortInput"
+            "varName": "SortInput"
         },
         "type": {
             "defaultValue": null,
@@ -753,54 +753,15 @@
     "isDeprecated": false,
     "name": "entityLookup",
     "operationArgs": {
-        "accountID": {
-            "defaultValue": null,
-            "description": "The account ID (or 0 for non-authenticated requests)",
-            "id_str": "accountID",
-            "name": "accountID",
-            "path": "accountID",
-            "requestStr": "$accountID:ID! ",
-            "required": true,
-            "responseStr": "accountID:$accountID ",
-            "type": {
-                "kind": [
-                    "NON_NULL",
-                    "SCALAR"
-                ],
-                "name": "ID",
-                "non_null": false
-            },
-            "varName": "accountID"
-        },
-        "entityIDs": {
-            "defaultValue": null,
-            "description": "Adds additional search criteria to fetch by the selected list of entity IDs. This option is not\nuniversally available, and may not be applicable specific Entity types. If used on non applicable entity\ntype, an error will be generated.",
-            "id_str": "entityIDs",
-            "name": "entityIDs",
-            "path": "entityIDs",
-            "requestStr": "$entityIDs:[ID!] ",
-            "required": false,
-            "responseStr": "entityIDs:$entityIDs ",
-            "type": {
-                "kind": [
-                    "LIST",
-                    "NON_NULL",
-                    "SCALAR"
-                ],
-                "name": "ID",
-                "non_null": false
-            },
-            "varName": "entityIDs"
-        },
-        "entityInput": {
+        "EntityInput": {
             "defaultValue": null,
             "description": "Return items under a parent entity (can be site, vpn user, etc),\nused to filter for networks that belong to a specific site for example",
             "id_str": "parent",
             "name": "parent",
             "path": "parent",
-            "requestStr": "$entityInput:EntityInput ",
+            "requestStr": "$EntityInput:EntityInput ",
             "required": false,
-            "responseStr": "parent:$entityInput ",
+            "responseStr": "parent:$EntityInput ",
             "type": {
                 "definition": {
                     "description": null,
@@ -1032,73 +993,17 @@
                 "name": "EntityInput",
                 "non_null": false
             },
-            "varName": "entityInput"
+            "varName": "EntityInput"
         },
-        "from": {
-            "defaultValue": "0",
-            "description": "Sets the offset number of items (for paging)",
-            "id_str": "from",
-            "name": "from",
-            "path": "from",
-            "requestStr": "$from:Int ",
-            "required": false,
-            "responseStr": "from:$from ",
-            "type": {
-                "kind": [
-                    "SCALAR"
-                ],
-                "name": "Int",
-                "non_null": false
-            },
-            "varName": "from"
-        },
-        "helperFields": {
-            "defaultValue": null,
-            "description": "Additional helper fields",
-            "id_str": "helperFields",
-            "name": "helperFields",
-            "path": "helperFields",
-            "requestStr": "$helperFields:[String!] ",
-            "required": false,
-            "responseStr": "helperFields:$helperFields ",
-            "type": {
-                "kind": [
-                    "LIST",
-                    "NON_NULL",
-                    "SCALAR"
-                ],
-                "name": "String",
-                "non_null": false
-            },
-            "varName": "helperFields"
-        },
-        "limit": {
-            "defaultValue": "50",
-            "description": "Sets the maximum number of items to retrieve",
-            "id_str": "limit",
-            "name": "limit",
-            "path": "limit",
-            "requestStr": "$limit:Int ",
-            "required": false,
-            "responseStr": "limit:$limit ",
-            "type": {
-                "kind": [
-                    "SCALAR"
-                ],
-                "name": "Int",
-                "non_null": false
-            },
-            "varName": "limit"
-        },
-        "lookupFilterInput": {
+        "LookupFilterInput": {
             "defaultValue": null,
             "description": "Custom filters for entityLookup",
             "id_str": "filters",
             "name": "filters",
             "path": "filters",
-            "requestStr": "$lookupFilterInput:[LookupFilterInput] ",
+            "requestStr": "$LookupFilterInput:[LookupFilterInput] ",
             "required": false,
-            "responseStr": "filters:$lookupFilterInput ",
+            "responseStr": "filters:$LookupFilterInput ",
             "type": {
                 "definition": {
                     "description": null,
@@ -1209,35 +1114,17 @@
                 "name": "LookupFilterInput",
                 "non_null": false
             },
-            "varName": "lookupFilterInput"
+            "varName": "LookupFilterInput"
         },
-        "search": {
-            "defaultValue": "\"\"",
-            "description": "Adds additional search parameters for the lookup. Available options:\ncountry lookup: \"removeExcluded\" to return only allowed countries\ncountryState lookup: country code (\"US\", \"CN\", etc) to get country's states",
-            "id_str": "search",
-            "name": "search",
-            "path": "search",
-            "requestStr": "$search:String ",
-            "required": false,
-            "responseStr": "search:$search ",
-            "type": {
-                "kind": [
-                    "SCALAR"
-                ],
-                "name": "String",
-                "non_null": false
-            },
-            "varName": "search"
-        },
-        "sortInput": {
+        "SortInput": {
             "defaultValue": null,
             "description": "Adds additional sort criteria(s) for the lookup.\nThis option is not universally available, and may not be applicable specific Entity types.",
             "id_str": "sort",
             "name": "sort",
             "path": "sort",
-            "requestStr": "$sortInput:[SortInput] ",
+            "requestStr": "$SortInput:[SortInput] ",
             "required": false,
-            "responseStr": "sort:$sortInput ",
+            "responseStr": "sort:$SortInput ",
             "type": {
                 "definition": {
                     "description": null,
@@ -1318,7 +1205,120 @@
                 "name": "SortInput",
                 "non_null": false
             },
-            "varName": "sortInput"
+            "varName": "SortInput"
+        },
+        "accountID": {
+            "defaultValue": null,
+            "description": "The account ID (or 0 for non-authenticated requests)",
+            "id_str": "accountID",
+            "name": "accountID",
+            "path": "accountID",
+            "requestStr": "$accountID:ID! ",
+            "required": true,
+            "responseStr": "accountID:$accountID ",
+            "type": {
+                "kind": [
+                    "NON_NULL",
+                    "SCALAR"
+                ],
+                "name": "ID",
+                "non_null": false
+            },
+            "varName": "accountID"
+        },
+        "entityIDs": {
+            "defaultValue": null,
+            "description": "Adds additional search criteria to fetch by the selected list of entity IDs. This option is not\nuniversally available, and may not be applicable specific Entity types. If used on non applicable entity\ntype, an error will be generated.",
+            "id_str": "entityIDs",
+            "name": "entityIDs",
+            "path": "entityIDs",
+            "requestStr": "$entityIDs:[ID!] ",
+            "required": false,
+            "responseStr": "entityIDs:$entityIDs ",
+            "type": {
+                "kind": [
+                    "LIST",
+                    "NON_NULL",
+                    "SCALAR"
+                ],
+                "name": "ID",
+                "non_null": false
+            },
+            "varName": "entityIDs"
+        },
+        "from": {
+            "defaultValue": "0",
+            "description": "Sets the offset number of items (for paging)",
+            "id_str": "from",
+            "name": "from",
+            "path": "from",
+            "requestStr": "$from:Int ",
+            "required": false,
+            "responseStr": "from:$from ",
+            "type": {
+                "kind": [
+                    "SCALAR"
+                ],
+                "name": "Int",
+                "non_null": false
+            },
+            "varName": "from"
+        },
+        "helperFields": {
+            "defaultValue": null,
+            "description": "Additional helper fields",
+            "id_str": "helperFields",
+            "name": "helperFields",
+            "path": "helperFields",
+            "requestStr": "$helperFields:[String!] ",
+            "required": false,
+            "responseStr": "helperFields:$helperFields ",
+            "type": {
+                "kind": [
+                    "LIST",
+                    "NON_NULL",
+                    "SCALAR"
+                ],
+                "name": "String",
+                "non_null": false
+            },
+            "varName": "helperFields"
+        },
+        "limit": {
+            "defaultValue": "50",
+            "description": "Sets the maximum number of items to retrieve",
+            "id_str": "limit",
+            "name": "limit",
+            "path": "limit",
+            "requestStr": "$limit:Int ",
+            "required": false,
+            "responseStr": "limit:$limit ",
+            "type": {
+                "kind": [
+                    "SCALAR"
+                ],
+                "name": "Int",
+                "non_null": false
+            },
+            "varName": "limit"
+        },
+        "search": {
+            "defaultValue": "\"\"",
+            "description": "Adds additional search parameters for the lookup. Available options:\ncountry lookup: \"removeExcluded\" to return only allowed countries\ncountryState lookup: country code (\"US\", \"CN\", etc) to get country's states",
+            "id_str": "search",
+            "name": "search",
+            "path": "search",
+            "requestStr": "$search:String ",
+            "required": false,
+            "responseStr": "search:$search ",
+            "type": {
+                "kind": [
+                    "SCALAR"
+                ],
+                "name": "String",
+                "non_null": false
+            },
+            "varName": "search"
         },
         "type": {
             "defaultValue": null,
@@ -1510,9 +1510,9 @@
                     "isDeprecated": false,
                     "name": "items",
                     "path": "items",
-                    "requestStr": "$entityInfo:[EntityInfo]! ",
+                    "requestStr": "$EntityInfo:[EntityInfo]! ",
                     "required": true,
-                    "responseStr": "items:$entityInfo ",
+                    "responseStr": "items:$EntityInfo ",
                     "type": {
                         "definition": {
                             "description": null,
@@ -1540,7 +1540,7 @@
                                     "varName": "description"
                                 },
                                 "entity": {
-                                    "alias": "entityEntity: entity",
+                                    "alias": "EntityEntity: entity",
                                     "args": {},
                                     "deprecationReason": null,
                                     "description": null,
@@ -1548,9 +1548,9 @@
                                     "isDeprecated": false,
                                     "name": "entity",
                                     "path": "items.entity",
-                                    "requestStr": "$entity:Entity! ",
+                                    "requestStr": "$Entity:Entity! ",
                                     "required": true,
-                                    "responseStr": "entity:$entity ",
+                                    "responseStr": "entity:$Entity ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -1598,7 +1598,7 @@
                                                     "varName": "name"
                                                 },
                                                 "type": {
-                                                    "alias": "entityTypeType: type",
+                                                    "alias": "EntityTypeType: type",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": null,
@@ -1790,7 +1790,7 @@
                                         "name": "Entity",
                                         "non_null": false
                                     },
-                                    "varName": "entity"
+                                    "varName": "Entity"
                                 },
                                 "helperFields": {
                                     "args": {},
@@ -1830,7 +1830,7 @@
                         "name": "EntityInfo",
                         "non_null": false
                     },
-                    "varName": "entityInfo"
+                    "varName": "EntityInfo"
                 },
                 "total": {
                     "args": {},
@@ -1868,10 +1868,7 @@
         "non_null": false
     },
     "variablesPayload": {
-        "entityIDs": [
-            "ID"
-        ],
-        "entityInput": {
+        "EntityInput": {
             "id": {
                 "id": "ID"
             },
@@ -1882,12 +1879,7 @@
                 "type": "enum(EntityType)"
             }
         },
-        "from": "Int",
-        "helperFields": [
-            "String"
-        ],
-        "limit": "Int",
-        "lookupFilterInput": {
+        "LookupFilterInput": {
             "filter": {
                 "filter": "enum(LookupFilterType)"
             },
@@ -1895,8 +1887,7 @@
                 "value": "String"
             }
         },
-        "search": "String",
-        "sortInput": {
+        "SortInput": {
             "field": {
                 "field": "String"
             },
@@ -1904,6 +1895,15 @@
                 "order": "enum(DirectionInput)"
             }
         },
+        "entityIDs": [
+            "ID"
+        ],
+        "from": "Int",
+        "helperFields": [
+            "String"
+        ],
+        "limit": "Int",
+        "search": "String",
         "type": "enum(EntityType)"
     }
 }

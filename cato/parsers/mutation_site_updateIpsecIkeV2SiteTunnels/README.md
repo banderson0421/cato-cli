@@ -10,9 +10,9 @@
 
 `cato mutation site updateIpsecIkeV2SiteTunnels 12345 $(cat < updateIpsecIkeV2SiteTunnels.json)`
 
-`cato mutation site updateIpsecIkeV2SiteTunnels 12345 '{"siteId": "ID", "updateIpsecIkeV2SiteTunnelsInput": {"updateIpsecIkeV2TunnelsInput": {"destinationType": {"destinationType": "enum(DestinationType)"}, "popLocationId": {"popLocationId": "ID"}, "publicCatoIpId": {"publicCatoIpId": "ID"}, "tunnels": {"lastMileBw": {"downstream": {"downstream": "Int"}, "downstreamMbpsPrecision": {"downstreamMbpsPrecision": "Float"}, "upstream": {"upstream": "Int"}, "upstreamMbpsPrecision": {"upstreamMbpsPrecision": "Float"}}, "privateCatoIp": {"privateCatoIp": "IPAddress"}, "privateSiteIp": {"privateSiteIp": "IPAddress"}, "psk": {"psk": "String"}, "publicSiteIp": {"publicSiteIp": "IPAddress"}, "tunnelId": {"tunnelId": "enum(IPSecV2InterfaceId)"}}}}}'`
+`cato mutation site updateIpsecIkeV2SiteTunnels 12345 '{"UpdateIpsecIkeV2SiteTunnelsInput": {"UpdateIpsecIkeV2TunnelsInput": {"destinationType": {"destinationType": "enum(DestinationType)"}, "popLocationId": {"popLocationId": "ID"}, "publicCatoIpId": {"publicCatoIpId": "ID"}, "tunnels": {"lastMileBw": {"downstream": {"downstream": "Int"}, "downstreamMbpsPrecision": {"downstreamMbpsPrecision": "Float"}, "upstream": {"upstream": "Int"}, "upstreamMbpsPrecision": {"upstreamMbpsPrecision": "Float"}}, "privateCatoIp": {"privateCatoIp": "IPAddress"}, "privateSiteIp": {"privateSiteIp": "IPAddress"}, "psk": {"psk": "String"}, "publicSiteIp": {"publicSiteIp": "IPAddress"}, "tunnelId": {"tunnelId": "enum(IPSecV2InterfaceId)"}}}}, "siteId": "ID"}'`
 
 #### Operation Arguments for mutation.site.updateIpsecIkeV2SiteTunnels ####
+`UpdateIpsecIkeV2SiteTunnelsInput` [UpdateIpsecIkeV2SiteTunnelsInput] - (required) N/A 
 `accountId` [ID] - (required) N/A 
 `siteId` [ID] - (required) N/A 
-`updateIpsecIkeV2SiteTunnelsInput` [UpdateIpsecIkeV2SiteTunnelsInput] - (required) N/A 

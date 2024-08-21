@@ -10,9 +10,9 @@
 
 `cato mutation site updateIpsecIkeV2SiteGeneralDetails 12345 $(cat < updateIpsecIkeV2SiteGeneralDetails.json)`
 
-`cato mutation site updateIpsecIkeV2SiteGeneralDetails 12345 '{"siteId": "ID", "updateIpsecIkeV2SiteGeneralDetailsInput": {"connectionMode": {"connectionMode": "enum(ConnectionMode)"}, "identificationType": {"identificationType": "enum(IdentificationType)"}, "ipsecIkeV2MessageInput": {"cipher": {"cipher": "enum(IpSecCipher)"}, "dhGroup": {"dhGroup": "enum(IpSecDHGroup)"}, "integrity": {"integrity": "enum(IpSecHash)"}, "prf": {"prf": "enum(IpSecHash)"}}, "networkRanges": {"networkRanges": ["IPSubnet"]}}}'`
+`cato mutation site updateIpsecIkeV2SiteGeneralDetails 12345 '{"UpdateIpsecIkeV2SiteGeneralDetailsInput": {"IpsecIkeV2MessageInput": {"cipher": {"cipher": "enum(IpSecCipher)"}, "dhGroup": {"dhGroup": "enum(IpSecDHGroup)"}, "integrity": {"integrity": "enum(IpSecHash)"}, "prf": {"prf": "enum(IpSecHash)"}}, "connectionMode": {"connectionMode": "enum(ConnectionMode)"}, "identificationType": {"identificationType": "enum(IdentificationType)"}, "networkRanges": {"networkRanges": ["IPSubnet"]}}, "siteId": "ID"}'`
 
 #### Operation Arguments for mutation.site.updateIpsecIkeV2SiteGeneralDetails ####
+`UpdateIpsecIkeV2SiteGeneralDetailsInput` [UpdateIpsecIkeV2SiteGeneralDetailsInput] - (required) N/A 
 `accountId` [ID] - (required) N/A 
 `siteId` [ID] - (required) N/A 
-`updateIpsecIkeV2SiteGeneralDetailsInput` [UpdateIpsecIkeV2SiteGeneralDetailsInput] - (required) N/A 

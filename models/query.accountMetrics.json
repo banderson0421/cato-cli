@@ -20,7 +20,7 @@
         },
         "groupDevices": {
             "defaultValue": null,
-            "description": "When the boolean argument groupDevices is set to __true__, then the analytics for all the\nSockets (usually two in high availability) are aggregated as one result.\n\nFor the best results for aggregated Sockets, we recommend that there is consistent\nnames and functionality (for example Destination) for the links on both Sockets.\n\n__Note:__ This argument is mandatory for queries of multiple sites and the only valid value\nfor groupDevices value is __true__.",
+            "description": "When the boolean argument groupDevices is set to __true__, then the analytics for all the\nSockets (usually two in high availability) are aggregated as one result.\n\nFor the best results for aggregated Sockets, we recommend that there is consistent\nnames and functionality (for example Destination) for the links on both Sockets.",
             "id_str": "groupDevices",
             "name": "groupDevices",
             "path": "groupDevices",
@@ -139,7 +139,7 @@
         },
         "groupDevices": {
             "defaultValue": null,
-            "description": "When the boolean argument groupDevices is set to __true__, then the analytics for all the\nSockets (usually two in high availability) are aggregated as one result.\n\nFor the best results for aggregated Sockets, we recommend that there is consistent\nnames and functionality (for example Destination) for the links on both Sockets.\n\n__Note:__ This argument is mandatory for queries of multiple sites and the only valid value\nfor groupDevices value is __true__.",
+            "description": "When the boolean argument groupDevices is set to __true__, then the analytics for all the\nSockets (usually two in high availability) are aggregated as one result.\n\nFor the best results for aggregated Sockets, we recommend that there is consistent\nnames and functionality (for example Destination) for the links on both Sockets.",
             "id_str": "groupDevices",
             "name": "groupDevices",
             "path": "groupDevices",
@@ -566,16 +566,16 @@
                     "isDeprecated": false,
                     "name": "sites",
                     "path": "sites",
-                    "requestStr": "$siteMetrics:[SiteMetrics] ",
+                    "requestStr": "$SiteMetrics:[SiteMetrics] ",
                     "required": false,
-                    "responseStr": "sites:$siteMetrics ",
+                    "responseStr": "sites:$SiteMetrics ",
                     "type": {
                         "definition": {
                             "description": null,
                             "enumValues": null,
                             "fields": {
                                 "flowCount": {
-                                    "alias": "timeseriesFlowCount: flowCount",
+                                    "alias": "TimeseriesFlowCount: flowCount",
                                     "args": {},
                                     "deprecationReason": null,
                                     "description": "Timeseries with the number of flows (connections) in the site. Applicable only for site",
@@ -583,9 +583,9 @@
                                     "isDeprecated": false,
                                     "name": "flowCount",
                                     "path": "sites.flowCount",
-                                    "requestStr": "$timeseries:Timeseries ",
+                                    "requestStr": "$Timeseries:Timeseries ",
                                     "required": false,
-                                    "responseStr": "flowCount:$timeseries ",
+                                    "responseStr": "flowCount:$Timeseries ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -659,9 +659,9 @@
                                                     "isDeprecated": false,
                                                     "name": "dimensions",
                                                     "path": "sites.flowCount.dimensions",
-                                                    "requestStr": "$dimensionData:[DimensionData] ",
+                                                    "requestStr": "$DimensionData:[DimensionData] ",
                                                     "required": false,
-                                                    "responseStr": "dimensions:$dimensionData ",
+                                                    "responseStr": "dimensions:$DimensionData ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -724,7 +724,7 @@
                                                         "name": "DimensionData",
                                                         "non_null": false
                                                     },
-                                                    "varName": "dimensionData"
+                                                    "varName": "DimensionData"
                                                 },
                                                 "info": {
                                                     "args": {},
@@ -756,9 +756,9 @@
                                                     "isDeprecated": false,
                                                     "name": "key",
                                                     "path": "sites.flowCount.key",
-                                                    "requestStr": "$timeseriesKey:TimeseriesKey ",
+                                                    "requestStr": "$TimeseriesKey:TimeseriesKey ",
                                                     "required": false,
-                                                    "responseStr": "key:$timeseriesKey ",
+                                                    "responseStr": "key:$TimeseriesKey ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -772,9 +772,9 @@
                                                                     "isDeprecated": false,
                                                                     "name": "dimensions",
                                                                     "path": "sites.flowCount.key.dimensions",
-                                                                    "requestStr": "$dimensionKey:[DimensionKey] ",
+                                                                    "requestStr": "$DimensionKey:[DimensionKey] ",
                                                                     "required": false,
-                                                                    "responseStr": "dimensions:$dimensionKey ",
+                                                                    "responseStr": "dimensions:$DimensionKey ",
                                                                     "type": {
                                                                         "definition": {
                                                                             "description": null,
@@ -837,7 +837,7 @@
                                                                         "name": "DimensionKey",
                                                                         "non_null": false
                                                                     },
-                                                                    "varName": "dimensionKey"
+                                                                    "varName": "DimensionKey"
                                                                 },
                                                                 "measureFieldName": {
                                                                     "args": {},
@@ -874,7 +874,7 @@
                                                         "name": "TimeseriesKey",
                                                         "non_null": false
                                                     },
-                                                    "varName": "timeseriesKey"
+                                                    "varName": "TimeseriesKey"
                                                 },
                                                 "label": {
                                                     "args": {},
@@ -1029,10 +1029,10 @@
                                         "name": "Timeseries",
                                         "non_null": false
                                     },
-                                    "varName": "timeseries"
+                                    "varName": "Timeseries"
                                 },
                                 "hostCount": {
-                                    "alias": "timeseriesHostCount: hostCount",
+                                    "alias": "TimeseriesHostCount: hostCount",
                                     "args": {},
                                     "deprecationReason": null,
                                     "description": "Timeseries with the number of hosts in the site. Applicable only for site",
@@ -1040,9 +1040,9 @@
                                     "isDeprecated": false,
                                     "name": "hostCount",
                                     "path": "sites.hostCount",
-                                    "requestStr": "$timeseries:Timeseries ",
+                                    "requestStr": "$Timeseries:Timeseries ",
                                     "required": false,
-                                    "responseStr": "hostCount:$timeseries ",
+                                    "responseStr": "hostCount:$Timeseries ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -1116,9 +1116,9 @@
                                                     "isDeprecated": false,
                                                     "name": "dimensions",
                                                     "path": "sites.hostCount.dimensions",
-                                                    "requestStr": "$dimensionData:[DimensionData] ",
+                                                    "requestStr": "$DimensionData:[DimensionData] ",
                                                     "required": false,
-                                                    "responseStr": "dimensions:$dimensionData ",
+                                                    "responseStr": "dimensions:$DimensionData ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -1181,7 +1181,7 @@
                                                         "name": "DimensionData",
                                                         "non_null": false
                                                     },
-                                                    "varName": "dimensionData"
+                                                    "varName": "DimensionData"
                                                 },
                                                 "info": {
                                                     "args": {},
@@ -1213,9 +1213,9 @@
                                                     "isDeprecated": false,
                                                     "name": "key",
                                                     "path": "sites.hostCount.key",
-                                                    "requestStr": "$timeseriesKey:TimeseriesKey ",
+                                                    "requestStr": "$TimeseriesKey:TimeseriesKey ",
                                                     "required": false,
-                                                    "responseStr": "key:$timeseriesKey ",
+                                                    "responseStr": "key:$TimeseriesKey ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -1229,9 +1229,9 @@
                                                                     "isDeprecated": false,
                                                                     "name": "dimensions",
                                                                     "path": "sites.hostCount.key.dimensions",
-                                                                    "requestStr": "$dimensionKey:[DimensionKey] ",
+                                                                    "requestStr": "$DimensionKey:[DimensionKey] ",
                                                                     "required": false,
-                                                                    "responseStr": "dimensions:$dimensionKey ",
+                                                                    "responseStr": "dimensions:$DimensionKey ",
                                                                     "type": {
                                                                         "definition": {
                                                                             "description": null,
@@ -1294,7 +1294,7 @@
                                                                         "name": "DimensionKey",
                                                                         "non_null": false
                                                                     },
-                                                                    "varName": "dimensionKey"
+                                                                    "varName": "DimensionKey"
                                                                 },
                                                                 "measureFieldName": {
                                                                     "args": {},
@@ -1331,7 +1331,7 @@
                                                         "name": "TimeseriesKey",
                                                         "non_null": false
                                                     },
-                                                    "varName": "timeseriesKey"
+                                                    "varName": "TimeseriesKey"
                                                 },
                                                 "label": {
                                                     "args": {},
@@ -1486,10 +1486,10 @@
                                         "name": "Timeseries",
                                         "non_null": false
                                     },
-                                    "varName": "timeseries"
+                                    "varName": "Timeseries"
                                 },
                                 "hostLimit": {
-                                    "alias": "timeseriesHostLimit: hostLimit",
+                                    "alias": "TimeseriesHostLimit: hostLimit",
                                     "args": {},
                                     "deprecationReason": null,
                                     "description": "Timeseries with the configurable limit of the number of hosts in the site. Applicable only for site",
@@ -1497,9 +1497,9 @@
                                     "isDeprecated": false,
                                     "name": "hostLimit",
                                     "path": "sites.hostLimit",
-                                    "requestStr": "$timeseries:Timeseries ",
+                                    "requestStr": "$Timeseries:Timeseries ",
                                     "required": false,
-                                    "responseStr": "hostLimit:$timeseries ",
+                                    "responseStr": "hostLimit:$Timeseries ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -1573,9 +1573,9 @@
                                                     "isDeprecated": false,
                                                     "name": "dimensions",
                                                     "path": "sites.hostLimit.dimensions",
-                                                    "requestStr": "$dimensionData:[DimensionData] ",
+                                                    "requestStr": "$DimensionData:[DimensionData] ",
                                                     "required": false,
-                                                    "responseStr": "dimensions:$dimensionData ",
+                                                    "responseStr": "dimensions:$DimensionData ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -1638,7 +1638,7 @@
                                                         "name": "DimensionData",
                                                         "non_null": false
                                                     },
-                                                    "varName": "dimensionData"
+                                                    "varName": "DimensionData"
                                                 },
                                                 "info": {
                                                     "args": {},
@@ -1670,9 +1670,9 @@
                                                     "isDeprecated": false,
                                                     "name": "key",
                                                     "path": "sites.hostLimit.key",
-                                                    "requestStr": "$timeseriesKey:TimeseriesKey ",
+                                                    "requestStr": "$TimeseriesKey:TimeseriesKey ",
                                                     "required": false,
-                                                    "responseStr": "key:$timeseriesKey ",
+                                                    "responseStr": "key:$TimeseriesKey ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -1686,9 +1686,9 @@
                                                                     "isDeprecated": false,
                                                                     "name": "dimensions",
                                                                     "path": "sites.hostLimit.key.dimensions",
-                                                                    "requestStr": "$dimensionKey:[DimensionKey] ",
+                                                                    "requestStr": "$DimensionKey:[DimensionKey] ",
                                                                     "required": false,
-                                                                    "responseStr": "dimensions:$dimensionKey ",
+                                                                    "responseStr": "dimensions:$DimensionKey ",
                                                                     "type": {
                                                                         "definition": {
                                                                             "description": null,
@@ -1751,7 +1751,7 @@
                                                                         "name": "DimensionKey",
                                                                         "non_null": false
                                                                     },
-                                                                    "varName": "dimensionKey"
+                                                                    "varName": "DimensionKey"
                                                                 },
                                                                 "measureFieldName": {
                                                                     "args": {},
@@ -1788,7 +1788,7 @@
                                                         "name": "TimeseriesKey",
                                                         "non_null": false
                                                     },
-                                                    "varName": "timeseriesKey"
+                                                    "varName": "TimeseriesKey"
                                                 },
                                                 "label": {
                                                     "args": {},
@@ -1943,7 +1943,7 @@
                                         "name": "Timeseries",
                                         "non_null": false
                                     },
-                                    "varName": "timeseries"
+                                    "varName": "Timeseries"
                                 },
                                 "id": {
                                     "args": {},
@@ -1966,7 +1966,7 @@
                                     "varName": "id"
                                 },
                                 "info": {
-                                    "alias": "siteInfoInfo: info",
+                                    "alias": "SiteInfoInfo: info",
                                     "args": {},
                                     "deprecationReason": null,
                                     "description": "Shows general information about the site (array with nested fields). Applicable only for site",
@@ -1974,9 +1974,9 @@
                                     "isDeprecated": false,
                                     "name": "info",
                                     "path": "sites.info",
-                                    "requestStr": "$siteInfo:SiteInfo ",
+                                    "requestStr": "$SiteInfo:SiteInfo ",
                                     "required": false,
-                                    "responseStr": "info:$siteInfo ",
+                                    "responseStr": "info:$SiteInfo ",
                                     "type": {
                                         "definition": {
                                             "description": "Basic Site configuration information",
@@ -2174,9 +2174,9 @@
                                                     "isDeprecated": false,
                                                     "name": "interfaces",
                                                     "path": "sites.info.interfaces",
-                                                    "requestStr": "$interfaceInfo:[InterfaceInfo] ",
+                                                    "requestStr": "$InterfaceInfo:[InterfaceInfo] ",
                                                     "required": false,
-                                                    "responseStr": "interfaces:$interfaceInfo ",
+                                                    "responseStr": "interfaces:$InterfaceInfo ",
                                                     "type": {
                                                         "definition": {
                                                             "description": "Basic Socket Interface configuration information",
@@ -2299,7 +2299,7 @@
                                                         "name": "InterfaceInfo",
                                                         "non_null": false
                                                     },
-                                                    "varName": "interfaceInfo"
+                                                    "varName": "InterfaceInfo"
                                                 },
                                                 "ipsec": {
                                                     "args": {},
@@ -2309,9 +2309,9 @@
                                                     "isDeprecated": false,
                                                     "name": "ipsec",
                                                     "path": "sites.info.ipsec",
-                                                    "requestStr": "$iPSecInfo:[IPSecInfo] ",
+                                                    "requestStr": "$IPSecInfo:[IPSecInfo] ",
                                                     "required": false,
-                                                    "responseStr": "ipsec:$iPSecInfo ",
+                                                    "responseStr": "ipsec:$IPSecInfo ",
                                                     "type": {
                                                         "definition": {
                                                             "description": "Basic IPSec configuration information",
@@ -2413,7 +2413,7 @@
                                                         "name": "IPSecInfo",
                                                         "non_null": false
                                                     },
-                                                    "varName": "iPSecInfo"
+                                                    "varName": "IPSecInfo"
                                                 },
                                                 "isHA": {
                                                     "args": {},
@@ -2483,9 +2483,9 @@
                                                     "isDeprecated": false,
                                                     "name": "sockets",
                                                     "path": "sites.info.sockets",
-                                                    "requestStr": "$socketInfo:[SocketInfo] ",
+                                                    "requestStr": "$SocketInfo:[SocketInfo] ",
                                                     "required": false,
-                                                    "responseStr": "sockets:$socketInfo ",
+                                                    "responseStr": "sockets:$SocketInfo ",
                                                     "type": {
                                                         "definition": {
                                                             "description": "Basic information about socket",
@@ -2532,7 +2532,7 @@
                                                                     "varName": "isPrimary"
                                                                 },
                                                                 "platform": {
-                                                                    "alias": "socketPlatformPlatform: platform",
+                                                                    "alias": "SocketPlatformPlatform: platform",
                                                                     "args": {},
                                                                     "deprecationReason": null,
                                                                     "description": "Shows Socket type",
@@ -2700,7 +2700,7 @@
                                                         "name": "SocketInfo",
                                                         "non_null": false
                                                     },
-                                                    "varName": "socketInfo"
+                                                    "varName": "SocketInfo"
                                                 },
                                                 "type": {
                                                     "args": {},
@@ -2772,10 +2772,10 @@
                                         "name": "SiteInfo",
                                         "non_null": false
                                     },
-                                    "varName": "siteInfo"
+                                    "varName": "SiteInfo"
                                 },
                                 "interfaces": {
-                                    "alias": "interfaceMetricsInterfaces: interfaces",
+                                    "alias": "InterfaceMetricsInterfaces: interfaces",
                                     "args": {},
                                     "deprecationReason": null,
                                     "description": "Analytics that are returned for the links for a site",
@@ -2783,16 +2783,16 @@
                                     "isDeprecated": false,
                                     "name": "interfaces",
                                     "path": "sites.interfaces",
-                                    "requestStr": "$interfaceMetrics:[InterfaceMetrics] ",
+                                    "requestStr": "$InterfaceMetrics:[InterfaceMetrics] ",
                                     "required": false,
-                                    "responseStr": "interfaces:$interfaceMetrics ",
+                                    "responseStr": "interfaces:$InterfaceMetrics ",
                                     "type": {
                                         "definition": {
                                             "description": null,
                                             "enumValues": null,
                                             "fields": {
                                                 "annotations": {
-                                                    "alias": "timeAnnotationAnnotations: annotations",
+                                                    "alias": "TimeAnnotationAnnotations: annotations",
                                                     "args": {
                                                         "annotations___types": {
                                                             "defaultValue": null,
@@ -2821,9 +2821,9 @@
                                                     "isDeprecated": false,
                                                     "name": "annotations",
                                                     "path": "sites.interfaces.annotations",
-                                                    "requestStr": "$timeAnnotation:[TimeAnnotation] ",
+                                                    "requestStr": "$TimeAnnotation:[TimeAnnotation] ",
                                                     "required": false,
-                                                    "responseStr": "annotations:$timeAnnotation ",
+                                                    "responseStr": "annotations:$TimeAnnotation ",
                                                     "type": {
                                                         "definition": {
                                                             "description": "An object for marking specific events in time.",
@@ -2893,7 +2893,7 @@
                                                                     "varName": "time"
                                                                 },
                                                                 "type": {
-                                                                    "alias": "annotationTypeType: type",
+                                                                    "alias": "AnnotationTypeType: type",
                                                                     "args": {},
                                                                     "deprecationReason": null,
                                                                     "description": "Type identifies which annotation this is: e.g. connectivity, rolechange, missingdata, which allows\ncharts to attach to it.",
@@ -2966,10 +2966,10 @@
                                                         "name": "TimeAnnotation",
                                                         "non_null": false
                                                     },
-                                                    "varName": "timeAnnotation"
+                                                    "varName": "TimeAnnotation"
                                                 },
                                                 "interfaceInfo": {
-                                                    "alias": "interfaceInfoInterfaceInfo: interfaceInfo",
+                                                    "alias": "InterfaceInfoInterfaceInfo: interfaceInfo",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": "Basic configuration information about the Socket interface . Applicable only for site",
@@ -2977,9 +2977,9 @@
                                                     "isDeprecated": false,
                                                     "name": "interfaceInfo",
                                                     "path": "sites.interfaces.interfaceInfo",
-                                                    "requestStr": "$interfaceInfo:InterfaceInfo ",
+                                                    "requestStr": "$InterfaceInfo:InterfaceInfo ",
                                                     "required": false,
-                                                    "responseStr": "interfaceInfo:$interfaceInfo ",
+                                                    "responseStr": "interfaceInfo:$InterfaceInfo ",
                                                     "type": {
                                                         "definition": {
                                                             "description": "Basic Socket Interface configuration information",
@@ -3100,10 +3100,10 @@
                                                         "name": "InterfaceInfo",
                                                         "non_null": false
                                                     },
-                                                    "varName": "interfaceInfo"
+                                                    "varName": "InterfaceInfo"
                                                 },
                                                 "ipsecInfo": {
-                                                    "alias": "iPSecInfoIpsecInfo: ipsecInfo",
+                                                    "alias": "IPSecInfoIpsecInfo: ipsecInfo",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": "Data related to IPsec sites, such as IKE version . Applicable only for site",
@@ -3111,9 +3111,9 @@
                                                     "isDeprecated": false,
                                                     "name": "ipsecInfo",
                                                     "path": "sites.interfaces.ipsecInfo",
-                                                    "requestStr": "$iPSecInfo:IPSecInfo ",
+                                                    "requestStr": "$IPSecInfo:IPSecInfo ",
                                                     "required": false,
-                                                    "responseStr": "ipsecInfo:$iPSecInfo ",
+                                                    "responseStr": "ipsecInfo:$IPSecInfo ",
                                                     "type": {
                                                         "definition": {
                                                             "description": "Basic IPSec configuration information",
@@ -3213,10 +3213,10 @@
                                                         "name": "IPSecInfo",
                                                         "non_null": false
                                                     },
-                                                    "varName": "iPSecInfo"
+                                                    "varName": "IPSecInfo"
                                                 },
                                                 "metrics": {
-                                                    "alias": "metricsMetrics: metrics",
+                                                    "alias": "MetricsMetrics: metrics",
                                                     "args": {
                                                         "metrics___toRate": {
                                                             "defaultValue": "false",
@@ -3243,9 +3243,9 @@
                                                     "isDeprecated": false,
                                                     "name": "metrics",
                                                     "path": "sites.interfaces.metrics",
-                                                    "requestStr": "$metrics:Metrics ",
+                                                    "requestStr": "$Metrics:Metrics ",
                                                     "required": false,
-                                                    "responseStr": "metrics:$metrics ",
+                                                    "responseStr": "metrics:$Metrics ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -3645,7 +3645,7 @@
                                                         "name": "Metrics",
                                                         "non_null": false
                                                     },
-                                                    "varName": "metrics"
+                                                    "varName": "Metrics"
                                                 },
                                                 "name": {
                                                     "args": {},
@@ -3668,7 +3668,7 @@
                                                     "varName": "name"
                                                 },
                                                 "periods": {
-                                                    "alias": "timePeriodPeriods: periods",
+                                                    "alias": "TimePeriodPeriods: periods",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": "object that is a specific time duration",
@@ -3676,9 +3676,9 @@
                                                     "isDeprecated": false,
                                                     "name": "periods",
                                                     "path": "sites.interfaces.periods",
-                                                    "requestStr": "$timePeriod:[TimePeriod] ",
+                                                    "requestStr": "$TimePeriod:[TimePeriod] ",
                                                     "required": false,
-                                                    "responseStr": "periods:$timePeriod ",
+                                                    "responseStr": "periods:$TimePeriod ",
                                                     "type": {
                                                         "definition": {
                                                             "description": "An object for marking durations!",
@@ -3729,7 +3729,7 @@
                                                                     "varName": "title"
                                                                 },
                                                                 "type": {
-                                                                    "alias": "periodTypeType: type",
+                                                                    "alias": "PeriodTypeType: type",
                                                                     "args": {},
                                                                     "deprecationReason": null,
                                                                     "description": "Type identifies which annotation this is: e.g. connectivity, rolechange, missingdata, which allows\ncharts to attach to it.",
@@ -3838,7 +3838,7 @@
                                                         "name": "TimePeriod",
                                                         "non_null": false
                                                     },
-                                                    "varName": "timePeriod"
+                                                    "varName": "TimePeriod"
                                                 },
                                                 "remoteIP": {
                                                     "args": {},
@@ -3861,7 +3861,7 @@
                                                     "varName": "remoteIP"
                                                 },
                                                 "remoteIPInfo": {
-                                                    "alias": "iPInfoRemoteIPInfo: remoteIPInfo",
+                                                    "alias": "IPInfoRemoteIPInfo: remoteIPInfo",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": "Data related to the link IP address, such as country code",
@@ -3869,9 +3869,9 @@
                                                     "isDeprecated": false,
                                                     "name": "remoteIPInfo",
                                                     "path": "sites.interfaces.remoteIPInfo",
-                                                    "requestStr": "$iPInfo:IPInfo ",
+                                                    "requestStr": "$IPInfo:IPInfo ",
                                                     "required": false,
-                                                    "responseStr": "remoteIPInfo:$iPInfo ",
+                                                    "responseStr": "remoteIPInfo:$IPInfo ",
                                                     "type": {
                                                         "definition": {
                                                             "description": "A general structure to contain IP detailed information",
@@ -4051,10 +4051,10 @@
                                                         "name": "IPInfo",
                                                         "non_null": false
                                                     },
-                                                    "varName": "iPInfo"
+                                                    "varName": "IPInfo"
                                                 },
                                                 "socketInfo": {
-                                                    "alias": "socketInfoSocketInfo: socketInfo",
+                                                    "alias": "SocketInfoSocketInfo: socketInfo",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": "Data related to Socket and vSocket sites, such as serial number and Socket version. Applicable only for site",
@@ -4062,9 +4062,9 @@
                                                     "isDeprecated": false,
                                                     "name": "socketInfo",
                                                     "path": "sites.interfaces.socketInfo",
-                                                    "requestStr": "$socketInfo:SocketInfo ",
+                                                    "requestStr": "$SocketInfo:SocketInfo ",
                                                     "required": false,
-                                                    "responseStr": "socketInfo:$socketInfo ",
+                                                    "responseStr": "socketInfo:$SocketInfo ",
                                                     "type": {
                                                         "definition": {
                                                             "description": "Basic information about socket",
@@ -4276,10 +4276,10 @@
                                                         "name": "SocketInfo",
                                                         "non_null": false
                                                     },
-                                                    "varName": "socketInfo"
+                                                    "varName": "SocketInfo"
                                                 },
                                                 "timeseries": {
-                                                    "alias": "timeseriesTimeseries: timeseries",
+                                                    "alias": "TimeseriesTimeseries: timeseries",
                                                     "args": {
                                                         "timeseries___buckets": {
                                                             "defaultValue": null,
@@ -4470,9 +4470,9 @@
                                                     "isDeprecated": false,
                                                     "name": "timeseries",
                                                     "path": "sites.interfaces.timeseries",
-                                                    "requestStr": "$timeseries:[Timeseries] ",
+                                                    "requestStr": "$Timeseries:[Timeseries] ",
                                                     "required": false,
-                                                    "responseStr": "timeseries:$timeseries ",
+                                                    "responseStr": "timeseries:$Timeseries ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -4539,7 +4539,7 @@
                                                                     "varName": "data"
                                                                 },
                                                                 "dimensions": {
-                                                                    "alias": "dimensionDataDimensions: dimensions",
+                                                                    "alias": "DimensionDataDimensions: dimensions",
                                                                     "args": {},
                                                                     "deprecationReason": null,
                                                                     "description": "List of dimension values for this timeseries",
@@ -4547,9 +4547,9 @@
                                                                     "isDeprecated": false,
                                                                     "name": "dimensions",
                                                                     "path": "sites.interfaces.timeseries.dimensions",
-                                                                    "requestStr": "$dimensionData:[DimensionData] ",
+                                                                    "requestStr": "$DimensionData:[DimensionData] ",
                                                                     "required": false,
-                                                                    "responseStr": "dimensions:$dimensionData ",
+                                                                    "responseStr": "dimensions:$DimensionData ",
                                                                     "type": {
                                                                         "definition": {
                                                                             "description": null,
@@ -4612,7 +4612,7 @@
                                                                         "name": "DimensionData",
                                                                         "non_null": false
                                                                     },
-                                                                    "varName": "dimensionData"
+                                                                    "varName": "DimensionData"
                                                                 },
                                                                 "info": {
                                                                     "args": {},
@@ -4637,7 +4637,7 @@
                                                                     "varName": "info"
                                                                 },
                                                                 "key": {
-                                                                    "alias": "timeseriesKeyKey: key",
+                                                                    "alias": "TimeseriesKeyKey: key",
                                                                     "args": {},
                                                                     "deprecationReason": null,
                                                                     "description": "Timeseries key: measure and dimension values",
@@ -4645,9 +4645,9 @@
                                                                     "isDeprecated": false,
                                                                     "name": "key",
                                                                     "path": "sites.interfaces.timeseries.key",
-                                                                    "requestStr": "$timeseriesKey:TimeseriesKey ",
+                                                                    "requestStr": "$TimeseriesKey:TimeseriesKey ",
                                                                     "required": false,
-                                                                    "responseStr": "key:$timeseriesKey ",
+                                                                    "responseStr": "key:$TimeseriesKey ",
                                                                     "type": {
                                                                         "definition": {
                                                                             "description": null,
@@ -4661,9 +4661,9 @@
                                                                                     "isDeprecated": false,
                                                                                     "name": "dimensions",
                                                                                     "path": "sites.interfaces.timeseries.key.dimensions",
-                                                                                    "requestStr": "$dimensionKey:[DimensionKey] ",
+                                                                                    "requestStr": "$DimensionKey:[DimensionKey] ",
                                                                                     "required": false,
-                                                                                    "responseStr": "dimensions:$dimensionKey ",
+                                                                                    "responseStr": "dimensions:$DimensionKey ",
                                                                                     "type": {
                                                                                         "definition": {
                                                                                             "description": null,
@@ -4726,7 +4726,7 @@
                                                                                         "name": "DimensionKey",
                                                                                         "non_null": false
                                                                                     },
-                                                                                    "varName": "dimensionKey"
+                                                                                    "varName": "DimensionKey"
                                                                                 },
                                                                                 "measureFieldName": {
                                                                                     "args": {},
@@ -4763,7 +4763,7 @@
                                                                         "name": "TimeseriesKey",
                                                                         "non_null": false
                                                                     },
-                                                                    "varName": "timeseriesKey"
+                                                                    "varName": "TimeseriesKey"
                                                                 },
                                                                 "label": {
                                                                     "args": {},
@@ -4807,7 +4807,7 @@
                                                                     "varName": "sum"
                                                                 },
                                                                 "units": {
-                                                                    "alias": "unitTypeUnits: units",
+                                                                    "alias": "UnitTypeUnits: units",
                                                                     "args": {},
                                                                     "deprecationReason": null,
                                                                     "description": "Identifies what unit of data this timeseries represents. Note that toRate is only available for particular types\nof data to make sense.",
@@ -4921,7 +4921,7 @@
                                                         "name": "Timeseries",
                                                         "non_null": false
                                                     },
-                                                    "varName": "timeseries"
+                                                    "varName": "Timeseries"
                                                 }
                                             },
                                             "inputFields": null,
@@ -4939,10 +4939,10 @@
                                         "name": "InterfaceMetrics",
                                         "non_null": false
                                     },
-                                    "varName": "interfaceMetrics"
+                                    "varName": "InterfaceMetrics"
                                 },
                                 "metrics": {
-                                    "alias": "metricsMetrics: metrics",
+                                    "alias": "MetricsMetrics: metrics",
                                     "args": {
                                         "metrics___toRate": {
                                             "defaultValue": "false",
@@ -4969,9 +4969,9 @@
                                     "isDeprecated": false,
                                     "name": "metrics",
                                     "path": "sites.metrics",
-                                    "requestStr": "$metrics:Metrics ",
+                                    "requestStr": "$Metrics:Metrics ",
                                     "required": false,
-                                    "responseStr": "metrics:$metrics ",
+                                    "responseStr": "metrics:$Metrics ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -5371,7 +5371,7 @@
                                         "name": "Metrics",
                                         "non_null": false
                                     },
-                                    "varName": "metrics"
+                                    "varName": "Metrics"
                                 },
                                 "name": {
                                     "args": {},
@@ -5429,7 +5429,7 @@
                         "name": "SiteMetrics",
                         "non_null": false
                     },
-                    "varName": "siteMetrics"
+                    "varName": "SiteMetrics"
                 },
                 "timeseries": {
                     "args": {
@@ -5622,9 +5622,9 @@
                     "isDeprecated": false,
                     "name": "timeseries",
                     "path": "timeseries",
-                    "requestStr": "$timeseries:[Timeseries] ",
+                    "requestStr": "$Timeseries:[Timeseries] ",
                     "required": false,
-                    "responseStr": "timeseries:$timeseries ",
+                    "responseStr": "timeseries:$Timeseries ",
                     "type": {
                         "definition": {
                             "description": null,
@@ -5691,7 +5691,7 @@
                                     "varName": "data"
                                 },
                                 "dimensions": {
-                                    "alias": "dimensionDataDimensions: dimensions",
+                                    "alias": "DimensionDataDimensions: dimensions",
                                     "args": {},
                                     "deprecationReason": null,
                                     "description": "List of dimension values for this timeseries",
@@ -5699,9 +5699,9 @@
                                     "isDeprecated": false,
                                     "name": "dimensions",
                                     "path": "timeseries.dimensions",
-                                    "requestStr": "$dimensionData:[DimensionData] ",
+                                    "requestStr": "$DimensionData:[DimensionData] ",
                                     "required": false,
-                                    "responseStr": "dimensions:$dimensionData ",
+                                    "responseStr": "dimensions:$DimensionData ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -5764,7 +5764,7 @@
                                         "name": "DimensionData",
                                         "non_null": false
                                     },
-                                    "varName": "dimensionData"
+                                    "varName": "DimensionData"
                                 },
                                 "info": {
                                     "args": {},
@@ -5789,7 +5789,7 @@
                                     "varName": "info"
                                 },
                                 "key": {
-                                    "alias": "timeseriesKeyKey: key",
+                                    "alias": "TimeseriesKeyKey: key",
                                     "args": {},
                                     "deprecationReason": null,
                                     "description": "Timeseries key: measure and dimension values",
@@ -5797,9 +5797,9 @@
                                     "isDeprecated": false,
                                     "name": "key",
                                     "path": "timeseries.key",
-                                    "requestStr": "$timeseriesKey:TimeseriesKey ",
+                                    "requestStr": "$TimeseriesKey:TimeseriesKey ",
                                     "required": false,
-                                    "responseStr": "key:$timeseriesKey ",
+                                    "responseStr": "key:$TimeseriesKey ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -5813,9 +5813,9 @@
                                                     "isDeprecated": false,
                                                     "name": "dimensions",
                                                     "path": "timeseries.key.dimensions",
-                                                    "requestStr": "$dimensionKey:[DimensionKey] ",
+                                                    "requestStr": "$DimensionKey:[DimensionKey] ",
                                                     "required": false,
-                                                    "responseStr": "dimensions:$dimensionKey ",
+                                                    "responseStr": "dimensions:$DimensionKey ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -5878,7 +5878,7 @@
                                                         "name": "DimensionKey",
                                                         "non_null": false
                                                     },
-                                                    "varName": "dimensionKey"
+                                                    "varName": "DimensionKey"
                                                 },
                                                 "measureFieldName": {
                                                     "args": {},
@@ -5915,7 +5915,7 @@
                                         "name": "TimeseriesKey",
                                         "non_null": false
                                     },
-                                    "varName": "timeseriesKey"
+                                    "varName": "TimeseriesKey"
                                 },
                                 "label": {
                                     "args": {},
@@ -5959,7 +5959,7 @@
                                     "varName": "sum"
                                 },
                                 "units": {
-                                    "alias": "unitTypeUnits: units",
+                                    "alias": "UnitTypeUnits: units",
                                     "args": {},
                                     "deprecationReason": null,
                                     "description": "Identifies what unit of data this timeseries represents. Note that toRate is only available for particular types\nof data to make sense.",
@@ -6073,7 +6073,7 @@
                         "name": "Timeseries",
                         "non_null": false
                     },
-                    "varName": "timeseries"
+                    "varName": "Timeseries"
                 },
                 "to": {
                     "args": {},
@@ -6124,16 +6124,16 @@
                     "isDeprecated": false,
                     "name": "users",
                     "path": "users",
-                    "requestStr": "$siteMetrics:[SiteMetrics] ",
+                    "requestStr": "$SiteMetrics:[SiteMetrics] ",
                     "required": false,
-                    "responseStr": "users:$siteMetrics ",
+                    "responseStr": "users:$SiteMetrics ",
                     "type": {
                         "definition": {
                             "description": null,
                             "enumValues": null,
                             "fields": {
                                 "flowCount": {
-                                    "alias": "timeseriesFlowCount: flowCount",
+                                    "alias": "TimeseriesFlowCount: flowCount",
                                     "args": {},
                                     "deprecationReason": null,
                                     "description": "Timeseries with the number of flows (connections) in the site. Applicable only for site",
@@ -6141,9 +6141,9 @@
                                     "isDeprecated": false,
                                     "name": "flowCount",
                                     "path": "users.flowCount",
-                                    "requestStr": "$timeseries:Timeseries ",
+                                    "requestStr": "$Timeseries:Timeseries ",
                                     "required": false,
-                                    "responseStr": "flowCount:$timeseries ",
+                                    "responseStr": "flowCount:$Timeseries ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -6217,9 +6217,9 @@
                                                     "isDeprecated": false,
                                                     "name": "dimensions",
                                                     "path": "users.flowCount.dimensions",
-                                                    "requestStr": "$dimensionData:[DimensionData] ",
+                                                    "requestStr": "$DimensionData:[DimensionData] ",
                                                     "required": false,
-                                                    "responseStr": "dimensions:$dimensionData ",
+                                                    "responseStr": "dimensions:$DimensionData ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -6282,7 +6282,7 @@
                                                         "name": "DimensionData",
                                                         "non_null": false
                                                     },
-                                                    "varName": "dimensionData"
+                                                    "varName": "DimensionData"
                                                 },
                                                 "info": {
                                                     "args": {},
@@ -6314,9 +6314,9 @@
                                                     "isDeprecated": false,
                                                     "name": "key",
                                                     "path": "users.flowCount.key",
-                                                    "requestStr": "$timeseriesKey:TimeseriesKey ",
+                                                    "requestStr": "$TimeseriesKey:TimeseriesKey ",
                                                     "required": false,
-                                                    "responseStr": "key:$timeseriesKey ",
+                                                    "responseStr": "key:$TimeseriesKey ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -6330,9 +6330,9 @@
                                                                     "isDeprecated": false,
                                                                     "name": "dimensions",
                                                                     "path": "users.flowCount.key.dimensions",
-                                                                    "requestStr": "$dimensionKey:[DimensionKey] ",
+                                                                    "requestStr": "$DimensionKey:[DimensionKey] ",
                                                                     "required": false,
-                                                                    "responseStr": "dimensions:$dimensionKey ",
+                                                                    "responseStr": "dimensions:$DimensionKey ",
                                                                     "type": {
                                                                         "definition": {
                                                                             "description": null,
@@ -6395,7 +6395,7 @@
                                                                         "name": "DimensionKey",
                                                                         "non_null": false
                                                                     },
-                                                                    "varName": "dimensionKey"
+                                                                    "varName": "DimensionKey"
                                                                 },
                                                                 "measureFieldName": {
                                                                     "args": {},
@@ -6432,7 +6432,7 @@
                                                         "name": "TimeseriesKey",
                                                         "non_null": false
                                                     },
-                                                    "varName": "timeseriesKey"
+                                                    "varName": "TimeseriesKey"
                                                 },
                                                 "label": {
                                                     "args": {},
@@ -6587,10 +6587,10 @@
                                         "name": "Timeseries",
                                         "non_null": false
                                     },
-                                    "varName": "timeseries"
+                                    "varName": "Timeseries"
                                 },
                                 "hostCount": {
-                                    "alias": "timeseriesHostCount: hostCount",
+                                    "alias": "TimeseriesHostCount: hostCount",
                                     "args": {},
                                     "deprecationReason": null,
                                     "description": "Timeseries with the number of hosts in the site. Applicable only for site",
@@ -6598,9 +6598,9 @@
                                     "isDeprecated": false,
                                     "name": "hostCount",
                                     "path": "users.hostCount",
-                                    "requestStr": "$timeseries:Timeseries ",
+                                    "requestStr": "$Timeseries:Timeseries ",
                                     "required": false,
-                                    "responseStr": "hostCount:$timeseries ",
+                                    "responseStr": "hostCount:$Timeseries ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -6674,9 +6674,9 @@
                                                     "isDeprecated": false,
                                                     "name": "dimensions",
                                                     "path": "users.hostCount.dimensions",
-                                                    "requestStr": "$dimensionData:[DimensionData] ",
+                                                    "requestStr": "$DimensionData:[DimensionData] ",
                                                     "required": false,
-                                                    "responseStr": "dimensions:$dimensionData ",
+                                                    "responseStr": "dimensions:$DimensionData ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -6739,7 +6739,7 @@
                                                         "name": "DimensionData",
                                                         "non_null": false
                                                     },
-                                                    "varName": "dimensionData"
+                                                    "varName": "DimensionData"
                                                 },
                                                 "info": {
                                                     "args": {},
@@ -6771,9 +6771,9 @@
                                                     "isDeprecated": false,
                                                     "name": "key",
                                                     "path": "users.hostCount.key",
-                                                    "requestStr": "$timeseriesKey:TimeseriesKey ",
+                                                    "requestStr": "$TimeseriesKey:TimeseriesKey ",
                                                     "required": false,
-                                                    "responseStr": "key:$timeseriesKey ",
+                                                    "responseStr": "key:$TimeseriesKey ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -6787,9 +6787,9 @@
                                                                     "isDeprecated": false,
                                                                     "name": "dimensions",
                                                                     "path": "users.hostCount.key.dimensions",
-                                                                    "requestStr": "$dimensionKey:[DimensionKey] ",
+                                                                    "requestStr": "$DimensionKey:[DimensionKey] ",
                                                                     "required": false,
-                                                                    "responseStr": "dimensions:$dimensionKey ",
+                                                                    "responseStr": "dimensions:$DimensionKey ",
                                                                     "type": {
                                                                         "definition": {
                                                                             "description": null,
@@ -6852,7 +6852,7 @@
                                                                         "name": "DimensionKey",
                                                                         "non_null": false
                                                                     },
-                                                                    "varName": "dimensionKey"
+                                                                    "varName": "DimensionKey"
                                                                 },
                                                                 "measureFieldName": {
                                                                     "args": {},
@@ -6889,7 +6889,7 @@
                                                         "name": "TimeseriesKey",
                                                         "non_null": false
                                                     },
-                                                    "varName": "timeseriesKey"
+                                                    "varName": "TimeseriesKey"
                                                 },
                                                 "label": {
                                                     "args": {},
@@ -7044,10 +7044,10 @@
                                         "name": "Timeseries",
                                         "non_null": false
                                     },
-                                    "varName": "timeseries"
+                                    "varName": "Timeseries"
                                 },
                                 "hostLimit": {
-                                    "alias": "timeseriesHostLimit: hostLimit",
+                                    "alias": "TimeseriesHostLimit: hostLimit",
                                     "args": {},
                                     "deprecationReason": null,
                                     "description": "Timeseries with the configurable limit of the number of hosts in the site. Applicable only for site",
@@ -7055,9 +7055,9 @@
                                     "isDeprecated": false,
                                     "name": "hostLimit",
                                     "path": "users.hostLimit",
-                                    "requestStr": "$timeseries:Timeseries ",
+                                    "requestStr": "$Timeseries:Timeseries ",
                                     "required": false,
-                                    "responseStr": "hostLimit:$timeseries ",
+                                    "responseStr": "hostLimit:$Timeseries ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -7131,9 +7131,9 @@
                                                     "isDeprecated": false,
                                                     "name": "dimensions",
                                                     "path": "users.hostLimit.dimensions",
-                                                    "requestStr": "$dimensionData:[DimensionData] ",
+                                                    "requestStr": "$DimensionData:[DimensionData] ",
                                                     "required": false,
-                                                    "responseStr": "dimensions:$dimensionData ",
+                                                    "responseStr": "dimensions:$DimensionData ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -7196,7 +7196,7 @@
                                                         "name": "DimensionData",
                                                         "non_null": false
                                                     },
-                                                    "varName": "dimensionData"
+                                                    "varName": "DimensionData"
                                                 },
                                                 "info": {
                                                     "args": {},
@@ -7228,9 +7228,9 @@
                                                     "isDeprecated": false,
                                                     "name": "key",
                                                     "path": "users.hostLimit.key",
-                                                    "requestStr": "$timeseriesKey:TimeseriesKey ",
+                                                    "requestStr": "$TimeseriesKey:TimeseriesKey ",
                                                     "required": false,
-                                                    "responseStr": "key:$timeseriesKey ",
+                                                    "responseStr": "key:$TimeseriesKey ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -7244,9 +7244,9 @@
                                                                     "isDeprecated": false,
                                                                     "name": "dimensions",
                                                                     "path": "users.hostLimit.key.dimensions",
-                                                                    "requestStr": "$dimensionKey:[DimensionKey] ",
+                                                                    "requestStr": "$DimensionKey:[DimensionKey] ",
                                                                     "required": false,
-                                                                    "responseStr": "dimensions:$dimensionKey ",
+                                                                    "responseStr": "dimensions:$DimensionKey ",
                                                                     "type": {
                                                                         "definition": {
                                                                             "description": null,
@@ -7309,7 +7309,7 @@
                                                                         "name": "DimensionKey",
                                                                         "non_null": false
                                                                     },
-                                                                    "varName": "dimensionKey"
+                                                                    "varName": "DimensionKey"
                                                                 },
                                                                 "measureFieldName": {
                                                                     "args": {},
@@ -7346,7 +7346,7 @@
                                                         "name": "TimeseriesKey",
                                                         "non_null": false
                                                     },
-                                                    "varName": "timeseriesKey"
+                                                    "varName": "TimeseriesKey"
                                                 },
                                                 "label": {
                                                     "args": {},
@@ -7501,7 +7501,7 @@
                                         "name": "Timeseries",
                                         "non_null": false
                                     },
-                                    "varName": "timeseries"
+                                    "varName": "Timeseries"
                                 },
                                 "id": {
                                     "args": {},
@@ -7524,7 +7524,7 @@
                                     "varName": "id"
                                 },
                                 "info": {
-                                    "alias": "siteInfoInfo: info",
+                                    "alias": "SiteInfoInfo: info",
                                     "args": {},
                                     "deprecationReason": null,
                                     "description": "Shows general information about the site (array with nested fields). Applicable only for site",
@@ -7532,9 +7532,9 @@
                                     "isDeprecated": false,
                                     "name": "info",
                                     "path": "users.info",
-                                    "requestStr": "$siteInfo:SiteInfo ",
+                                    "requestStr": "$SiteInfo:SiteInfo ",
                                     "required": false,
-                                    "responseStr": "info:$siteInfo ",
+                                    "responseStr": "info:$SiteInfo ",
                                     "type": {
                                         "definition": {
                                             "description": "Basic Site configuration information",
@@ -7732,9 +7732,9 @@
                                                     "isDeprecated": false,
                                                     "name": "interfaces",
                                                     "path": "users.info.interfaces",
-                                                    "requestStr": "$interfaceInfo:[InterfaceInfo] ",
+                                                    "requestStr": "$InterfaceInfo:[InterfaceInfo] ",
                                                     "required": false,
-                                                    "responseStr": "interfaces:$interfaceInfo ",
+                                                    "responseStr": "interfaces:$InterfaceInfo ",
                                                     "type": {
                                                         "definition": {
                                                             "description": "Basic Socket Interface configuration information",
@@ -7857,7 +7857,7 @@
                                                         "name": "InterfaceInfo",
                                                         "non_null": false
                                                     },
-                                                    "varName": "interfaceInfo"
+                                                    "varName": "InterfaceInfo"
                                                 },
                                                 "ipsec": {
                                                     "args": {},
@@ -7867,9 +7867,9 @@
                                                     "isDeprecated": false,
                                                     "name": "ipsec",
                                                     "path": "users.info.ipsec",
-                                                    "requestStr": "$iPSecInfo:[IPSecInfo] ",
+                                                    "requestStr": "$IPSecInfo:[IPSecInfo] ",
                                                     "required": false,
-                                                    "responseStr": "ipsec:$iPSecInfo ",
+                                                    "responseStr": "ipsec:$IPSecInfo ",
                                                     "type": {
                                                         "definition": {
                                                             "description": "Basic IPSec configuration information",
@@ -7971,7 +7971,7 @@
                                                         "name": "IPSecInfo",
                                                         "non_null": false
                                                     },
-                                                    "varName": "iPSecInfo"
+                                                    "varName": "IPSecInfo"
                                                 },
                                                 "isHA": {
                                                     "args": {},
@@ -8041,9 +8041,9 @@
                                                     "isDeprecated": false,
                                                     "name": "sockets",
                                                     "path": "users.info.sockets",
-                                                    "requestStr": "$socketInfo:[SocketInfo] ",
+                                                    "requestStr": "$SocketInfo:[SocketInfo] ",
                                                     "required": false,
-                                                    "responseStr": "sockets:$socketInfo ",
+                                                    "responseStr": "sockets:$SocketInfo ",
                                                     "type": {
                                                         "definition": {
                                                             "description": "Basic information about socket",
@@ -8090,7 +8090,7 @@
                                                                     "varName": "isPrimary"
                                                                 },
                                                                 "platform": {
-                                                                    "alias": "socketPlatformPlatform: platform",
+                                                                    "alias": "SocketPlatformPlatform: platform",
                                                                     "args": {},
                                                                     "deprecationReason": null,
                                                                     "description": "Shows Socket type",
@@ -8258,7 +8258,7 @@
                                                         "name": "SocketInfo",
                                                         "non_null": false
                                                     },
-                                                    "varName": "socketInfo"
+                                                    "varName": "SocketInfo"
                                                 },
                                                 "type": {
                                                     "args": {},
@@ -8330,10 +8330,10 @@
                                         "name": "SiteInfo",
                                         "non_null": false
                                     },
-                                    "varName": "siteInfo"
+                                    "varName": "SiteInfo"
                                 },
                                 "interfaces": {
-                                    "alias": "interfaceMetricsInterfaces: interfaces",
+                                    "alias": "InterfaceMetricsInterfaces: interfaces",
                                     "args": {},
                                     "deprecationReason": null,
                                     "description": "Analytics that are returned for the links for a site",
@@ -8341,16 +8341,16 @@
                                     "isDeprecated": false,
                                     "name": "interfaces",
                                     "path": "users.interfaces",
-                                    "requestStr": "$interfaceMetrics:[InterfaceMetrics] ",
+                                    "requestStr": "$InterfaceMetrics:[InterfaceMetrics] ",
                                     "required": false,
-                                    "responseStr": "interfaces:$interfaceMetrics ",
+                                    "responseStr": "interfaces:$InterfaceMetrics ",
                                     "type": {
                                         "definition": {
                                             "description": null,
                                             "enumValues": null,
                                             "fields": {
                                                 "annotations": {
-                                                    "alias": "timeAnnotationAnnotations: annotations",
+                                                    "alias": "TimeAnnotationAnnotations: annotations",
                                                     "args": {
                                                         "annotations___types": {
                                                             "defaultValue": null,
@@ -8379,9 +8379,9 @@
                                                     "isDeprecated": false,
                                                     "name": "annotations",
                                                     "path": "users.interfaces.annotations",
-                                                    "requestStr": "$timeAnnotation:[TimeAnnotation] ",
+                                                    "requestStr": "$TimeAnnotation:[TimeAnnotation] ",
                                                     "required": false,
-                                                    "responseStr": "annotations:$timeAnnotation ",
+                                                    "responseStr": "annotations:$TimeAnnotation ",
                                                     "type": {
                                                         "definition": {
                                                             "description": "An object for marking specific events in time.",
@@ -8451,7 +8451,7 @@
                                                                     "varName": "time"
                                                                 },
                                                                 "type": {
-                                                                    "alias": "annotationTypeType: type",
+                                                                    "alias": "AnnotationTypeType: type",
                                                                     "args": {},
                                                                     "deprecationReason": null,
                                                                     "description": "Type identifies which annotation this is: e.g. connectivity, rolechange, missingdata, which allows\ncharts to attach to it.",
@@ -8524,10 +8524,10 @@
                                                         "name": "TimeAnnotation",
                                                         "non_null": false
                                                     },
-                                                    "varName": "timeAnnotation"
+                                                    "varName": "TimeAnnotation"
                                                 },
                                                 "interfaceInfo": {
-                                                    "alias": "interfaceInfoInterfaceInfo: interfaceInfo",
+                                                    "alias": "InterfaceInfoInterfaceInfo: interfaceInfo",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": "Basic configuration information about the Socket interface . Applicable only for site",
@@ -8535,9 +8535,9 @@
                                                     "isDeprecated": false,
                                                     "name": "interfaceInfo",
                                                     "path": "users.interfaces.interfaceInfo",
-                                                    "requestStr": "$interfaceInfo:InterfaceInfo ",
+                                                    "requestStr": "$InterfaceInfo:InterfaceInfo ",
                                                     "required": false,
-                                                    "responseStr": "interfaceInfo:$interfaceInfo ",
+                                                    "responseStr": "interfaceInfo:$InterfaceInfo ",
                                                     "type": {
                                                         "definition": {
                                                             "description": "Basic Socket Interface configuration information",
@@ -8658,10 +8658,10 @@
                                                         "name": "InterfaceInfo",
                                                         "non_null": false
                                                     },
-                                                    "varName": "interfaceInfo"
+                                                    "varName": "InterfaceInfo"
                                                 },
                                                 "ipsecInfo": {
-                                                    "alias": "iPSecInfoIpsecInfo: ipsecInfo",
+                                                    "alias": "IPSecInfoIpsecInfo: ipsecInfo",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": "Data related to IPsec sites, such as IKE version . Applicable only for site",
@@ -8669,9 +8669,9 @@
                                                     "isDeprecated": false,
                                                     "name": "ipsecInfo",
                                                     "path": "users.interfaces.ipsecInfo",
-                                                    "requestStr": "$iPSecInfo:IPSecInfo ",
+                                                    "requestStr": "$IPSecInfo:IPSecInfo ",
                                                     "required": false,
-                                                    "responseStr": "ipsecInfo:$iPSecInfo ",
+                                                    "responseStr": "ipsecInfo:$IPSecInfo ",
                                                     "type": {
                                                         "definition": {
                                                             "description": "Basic IPSec configuration information",
@@ -8771,10 +8771,10 @@
                                                         "name": "IPSecInfo",
                                                         "non_null": false
                                                     },
-                                                    "varName": "iPSecInfo"
+                                                    "varName": "IPSecInfo"
                                                 },
                                                 "metrics": {
-                                                    "alias": "metricsMetrics: metrics",
+                                                    "alias": "MetricsMetrics: metrics",
                                                     "args": {
                                                         "metrics___toRate": {
                                                             "defaultValue": "false",
@@ -8801,9 +8801,9 @@
                                                     "isDeprecated": false,
                                                     "name": "metrics",
                                                     "path": "users.interfaces.metrics",
-                                                    "requestStr": "$metrics:Metrics ",
+                                                    "requestStr": "$Metrics:Metrics ",
                                                     "required": false,
-                                                    "responseStr": "metrics:$metrics ",
+                                                    "responseStr": "metrics:$Metrics ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -9203,7 +9203,7 @@
                                                         "name": "Metrics",
                                                         "non_null": false
                                                     },
-                                                    "varName": "metrics"
+                                                    "varName": "Metrics"
                                                 },
                                                 "name": {
                                                     "args": {},
@@ -9226,7 +9226,7 @@
                                                     "varName": "name"
                                                 },
                                                 "periods": {
-                                                    "alias": "timePeriodPeriods: periods",
+                                                    "alias": "TimePeriodPeriods: periods",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": "object that is a specific time duration",
@@ -9234,9 +9234,9 @@
                                                     "isDeprecated": false,
                                                     "name": "periods",
                                                     "path": "users.interfaces.periods",
-                                                    "requestStr": "$timePeriod:[TimePeriod] ",
+                                                    "requestStr": "$TimePeriod:[TimePeriod] ",
                                                     "required": false,
-                                                    "responseStr": "periods:$timePeriod ",
+                                                    "responseStr": "periods:$TimePeriod ",
                                                     "type": {
                                                         "definition": {
                                                             "description": "An object for marking durations!",
@@ -9287,7 +9287,7 @@
                                                                     "varName": "title"
                                                                 },
                                                                 "type": {
-                                                                    "alias": "periodTypeType: type",
+                                                                    "alias": "PeriodTypeType: type",
                                                                     "args": {},
                                                                     "deprecationReason": null,
                                                                     "description": "Type identifies which annotation this is: e.g. connectivity, rolechange, missingdata, which allows\ncharts to attach to it.",
@@ -9396,7 +9396,7 @@
                                                         "name": "TimePeriod",
                                                         "non_null": false
                                                     },
-                                                    "varName": "timePeriod"
+                                                    "varName": "TimePeriod"
                                                 },
                                                 "remoteIP": {
                                                     "args": {},
@@ -9419,7 +9419,7 @@
                                                     "varName": "remoteIP"
                                                 },
                                                 "remoteIPInfo": {
-                                                    "alias": "iPInfoRemoteIPInfo: remoteIPInfo",
+                                                    "alias": "IPInfoRemoteIPInfo: remoteIPInfo",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": "Data related to the link IP address, such as country code",
@@ -9427,9 +9427,9 @@
                                                     "isDeprecated": false,
                                                     "name": "remoteIPInfo",
                                                     "path": "users.interfaces.remoteIPInfo",
-                                                    "requestStr": "$iPInfo:IPInfo ",
+                                                    "requestStr": "$IPInfo:IPInfo ",
                                                     "required": false,
-                                                    "responseStr": "remoteIPInfo:$iPInfo ",
+                                                    "responseStr": "remoteIPInfo:$IPInfo ",
                                                     "type": {
                                                         "definition": {
                                                             "description": "A general structure to contain IP detailed information",
@@ -9609,10 +9609,10 @@
                                                         "name": "IPInfo",
                                                         "non_null": false
                                                     },
-                                                    "varName": "iPInfo"
+                                                    "varName": "IPInfo"
                                                 },
                                                 "socketInfo": {
-                                                    "alias": "socketInfoSocketInfo: socketInfo",
+                                                    "alias": "SocketInfoSocketInfo: socketInfo",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": "Data related to Socket and vSocket sites, such as serial number and Socket version. Applicable only for site",
@@ -9620,9 +9620,9 @@
                                                     "isDeprecated": false,
                                                     "name": "socketInfo",
                                                     "path": "users.interfaces.socketInfo",
-                                                    "requestStr": "$socketInfo:SocketInfo ",
+                                                    "requestStr": "$SocketInfo:SocketInfo ",
                                                     "required": false,
-                                                    "responseStr": "socketInfo:$socketInfo ",
+                                                    "responseStr": "socketInfo:$SocketInfo ",
                                                     "type": {
                                                         "definition": {
                                                             "description": "Basic information about socket",
@@ -9834,10 +9834,10 @@
                                                         "name": "SocketInfo",
                                                         "non_null": false
                                                     },
-                                                    "varName": "socketInfo"
+                                                    "varName": "SocketInfo"
                                                 },
                                                 "timeseries": {
-                                                    "alias": "timeseriesTimeseries: timeseries",
+                                                    "alias": "TimeseriesTimeseries: timeseries",
                                                     "args": {
                                                         "timeseries___buckets": {
                                                             "defaultValue": null,
@@ -10028,9 +10028,9 @@
                                                     "isDeprecated": false,
                                                     "name": "timeseries",
                                                     "path": "users.interfaces.timeseries",
-                                                    "requestStr": "$timeseries:[Timeseries] ",
+                                                    "requestStr": "$Timeseries:[Timeseries] ",
                                                     "required": false,
-                                                    "responseStr": "timeseries:$timeseries ",
+                                                    "responseStr": "timeseries:$Timeseries ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -10097,7 +10097,7 @@
                                                                     "varName": "data"
                                                                 },
                                                                 "dimensions": {
-                                                                    "alias": "dimensionDataDimensions: dimensions",
+                                                                    "alias": "DimensionDataDimensions: dimensions",
                                                                     "args": {},
                                                                     "deprecationReason": null,
                                                                     "description": "List of dimension values for this timeseries",
@@ -10105,9 +10105,9 @@
                                                                     "isDeprecated": false,
                                                                     "name": "dimensions",
                                                                     "path": "users.interfaces.timeseries.dimensions",
-                                                                    "requestStr": "$dimensionData:[DimensionData] ",
+                                                                    "requestStr": "$DimensionData:[DimensionData] ",
                                                                     "required": false,
-                                                                    "responseStr": "dimensions:$dimensionData ",
+                                                                    "responseStr": "dimensions:$DimensionData ",
                                                                     "type": {
                                                                         "definition": {
                                                                             "description": null,
@@ -10170,7 +10170,7 @@
                                                                         "name": "DimensionData",
                                                                         "non_null": false
                                                                     },
-                                                                    "varName": "dimensionData"
+                                                                    "varName": "DimensionData"
                                                                 },
                                                                 "info": {
                                                                     "args": {},
@@ -10195,7 +10195,7 @@
                                                                     "varName": "info"
                                                                 },
                                                                 "key": {
-                                                                    "alias": "timeseriesKeyKey: key",
+                                                                    "alias": "TimeseriesKeyKey: key",
                                                                     "args": {},
                                                                     "deprecationReason": null,
                                                                     "description": "Timeseries key: measure and dimension values",
@@ -10203,9 +10203,9 @@
                                                                     "isDeprecated": false,
                                                                     "name": "key",
                                                                     "path": "users.interfaces.timeseries.key",
-                                                                    "requestStr": "$timeseriesKey:TimeseriesKey ",
+                                                                    "requestStr": "$TimeseriesKey:TimeseriesKey ",
                                                                     "required": false,
-                                                                    "responseStr": "key:$timeseriesKey ",
+                                                                    "responseStr": "key:$TimeseriesKey ",
                                                                     "type": {
                                                                         "definition": {
                                                                             "description": null,
@@ -10219,9 +10219,9 @@
                                                                                     "isDeprecated": false,
                                                                                     "name": "dimensions",
                                                                                     "path": "users.interfaces.timeseries.key.dimensions",
-                                                                                    "requestStr": "$dimensionKey:[DimensionKey] ",
+                                                                                    "requestStr": "$DimensionKey:[DimensionKey] ",
                                                                                     "required": false,
-                                                                                    "responseStr": "dimensions:$dimensionKey ",
+                                                                                    "responseStr": "dimensions:$DimensionKey ",
                                                                                     "type": {
                                                                                         "definition": {
                                                                                             "description": null,
@@ -10284,7 +10284,7 @@
                                                                                         "name": "DimensionKey",
                                                                                         "non_null": false
                                                                                     },
-                                                                                    "varName": "dimensionKey"
+                                                                                    "varName": "DimensionKey"
                                                                                 },
                                                                                 "measureFieldName": {
                                                                                     "args": {},
@@ -10321,7 +10321,7 @@
                                                                         "name": "TimeseriesKey",
                                                                         "non_null": false
                                                                     },
-                                                                    "varName": "timeseriesKey"
+                                                                    "varName": "TimeseriesKey"
                                                                 },
                                                                 "label": {
                                                                     "args": {},
@@ -10365,7 +10365,7 @@
                                                                     "varName": "sum"
                                                                 },
                                                                 "units": {
-                                                                    "alias": "unitTypeUnits: units",
+                                                                    "alias": "UnitTypeUnits: units",
                                                                     "args": {},
                                                                     "deprecationReason": null,
                                                                     "description": "Identifies what unit of data this timeseries represents. Note that toRate is only available for particular types\nof data to make sense.",
@@ -10479,7 +10479,7 @@
                                                         "name": "Timeseries",
                                                         "non_null": false
                                                     },
-                                                    "varName": "timeseries"
+                                                    "varName": "Timeseries"
                                                 }
                                             },
                                             "inputFields": null,
@@ -10497,10 +10497,10 @@
                                         "name": "InterfaceMetrics",
                                         "non_null": false
                                     },
-                                    "varName": "interfaceMetrics"
+                                    "varName": "InterfaceMetrics"
                                 },
                                 "metrics": {
-                                    "alias": "metricsMetrics: metrics",
+                                    "alias": "MetricsMetrics: metrics",
                                     "args": {
                                         "metrics___toRate": {
                                             "defaultValue": "false",
@@ -10527,9 +10527,9 @@
                                     "isDeprecated": false,
                                     "name": "metrics",
                                     "path": "users.metrics",
-                                    "requestStr": "$metrics:Metrics ",
+                                    "requestStr": "$Metrics:Metrics ",
                                     "required": false,
-                                    "responseStr": "metrics:$metrics ",
+                                    "responseStr": "metrics:$Metrics ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -10929,7 +10929,7 @@
                                         "name": "Metrics",
                                         "non_null": false
                                     },
-                                    "varName": "metrics"
+                                    "varName": "Metrics"
                                 },
                                 "name": {
                                     "args": {},
@@ -10987,7 +10987,7 @@
                         "name": "SiteMetrics",
                         "non_null": false
                     },
-                    "varName": "siteMetrics"
+                    "varName": "SiteMetrics"
                 }
             },
             "inputFields": null,

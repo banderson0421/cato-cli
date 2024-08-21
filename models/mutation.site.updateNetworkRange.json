@@ -29,9 +29,9 @@
                     "id_str": "updateNetworkRange___input",
                     "name": "input",
                     "path": "updateNetworkRange.input",
-                    "requestStr": "$updateNetworkRangeInput:UpdateNetworkRangeInput! ",
+                    "requestStr": "$UpdateNetworkRangeInput:UpdateNetworkRangeInput! ",
                     "required": true,
-                    "responseStr": "input:$updateNetworkRangeInput ",
+                    "responseStr": "input:$UpdateNetworkRangeInput ",
                     "type": {
                         "definition": {
                             "description": null,
@@ -62,9 +62,9 @@
                                     "id_str": "updateNetworkRange___input___dhcpSettings",
                                     "name": "dhcpSettings",
                                     "path": "updateNetworkRange.input.dhcpSettings",
-                                    "requestStr": "$networkDhcpSettingsInput:NetworkDhcpSettingsInput ",
+                                    "requestStr": "$NetworkDhcpSettingsInput:NetworkDhcpSettingsInput ",
                                     "required": false,
-                                    "responseStr": "dhcpSettings:$networkDhcpSettingsInput ",
+                                    "responseStr": "dhcpSettings:$NetworkDhcpSettingsInput ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -175,7 +175,7 @@
                                         "name": "NetworkDhcpSettingsInput",
                                         "non_null": false
                                     },
-                                    "varName": "networkDhcpSettingsInput"
+                                    "varName": "NetworkDhcpSettingsInput"
                                 },
                                 "gateway": {
                                     "defaultValue": null,
@@ -359,7 +359,7 @@
                         "name": "UpdateNetworkRangeInput",
                         "non_null": false
                     },
-                    "varName": "updateNetworkRangeInput"
+                    "varName": "UpdateNetworkRangeInput"
                 },
                 "updateNetworkRange___networkRangeId": {
                     "defaultValue": null,
@@ -403,53 +403,15 @@
     "isDeprecated": false,
     "name": "site",
     "operationArgs": {
-        "accountId": {
-            "defaultValue": null,
-            "description": null,
-            "id_str": "accountId",
-            "name": "accountId",
-            "path": "accountId",
-            "requestStr": "$accountId:ID! ",
-            "required": true,
-            "responseStr": "accountId:$accountId ",
-            "type": {
-                "kind": [
-                    "NON_NULL",
-                    "SCALAR"
-                ],
-                "name": "ID",
-                "non_null": false
-            },
-            "varName": "accountId"
-        },
-        "networkRangeId": {
-            "defaultValue": null,
-            "description": null,
-            "id_str": "updateNetworkRange___networkRangeId",
-            "name": "networkRangeId",
-            "path": "updateNetworkRange.networkRangeId",
-            "requestStr": "$networkRangeId:ID! ",
-            "required": true,
-            "responseStr": "networkRangeId:$networkRangeId ",
-            "type": {
-                "kind": [
-                    "NON_NULL",
-                    "SCALAR"
-                ],
-                "name": "ID",
-                "non_null": false
-            },
-            "varName": "networkRangeId"
-        },
-        "updateNetworkRangeInput": {
+        "UpdateNetworkRangeInput": {
             "defaultValue": null,
             "description": null,
             "id_str": "updateNetworkRange___input",
             "name": "input",
             "path": "updateNetworkRange.input",
-            "requestStr": "$updateNetworkRangeInput:UpdateNetworkRangeInput! ",
+            "requestStr": "$UpdateNetworkRangeInput:UpdateNetworkRangeInput! ",
             "required": true,
-            "responseStr": "input:$updateNetworkRangeInput ",
+            "responseStr": "input:$UpdateNetworkRangeInput ",
             "type": {
                 "definition": {
                     "description": null,
@@ -480,9 +442,9 @@
                             "id_str": "updateNetworkRange___input___dhcpSettings",
                             "name": "dhcpSettings",
                             "path": "updateNetworkRange.input.dhcpSettings",
-                            "requestStr": "$networkDhcpSettingsInput:NetworkDhcpSettingsInput ",
+                            "requestStr": "$NetworkDhcpSettingsInput:NetworkDhcpSettingsInput ",
                             "required": false,
-                            "responseStr": "dhcpSettings:$networkDhcpSettingsInput ",
+                            "responseStr": "dhcpSettings:$NetworkDhcpSettingsInput ",
                             "type": {
                                 "definition": {
                                     "description": null,
@@ -593,7 +555,7 @@
                                 "name": "NetworkDhcpSettingsInput",
                                 "non_null": false
                             },
-                            "varName": "networkDhcpSettingsInput"
+                            "varName": "NetworkDhcpSettingsInput"
                         },
                         "gateway": {
                             "defaultValue": null,
@@ -777,7 +739,45 @@
                 "name": "UpdateNetworkRangeInput",
                 "non_null": false
             },
-            "varName": "updateNetworkRangeInput"
+            "varName": "UpdateNetworkRangeInput"
+        },
+        "accountId": {
+            "defaultValue": null,
+            "description": null,
+            "id_str": "accountId",
+            "name": "accountId",
+            "path": "accountId",
+            "requestStr": "$accountId:ID! ",
+            "required": true,
+            "responseStr": "accountId:$accountId ",
+            "type": {
+                "kind": [
+                    "NON_NULL",
+                    "SCALAR"
+                ],
+                "name": "ID",
+                "non_null": false
+            },
+            "varName": "accountId"
+        },
+        "networkRangeId": {
+            "defaultValue": null,
+            "description": null,
+            "id_str": "updateNetworkRange___networkRangeId",
+            "name": "networkRangeId",
+            "path": "updateNetworkRange.networkRangeId",
+            "requestStr": "$networkRangeId:ID! ",
+            "required": true,
+            "responseStr": "networkRangeId:$networkRangeId ",
+            "type": {
+                "kind": [
+                    "NON_NULL",
+                    "SCALAR"
+                ],
+                "name": "ID",
+                "non_null": false
+            },
+            "varName": "networkRangeId"
         }
     },
     "path": "mutation.site.updateNetworkRange",
@@ -794,9 +794,9 @@
                             "id_str": "updateNetworkRange___input",
                             "name": "input",
                             "path": "updateNetworkRange.input",
-                            "requestStr": "$updateNetworkRangeInput:UpdateNetworkRangeInput! ",
+                            "requestStr": "$UpdateNetworkRangeInput:UpdateNetworkRangeInput! ",
                             "required": true,
-                            "responseStr": "input:$updateNetworkRangeInput ",
+                            "responseStr": "input:$UpdateNetworkRangeInput ",
                             "type": {
                                 "definition": {
                                     "description": null,
@@ -827,9 +827,9 @@
                                             "id_str": "updateNetworkRange___input___dhcpSettings",
                                             "name": "dhcpSettings",
                                             "path": "updateNetworkRange.input.dhcpSettings",
-                                            "requestStr": "$networkDhcpSettingsInput:NetworkDhcpSettingsInput ",
+                                            "requestStr": "$NetworkDhcpSettingsInput:NetworkDhcpSettingsInput ",
                                             "required": false,
-                                            "responseStr": "dhcpSettings:$networkDhcpSettingsInput ",
+                                            "responseStr": "dhcpSettings:$NetworkDhcpSettingsInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -940,7 +940,7 @@
                                                 "name": "NetworkDhcpSettingsInput",
                                                 "non_null": false
                                             },
-                                            "varName": "networkDhcpSettingsInput"
+                                            "varName": "NetworkDhcpSettingsInput"
                                         },
                                         "gateway": {
                                             "defaultValue": null,
@@ -1124,7 +1124,7 @@
                                 "name": "UpdateNetworkRangeInput",
                                 "non_null": false
                             },
-                            "varName": "updateNetworkRangeInput"
+                            "varName": "UpdateNetworkRangeInput"
                         },
                         "updateNetworkRange___networkRangeId": {
                             "defaultValue": null,
@@ -1152,9 +1152,9 @@
                     "isDeprecated": false,
                     "name": "updateNetworkRange",
                     "path": "updateNetworkRange",
-                    "requestStr": "$updateNetworkRangePayload:UpdateNetworkRangePayload ",
+                    "requestStr": "$UpdateNetworkRangePayload:UpdateNetworkRangePayload ",
                     "required": false,
-                    "responseStr": "updateNetworkRange:$updateNetworkRangePayload ",
+                    "responseStr": "updateNetworkRange:$UpdateNetworkRangePayload ",
                     "type": {
                         "definition": {
                             "description": null,
@@ -1195,7 +1195,7 @@
                         "name": "UpdateNetworkRangePayload",
                         "non_null": false
                     },
-                    "varName": "updateNetworkRangePayload"
+                    "varName": "UpdateNetworkRangePayload"
                 }
             },
             "inputFields": null,
@@ -1213,8 +1213,18 @@
         "non_null": false
     },
     "variablesPayload": {
-        "networkRangeId": "ID",
-        "updateNetworkRangeInput": {
+        "UpdateNetworkRangeInput": {
+            "NetworkDhcpSettingsInput": {
+                "dhcpType": {
+                    "dhcpType": "enum(DhcpType)"
+                },
+                "ipRange": {
+                    "ipRange": "IPRange"
+                },
+                "relayGroupId": {
+                    "relayGroupId": "ID"
+                }
+            },
             "azureFloatingIp": {
                 "azureFloatingIp": "IPAddress"
             },
@@ -1226,17 +1236,6 @@
             },
             "name": {
                 "name": "String"
-            },
-            "networkDhcpSettingsInput": {
-                "dhcpType": {
-                    "dhcpType": "enum(DhcpType)"
-                },
-                "ipRange": {
-                    "ipRange": "IPRange"
-                },
-                "relayGroupId": {
-                    "relayGroupId": "ID"
-                }
             },
             "rangeType": {
                 "rangeType": "enum(SubnetType)"
@@ -1250,6 +1249,7 @@
             "vlan": {
                 "vlan": "Int"
             }
-        }
+        },
+        "networkRangeId": "ID"
     }
 }

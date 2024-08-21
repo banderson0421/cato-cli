@@ -29,9 +29,9 @@
                     "id_str": "addSocketSite___input",
                     "name": "input",
                     "path": "addSocketSite.input",
-                    "requestStr": "$addSocketSiteInput:AddSocketSiteInput! ",
+                    "requestStr": "$AddSocketSiteInput:AddSocketSiteInput! ",
                     "required": true,
-                    "responseStr": "input:$addSocketSiteInput ",
+                    "responseStr": "input:$AddSocketSiteInput ",
                     "type": {
                         "definition": {
                             "description": null,
@@ -173,9 +173,9 @@
                                     "id_str": "addSocketSite___input___siteLocation",
                                     "name": "siteLocation",
                                     "path": "addSocketSite.input.siteLocation",
-                                    "requestStr": "$addSiteLocationInput:AddSiteLocationInput! ",
+                                    "requestStr": "$AddSiteLocationInput:AddSiteLocationInput! ",
                                     "required": true,
-                                    "responseStr": "siteLocation:$addSiteLocationInput ",
+                                    "responseStr": "siteLocation:$AddSiteLocationInput ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -288,7 +288,7 @@
                                         "name": "AddSiteLocationInput",
                                         "non_null": false
                                     },
-                                    "varName": "addSiteLocationInput"
+                                    "varName": "AddSiteLocationInput"
                                 },
                                 "siteType": {
                                     "defaultValue": "BRANCH",
@@ -377,7 +377,7 @@
                         "name": "AddSocketSiteInput",
                         "non_null": false
                     },
-                    "varName": "addSocketSiteInput"
+                    "varName": "AddSocketSiteInput"
                 }
             },
             "deprecationReason": null,
@@ -402,34 +402,15 @@
     "isDeprecated": false,
     "name": "site",
     "operationArgs": {
-        "accountId": {
-            "defaultValue": null,
-            "description": null,
-            "id_str": "accountId",
-            "name": "accountId",
-            "path": "accountId",
-            "requestStr": "$accountId:ID! ",
-            "required": true,
-            "responseStr": "accountId:$accountId ",
-            "type": {
-                "kind": [
-                    "NON_NULL",
-                    "SCALAR"
-                ],
-                "name": "ID",
-                "non_null": false
-            },
-            "varName": "accountId"
-        },
-        "addSocketSiteInput": {
+        "AddSocketSiteInput": {
             "defaultValue": null,
             "description": null,
             "id_str": "addSocketSite___input",
             "name": "input",
             "path": "addSocketSite.input",
-            "requestStr": "$addSocketSiteInput:AddSocketSiteInput! ",
+            "requestStr": "$AddSocketSiteInput:AddSocketSiteInput! ",
             "required": true,
-            "responseStr": "input:$addSocketSiteInput ",
+            "responseStr": "input:$AddSocketSiteInput ",
             "type": {
                 "definition": {
                     "description": null,
@@ -571,9 +552,9 @@
                             "id_str": "addSocketSite___input___siteLocation",
                             "name": "siteLocation",
                             "path": "addSocketSite.input.siteLocation",
-                            "requestStr": "$addSiteLocationInput:AddSiteLocationInput! ",
+                            "requestStr": "$AddSiteLocationInput:AddSiteLocationInput! ",
                             "required": true,
-                            "responseStr": "siteLocation:$addSiteLocationInput ",
+                            "responseStr": "siteLocation:$AddSiteLocationInput ",
                             "type": {
                                 "definition": {
                                     "description": null,
@@ -686,7 +667,7 @@
                                 "name": "AddSiteLocationInput",
                                 "non_null": false
                             },
-                            "varName": "addSiteLocationInput"
+                            "varName": "AddSiteLocationInput"
                         },
                         "siteType": {
                             "defaultValue": "BRANCH",
@@ -775,7 +756,26 @@
                 "name": "AddSocketSiteInput",
                 "non_null": false
             },
-            "varName": "addSocketSiteInput"
+            "varName": "AddSocketSiteInput"
+        },
+        "accountId": {
+            "defaultValue": null,
+            "description": null,
+            "id_str": "accountId",
+            "name": "accountId",
+            "path": "accountId",
+            "requestStr": "$accountId:ID! ",
+            "required": true,
+            "responseStr": "accountId:$accountId ",
+            "type": {
+                "kind": [
+                    "NON_NULL",
+                    "SCALAR"
+                ],
+                "name": "ID",
+                "non_null": false
+            },
+            "varName": "accountId"
         }
     },
     "path": "mutation.site.addSocketSite",
@@ -792,9 +792,9 @@
                             "id_str": "addSocketSite___input",
                             "name": "input",
                             "path": "addSocketSite.input",
-                            "requestStr": "$addSocketSiteInput:AddSocketSiteInput! ",
+                            "requestStr": "$AddSocketSiteInput:AddSocketSiteInput! ",
                             "required": true,
-                            "responseStr": "input:$addSocketSiteInput ",
+                            "responseStr": "input:$AddSocketSiteInput ",
                             "type": {
                                 "definition": {
                                     "description": null,
@@ -936,9 +936,9 @@
                                             "id_str": "addSocketSite___input___siteLocation",
                                             "name": "siteLocation",
                                             "path": "addSocketSite.input.siteLocation",
-                                            "requestStr": "$addSiteLocationInput:AddSiteLocationInput! ",
+                                            "requestStr": "$AddSiteLocationInput:AddSiteLocationInput! ",
                                             "required": true,
-                                            "responseStr": "siteLocation:$addSiteLocationInput ",
+                                            "responseStr": "siteLocation:$AddSiteLocationInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -1051,7 +1051,7 @@
                                                 "name": "AddSiteLocationInput",
                                                 "non_null": false
                                             },
-                                            "varName": "addSiteLocationInput"
+                                            "varName": "AddSiteLocationInput"
                                         },
                                         "siteType": {
                                             "defaultValue": "BRANCH",
@@ -1140,7 +1140,7 @@
                                 "name": "AddSocketSiteInput",
                                 "non_null": false
                             },
-                            "varName": "addSocketSiteInput"
+                            "varName": "AddSocketSiteInput"
                         }
                     },
                     "deprecationReason": null,
@@ -1149,9 +1149,9 @@
                     "isDeprecated": false,
                     "name": "addSocketSite",
                     "path": "addSocketSite",
-                    "requestStr": "$addSocketSitePayload:AddSocketSitePayload ",
+                    "requestStr": "$AddSocketSitePayload:AddSocketSitePayload ",
                     "required": false,
-                    "responseStr": "addSocketSite:$addSocketSitePayload ",
+                    "responseStr": "addSocketSite:$AddSocketSitePayload ",
                     "type": {
                         "definition": {
                             "description": null,
@@ -1192,7 +1192,7 @@
                         "name": "AddSocketSitePayload",
                         "non_null": false
                     },
-                    "varName": "addSocketSitePayload"
+                    "varName": "AddSocketSitePayload"
                 }
             },
             "inputFields": null,
@@ -1210,8 +1210,8 @@
         "non_null": false
     },
     "variablesPayload": {
-        "addSocketSiteInput": {
-            "addSiteLocationInput": {
+        "AddSocketSiteInput": {
+            "AddSiteLocationInput": {
                 "address": {
                     "address": "String"
                 },

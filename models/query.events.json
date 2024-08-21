@@ -25,9 +25,9 @@
             "id_str": "dimensions",
             "name": "dimensions",
             "path": "dimensions",
-            "requestStr": "$eventsDimension:[EventsDimension] ",
+            "requestStr": "$EventsDimension:[EventsDimension] ",
             "required": false,
-            "responseStr": "dimensions:$eventsDimension ",
+            "responseStr": "dimensions:$EventsDimension ",
             "type": {
                 "definition": {
                     "description": null,
@@ -769,12 +769,6 @@
                                         },
                                         {
                                             "deprecationReason": null,
-                                            "description": "For SaaS Security API, id of the connector",
-                                            "isDeprecated": false,
-                                            "name": "connector_id"
-                                        },
-                                        {
-                                            "deprecationReason": null,
                                             "description": "For SaaS Security API, parent Microsoft 365 connector",
                                             "isDeprecated": false,
                                             "name": "parent_connector_name"
@@ -1339,7 +1333,7 @@
                 "name": "EventsDimension",
                 "non_null": false
             },
-            "varName": "eventsDimension"
+            "varName": "EventsDimension"
         },
         "filters": {
             "defaultValue": null,
@@ -1347,9 +1341,9 @@
             "id_str": "filters",
             "name": "filters",
             "path": "filters",
-            "requestStr": "$eventsFilter:[EventsFilter!] ",
+            "requestStr": "$EventsFilter:[EventsFilter!] ",
             "required": false,
-            "responseStr": "filters:$eventsFilter ",
+            "responseStr": "filters:$EventsFilter ",
             "type": {
                 "definition": {
                     "description": null,
@@ -2091,12 +2085,6 @@
                                         },
                                         {
                                             "deprecationReason": null,
-                                            "description": "For SaaS Security API, id of the connector",
-                                            "isDeprecated": false,
-                                            "name": "connector_id"
-                                        },
-                                        {
-                                            "deprecationReason": null,
                                             "description": "For SaaS Security API, parent Microsoft 365 connector",
                                             "isDeprecated": false,
                                             "name": "parent_connector_name"
@@ -2786,7 +2774,7 @@
                 "name": "EventsFilter",
                 "non_null": false
             },
-            "varName": "eventsFilter"
+            "varName": "EventsFilter"
         },
         "measures": {
             "defaultValue": null,
@@ -2794,9 +2782,9 @@
             "id_str": "measures",
             "name": "measures",
             "path": "measures",
-            "requestStr": "$eventsMeasure:[EventsMeasure] ",
+            "requestStr": "$EventsMeasure:[EventsMeasure] ",
             "required": false,
-            "responseStr": "measures:$eventsMeasure ",
+            "responseStr": "measures:$EventsMeasure ",
             "type": {
                 "definition": {
                     "description": null,
@@ -3629,12 +3617,6 @@
                                         },
                                         {
                                             "deprecationReason": null,
-                                            "description": "For SaaS Security API, id of the connector",
-                                            "isDeprecated": false,
-                                            "name": "connector_id"
-                                        },
-                                        {
-                                            "deprecationReason": null,
                                             "description": "For SaaS Security API, parent Microsoft 365 connector",
                                             "isDeprecated": false,
                                             "name": "parent_connector_name"
@@ -4217,7 +4199,7 @@
                 "name": "EventsMeasure",
                 "non_null": false
             },
-            "varName": "eventsMeasure"
+            "varName": "EventsMeasure"
         },
         "sort": {
             "defaultValue": null,
@@ -4225,9 +4207,9 @@
             "id_str": "sort",
             "name": "sort",
             "path": "sort",
-            "requestStr": "$eventsSort:[EventsSort!] ",
+            "requestStr": "$EventsSort:[EventsSort!] ",
             "required": false,
-            "responseStr": "sort:$eventsSort ",
+            "responseStr": "sort:$EventsSort ",
             "type": {
                 "definition": {
                     "description": null,
@@ -4969,12 +4951,6 @@
                                         },
                                         {
                                             "deprecationReason": null,
-                                            "description": "For SaaS Security API, id of the connector",
-                                            "isDeprecated": false,
-                                            "name": "connector_id"
-                                        },
-                                        {
-                                            "deprecationReason": null,
                                             "description": "For SaaS Security API, parent Microsoft 365 connector",
                                             "isDeprecated": false,
                                             "name": "parent_connector_name"
@@ -5583,7 +5559,7 @@
                 "name": "EventsSort",
                 "non_null": false
             },
-            "varName": "eventsSort"
+            "varName": "EventsSort"
         },
         "timeFrame": {
             "defaultValue": null,
@@ -5613,34 +5589,15 @@
     "isDeprecated": false,
     "name": "events",
     "operationArgs": {
-        "accountID": {
-            "defaultValue": null,
-            "description": "Account ID",
-            "id_str": "accountID",
-            "name": "accountID",
-            "path": "accountID",
-            "requestStr": "$accountID:ID! ",
-            "required": true,
-            "responseStr": "accountID:$accountID ",
-            "type": {
-                "kind": [
-                    "NON_NULL",
-                    "SCALAR"
-                ],
-                "name": "ID",
-                "non_null": false
-            },
-            "varName": "accountID"
-        },
-        "eventsDimension": {
+        "EventsDimension": {
             "defaultValue": null,
             "description": null,
             "id_str": "dimensions",
             "name": "dimensions",
             "path": "dimensions",
-            "requestStr": "$eventsDimension:[EventsDimension] ",
+            "requestStr": "$EventsDimension:[EventsDimension] ",
             "required": false,
-            "responseStr": "dimensions:$eventsDimension ",
+            "responseStr": "dimensions:$EventsDimension ",
             "type": {
                 "definition": {
                     "description": null,
@@ -6382,12 +6339,6 @@
                                         },
                                         {
                                             "deprecationReason": null,
-                                            "description": "For SaaS Security API, id of the connector",
-                                            "isDeprecated": false,
-                                            "name": "connector_id"
-                                        },
-                                        {
-                                            "deprecationReason": null,
                                             "description": "For SaaS Security API, parent Microsoft 365 connector",
                                             "isDeprecated": false,
                                             "name": "parent_connector_name"
@@ -6952,17 +6903,17 @@
                 "name": "EventsDimension",
                 "non_null": false
             },
-            "varName": "eventsDimension"
+            "varName": "EventsDimension"
         },
-        "eventsFilter": {
+        "EventsFilter": {
             "defaultValue": null,
             "description": null,
             "id_str": "filters",
             "name": "filters",
             "path": "filters",
-            "requestStr": "$eventsFilter:[EventsFilter!] ",
+            "requestStr": "$EventsFilter:[EventsFilter!] ",
             "required": false,
-            "responseStr": "filters:$eventsFilter ",
+            "responseStr": "filters:$EventsFilter ",
             "type": {
                 "definition": {
                     "description": null,
@@ -7704,12 +7655,6 @@
                                         },
                                         {
                                             "deprecationReason": null,
-                                            "description": "For SaaS Security API, id of the connector",
-                                            "isDeprecated": false,
-                                            "name": "connector_id"
-                                        },
-                                        {
-                                            "deprecationReason": null,
                                             "description": "For SaaS Security API, parent Microsoft 365 connector",
                                             "isDeprecated": false,
                                             "name": "parent_connector_name"
@@ -8399,17 +8344,17 @@
                 "name": "EventsFilter",
                 "non_null": false
             },
-            "varName": "eventsFilter"
+            "varName": "EventsFilter"
         },
-        "eventsMeasure": {
+        "EventsMeasure": {
             "defaultValue": null,
             "description": null,
             "id_str": "measures",
             "name": "measures",
             "path": "measures",
-            "requestStr": "$eventsMeasure:[EventsMeasure] ",
+            "requestStr": "$EventsMeasure:[EventsMeasure] ",
             "required": false,
-            "responseStr": "measures:$eventsMeasure ",
+            "responseStr": "measures:$EventsMeasure ",
             "type": {
                 "definition": {
                     "description": null,
@@ -9242,12 +9187,6 @@
                                         },
                                         {
                                             "deprecationReason": null,
-                                            "description": "For SaaS Security API, id of the connector",
-                                            "isDeprecated": false,
-                                            "name": "connector_id"
-                                        },
-                                        {
-                                            "deprecationReason": null,
                                             "description": "For SaaS Security API, parent Microsoft 365 connector",
                                             "isDeprecated": false,
                                             "name": "parent_connector_name"
@@ -9830,17 +9769,17 @@
                 "name": "EventsMeasure",
                 "non_null": false
             },
-            "varName": "eventsMeasure"
+            "varName": "EventsMeasure"
         },
-        "eventsSort": {
+        "EventsSort": {
             "defaultValue": null,
             "description": null,
             "id_str": "sort",
             "name": "sort",
             "path": "sort",
-            "requestStr": "$eventsSort:[EventsSort!] ",
+            "requestStr": "$EventsSort:[EventsSort!] ",
             "required": false,
-            "responseStr": "sort:$eventsSort ",
+            "responseStr": "sort:$EventsSort ",
             "type": {
                 "definition": {
                     "description": null,
@@ -10582,12 +10521,6 @@
                                         },
                                         {
                                             "deprecationReason": null,
-                                            "description": "For SaaS Security API, id of the connector",
-                                            "isDeprecated": false,
-                                            "name": "connector_id"
-                                        },
-                                        {
-                                            "deprecationReason": null,
                                             "description": "For SaaS Security API, parent Microsoft 365 connector",
                                             "isDeprecated": false,
                                             "name": "parent_connector_name"
@@ -11196,7 +11129,26 @@
                 "name": "EventsSort",
                 "non_null": false
             },
-            "varName": "eventsSort"
+            "varName": "EventsSort"
+        },
+        "accountID": {
+            "defaultValue": null,
+            "description": "Account ID",
+            "id_str": "accountID",
+            "name": "accountID",
+            "path": "accountID",
+            "requestStr": "$accountID:ID! ",
+            "required": true,
+            "responseStr": "accountID:$accountID ",
+            "type": {
+                "kind": [
+                    "NON_NULL",
+                    "SCALAR"
+                ],
+                "name": "ID",
+                "non_null": false
+            },
+            "varName": "accountID"
         },
         "from": {
             "defaultValue": null,
@@ -11345,9 +11297,9 @@
                     "isDeprecated": false,
                     "name": "records",
                     "path": "records",
-                    "requestStr": "$eventsRecord:[EventsRecord] ",
+                    "requestStr": "$EventsRecord:[EventsRecord] ",
                     "required": false,
-                    "responseStr": "records:$eventsRecord ",
+                    "responseStr": "records:$EventsRecord ",
                     "type": {
                         "definition": {
                             "description": null,
@@ -11432,7 +11384,7 @@
                         "name": "EventsRecord",
                         "non_null": false
                     },
-                    "varName": "eventsRecord"
+                    "varName": "EventsRecord"
                 },
                 "to": {
                     "args": {},
@@ -11509,12 +11461,12 @@
         "non_null": false
     },
     "variablesPayload": {
-        "eventsDimension": {
+        "EventsDimension": {
             "fieldName": {
                 "fieldName": "enum(EventFieldName)"
             }
         },
-        "eventsFilter": {
+        "EventsFilter": {
             "fieldName": {
                 "fieldName": "enum(EventFieldName)"
             },
@@ -11527,7 +11479,7 @@
                 ]
             }
         },
-        "eventsMeasure": {
+        "EventsMeasure": {
             "aggType": {
                 "aggType": "enum(AggregationType)"
             },
@@ -11538,7 +11490,7 @@
                 "trend": "Boolean"
             }
         },
-        "eventsSort": {
+        "EventsSort": {
             "fieldName": {
                 "fieldName": "enum(EventFieldName)"
             },

@@ -10,8 +10,8 @@
 
 `cato query policy 12345 $(cat < policy.json)`
 
-`cato query policy 12345 '{"internetFirewallPolicyInput": {"policyRevisionInput": {"id": {"id": "ID"}, "type": {"type": "enum(PolicyRevisionType)"}}}}'`
+`cato query policy 12345 '{"InternetFirewallPolicyInput": {"PolicyRevisionInput": {"id": {"id": "ID"}, "type": {"type": "enum(PolicyRevisionType)"}}}}'`
 
 #### Operation Arguments for query.policy ####
+`InternetFirewallPolicyInput` [InternetFirewallPolicyInput] - (optional) N/A 
 `accountId` [ID] - (required) N/A 
-`internetFirewallPolicyInput` [InternetFirewallPolicyInput] - (optional) N/A 

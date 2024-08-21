@@ -10,9 +10,9 @@
 
 `cato mutation site updateStaticHost 12345 $(cat < updateStaticHost.json)`
 
-`cato mutation site updateStaticHost 12345 '{"hostId": "ID", "updateStaticHostInput": {"ip": {"ip": "IPAddress"}, "macAddress": {"macAddress": "String"}, "name": {"name": "String"}}}'`
+`cato mutation site updateStaticHost 12345 '{"UpdateStaticHostInput": {"ip": {"ip": "IPAddress"}, "macAddress": {"macAddress": "String"}, "name": {"name": "String"}}, "hostId": "ID"}'`
 
 #### Operation Arguments for mutation.site.updateStaticHost ####
+`UpdateStaticHostInput` [UpdateStaticHostInput] - (required) N/A 
 `accountId` [ID] - (required) N/A 
 `hostId` [ID] - (required) N/A 
-`updateStaticHostInput` [UpdateStaticHostInput] - (required) N/A 

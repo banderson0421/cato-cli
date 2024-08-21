@@ -26,9 +26,9 @@
             "id_str": "filters",
             "name": "filters",
             "path": "filters",
-            "requestStr": "$auditFieldFilterInput:[AuditFieldFilterInput!] ",
+            "requestStr": "$AuditFieldFilterInput:[AuditFieldFilterInput!] ",
             "required": false,
-            "responseStr": "filters:$auditFieldFilterInput ",
+            "responseStr": "filters:$AuditFieldFilterInput ",
             "type": {
                 "definition": {
                     "description": null,
@@ -41,9 +41,9 @@
                             "id_str": "filters___fieldName",
                             "name": "fieldName",
                             "path": "filters.fieldName",
-                            "requestStr": "$fieldNameInput:FieldNameInput! ",
+                            "requestStr": "$FieldNameInput:FieldNameInput! ",
                             "required": true,
-                            "responseStr": "fieldName:$fieldNameInput ",
+                            "responseStr": "fieldName:$FieldNameInput ",
                             "type": {
                                 "definition": {
                                     "description": "FieldName for the different types of FieldName inputs\nUse the EventFieldName for events, and AuditFieldName for audit",
@@ -56,9 +56,9 @@
                                             "id_str": "filters___fieldName___AuditFieldName",
                                             "name": "AuditFieldName",
                                             "path": "filters.fieldName.AuditFieldName",
-                                            "requestStr": "$auditFieldName:AuditFieldName ",
+                                            "requestStr": "$AuditFieldName:AuditFieldName ",
                                             "required": false,
-                                            "responseStr": "AuditFieldName:$auditFieldName ",
+                                            "responseStr": "AuditFieldName:$AuditFieldName ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -150,7 +150,7 @@
                                                 "name": "AuditFieldName",
                                                 "non_null": false
                                             },
-                                            "varName": "auditFieldName"
+                                            "varName": "AuditFieldName"
                                         },
                                         "EventFieldName": {
                                             "defaultValue": null,
@@ -158,9 +158,9 @@
                                             "id_str": "filters___fieldName___EventFieldName",
                                             "name": "EventFieldName",
                                             "path": "filters.fieldName.EventFieldName",
-                                            "requestStr": "$eventFieldName:EventFieldName ",
+                                            "requestStr": "$EventFieldName:EventFieldName ",
                                             "required": false,
-                                            "responseStr": "EventFieldName:$eventFieldName ",
+                                            "responseStr": "EventFieldName:$EventFieldName ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -887,12 +887,6 @@
                                                         },
                                                         {
                                                             "deprecationReason": null,
-                                                            "description": "For SaaS Security API, id of the connector",
-                                                            "isDeprecated": false,
-                                                            "name": "connector_id"
-                                                        },
-                                                        {
-                                                            "deprecationReason": null,
                                                             "description": "For SaaS Security API, parent Microsoft 365 connector",
                                                             "isDeprecated": false,
                                                             "name": "parent_connector_name"
@@ -1440,7 +1434,7 @@
                                                 "name": "EventFieldName",
                                                 "non_null": false
                                             },
-                                            "varName": "eventFieldName"
+                                            "varName": "EventFieldName"
                                         }
                                     },
                                     "interfaces": null,
@@ -1456,7 +1450,7 @@
                                 "name": "FieldNameInput",
                                 "non_null": false
                             },
-                            "varName": "fieldNameInput"
+                            "varName": "FieldNameInput"
                         },
                         "operator": {
                             "defaultValue": null,
@@ -1572,7 +1566,7 @@
                 "name": "AuditFieldFilterInput",
                 "non_null": false
             },
-            "varName": "auditFieldFilterInput"
+            "varName": "AuditFieldFilterInput"
         },
         "marker": {
             "defaultValue": null,
@@ -1624,35 +1618,15 @@
     "isDeprecated": false,
     "name": "auditFeed",
     "operationArgs": {
-        "accountIDs": {
-            "defaultValue": null,
-            "description": "List of Unique Account Identifiers.",
-            "id_str": "accountIDs",
-            "name": "accountIDs",
-            "path": "accountIDs",
-            "requestStr": "$accountIDs:[ID!] ",
-            "required": false,
-            "responseStr": "accountIDs:$accountIDs ",
-            "type": {
-                "kind": [
-                    "LIST",
-                    "NON_NULL",
-                    "SCALAR"
-                ],
-                "name": "ID",
-                "non_null": false
-            },
-            "varName": "accountIDs"
-        },
-        "auditFieldFilterInput": {
+        "AuditFieldFilterInput": {
             "defaultValue": null,
             "description": null,
             "id_str": "filters",
             "name": "filters",
             "path": "filters",
-            "requestStr": "$auditFieldFilterInput:[AuditFieldFilterInput!] ",
+            "requestStr": "$AuditFieldFilterInput:[AuditFieldFilterInput!] ",
             "required": false,
-            "responseStr": "filters:$auditFieldFilterInput ",
+            "responseStr": "filters:$AuditFieldFilterInput ",
             "type": {
                 "definition": {
                     "description": null,
@@ -1665,9 +1639,9 @@
                             "id_str": "filters___fieldName",
                             "name": "fieldName",
                             "path": "filters.fieldName",
-                            "requestStr": "$fieldNameInput:FieldNameInput! ",
+                            "requestStr": "$FieldNameInput:FieldNameInput! ",
                             "required": true,
-                            "responseStr": "fieldName:$fieldNameInput ",
+                            "responseStr": "fieldName:$FieldNameInput ",
                             "type": {
                                 "definition": {
                                     "description": "FieldName for the different types of FieldName inputs\nUse the EventFieldName for events, and AuditFieldName for audit",
@@ -1680,9 +1654,9 @@
                                             "id_str": "filters___fieldName___AuditFieldName",
                                             "name": "AuditFieldName",
                                             "path": "filters.fieldName.AuditFieldName",
-                                            "requestStr": "$auditFieldName:AuditFieldName ",
+                                            "requestStr": "$AuditFieldName:AuditFieldName ",
                                             "required": false,
-                                            "responseStr": "AuditFieldName:$auditFieldName ",
+                                            "responseStr": "AuditFieldName:$AuditFieldName ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -1774,7 +1748,7 @@
                                                 "name": "AuditFieldName",
                                                 "non_null": false
                                             },
-                                            "varName": "auditFieldName"
+                                            "varName": "AuditFieldName"
                                         },
                                         "EventFieldName": {
                                             "defaultValue": null,
@@ -1782,9 +1756,9 @@
                                             "id_str": "filters___fieldName___EventFieldName",
                                             "name": "EventFieldName",
                                             "path": "filters.fieldName.EventFieldName",
-                                            "requestStr": "$eventFieldName:EventFieldName ",
+                                            "requestStr": "$EventFieldName:EventFieldName ",
                                             "required": false,
-                                            "responseStr": "EventFieldName:$eventFieldName ",
+                                            "responseStr": "EventFieldName:$EventFieldName ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -2511,12 +2485,6 @@
                                                         },
                                                         {
                                                             "deprecationReason": null,
-                                                            "description": "For SaaS Security API, id of the connector",
-                                                            "isDeprecated": false,
-                                                            "name": "connector_id"
-                                                        },
-                                                        {
-                                                            "deprecationReason": null,
                                                             "description": "For SaaS Security API, parent Microsoft 365 connector",
                                                             "isDeprecated": false,
                                                             "name": "parent_connector_name"
@@ -3064,7 +3032,7 @@
                                                 "name": "EventFieldName",
                                                 "non_null": false
                                             },
-                                            "varName": "eventFieldName"
+                                            "varName": "EventFieldName"
                                         }
                                     },
                                     "interfaces": null,
@@ -3080,7 +3048,7 @@
                                 "name": "FieldNameInput",
                                 "non_null": false
                             },
-                            "varName": "fieldNameInput"
+                            "varName": "FieldNameInput"
                         },
                         "operator": {
                             "defaultValue": null,
@@ -3196,7 +3164,27 @@
                 "name": "AuditFieldFilterInput",
                 "non_null": false
             },
-            "varName": "auditFieldFilterInput"
+            "varName": "AuditFieldFilterInput"
+        },
+        "accountIDs": {
+            "defaultValue": null,
+            "description": "List of Unique Account Identifiers.",
+            "id_str": "accountIDs",
+            "name": "accountIDs",
+            "path": "accountIDs",
+            "requestStr": "$accountIDs:[ID!] ",
+            "required": false,
+            "responseStr": "accountIDs:$accountIDs ",
+            "type": {
+                "kind": [
+                    "LIST",
+                    "NON_NULL",
+                    "SCALAR"
+                ],
+                "name": "ID",
+                "non_null": false
+            },
+            "varName": "accountIDs"
         },
         "fieldNames": {
             "defaultValue": null,
@@ -3354,9 +3342,9 @@
                     "isDeprecated": false,
                     "name": "accounts",
                     "path": "accounts",
-                    "requestStr": "$auditFeedAccountRecords:[AuditFeedAccountRecords] ",
+                    "requestStr": "$AuditFeedAccountRecords:[AuditFeedAccountRecords] ",
                     "required": false,
-                    "responseStr": "accounts:$auditFeedAccountRecords ",
+                    "responseStr": "accounts:$AuditFeedAccountRecords ",
                     "type": {
                         "definition": {
                             "description": null,
@@ -3383,7 +3371,7 @@
                                     "varName": "id"
                                 },
                                 "records": {
-                                    "alias": "auditRecordRecords: records",
+                                    "alias": "AuditRecordRecords: records",
                                     "args": {
                                         "records___fieldNames": {
                                             "defaultValue": null,
@@ -3496,16 +3484,16 @@
                                     "isDeprecated": false,
                                     "name": "records",
                                     "path": "accounts.records",
-                                    "requestStr": "$auditRecord:[AuditRecord] ",
+                                    "requestStr": "$AuditRecord:[AuditRecord] ",
                                     "required": false,
-                                    "responseStr": "records:$auditRecord ",
+                                    "responseStr": "records:$AuditRecord ",
                                     "type": {
                                         "definition": {
                                             "description": "Represents a single event in the audit database",
                                             "enumValues": null,
                                             "fields": {
                                                 "account": {
-                                                    "alias": "entityInfoAccount: account",
+                                                    "alias": "EntityInfoAccount: account",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": null,
@@ -3513,9 +3501,9 @@
                                                     "isDeprecated": false,
                                                     "name": "account",
                                                     "path": "accounts.records.account",
-                                                    "requestStr": "$entityInfo:EntityInfo ",
+                                                    "requestStr": "$EntityInfo:EntityInfo ",
                                                     "required": false,
-                                                    "responseStr": "account:$entityInfo ",
+                                                    "responseStr": "account:$EntityInfo ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -3550,9 +3538,9 @@
                                                                     "isDeprecated": false,
                                                                     "name": "entity",
                                                                     "path": "accounts.records.account.entity",
-                                                                    "requestStr": "$entity:Entity! ",
+                                                                    "requestStr": "$Entity:Entity! ",
                                                                     "required": true,
-                                                                    "responseStr": "entity:$entity ",
+                                                                    "responseStr": "entity:$Entity ",
                                                                     "type": {
                                                                         "definition": {
                                                                             "description": null,
@@ -3600,7 +3588,7 @@
                                                                                     "varName": "name"
                                                                                 },
                                                                                 "type": {
-                                                                                    "alias": "entityTypeType: type",
+                                                                                    "alias": "EntityTypeType: type",
                                                                                     "args": {},
                                                                                     "deprecationReason": null,
                                                                                     "description": null,
@@ -3792,7 +3780,7 @@
                                                                         "name": "Entity",
                                                                         "non_null": false
                                                                     },
-                                                                    "varName": "entity"
+                                                                    "varName": "Entity"
                                                                 },
                                                                 "helperFields": {
                                                                     "args": {},
@@ -3829,10 +3817,10 @@
                                                         "name": "EntityInfo",
                                                         "non_null": false
                                                     },
-                                                    "varName": "entityInfo"
+                                                    "varName": "EntityInfo"
                                                 },
                                                 "admin": {
-                                                    "alias": "entityAdmin: admin",
+                                                    "alias": "EntityAdmin: admin",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": null,
@@ -3840,9 +3828,9 @@
                                                     "isDeprecated": false,
                                                     "name": "admin",
                                                     "path": "accounts.records.admin",
-                                                    "requestStr": "$entity:Entity ",
+                                                    "requestStr": "$Entity:Entity ",
                                                     "required": false,
-                                                    "responseStr": "admin:$entity ",
+                                                    "responseStr": "admin:$Entity ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -4080,10 +4068,10 @@
                                                         "name": "Entity",
                                                         "non_null": false
                                                     },
-                                                    "varName": "entity"
+                                                    "varName": "Entity"
                                                 },
                                                 "apiKey": {
-                                                    "alias": "entityApiKey: apiKey",
+                                                    "alias": "EntityApiKey: apiKey",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": null,
@@ -4091,9 +4079,9 @@
                                                     "isDeprecated": false,
                                                     "name": "apiKey",
                                                     "path": "accounts.records.apiKey",
-                                                    "requestStr": "$entity:Entity ",
+                                                    "requestStr": "$Entity:Entity ",
                                                     "required": false,
-                                                    "responseStr": "apiKey:$entity ",
+                                                    "responseStr": "apiKey:$Entity ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -4331,7 +4319,7 @@
                                                         "name": "Entity",
                                                         "non_null": false
                                                     },
-                                                    "varName": "entity"
+                                                    "varName": "Entity"
                                                 },
                                                 "flatFields": {
                                                     "args": {},
@@ -4357,7 +4345,7 @@
                                                     "varName": "flatFields"
                                                 },
                                                 "object": {
-                                                    "alias": "entityObject: object",
+                                                    "alias": "EntityObject: object",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": null,
@@ -4365,9 +4353,9 @@
                                                     "isDeprecated": false,
                                                     "name": "object",
                                                     "path": "accounts.records.object",
-                                                    "requestStr": "$entity:Entity ",
+                                                    "requestStr": "$Entity:Entity ",
                                                     "required": false,
-                                                    "responseStr": "object:$entity ",
+                                                    "responseStr": "object:$Entity ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -4605,7 +4593,7 @@
                                                         "name": "Entity",
                                                         "non_null": false
                                                     },
-                                                    "varName": "entity"
+                                                    "varName": "Entity"
                                                 },
                                                 "time": {
                                                     "args": {},
@@ -4643,7 +4631,7 @@
                                         "name": "AuditRecord",
                                         "non_null": false
                                     },
-                                    "varName": "auditRecord"
+                                    "varName": "AuditRecord"
                                 }
                             },
                             "inputFields": null,
@@ -4660,7 +4648,7 @@
                         "name": "AuditFeedAccountRecords",
                         "non_null": false
                     },
-                    "varName": "auditFeedAccountRecords"
+                    "varName": "AuditFeedAccountRecords"
                 },
                 "fetchedCount": {
                     "args": {},
@@ -4778,11 +4766,8 @@
         "non_null": false
     },
     "variablesPayload": {
-        "accountIDs": [
-            "ID"
-        ],
-        "auditFieldFilterInput": {
-            "fieldNameInput": {
+        "AuditFieldFilterInput": {
+            "FieldNameInput": {
                 "AuditFieldName": {
                     "AuditFieldName": "enum(AuditFieldName)"
                 },
@@ -4799,6 +4784,9 @@
                 ]
             }
         },
+        "accountIDs": [
+            "ID"
+        ],
         "fieldNames": "enum(AuditFieldName)",
         "marker": "String",
         "timeFrame": "TimeFrame"

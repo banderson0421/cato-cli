@@ -26,9 +26,9 @@
             "id_str": "filters",
             "name": "filters",
             "path": "filters",
-            "requestStr": "$eventFeedFieldFilterInput:[EventFeedFieldFilterInput!] ",
+            "requestStr": "$EventFeedFieldFilterInput:[EventFeedFieldFilterInput!] ",
             "required": false,
-            "responseStr": "filters:$eventFeedFieldFilterInput ",
+            "responseStr": "filters:$EventFeedFieldFilterInput ",
             "type": {
                 "definition": {
                     "description": null,
@@ -168,7 +168,7 @@
                 "name": "EventFeedFieldFilterInput",
                 "non_null": false
             },
-            "varName": "eventFeedFieldFilterInput"
+            "varName": "EventFeedFieldFilterInput"
         },
         "marker": {
             "defaultValue": null,
@@ -198,35 +198,15 @@
     "isDeprecated": false,
     "name": "eventsFeed",
     "operationArgs": {
-        "accountIDs": {
-            "defaultValue": null,
-            "description": "List of Unique Account Identifiers.",
-            "id_str": "accountIDs",
-            "name": "accountIDs",
-            "path": "accountIDs",
-            "requestStr": "$accountIDs:[ID!] ",
-            "required": false,
-            "responseStr": "accountIDs:$accountIDs ",
-            "type": {
-                "kind": [
-                    "LIST",
-                    "NON_NULL",
-                    "SCALAR"
-                ],
-                "name": "ID",
-                "non_null": false
-            },
-            "varName": "accountIDs"
-        },
-        "eventFeedFieldFilterInput": {
+        "EventFeedFieldFilterInput": {
             "defaultValue": null,
             "description": null,
             "id_str": "filters",
             "name": "filters",
             "path": "filters",
-            "requestStr": "$eventFeedFieldFilterInput:[EventFeedFieldFilterInput!] ",
+            "requestStr": "$EventFeedFieldFilterInput:[EventFeedFieldFilterInput!] ",
             "required": false,
-            "responseStr": "filters:$eventFeedFieldFilterInput ",
+            "responseStr": "filters:$EventFeedFieldFilterInput ",
             "type": {
                 "definition": {
                     "description": null,
@@ -366,7 +346,27 @@
                 "name": "EventFeedFieldFilterInput",
                 "non_null": false
             },
-            "varName": "eventFeedFieldFilterInput"
+            "varName": "EventFeedFieldFilterInput"
+        },
+        "accountIDs": {
+            "defaultValue": null,
+            "description": "List of Unique Account Identifiers.",
+            "id_str": "accountIDs",
+            "name": "accountIDs",
+            "path": "accountIDs",
+            "requestStr": "$accountIDs:[ID!] ",
+            "required": false,
+            "responseStr": "accountIDs:$accountIDs ",
+            "type": {
+                "kind": [
+                    "LIST",
+                    "NON_NULL",
+                    "SCALAR"
+                ],
+                "name": "ID",
+                "non_null": false
+            },
+            "varName": "accountIDs"
         },
         "fieldNames": {
             "defaultValue": null,
@@ -1103,12 +1103,6 @@
                         },
                         {
                             "deprecationReason": null,
-                            "description": "For SaaS Security API, id of the connector",
-                            "isDeprecated": false,
-                            "name": "connector_id"
-                        },
-                        {
-                            "deprecationReason": null,
                             "description": "For SaaS Security API, parent Microsoft 365 connector",
                             "isDeprecated": false,
                             "name": "parent_connector_name"
@@ -1693,9 +1687,9 @@
                     "isDeprecated": false,
                     "name": "accounts",
                     "path": "accounts",
-                    "requestStr": "$eventsFeedAccountRecords:[EventsFeedAccountRecords] ",
+                    "requestStr": "$EventsFeedAccountRecords:[EventsFeedAccountRecords] ",
                     "required": false,
-                    "responseStr": "accounts:$eventsFeedAccountRecords ",
+                    "responseStr": "accounts:$EventsFeedAccountRecords ",
                     "type": {
                         "definition": {
                             "description": null,
@@ -1742,7 +1736,7 @@
                                     "varName": "id"
                                 },
                                 "records": {
-                                    "alias": "eventRecordRecords: records",
+                                    "alias": "EventRecordRecords: records",
                                     "args": {
                                         "records___fieldNames": {
                                             "defaultValue": null,
@@ -2479,12 +2473,6 @@
                                                         },
                                                         {
                                                             "deprecationReason": null,
-                                                            "description": "For SaaS Security API, id of the connector",
-                                                            "isDeprecated": false,
-                                                            "name": "connector_id"
-                                                        },
-                                                        {
-                                                            "deprecationReason": null,
                                                             "description": "For SaaS Security API, parent Microsoft 365 connector",
                                                             "isDeprecated": false,
                                                             "name": "parent_connector_name"
@@ -3043,9 +3031,9 @@
                                     "isDeprecated": false,
                                     "name": "records",
                                     "path": "accounts.records",
-                                    "requestStr": "$eventRecord:[EventRecord] ",
+                                    "requestStr": "$EventRecord:[EventRecord] ",
                                     "required": false,
-                                    "responseStr": "records:$eventRecord ",
+                                    "responseStr": "records:$EventRecord ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -3110,7 +3098,7 @@
                                         "name": "EventRecord",
                                         "non_null": false
                                     },
-                                    "varName": "eventRecord"
+                                    "varName": "EventRecord"
                                 }
                             },
                             "inputFields": null,
@@ -3127,7 +3115,7 @@
                         "name": "EventsFeedAccountRecords",
                         "non_null": false
                     },
-                    "varName": "eventsFeedAccountRecords"
+                    "varName": "EventsFeedAccountRecords"
                 },
                 "fetchedCount": {
                     "args": {},
@@ -3185,10 +3173,7 @@
         "non_null": false
     },
     "variablesPayload": {
-        "accountIDs": [
-            "ID"
-        ],
-        "eventFeedFieldFilterInput": {
+        "EventFeedFieldFilterInput": {
             "fieldName": {
                 "fieldName": "enum(EventFeedFilterFieldName)"
             },
@@ -3201,6 +3186,9 @@
                 ]
             }
         },
+        "accountIDs": [
+            "ID"
+        ],
         "fieldNames": "enum(EventFieldName)",
         "marker": "String"
     }

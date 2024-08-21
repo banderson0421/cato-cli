@@ -29,9 +29,9 @@
                     "id_str": "addIpsecIkeV2SiteTunnels___input",
                     "name": "input",
                     "path": "addIpsecIkeV2SiteTunnels.input",
-                    "requestStr": "$addIpsecIkeV2SiteTunnelsInput:AddIpsecIkeV2SiteTunnelsInput! ",
+                    "requestStr": "$AddIpsecIkeV2SiteTunnelsInput:AddIpsecIkeV2SiteTunnelsInput! ",
                     "required": true,
-                    "responseStr": "input:$addIpsecIkeV2SiteTunnelsInput ",
+                    "responseStr": "input:$AddIpsecIkeV2SiteTunnelsInput ",
                     "type": {
                         "definition": {
                             "description": null,
@@ -44,9 +44,9 @@
                                     "id_str": "addIpsecIkeV2SiteTunnels___input___primary",
                                     "name": "primary",
                                     "path": "addIpsecIkeV2SiteTunnels.input.primary",
-                                    "requestStr": "$addIpsecIkeV2TunnelsInput:AddIpsecIkeV2TunnelsInput ",
+                                    "requestStr": "$AddIpsecIkeV2TunnelsInput:AddIpsecIkeV2TunnelsInput ",
                                     "required": false,
-                                    "responseStr": "primary:$addIpsecIkeV2TunnelsInput ",
+                                    "responseStr": "primary:$AddIpsecIkeV2TunnelsInput ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -137,9 +137,9 @@
                                                     "id_str": "addIpsecIkeV2SiteTunnels___input___primary___tunnels",
                                                     "name": "tunnels",
                                                     "path": "addIpsecIkeV2SiteTunnels.input.primary.tunnels",
-                                                    "requestStr": "$addIpsecIkeV2TunnelInput:[AddIpsecIkeV2TunnelInput]! ",
+                                                    "requestStr": "$AddIpsecIkeV2TunnelInput:[AddIpsecIkeV2TunnelInput]! ",
                                                     "required": true,
-                                                    "responseStr": "tunnels:$addIpsecIkeV2TunnelInput ",
+                                                    "responseStr": "tunnels:$AddIpsecIkeV2TunnelInput ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -152,9 +152,9 @@
                                                                     "id_str": "addIpsecIkeV2SiteTunnels___input___primary___tunnels___lastMileBw",
                                                                     "name": "lastMileBw",
                                                                     "path": "addIpsecIkeV2SiteTunnels.input.primary.tunnels.lastMileBw",
-                                                                    "requestStr": "$lastMileBwInput:LastMileBwInput ",
+                                                                    "requestStr": "$LastMileBwInput:LastMileBwInput ",
                                                                     "required": false,
-                                                                    "responseStr": "lastMileBw:$lastMileBwInput ",
+                                                                    "responseStr": "lastMileBw:$LastMileBwInput ",
                                                                     "type": {
                                                                         "definition": {
                                                                             "description": null,
@@ -246,7 +246,7 @@
                                                                         "name": "LastMileBwInput",
                                                                         "non_null": false
                                                                     },
-                                                                    "varName": "lastMileBwInput"
+                                                                    "varName": "LastMileBwInput"
                                                                 },
                                                                 "privateCatoIp": {
                                                                     "defaultValue": null,
@@ -337,7 +337,7 @@
                                                         "name": "AddIpsecIkeV2TunnelInput",
                                                         "non_null": false
                                                     },
-                                                    "varName": "addIpsecIkeV2TunnelInput"
+                                                    "varName": "AddIpsecIkeV2TunnelInput"
                                                 }
                                             },
                                             "interfaces": null,
@@ -352,7 +352,7 @@
                                         "name": "AddIpsecIkeV2TunnelsInput",
                                         "non_null": false
                                     },
-                                    "varName": "addIpsecIkeV2TunnelsInput"
+                                    "varName": "AddIpsecIkeV2TunnelsInput"
                                 },
                                 "secondary": {
                                     "defaultValue": null,
@@ -360,9 +360,9 @@
                                     "id_str": "addIpsecIkeV2SiteTunnels___input___secondary",
                                     "name": "secondary",
                                     "path": "addIpsecIkeV2SiteTunnels.input.secondary",
-                                    "requestStr": "$addIpsecIkeV2TunnelsInput:AddIpsecIkeV2TunnelsInput ",
+                                    "requestStr": "$AddIpsecIkeV2TunnelsInput:AddIpsecIkeV2TunnelsInput ",
                                     "required": false,
-                                    "responseStr": "secondary:$addIpsecIkeV2TunnelsInput ",
+                                    "responseStr": "secondary:$AddIpsecIkeV2TunnelsInput ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -453,9 +453,9 @@
                                                     "id_str": "addIpsecIkeV2SiteTunnels___input___secondary___tunnels",
                                                     "name": "tunnels",
                                                     "path": "addIpsecIkeV2SiteTunnels.input.secondary.tunnels",
-                                                    "requestStr": "$addIpsecIkeV2TunnelInput:[AddIpsecIkeV2TunnelInput]! ",
+                                                    "requestStr": "$AddIpsecIkeV2TunnelInput:[AddIpsecIkeV2TunnelInput]! ",
                                                     "required": true,
-                                                    "responseStr": "tunnels:$addIpsecIkeV2TunnelInput ",
+                                                    "responseStr": "tunnels:$AddIpsecIkeV2TunnelInput ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -468,9 +468,9 @@
                                                                     "id_str": "addIpsecIkeV2SiteTunnels___input___secondary___tunnels___lastMileBw",
                                                                     "name": "lastMileBw",
                                                                     "path": "addIpsecIkeV2SiteTunnels.input.secondary.tunnels.lastMileBw",
-                                                                    "requestStr": "$lastMileBwInput:LastMileBwInput ",
+                                                                    "requestStr": "$LastMileBwInput:LastMileBwInput ",
                                                                     "required": false,
-                                                                    "responseStr": "lastMileBw:$lastMileBwInput ",
+                                                                    "responseStr": "lastMileBw:$LastMileBwInput ",
                                                                     "type": {
                                                                         "definition": {
                                                                             "description": null,
@@ -562,7 +562,7 @@
                                                                         "name": "LastMileBwInput",
                                                                         "non_null": false
                                                                     },
-                                                                    "varName": "lastMileBwInput"
+                                                                    "varName": "LastMileBwInput"
                                                                 },
                                                                 "privateCatoIp": {
                                                                     "defaultValue": null,
@@ -653,7 +653,7 @@
                                                         "name": "AddIpsecIkeV2TunnelInput",
                                                         "non_null": false
                                                     },
-                                                    "varName": "addIpsecIkeV2TunnelInput"
+                                                    "varName": "AddIpsecIkeV2TunnelInput"
                                                 }
                                             },
                                             "interfaces": null,
@@ -668,7 +668,7 @@
                                         "name": "AddIpsecIkeV2TunnelsInput",
                                         "non_null": false
                                     },
-                                    "varName": "addIpsecIkeV2TunnelsInput"
+                                    "varName": "AddIpsecIkeV2TunnelsInput"
                                 }
                             },
                             "interfaces": null,
@@ -684,7 +684,7 @@
                         "name": "AddIpsecIkeV2SiteTunnelsInput",
                         "non_null": false
                     },
-                    "varName": "addIpsecIkeV2SiteTunnelsInput"
+                    "varName": "AddIpsecIkeV2SiteTunnelsInput"
                 },
                 "addIpsecIkeV2SiteTunnels___siteId": {
                     "defaultValue": null,
@@ -732,34 +732,15 @@
     "isDeprecated": false,
     "name": "site",
     "operationArgs": {
-        "accountId": {
-            "defaultValue": null,
-            "description": null,
-            "id_str": "accountId",
-            "name": "accountId",
-            "path": "accountId",
-            "requestStr": "$accountId:ID! ",
-            "required": true,
-            "responseStr": "accountId:$accountId ",
-            "type": {
-                "kind": [
-                    "NON_NULL",
-                    "SCALAR"
-                ],
-                "name": "ID",
-                "non_null": false
-            },
-            "varName": "accountId"
-        },
-        "addIpsecIkeV2SiteTunnelsInput": {
+        "AddIpsecIkeV2SiteTunnelsInput": {
             "defaultValue": null,
             "description": null,
             "id_str": "addIpsecIkeV2SiteTunnels___input",
             "name": "input",
             "path": "addIpsecIkeV2SiteTunnels.input",
-            "requestStr": "$addIpsecIkeV2SiteTunnelsInput:AddIpsecIkeV2SiteTunnelsInput! ",
+            "requestStr": "$AddIpsecIkeV2SiteTunnelsInput:AddIpsecIkeV2SiteTunnelsInput! ",
             "required": true,
-            "responseStr": "input:$addIpsecIkeV2SiteTunnelsInput ",
+            "responseStr": "input:$AddIpsecIkeV2SiteTunnelsInput ",
             "type": {
                 "definition": {
                     "description": null,
@@ -772,9 +753,9 @@
                             "id_str": "addIpsecIkeV2SiteTunnels___input___primary",
                             "name": "primary",
                             "path": "addIpsecIkeV2SiteTunnels.input.primary",
-                            "requestStr": "$addIpsecIkeV2TunnelsInput:AddIpsecIkeV2TunnelsInput ",
+                            "requestStr": "$AddIpsecIkeV2TunnelsInput:AddIpsecIkeV2TunnelsInput ",
                             "required": false,
-                            "responseStr": "primary:$addIpsecIkeV2TunnelsInput ",
+                            "responseStr": "primary:$AddIpsecIkeV2TunnelsInput ",
                             "type": {
                                 "definition": {
                                     "description": null,
@@ -865,9 +846,9 @@
                                             "id_str": "addIpsecIkeV2SiteTunnels___input___primary___tunnels",
                                             "name": "tunnels",
                                             "path": "addIpsecIkeV2SiteTunnels.input.primary.tunnels",
-                                            "requestStr": "$addIpsecIkeV2TunnelInput:[AddIpsecIkeV2TunnelInput]! ",
+                                            "requestStr": "$AddIpsecIkeV2TunnelInput:[AddIpsecIkeV2TunnelInput]! ",
                                             "required": true,
-                                            "responseStr": "tunnels:$addIpsecIkeV2TunnelInput ",
+                                            "responseStr": "tunnels:$AddIpsecIkeV2TunnelInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -880,9 +861,9 @@
                                                             "id_str": "addIpsecIkeV2SiteTunnels___input___primary___tunnels___lastMileBw",
                                                             "name": "lastMileBw",
                                                             "path": "addIpsecIkeV2SiteTunnels.input.primary.tunnels.lastMileBw",
-                                                            "requestStr": "$lastMileBwInput:LastMileBwInput ",
+                                                            "requestStr": "$LastMileBwInput:LastMileBwInput ",
                                                             "required": false,
-                                                            "responseStr": "lastMileBw:$lastMileBwInput ",
+                                                            "responseStr": "lastMileBw:$LastMileBwInput ",
                                                             "type": {
                                                                 "definition": {
                                                                     "description": null,
@@ -974,7 +955,7 @@
                                                                 "name": "LastMileBwInput",
                                                                 "non_null": false
                                                             },
-                                                            "varName": "lastMileBwInput"
+                                                            "varName": "LastMileBwInput"
                                                         },
                                                         "privateCatoIp": {
                                                             "defaultValue": null,
@@ -1065,7 +1046,7 @@
                                                 "name": "AddIpsecIkeV2TunnelInput",
                                                 "non_null": false
                                             },
-                                            "varName": "addIpsecIkeV2TunnelInput"
+                                            "varName": "AddIpsecIkeV2TunnelInput"
                                         }
                                     },
                                     "interfaces": null,
@@ -1080,7 +1061,7 @@
                                 "name": "AddIpsecIkeV2TunnelsInput",
                                 "non_null": false
                             },
-                            "varName": "addIpsecIkeV2TunnelsInput"
+                            "varName": "AddIpsecIkeV2TunnelsInput"
                         },
                         "secondary": {
                             "defaultValue": null,
@@ -1088,9 +1069,9 @@
                             "id_str": "addIpsecIkeV2SiteTunnels___input___secondary",
                             "name": "secondary",
                             "path": "addIpsecIkeV2SiteTunnels.input.secondary",
-                            "requestStr": "$addIpsecIkeV2TunnelsInput:AddIpsecIkeV2TunnelsInput ",
+                            "requestStr": "$AddIpsecIkeV2TunnelsInput:AddIpsecIkeV2TunnelsInput ",
                             "required": false,
-                            "responseStr": "secondary:$addIpsecIkeV2TunnelsInput ",
+                            "responseStr": "secondary:$AddIpsecIkeV2TunnelsInput ",
                             "type": {
                                 "definition": {
                                     "description": null,
@@ -1181,9 +1162,9 @@
                                             "id_str": "addIpsecIkeV2SiteTunnels___input___secondary___tunnels",
                                             "name": "tunnels",
                                             "path": "addIpsecIkeV2SiteTunnels.input.secondary.tunnels",
-                                            "requestStr": "$addIpsecIkeV2TunnelInput:[AddIpsecIkeV2TunnelInput]! ",
+                                            "requestStr": "$AddIpsecIkeV2TunnelInput:[AddIpsecIkeV2TunnelInput]! ",
                                             "required": true,
-                                            "responseStr": "tunnels:$addIpsecIkeV2TunnelInput ",
+                                            "responseStr": "tunnels:$AddIpsecIkeV2TunnelInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -1196,9 +1177,9 @@
                                                             "id_str": "addIpsecIkeV2SiteTunnels___input___secondary___tunnels___lastMileBw",
                                                             "name": "lastMileBw",
                                                             "path": "addIpsecIkeV2SiteTunnels.input.secondary.tunnels.lastMileBw",
-                                                            "requestStr": "$lastMileBwInput:LastMileBwInput ",
+                                                            "requestStr": "$LastMileBwInput:LastMileBwInput ",
                                                             "required": false,
-                                                            "responseStr": "lastMileBw:$lastMileBwInput ",
+                                                            "responseStr": "lastMileBw:$LastMileBwInput ",
                                                             "type": {
                                                                 "definition": {
                                                                     "description": null,
@@ -1290,7 +1271,7 @@
                                                                 "name": "LastMileBwInput",
                                                                 "non_null": false
                                                             },
-                                                            "varName": "lastMileBwInput"
+                                                            "varName": "LastMileBwInput"
                                                         },
                                                         "privateCatoIp": {
                                                             "defaultValue": null,
@@ -1381,7 +1362,7 @@
                                                 "name": "AddIpsecIkeV2TunnelInput",
                                                 "non_null": false
                                             },
-                                            "varName": "addIpsecIkeV2TunnelInput"
+                                            "varName": "AddIpsecIkeV2TunnelInput"
                                         }
                                     },
                                     "interfaces": null,
@@ -1396,7 +1377,7 @@
                                 "name": "AddIpsecIkeV2TunnelsInput",
                                 "non_null": false
                             },
-                            "varName": "addIpsecIkeV2TunnelsInput"
+                            "varName": "AddIpsecIkeV2TunnelsInput"
                         }
                     },
                     "interfaces": null,
@@ -1412,7 +1393,26 @@
                 "name": "AddIpsecIkeV2SiteTunnelsInput",
                 "non_null": false
             },
-            "varName": "addIpsecIkeV2SiteTunnelsInput"
+            "varName": "AddIpsecIkeV2SiteTunnelsInput"
+        },
+        "accountId": {
+            "defaultValue": null,
+            "description": null,
+            "id_str": "accountId",
+            "name": "accountId",
+            "path": "accountId",
+            "requestStr": "$accountId:ID! ",
+            "required": true,
+            "responseStr": "accountId:$accountId ",
+            "type": {
+                "kind": [
+                    "NON_NULL",
+                    "SCALAR"
+                ],
+                "name": "ID",
+                "non_null": false
+            },
+            "varName": "accountId"
         },
         "siteId": {
             "defaultValue": null,
@@ -1448,9 +1448,9 @@
                             "id_str": "addIpsecIkeV2SiteTunnels___input",
                             "name": "input",
                             "path": "addIpsecIkeV2SiteTunnels.input",
-                            "requestStr": "$addIpsecIkeV2SiteTunnelsInput:AddIpsecIkeV2SiteTunnelsInput! ",
+                            "requestStr": "$AddIpsecIkeV2SiteTunnelsInput:AddIpsecIkeV2SiteTunnelsInput! ",
                             "required": true,
-                            "responseStr": "input:$addIpsecIkeV2SiteTunnelsInput ",
+                            "responseStr": "input:$AddIpsecIkeV2SiteTunnelsInput ",
                             "type": {
                                 "definition": {
                                     "description": null,
@@ -1463,9 +1463,9 @@
                                             "id_str": "addIpsecIkeV2SiteTunnels___input___primary",
                                             "name": "primary",
                                             "path": "addIpsecIkeV2SiteTunnels.input.primary",
-                                            "requestStr": "$addIpsecIkeV2TunnelsInput:AddIpsecIkeV2TunnelsInput ",
+                                            "requestStr": "$AddIpsecIkeV2TunnelsInput:AddIpsecIkeV2TunnelsInput ",
                                             "required": false,
-                                            "responseStr": "primary:$addIpsecIkeV2TunnelsInput ",
+                                            "responseStr": "primary:$AddIpsecIkeV2TunnelsInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -1556,9 +1556,9 @@
                                                             "id_str": "addIpsecIkeV2SiteTunnels___input___primary___tunnels",
                                                             "name": "tunnels",
                                                             "path": "addIpsecIkeV2SiteTunnels.input.primary.tunnels",
-                                                            "requestStr": "$addIpsecIkeV2TunnelInput:[AddIpsecIkeV2TunnelInput]! ",
+                                                            "requestStr": "$AddIpsecIkeV2TunnelInput:[AddIpsecIkeV2TunnelInput]! ",
                                                             "required": true,
-                                                            "responseStr": "tunnels:$addIpsecIkeV2TunnelInput ",
+                                                            "responseStr": "tunnels:$AddIpsecIkeV2TunnelInput ",
                                                             "type": {
                                                                 "definition": {
                                                                     "description": null,
@@ -1571,9 +1571,9 @@
                                                                             "id_str": "addIpsecIkeV2SiteTunnels___input___primary___tunnels___lastMileBw",
                                                                             "name": "lastMileBw",
                                                                             "path": "addIpsecIkeV2SiteTunnels.input.primary.tunnels.lastMileBw",
-                                                                            "requestStr": "$lastMileBwInput:LastMileBwInput ",
+                                                                            "requestStr": "$LastMileBwInput:LastMileBwInput ",
                                                                             "required": false,
-                                                                            "responseStr": "lastMileBw:$lastMileBwInput ",
+                                                                            "responseStr": "lastMileBw:$LastMileBwInput ",
                                                                             "type": {
                                                                                 "definition": {
                                                                                     "description": null,
@@ -1665,7 +1665,7 @@
                                                                                 "name": "LastMileBwInput",
                                                                                 "non_null": false
                                                                             },
-                                                                            "varName": "lastMileBwInput"
+                                                                            "varName": "LastMileBwInput"
                                                                         },
                                                                         "privateCatoIp": {
                                                                             "defaultValue": null,
@@ -1756,7 +1756,7 @@
                                                                 "name": "AddIpsecIkeV2TunnelInput",
                                                                 "non_null": false
                                                             },
-                                                            "varName": "addIpsecIkeV2TunnelInput"
+                                                            "varName": "AddIpsecIkeV2TunnelInput"
                                                         }
                                                     },
                                                     "interfaces": null,
@@ -1771,7 +1771,7 @@
                                                 "name": "AddIpsecIkeV2TunnelsInput",
                                                 "non_null": false
                                             },
-                                            "varName": "addIpsecIkeV2TunnelsInput"
+                                            "varName": "AddIpsecIkeV2TunnelsInput"
                                         },
                                         "secondary": {
                                             "defaultValue": null,
@@ -1779,9 +1779,9 @@
                                             "id_str": "addIpsecIkeV2SiteTunnels___input___secondary",
                                             "name": "secondary",
                                             "path": "addIpsecIkeV2SiteTunnels.input.secondary",
-                                            "requestStr": "$addIpsecIkeV2TunnelsInput:AddIpsecIkeV2TunnelsInput ",
+                                            "requestStr": "$AddIpsecIkeV2TunnelsInput:AddIpsecIkeV2TunnelsInput ",
                                             "required": false,
-                                            "responseStr": "secondary:$addIpsecIkeV2TunnelsInput ",
+                                            "responseStr": "secondary:$AddIpsecIkeV2TunnelsInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -1872,9 +1872,9 @@
                                                             "id_str": "addIpsecIkeV2SiteTunnels___input___secondary___tunnels",
                                                             "name": "tunnels",
                                                             "path": "addIpsecIkeV2SiteTunnels.input.secondary.tunnels",
-                                                            "requestStr": "$addIpsecIkeV2TunnelInput:[AddIpsecIkeV2TunnelInput]! ",
+                                                            "requestStr": "$AddIpsecIkeV2TunnelInput:[AddIpsecIkeV2TunnelInput]! ",
                                                             "required": true,
-                                                            "responseStr": "tunnels:$addIpsecIkeV2TunnelInput ",
+                                                            "responseStr": "tunnels:$AddIpsecIkeV2TunnelInput ",
                                                             "type": {
                                                                 "definition": {
                                                                     "description": null,
@@ -1887,9 +1887,9 @@
                                                                             "id_str": "addIpsecIkeV2SiteTunnels___input___secondary___tunnels___lastMileBw",
                                                                             "name": "lastMileBw",
                                                                             "path": "addIpsecIkeV2SiteTunnels.input.secondary.tunnels.lastMileBw",
-                                                                            "requestStr": "$lastMileBwInput:LastMileBwInput ",
+                                                                            "requestStr": "$LastMileBwInput:LastMileBwInput ",
                                                                             "required": false,
-                                                                            "responseStr": "lastMileBw:$lastMileBwInput ",
+                                                                            "responseStr": "lastMileBw:$LastMileBwInput ",
                                                                             "type": {
                                                                                 "definition": {
                                                                                     "description": null,
@@ -1981,7 +1981,7 @@
                                                                                 "name": "LastMileBwInput",
                                                                                 "non_null": false
                                                                             },
-                                                                            "varName": "lastMileBwInput"
+                                                                            "varName": "LastMileBwInput"
                                                                         },
                                                                         "privateCatoIp": {
                                                                             "defaultValue": null,
@@ -2072,7 +2072,7 @@
                                                                 "name": "AddIpsecIkeV2TunnelInput",
                                                                 "non_null": false
                                                             },
-                                                            "varName": "addIpsecIkeV2TunnelInput"
+                                                            "varName": "AddIpsecIkeV2TunnelInput"
                                                         }
                                                     },
                                                     "interfaces": null,
@@ -2087,7 +2087,7 @@
                                                 "name": "AddIpsecIkeV2TunnelsInput",
                                                 "non_null": false
                                             },
-                                            "varName": "addIpsecIkeV2TunnelsInput"
+                                            "varName": "AddIpsecIkeV2TunnelsInput"
                                         }
                                     },
                                     "interfaces": null,
@@ -2103,7 +2103,7 @@
                                 "name": "AddIpsecIkeV2SiteTunnelsInput",
                                 "non_null": false
                             },
-                            "varName": "addIpsecIkeV2SiteTunnelsInput"
+                            "varName": "AddIpsecIkeV2SiteTunnelsInput"
                         },
                         "addIpsecIkeV2SiteTunnels___siteId": {
                             "defaultValue": null,
@@ -2131,9 +2131,9 @@
                     "isDeprecated": false,
                     "name": "addIpsecIkeV2SiteTunnels",
                     "path": "addIpsecIkeV2SiteTunnels",
-                    "requestStr": "$addIpsecIkeV2SiteTunnelsPayload:AddIpsecIkeV2SiteTunnelsPayload ",
+                    "requestStr": "$AddIpsecIkeV2SiteTunnelsPayload:AddIpsecIkeV2SiteTunnelsPayload ",
                     "required": false,
-                    "responseStr": "addIpsecIkeV2SiteTunnels:$addIpsecIkeV2SiteTunnelsPayload ",
+                    "responseStr": "addIpsecIkeV2SiteTunnels:$AddIpsecIkeV2SiteTunnelsPayload ",
                     "type": {
                         "definition": {
                             "description": null,
@@ -2147,9 +2147,9 @@
                                     "isDeprecated": false,
                                     "name": "primary",
                                     "path": "addIpsecIkeV2SiteTunnels.primary",
-                                    "requestStr": "$addIpsecIkeV2SiteMultiTunnelPayload:AddIpsecIkeV2SiteMultiTunnelPayload ",
+                                    "requestStr": "$AddIpsecIkeV2SiteMultiTunnelPayload:AddIpsecIkeV2SiteMultiTunnelPayload ",
                                     "required": false,
-                                    "responseStr": "primary:$addIpsecIkeV2SiteMultiTunnelPayload ",
+                                    "responseStr": "primary:$AddIpsecIkeV2SiteMultiTunnelPayload ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -2183,9 +2183,9 @@
                                                     "isDeprecated": false,
                                                     "name": "tunnels",
                                                     "path": "addIpsecIkeV2SiteTunnels.primary.tunnels",
-                                                    "requestStr": "$addIpsecIkeV2SiteTunnelPayload:[AddIpsecIkeV2SiteTunnelPayload]! ",
+                                                    "requestStr": "$AddIpsecIkeV2SiteTunnelPayload:[AddIpsecIkeV2SiteTunnelPayload]! ",
                                                     "required": true,
-                                                    "responseStr": "tunnels:$addIpsecIkeV2SiteTunnelPayload ",
+                                                    "responseStr": "tunnels:$AddIpsecIkeV2SiteTunnelPayload ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -2212,7 +2212,7 @@
                                                                     "varName": "localId"
                                                                 },
                                                                 "tunnelId": {
-                                                                    "alias": "iPSecV2InterfaceIdTunnelId: tunnelId",
+                                                                    "alias": "IPSecV2InterfaceIdTunnelId: tunnelId",
                                                                     "args": {},
                                                                     "deprecationReason": null,
                                                                     "description": "The ID of the tunnel",
@@ -2297,7 +2297,7 @@
                                                         "name": "AddIpsecIkeV2SiteTunnelPayload",
                                                         "non_null": false
                                                     },
-                                                    "varName": "addIpsecIkeV2SiteTunnelPayload"
+                                                    "varName": "AddIpsecIkeV2SiteTunnelPayload"
                                                 }
                                             },
                                             "inputFields": null,
@@ -2313,7 +2313,7 @@
                                         "name": "AddIpsecIkeV2SiteMultiTunnelPayload",
                                         "non_null": false
                                     },
-                                    "varName": "addIpsecIkeV2SiteMultiTunnelPayload"
+                                    "varName": "AddIpsecIkeV2SiteMultiTunnelPayload"
                                 },
                                 "secondary": {
                                     "args": {},
@@ -2323,9 +2323,9 @@
                                     "isDeprecated": false,
                                     "name": "secondary",
                                     "path": "addIpsecIkeV2SiteTunnels.secondary",
-                                    "requestStr": "$addIpsecIkeV2SiteMultiTunnelPayload:AddIpsecIkeV2SiteMultiTunnelPayload ",
+                                    "requestStr": "$AddIpsecIkeV2SiteMultiTunnelPayload:AddIpsecIkeV2SiteMultiTunnelPayload ",
                                     "required": false,
-                                    "responseStr": "secondary:$addIpsecIkeV2SiteMultiTunnelPayload ",
+                                    "responseStr": "secondary:$AddIpsecIkeV2SiteMultiTunnelPayload ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -2359,9 +2359,9 @@
                                                     "isDeprecated": false,
                                                     "name": "tunnels",
                                                     "path": "addIpsecIkeV2SiteTunnels.secondary.tunnels",
-                                                    "requestStr": "$addIpsecIkeV2SiteTunnelPayload:[AddIpsecIkeV2SiteTunnelPayload]! ",
+                                                    "requestStr": "$AddIpsecIkeV2SiteTunnelPayload:[AddIpsecIkeV2SiteTunnelPayload]! ",
                                                     "required": true,
-                                                    "responseStr": "tunnels:$addIpsecIkeV2SiteTunnelPayload ",
+                                                    "responseStr": "tunnels:$AddIpsecIkeV2SiteTunnelPayload ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -2388,7 +2388,7 @@
                                                                     "varName": "localId"
                                                                 },
                                                                 "tunnelId": {
-                                                                    "alias": "iPSecV2InterfaceIdTunnelId: tunnelId",
+                                                                    "alias": "IPSecV2InterfaceIdTunnelId: tunnelId",
                                                                     "args": {},
                                                                     "deprecationReason": null,
                                                                     "description": "The ID of the tunnel",
@@ -2473,7 +2473,7 @@
                                                         "name": "AddIpsecIkeV2SiteTunnelPayload",
                                                         "non_null": false
                                                     },
-                                                    "varName": "addIpsecIkeV2SiteTunnelPayload"
+                                                    "varName": "AddIpsecIkeV2SiteTunnelPayload"
                                                 }
                                             },
                                             "inputFields": null,
@@ -2489,7 +2489,7 @@
                                         "name": "AddIpsecIkeV2SiteMultiTunnelPayload",
                                         "non_null": false
                                     },
-                                    "varName": "addIpsecIkeV2SiteMultiTunnelPayload"
+                                    "varName": "AddIpsecIkeV2SiteMultiTunnelPayload"
                                 },
                                 "siteId": {
                                     "args": {},
@@ -2526,7 +2526,7 @@
                         "name": "AddIpsecIkeV2SiteTunnelsPayload",
                         "non_null": false
                     },
-                    "varName": "addIpsecIkeV2SiteTunnelsPayload"
+                    "varName": "AddIpsecIkeV2SiteTunnelsPayload"
                 }
             },
             "inputFields": null,
@@ -2544,8 +2544,8 @@
         "non_null": false
     },
     "variablesPayload": {
-        "addIpsecIkeV2SiteTunnelsInput": {
-            "addIpsecIkeV2TunnelsInput": {
+        "AddIpsecIkeV2SiteTunnelsInput": {
+            "AddIpsecIkeV2TunnelsInput": {
                 "destinationType": {
                     "destinationType": "enum(DestinationType)"
                 },

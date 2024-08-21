@@ -29,9 +29,9 @@
                     "id_str": "addStaticHost___input",
                     "name": "input",
                     "path": "addStaticHost.input",
-                    "requestStr": "$addStaticHostInput:AddStaticHostInput! ",
+                    "requestStr": "$AddStaticHostInput:AddStaticHostInput! ",
                     "required": true,
-                    "responseStr": "input:$addStaticHostInput ",
+                    "responseStr": "input:$AddStaticHostInput ",
                     "type": {
                         "definition": {
                             "description": null,
@@ -108,7 +108,7 @@
                         "name": "AddStaticHostInput",
                         "non_null": false
                     },
-                    "varName": "addStaticHostInput"
+                    "varName": "AddStaticHostInput"
                 },
                 "addStaticHost___siteId": {
                     "defaultValue": null,
@@ -149,34 +149,15 @@
     "isDeprecated": false,
     "name": "site",
     "operationArgs": {
-        "accountId": {
-            "defaultValue": null,
-            "description": null,
-            "id_str": "accountId",
-            "name": "accountId",
-            "path": "accountId",
-            "requestStr": "$accountId:ID! ",
-            "required": true,
-            "responseStr": "accountId:$accountId ",
-            "type": {
-                "kind": [
-                    "NON_NULL",
-                    "SCALAR"
-                ],
-                "name": "ID",
-                "non_null": false
-            },
-            "varName": "accountId"
-        },
-        "addStaticHostInput": {
+        "AddStaticHostInput": {
             "defaultValue": null,
             "description": null,
             "id_str": "addStaticHost___input",
             "name": "input",
             "path": "addStaticHost.input",
-            "requestStr": "$addStaticHostInput:AddStaticHostInput! ",
+            "requestStr": "$AddStaticHostInput:AddStaticHostInput! ",
             "required": true,
-            "responseStr": "input:$addStaticHostInput ",
+            "responseStr": "input:$AddStaticHostInput ",
             "type": {
                 "definition": {
                     "description": null,
@@ -253,7 +234,26 @@
                 "name": "AddStaticHostInput",
                 "non_null": false
             },
-            "varName": "addStaticHostInput"
+            "varName": "AddStaticHostInput"
+        },
+        "accountId": {
+            "defaultValue": null,
+            "description": null,
+            "id_str": "accountId",
+            "name": "accountId",
+            "path": "accountId",
+            "requestStr": "$accountId:ID! ",
+            "required": true,
+            "responseStr": "accountId:$accountId ",
+            "type": {
+                "kind": [
+                    "NON_NULL",
+                    "SCALAR"
+                ],
+                "name": "ID",
+                "non_null": false
+            },
+            "varName": "accountId"
         },
         "siteId": {
             "defaultValue": null,
@@ -289,9 +289,9 @@
                             "id_str": "addStaticHost___input",
                             "name": "input",
                             "path": "addStaticHost.input",
-                            "requestStr": "$addStaticHostInput:AddStaticHostInput! ",
+                            "requestStr": "$AddStaticHostInput:AddStaticHostInput! ",
                             "required": true,
-                            "responseStr": "input:$addStaticHostInput ",
+                            "responseStr": "input:$AddStaticHostInput ",
                             "type": {
                                 "definition": {
                                     "description": null,
@@ -368,7 +368,7 @@
                                 "name": "AddStaticHostInput",
                                 "non_null": false
                             },
-                            "varName": "addStaticHostInput"
+                            "varName": "AddStaticHostInput"
                         },
                         "addStaticHost___siteId": {
                             "defaultValue": null,
@@ -396,9 +396,9 @@
                     "isDeprecated": false,
                     "name": "addStaticHost",
                     "path": "addStaticHost",
-                    "requestStr": "$addStaticHostPayload:AddStaticHostPayload ",
+                    "requestStr": "$AddStaticHostPayload:AddStaticHostPayload ",
                     "required": false,
-                    "responseStr": "addStaticHost:$addStaticHostPayload ",
+                    "responseStr": "addStaticHost:$AddStaticHostPayload ",
                     "type": {
                         "definition": {
                             "description": null,
@@ -439,7 +439,7 @@
                         "name": "AddStaticHostPayload",
                         "non_null": false
                     },
-                    "varName": "addStaticHostPayload"
+                    "varName": "AddStaticHostPayload"
                 }
             },
             "inputFields": null,
@@ -457,7 +457,7 @@
         "non_null": false
     },
     "variablesPayload": {
-        "addStaticHostInput": {
+        "AddStaticHostInput": {
             "ip": {
                 "ip": "IPAddress"
             },

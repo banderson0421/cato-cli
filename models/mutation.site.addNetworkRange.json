@@ -29,9 +29,9 @@
                     "id_str": "addNetworkRange___input",
                     "name": "input",
                     "path": "addNetworkRange.input",
-                    "requestStr": "$addNetworkRangeInput:AddNetworkRangeInput! ",
+                    "requestStr": "$AddNetworkRangeInput:AddNetworkRangeInput! ",
                     "required": true,
-                    "responseStr": "input:$addNetworkRangeInput ",
+                    "responseStr": "input:$AddNetworkRangeInput ",
                     "type": {
                         "definition": {
                             "description": null,
@@ -62,9 +62,9 @@
                                     "id_str": "addNetworkRange___input___dhcpSettings",
                                     "name": "dhcpSettings",
                                     "path": "addNetworkRange.input.dhcpSettings",
-                                    "requestStr": "$networkDhcpSettingsInput:NetworkDhcpSettingsInput ",
+                                    "requestStr": "$NetworkDhcpSettingsInput:NetworkDhcpSettingsInput ",
                                     "required": false,
-                                    "responseStr": "dhcpSettings:$networkDhcpSettingsInput ",
+                                    "responseStr": "dhcpSettings:$NetworkDhcpSettingsInput ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -175,7 +175,7 @@
                                         "name": "NetworkDhcpSettingsInput",
                                         "non_null": false
                                     },
-                                    "varName": "networkDhcpSettingsInput"
+                                    "varName": "NetworkDhcpSettingsInput"
                                 },
                                 "gateway": {
                                     "defaultValue": null,
@@ -362,7 +362,7 @@
                         "name": "AddNetworkRangeInput",
                         "non_null": false
                     },
-                    "varName": "addNetworkRangeInput"
+                    "varName": "AddNetworkRangeInput"
                 },
                 "addNetworkRange___lanSocketInterfaceId": {
                     "defaultValue": null,
@@ -406,34 +406,15 @@
     "isDeprecated": false,
     "name": "site",
     "operationArgs": {
-        "accountId": {
-            "defaultValue": null,
-            "description": null,
-            "id_str": "accountId",
-            "name": "accountId",
-            "path": "accountId",
-            "requestStr": "$accountId:ID! ",
-            "required": true,
-            "responseStr": "accountId:$accountId ",
-            "type": {
-                "kind": [
-                    "NON_NULL",
-                    "SCALAR"
-                ],
-                "name": "ID",
-                "non_null": false
-            },
-            "varName": "accountId"
-        },
-        "addNetworkRangeInput": {
+        "AddNetworkRangeInput": {
             "defaultValue": null,
             "description": null,
             "id_str": "addNetworkRange___input",
             "name": "input",
             "path": "addNetworkRange.input",
-            "requestStr": "$addNetworkRangeInput:AddNetworkRangeInput! ",
+            "requestStr": "$AddNetworkRangeInput:AddNetworkRangeInput! ",
             "required": true,
-            "responseStr": "input:$addNetworkRangeInput ",
+            "responseStr": "input:$AddNetworkRangeInput ",
             "type": {
                 "definition": {
                     "description": null,
@@ -464,9 +445,9 @@
                             "id_str": "addNetworkRange___input___dhcpSettings",
                             "name": "dhcpSettings",
                             "path": "addNetworkRange.input.dhcpSettings",
-                            "requestStr": "$networkDhcpSettingsInput:NetworkDhcpSettingsInput ",
+                            "requestStr": "$NetworkDhcpSettingsInput:NetworkDhcpSettingsInput ",
                             "required": false,
-                            "responseStr": "dhcpSettings:$networkDhcpSettingsInput ",
+                            "responseStr": "dhcpSettings:$NetworkDhcpSettingsInput ",
                             "type": {
                                 "definition": {
                                     "description": null,
@@ -577,7 +558,7 @@
                                 "name": "NetworkDhcpSettingsInput",
                                 "non_null": false
                             },
-                            "varName": "networkDhcpSettingsInput"
+                            "varName": "NetworkDhcpSettingsInput"
                         },
                         "gateway": {
                             "defaultValue": null,
@@ -764,7 +745,26 @@
                 "name": "AddNetworkRangeInput",
                 "non_null": false
             },
-            "varName": "addNetworkRangeInput"
+            "varName": "AddNetworkRangeInput"
+        },
+        "accountId": {
+            "defaultValue": null,
+            "description": null,
+            "id_str": "accountId",
+            "name": "accountId",
+            "path": "accountId",
+            "requestStr": "$accountId:ID! ",
+            "required": true,
+            "responseStr": "accountId:$accountId ",
+            "type": {
+                "kind": [
+                    "NON_NULL",
+                    "SCALAR"
+                ],
+                "name": "ID",
+                "non_null": false
+            },
+            "varName": "accountId"
         },
         "lanSocketInterfaceId": {
             "defaultValue": null,
@@ -800,9 +800,9 @@
                             "id_str": "addNetworkRange___input",
                             "name": "input",
                             "path": "addNetworkRange.input",
-                            "requestStr": "$addNetworkRangeInput:AddNetworkRangeInput! ",
+                            "requestStr": "$AddNetworkRangeInput:AddNetworkRangeInput! ",
                             "required": true,
-                            "responseStr": "input:$addNetworkRangeInput ",
+                            "responseStr": "input:$AddNetworkRangeInput ",
                             "type": {
                                 "definition": {
                                     "description": null,
@@ -833,9 +833,9 @@
                                             "id_str": "addNetworkRange___input___dhcpSettings",
                                             "name": "dhcpSettings",
                                             "path": "addNetworkRange.input.dhcpSettings",
-                                            "requestStr": "$networkDhcpSettingsInput:NetworkDhcpSettingsInput ",
+                                            "requestStr": "$NetworkDhcpSettingsInput:NetworkDhcpSettingsInput ",
                                             "required": false,
-                                            "responseStr": "dhcpSettings:$networkDhcpSettingsInput ",
+                                            "responseStr": "dhcpSettings:$NetworkDhcpSettingsInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -946,7 +946,7 @@
                                                 "name": "NetworkDhcpSettingsInput",
                                                 "non_null": false
                                             },
-                                            "varName": "networkDhcpSettingsInput"
+                                            "varName": "NetworkDhcpSettingsInput"
                                         },
                                         "gateway": {
                                             "defaultValue": null,
@@ -1133,7 +1133,7 @@
                                 "name": "AddNetworkRangeInput",
                                 "non_null": false
                             },
-                            "varName": "addNetworkRangeInput"
+                            "varName": "AddNetworkRangeInput"
                         },
                         "addNetworkRange___lanSocketInterfaceId": {
                             "defaultValue": null,
@@ -1161,9 +1161,9 @@
                     "isDeprecated": false,
                     "name": "addNetworkRange",
                     "path": "addNetworkRange",
-                    "requestStr": "$addNetworkRangePayload:AddNetworkRangePayload ",
+                    "requestStr": "$AddNetworkRangePayload:AddNetworkRangePayload ",
                     "required": false,
-                    "responseStr": "addNetworkRange:$addNetworkRangePayload ",
+                    "responseStr": "addNetworkRange:$AddNetworkRangePayload ",
                     "type": {
                         "definition": {
                             "description": null,
@@ -1204,7 +1204,7 @@
                         "name": "AddNetworkRangePayload",
                         "non_null": false
                     },
-                    "varName": "addNetworkRangePayload"
+                    "varName": "AddNetworkRangePayload"
                 }
             },
             "inputFields": null,
@@ -1222,7 +1222,18 @@
         "non_null": false
     },
     "variablesPayload": {
-        "addNetworkRangeInput": {
+        "AddNetworkRangeInput": {
+            "NetworkDhcpSettingsInput": {
+                "dhcpType": {
+                    "dhcpType": "enum(DhcpType)"
+                },
+                "ipRange": {
+                    "ipRange": "IPRange"
+                },
+                "relayGroupId": {
+                    "relayGroupId": "ID"
+                }
+            },
             "azureFloatingIp": {
                 "azureFloatingIp": "IPAddress"
             },
@@ -1234,17 +1245,6 @@
             },
             "name": {
                 "name": "String"
-            },
-            "networkDhcpSettingsInput": {
-                "dhcpType": {
-                    "dhcpType": "enum(DhcpType)"
-                },
-                "ipRange": {
-                    "ipRange": "IPRange"
-                },
-                "relayGroupId": {
-                    "relayGroupId": "ID"
-                }
             },
             "rangeType": {
                 "rangeType": "enum(SubnetType)"

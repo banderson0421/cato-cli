@@ -10,9 +10,9 @@
 
 `cato mutation policy internetFirewall moveSection 12345 $(cat < moveSection.json)`
 
-`cato mutation policy internetFirewall moveSection 12345 '{"internetFirewallPolicyMutationInput": {"policyMutationRevisionInput": {"id": {"id": "ID"}}}, "policyMoveSectionInput": {"id": {"id": "ID"}, "policySectionPositionInput": {"position": {"position": "enum(PolicySectionPositionEnum)"}, "ref": {"ref": "ID"}}}}'`
+`cato mutation policy internetFirewall moveSection 12345 '{"InternetFirewallPolicyMutationInput": {"PolicyMutationRevisionInput": {"id": {"id": "ID"}}}, "PolicyMoveSectionInput": {"PolicySectionPositionInput": {"position": {"position": "enum(PolicySectionPositionEnum)"}, "ref": {"ref": "ID"}}, "id": {"id": "ID"}}}'`
 
 #### Operation Arguments for mutation.policy.internetFirewall.moveSection ####
+`InternetFirewallPolicyMutationInput` [InternetFirewallPolicyMutationInput] - (optional) N/A 
+`PolicyMoveSectionInput` [PolicyMoveSectionInput] - (required) N/A 
 `accountId` [ID] - (required) N/A 
-`internetFirewallPolicyMutationInput` [InternetFirewallPolicyMutationInput] - (optional) N/A 
-`policyMoveSectionInput` [PolicyMoveSectionInput] - (required) N/A 

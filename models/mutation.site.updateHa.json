@@ -29,9 +29,9 @@
                     "id_str": "updateHa___input",
                     "name": "input",
                     "path": "updateHa.input",
-                    "requestStr": "$updateHaInput:UpdateHaInput! ",
+                    "requestStr": "$UpdateHaInput:UpdateHaInput! ",
                     "required": true,
-                    "responseStr": "input:$updateHaInput ",
+                    "responseStr": "input:$UpdateHaInput ",
                     "type": {
                         "definition": {
                             "description": null,
@@ -106,7 +106,7 @@
                         "name": "UpdateHaInput",
                         "non_null": false
                     },
-                    "varName": "updateHaInput"
+                    "varName": "UpdateHaInput"
                 },
                 "updateHa___siteId": {
                     "defaultValue": null,
@@ -147,53 +147,15 @@
     "isDeprecated": false,
     "name": "site",
     "operationArgs": {
-        "accountId": {
-            "defaultValue": null,
-            "description": null,
-            "id_str": "accountId",
-            "name": "accountId",
-            "path": "accountId",
-            "requestStr": "$accountId:ID! ",
-            "required": true,
-            "responseStr": "accountId:$accountId ",
-            "type": {
-                "kind": [
-                    "NON_NULL",
-                    "SCALAR"
-                ],
-                "name": "ID",
-                "non_null": false
-            },
-            "varName": "accountId"
-        },
-        "siteId": {
-            "defaultValue": null,
-            "description": null,
-            "id_str": "updateHa___siteId",
-            "name": "siteId",
-            "path": "updateHa.siteId",
-            "requestStr": "$siteId:ID! ",
-            "required": true,
-            "responseStr": "siteId:$siteId ",
-            "type": {
-                "kind": [
-                    "NON_NULL",
-                    "SCALAR"
-                ],
-                "name": "ID",
-                "non_null": false
-            },
-            "varName": "siteId"
-        },
-        "updateHaInput": {
+        "UpdateHaInput": {
             "defaultValue": null,
             "description": null,
             "id_str": "updateHa___input",
             "name": "input",
             "path": "updateHa.input",
-            "requestStr": "$updateHaInput:UpdateHaInput! ",
+            "requestStr": "$UpdateHaInput:UpdateHaInput! ",
             "required": true,
-            "responseStr": "input:$updateHaInput ",
+            "responseStr": "input:$UpdateHaInput ",
             "type": {
                 "definition": {
                     "description": null,
@@ -268,7 +230,45 @@
                 "name": "UpdateHaInput",
                 "non_null": false
             },
-            "varName": "updateHaInput"
+            "varName": "UpdateHaInput"
+        },
+        "accountId": {
+            "defaultValue": null,
+            "description": null,
+            "id_str": "accountId",
+            "name": "accountId",
+            "path": "accountId",
+            "requestStr": "$accountId:ID! ",
+            "required": true,
+            "responseStr": "accountId:$accountId ",
+            "type": {
+                "kind": [
+                    "NON_NULL",
+                    "SCALAR"
+                ],
+                "name": "ID",
+                "non_null": false
+            },
+            "varName": "accountId"
+        },
+        "siteId": {
+            "defaultValue": null,
+            "description": null,
+            "id_str": "updateHa___siteId",
+            "name": "siteId",
+            "path": "updateHa.siteId",
+            "requestStr": "$siteId:ID! ",
+            "required": true,
+            "responseStr": "siteId:$siteId ",
+            "type": {
+                "kind": [
+                    "NON_NULL",
+                    "SCALAR"
+                ],
+                "name": "ID",
+                "non_null": false
+            },
+            "varName": "siteId"
         }
     },
     "path": "mutation.site.updateHa",
@@ -285,9 +285,9 @@
                             "id_str": "updateHa___input",
                             "name": "input",
                             "path": "updateHa.input",
-                            "requestStr": "$updateHaInput:UpdateHaInput! ",
+                            "requestStr": "$UpdateHaInput:UpdateHaInput! ",
                             "required": true,
-                            "responseStr": "input:$updateHaInput ",
+                            "responseStr": "input:$UpdateHaInput ",
                             "type": {
                                 "definition": {
                                     "description": null,
@@ -362,7 +362,7 @@
                                 "name": "UpdateHaInput",
                                 "non_null": false
                             },
-                            "varName": "updateHaInput"
+                            "varName": "UpdateHaInput"
                         },
                         "updateHa___siteId": {
                             "defaultValue": null,
@@ -390,9 +390,9 @@
                     "isDeprecated": false,
                     "name": "updateHa",
                     "path": "updateHa",
-                    "requestStr": "$updateHaPayload:UpdateHaPayload ",
+                    "requestStr": "$UpdateHaPayload:UpdateHaPayload ",
                     "required": false,
-                    "responseStr": "updateHa:$updateHaPayload ",
+                    "responseStr": "updateHa:$UpdateHaPayload ",
                     "type": {
                         "definition": {
                             "description": null,
@@ -433,7 +433,7 @@
                         "name": "UpdateHaPayload",
                         "non_null": false
                     },
-                    "varName": "updateHaPayload"
+                    "varName": "UpdateHaPayload"
                 }
             },
             "inputFields": null,
@@ -451,8 +451,7 @@
         "non_null": false
     },
     "variablesPayload": {
-        "siteId": "ID",
-        "updateHaInput": {
+        "UpdateHaInput": {
             "primaryManagementIp": {
                 "primaryManagementIp": "IPAddress"
             },
@@ -462,6 +461,7 @@
             "vrid": {
                 "vrid": "Int"
             }
-        }
+        },
+        "siteId": "ID"
     }
 }

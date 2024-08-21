@@ -48,9 +48,9 @@
                     "id_str": "updateStaticHost___input",
                     "name": "input",
                     "path": "updateStaticHost.input",
-                    "requestStr": "$updateStaticHostInput:UpdateStaticHostInput! ",
+                    "requestStr": "$UpdateStaticHostInput:UpdateStaticHostInput! ",
                     "required": true,
-                    "responseStr": "input:$updateStaticHostInput ",
+                    "responseStr": "input:$UpdateStaticHostInput ",
                     "type": {
                         "definition": {
                             "description": null,
@@ -125,7 +125,7 @@
                         "name": "UpdateStaticHostInput",
                         "non_null": false
                     },
-                    "varName": "updateStaticHostInput"
+                    "varName": "UpdateStaticHostInput"
                 }
             },
             "deprecationReason": null,
@@ -147,53 +147,15 @@
     "isDeprecated": false,
     "name": "site",
     "operationArgs": {
-        "accountId": {
-            "defaultValue": null,
-            "description": null,
-            "id_str": "accountId",
-            "name": "accountId",
-            "path": "accountId",
-            "requestStr": "$accountId:ID! ",
-            "required": true,
-            "responseStr": "accountId:$accountId ",
-            "type": {
-                "kind": [
-                    "NON_NULL",
-                    "SCALAR"
-                ],
-                "name": "ID",
-                "non_null": false
-            },
-            "varName": "accountId"
-        },
-        "hostId": {
-            "defaultValue": null,
-            "description": null,
-            "id_str": "updateStaticHost___hostId",
-            "name": "hostId",
-            "path": "updateStaticHost.hostId",
-            "requestStr": "$hostId:ID! ",
-            "required": true,
-            "responseStr": "hostId:$hostId ",
-            "type": {
-                "kind": [
-                    "NON_NULL",
-                    "SCALAR"
-                ],
-                "name": "ID",
-                "non_null": false
-            },
-            "varName": "hostId"
-        },
-        "updateStaticHostInput": {
+        "UpdateStaticHostInput": {
             "defaultValue": null,
             "description": null,
             "id_str": "updateStaticHost___input",
             "name": "input",
             "path": "updateStaticHost.input",
-            "requestStr": "$updateStaticHostInput:UpdateStaticHostInput! ",
+            "requestStr": "$UpdateStaticHostInput:UpdateStaticHostInput! ",
             "required": true,
-            "responseStr": "input:$updateStaticHostInput ",
+            "responseStr": "input:$UpdateStaticHostInput ",
             "type": {
                 "definition": {
                     "description": null,
@@ -268,7 +230,45 @@
                 "name": "UpdateStaticHostInput",
                 "non_null": false
             },
-            "varName": "updateStaticHostInput"
+            "varName": "UpdateStaticHostInput"
+        },
+        "accountId": {
+            "defaultValue": null,
+            "description": null,
+            "id_str": "accountId",
+            "name": "accountId",
+            "path": "accountId",
+            "requestStr": "$accountId:ID! ",
+            "required": true,
+            "responseStr": "accountId:$accountId ",
+            "type": {
+                "kind": [
+                    "NON_NULL",
+                    "SCALAR"
+                ],
+                "name": "ID",
+                "non_null": false
+            },
+            "varName": "accountId"
+        },
+        "hostId": {
+            "defaultValue": null,
+            "description": null,
+            "id_str": "updateStaticHost___hostId",
+            "name": "hostId",
+            "path": "updateStaticHost.hostId",
+            "requestStr": "$hostId:ID! ",
+            "required": true,
+            "responseStr": "hostId:$hostId ",
+            "type": {
+                "kind": [
+                    "NON_NULL",
+                    "SCALAR"
+                ],
+                "name": "ID",
+                "non_null": false
+            },
+            "varName": "hostId"
         }
     },
     "path": "mutation.site.updateStaticHost",
@@ -304,9 +304,9 @@
                             "id_str": "updateStaticHost___input",
                             "name": "input",
                             "path": "updateStaticHost.input",
-                            "requestStr": "$updateStaticHostInput:UpdateStaticHostInput! ",
+                            "requestStr": "$UpdateStaticHostInput:UpdateStaticHostInput! ",
                             "required": true,
-                            "responseStr": "input:$updateStaticHostInput ",
+                            "responseStr": "input:$UpdateStaticHostInput ",
                             "type": {
                                 "definition": {
                                     "description": null,
@@ -381,7 +381,7 @@
                                 "name": "UpdateStaticHostInput",
                                 "non_null": false
                             },
-                            "varName": "updateStaticHostInput"
+                            "varName": "UpdateStaticHostInput"
                         }
                     },
                     "deprecationReason": null,
@@ -390,9 +390,9 @@
                     "isDeprecated": false,
                     "name": "updateStaticHost",
                     "path": "updateStaticHost",
-                    "requestStr": "$updateStaticHostPayload:UpdateStaticHostPayload ",
+                    "requestStr": "$UpdateStaticHostPayload:UpdateStaticHostPayload ",
                     "required": false,
-                    "responseStr": "updateStaticHost:$updateStaticHostPayload ",
+                    "responseStr": "updateStaticHost:$UpdateStaticHostPayload ",
                     "type": {
                         "definition": {
                             "description": null,
@@ -433,7 +433,7 @@
                         "name": "UpdateStaticHostPayload",
                         "non_null": false
                     },
-                    "varName": "updateStaticHostPayload"
+                    "varName": "UpdateStaticHostPayload"
                 }
             },
             "inputFields": null,
@@ -451,8 +451,7 @@
         "non_null": false
     },
     "variablesPayload": {
-        "hostId": "ID",
-        "updateStaticHostInput": {
+        "UpdateStaticHostInput": {
             "ip": {
                 "ip": "IPAddress"
             },
@@ -462,6 +461,7 @@
             "name": {
                 "name": "String"
             }
-        }
+        },
+        "hostId": "ID"
     }
 }

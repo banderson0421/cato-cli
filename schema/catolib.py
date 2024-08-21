@@ -9,6 +9,7 @@ import urllib.request
 import logging
 from optparse import OptionParser
 import os
+import sys
 import copy
 
 api_call_count = 0
@@ -75,7 +76,6 @@ def openFile(fileName, readMode="rt"):
 		print('[ERROR] File path "'+fileName+'" in csv not found, or script unable to read.')
 		exit()
 
-
 ############ parsing schema ############
 
 def parseSchema(schema):
@@ -126,6 +126,9 @@ def parseSchema(schema):
 				parsedOperation["operationArgs"][arg["varName"]] = arg
 			parsedOperation["variablesPayload"] = generateExampleVariables(parsedOperation)
 			writeFile("../models/"+operationName+".json",json.dumps(parsedOperation, indent=4, sort_keys=True))
+			# writeFile("../queryPayloads/"+operationName+".json",json.dumps(generateGraphqlPayload(parsedOperation["variablesPayload"],parsedOperation,operationName),indent=4,sort_keys=True))
+			payload = generateGraphqlPayload(parsedOperation["variablesPayload"],parsedOperation,operationName)
+			writeFile("../queryPayloads/"+operationName+".txt",payload["query"])
 
 def getChildOperations(operationType, curType, parentType, parentPath):
 	# Parse fields for nested args to map out all child operations
@@ -833,7 +836,6 @@ def getParserMapping(curParser,curPath,operationFullPath,operation):
 			"required": "required" if arg["required"]==True else "optional",
 			"values":values
 		}
-	# print(json.dumps(parserObj,indent=4,sort_keys=True))
 	pAry = curPath.split(".")
 	pathCount = len(curPath.split("."))
 	if pAry[0] not in curParser:
@@ -874,3 +876,126 @@ def send(api_key,query,variables={},operationName=None):
 		logging.warning(f"API error: {result_data}")
 		return False,result
 	return True,result
+
+
+################### adding functions local to generate dynamic payloads ####################
+def generateGraphqlPayload(variablesObj,operation,operationName):
+	indent = "	"
+	queryStr = ""
+	variableStr = ""
+	for varName in variablesObj:
+		if (varName in operation["operationArgs"]):
+			variableStr += operation["operationArgs"][varName]["requestStr"]
+	operationAry = operationName.split(".")
+	operationType = operationAry.pop(0)
+	queryStr = operationType + " "
+	queryStr += renderCamelCase(".".join(operationAry))
+	queryStr += " ( " + variableStr + ") {\n"
+	queryStr += indent + operation["name"] + " ( "			
+	for argName in operation["args"]:
+		arg = operation["args"][argName]
+		if arg["varName"] in variablesObj:
+			queryStr += arg["responseStr"]
+	queryStr += ") {\n" + renderArgsAndFields("", variablesObj, operation, operation["type"]["definition"], "		") + "	}"
+	queryStr += indent + "\n}";
+	body = {
+		"query":queryStr.replace("\n", " ").replace("\t", " ").replace("    ", " ").replace("   ", " ").replace("  ", " "),
+		"variables":variablesObj,
+		"operationName":renderCamelCase(".".join(operationAry)),
+	}
+	return body
+
+def renderCamelCase(pathStr):
+	str = "";
+	pathAry = pathStr.split(".") 
+	for i, path in enumerate(pathAry):
+		if i == 0:
+			str += path
+		else:
+			str += path[0].upper() + path[1:]
+	return str	
+
+def renderArgsAndFields(responseArgStr, variablesObj, curOperation, definition, indent):
+	for fieldName in definition['fields']:
+		field = definition['fields'][fieldName]
+		field_name = field['alias'] if 'alias' in field else field['name']				
+		responseArgStr += indent + field_name
+		if field.get("args") and not isinstance(field['args'], list):
+			if (len(list(field['args'].keys()))>0):
+				argsPresent = False
+				argStr = " ( "
+				for argName in field['args']:
+					arg = field['args'][argName]
+					if arg["varName"] in variablesObj:
+						argStr += arg['responseStr'] + " "
+						argsPresent = True
+				argStr += ") "
+				if argsPresent==True:
+					responseArgStr += argStr
+		if field.get("type") and field['type'].get('definition') and field['type']['definition']['fields'] is not None:
+			responseArgStr += " {\n"
+			for subfieldIndex in field['type']['definition']['fields']:
+				subfield = field['type']['definition']['fields'][subfieldIndex]
+				subfield_name = subfield['alias'] if 'alias' in subfield else subfield['name']				
+				responseArgStr += indent + "	" + subfield_name
+				if subfield.get("args") and len(list(subfield["args"].keys()))>0:
+					argsPresent = False
+					subArgStr = " ( "
+					for argName in subfield['args']:
+						arg = subfield['args'][argName]
+						if arg["varName"] in variablesObj:
+							argsPresent = True
+							subArgStr += arg['responseStr'] + " "
+					subArgStr += " )"
+					if argsPresent==True:
+						responseArgStr += subArgStr
+				if subfield.get("type") and subfield['type'].get("definition") and (subfield['type']['definition'].get("fields") or subfield['type']['definition'].get('inputFields')):
+					responseArgStr += " {\n"
+					responseArgStr = renderArgsAndFields(responseArgStr, variablesObj, curOperation, subfield['type']['definition'], indent + "		")
+					if subfield['type']['definition'].get('possibleTypes'):
+						for possibleTypeName in subfield['type']['definition']['possibleTypes']:
+							possibleType = subfield['type']['definition']['possibleTypes'][possibleTypeName]
+							responseArgStr += indent + "		... on " + possibleType['name'] + " {\n"
+							if possibleType.get('fields') or possibleType.get('inputFields'):
+								responseArgStr = renderArgsAndFields(responseArgStr, variablesObj, curOperation, possibleType, indent + "			")
+							responseArgStr += indent + "		}\n"
+					responseArgStr += indent + "	}"
+				elif subfield.get('type') and subfield['type'].get('definition') and subfield['type']['definition'].get('possibleTypes'):
+					responseArgStr += " {\n"
+					responseArgStr += indent + "		__typename\n"
+					for possibleTypeName in subfield['type']['definition']['possibleTypes']:
+						possibleType = subfield['type']['definition']['possibleTypes'][possibleTypeName]						
+						responseArgStr += indent + "		... on " + possibleType['name'] + " {\n"
+						if possibleType.get('fields') or possibleType.get('inputFields'):
+							responseArgStr = renderArgsAndFields(responseArgStr, variablesObj, curOperation, possibleType, indent + "			")
+						responseArgStr += indent + "		}\n"
+					responseArgStr += indent + " 	}\n"
+				responseArgStr += "\n"
+			if field['type']['definition'].get('possibleTypes'):
+				for possibleTypeName in field['type']['definition']['possibleTypes']:
+					possibleType = field['type']['definition']['possibleTypes'][possibleTypeName]
+					responseArgStr += indent + "	... on " + possibleType['name'] + " {\n"
+					if possibleType.get('fields') or possibleType.get('inputFields'):
+						responseArgStr = renderArgsAndFields(responseArgStr, variablesObj, curOperation, possibleType, indent + "		")
+					responseArgStr += indent + "	}\n"
+			responseArgStr += indent + "}\n"
+		if field.get('type') and field['type'].get('definition') and field['type']['definition'].get('inputFields'):
+			responseArgStr += " {\n"
+			for subfieldName in field['type']['definition'].get('inputFields'):
+				subfield = field['type']['definition']['inputFields'][subfieldName]
+				subfield_name = subfield['alias'] if 'alias' in subfield else subfield['name']
+				responseArgStr += indent + "	" + subfield_name
+				if subfield.get('type') and subfield['type'].get('definition') and (subfield['type']['definition'].get('fields') or subfield['type']['definition'].get('inputFields')):
+					responseArgStr += " {\n"
+					responseArgStr = renderArgsAndFields(responseArgStr, variablesObj, curOperation, subfield['type']['definition'], indent + "		")
+					responseArgStr += indent + "	}\n"
+			if field['type']['definition'].get('possibleTypes'):
+				for possibleTypeName in field['type']['definition']['possibleTypes']:
+					possibleType = field['type']['definition']['possibleTypes'][possibleTypeName]
+					responseArgStr += indent + "... on " + possibleType['name'] + " {\n"
+					if possibleType.get('fields') or possibleType.get('inputFields'):
+						responseArgStr = renderArgsAndFields(responseArgStr, variablesObj, curOperation, possibleType, indent + "		")
+					responseArgStr += indent + "	}\n"
+			responseArgStr += indent + "}\n"
+		responseArgStr += "\n"
+	return responseArgStr

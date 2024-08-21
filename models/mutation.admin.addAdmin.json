@@ -29,9 +29,9 @@
                     "id_str": "addAdmin___input",
                     "name": "input",
                     "path": "addAdmin.input",
-                    "requestStr": "$addAdminInput:AddAdminInput! ",
+                    "requestStr": "$AddAdminInput:AddAdminInput! ",
                     "required": true,
-                    "responseStr": "input:$addAdminInput ",
+                    "responseStr": "input:$AddAdminInput ",
                     "type": {
                         "definition": {
                             "description": null,
@@ -101,9 +101,9 @@
                                     "id_str": "addAdmin___input___managedRoles",
                                     "name": "managedRoles",
                                     "path": "addAdmin.input.managedRoles",
-                                    "requestStr": "$updateAdminRoleInput:[UpdateAdminRoleInput] ",
+                                    "requestStr": "$UpdateAdminRoleInput:[UpdateAdminRoleInput] ",
                                     "required": false,
-                                    "responseStr": "managedRoles:$updateAdminRoleInput ",
+                                    "responseStr": "managedRoles:$UpdateAdminRoleInput ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -136,9 +136,9 @@
                                                     "id_str": "addAdmin___input___managedRoles___allowedEntities",
                                                     "name": "allowedEntities",
                                                     "path": "addAdmin.input.managedRoles.allowedEntities",
-                                                    "requestStr": "$entityInput:[EntityInput] ",
+                                                    "requestStr": "$EntityInput:[EntityInput] ",
                                                     "required": false,
-                                                    "responseStr": "allowedEntities:$entityInput ",
+                                                    "responseStr": "allowedEntities:$EntityInput ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -372,7 +372,7 @@
                                                         "name": "EntityInput",
                                                         "non_null": false
                                                     },
-                                                    "varName": "entityInput"
+                                                    "varName": "EntityInput"
                                                 },
                                                 "role": {
                                                     "defaultValue": null,
@@ -380,9 +380,9 @@
                                                     "id_str": "addAdmin___input___managedRoles___role",
                                                     "name": "role",
                                                     "path": "addAdmin.input.managedRoles.role",
-                                                    "requestStr": "$updateAccountRoleInput:UpdateAccountRoleInput! ",
+                                                    "requestStr": "$UpdateAccountRoleInput:UpdateAccountRoleInput! ",
                                                     "required": true,
-                                                    "responseStr": "role:$updateAccountRoleInput ",
+                                                    "responseStr": "role:$UpdateAccountRoleInput ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -440,7 +440,7 @@
                                                         "name": "UpdateAccountRoleInput",
                                                         "non_null": false
                                                     },
-                                                    "varName": "updateAccountRoleInput"
+                                                    "varName": "UpdateAccountRoleInput"
                                                 }
                                             },
                                             "interfaces": null,
@@ -457,7 +457,7 @@
                                         "name": "UpdateAdminRoleInput",
                                         "non_null": false
                                     },
-                                    "varName": "updateAdminRoleInput"
+                                    "varName": "UpdateAdminRoleInput"
                                 },
                                 "mfaEnabled": {
                                     "defaultValue": null,
@@ -503,9 +503,9 @@
                                     "id_str": "addAdmin___input___resellerRoles",
                                     "name": "resellerRoles",
                                     "path": "addAdmin.input.resellerRoles",
-                                    "requestStr": "$updateAdminRoleInput:[UpdateAdminRoleInput] ",
+                                    "requestStr": "$UpdateAdminRoleInput:[UpdateAdminRoleInput] ",
                                     "required": false,
-                                    "responseStr": "resellerRoles:$updateAdminRoleInput ",
+                                    "responseStr": "resellerRoles:$UpdateAdminRoleInput ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -538,9 +538,9 @@
                                                     "id_str": "addAdmin___input___resellerRoles___allowedEntities",
                                                     "name": "allowedEntities",
                                                     "path": "addAdmin.input.resellerRoles.allowedEntities",
-                                                    "requestStr": "$entityInput:[EntityInput] ",
+                                                    "requestStr": "$EntityInput:[EntityInput] ",
                                                     "required": false,
-                                                    "responseStr": "allowedEntities:$entityInput ",
+                                                    "responseStr": "allowedEntities:$EntityInput ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -774,7 +774,7 @@
                                                         "name": "EntityInput",
                                                         "non_null": false
                                                     },
-                                                    "varName": "entityInput"
+                                                    "varName": "EntityInput"
                                                 },
                                                 "role": {
                                                     "defaultValue": null,
@@ -782,9 +782,9 @@
                                                     "id_str": "addAdmin___input___resellerRoles___role",
                                                     "name": "role",
                                                     "path": "addAdmin.input.resellerRoles.role",
-                                                    "requestStr": "$updateAccountRoleInput:UpdateAccountRoleInput! ",
+                                                    "requestStr": "$UpdateAccountRoleInput:UpdateAccountRoleInput! ",
                                                     "required": true,
-                                                    "responseStr": "role:$updateAccountRoleInput ",
+                                                    "responseStr": "role:$UpdateAccountRoleInput ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -842,7 +842,7 @@
                                                         "name": "UpdateAccountRoleInput",
                                                         "non_null": false
                                                     },
-                                                    "varName": "updateAccountRoleInput"
+                                                    "varName": "UpdateAccountRoleInput"
                                                 }
                                             },
                                             "interfaces": null,
@@ -859,7 +859,7 @@
                                         "name": "UpdateAdminRoleInput",
                                         "non_null": false
                                     },
-                                    "varName": "updateAdminRoleInput"
+                                    "varName": "UpdateAdminRoleInput"
                                 }
                             },
                             "interfaces": null,
@@ -875,7 +875,7 @@
                         "name": "AddAdminInput",
                         "non_null": false
                     },
-                    "varName": "addAdminInput"
+                    "varName": "AddAdminInput"
                 }
             },
             "deprecationReason": null,
@@ -901,34 +901,15 @@
     "isDeprecated": false,
     "name": "admin",
     "operationArgs": {
-        "accountId": {
-            "defaultValue": null,
-            "description": null,
-            "id_str": "accountId",
-            "name": "accountId",
-            "path": "accountId",
-            "requestStr": "$accountId:ID! ",
-            "required": true,
-            "responseStr": "accountId:$accountId ",
-            "type": {
-                "kind": [
-                    "NON_NULL",
-                    "SCALAR"
-                ],
-                "name": "ID",
-                "non_null": false
-            },
-            "varName": "accountId"
-        },
-        "addAdminInput": {
+        "AddAdminInput": {
             "defaultValue": null,
             "description": null,
             "id_str": "addAdmin___input",
             "name": "input",
             "path": "addAdmin.input",
-            "requestStr": "$addAdminInput:AddAdminInput! ",
+            "requestStr": "$AddAdminInput:AddAdminInput! ",
             "required": true,
-            "responseStr": "input:$addAdminInput ",
+            "responseStr": "input:$AddAdminInput ",
             "type": {
                 "definition": {
                     "description": null,
@@ -998,9 +979,9 @@
                             "id_str": "addAdmin___input___managedRoles",
                             "name": "managedRoles",
                             "path": "addAdmin.input.managedRoles",
-                            "requestStr": "$updateAdminRoleInput:[UpdateAdminRoleInput] ",
+                            "requestStr": "$UpdateAdminRoleInput:[UpdateAdminRoleInput] ",
                             "required": false,
-                            "responseStr": "managedRoles:$updateAdminRoleInput ",
+                            "responseStr": "managedRoles:$UpdateAdminRoleInput ",
                             "type": {
                                 "definition": {
                                     "description": null,
@@ -1033,9 +1014,9 @@
                                             "id_str": "addAdmin___input___managedRoles___allowedEntities",
                                             "name": "allowedEntities",
                                             "path": "addAdmin.input.managedRoles.allowedEntities",
-                                            "requestStr": "$entityInput:[EntityInput] ",
+                                            "requestStr": "$EntityInput:[EntityInput] ",
                                             "required": false,
-                                            "responseStr": "allowedEntities:$entityInput ",
+                                            "responseStr": "allowedEntities:$EntityInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -1269,7 +1250,7 @@
                                                 "name": "EntityInput",
                                                 "non_null": false
                                             },
-                                            "varName": "entityInput"
+                                            "varName": "EntityInput"
                                         },
                                         "role": {
                                             "defaultValue": null,
@@ -1277,9 +1258,9 @@
                                             "id_str": "addAdmin___input___managedRoles___role",
                                             "name": "role",
                                             "path": "addAdmin.input.managedRoles.role",
-                                            "requestStr": "$updateAccountRoleInput:UpdateAccountRoleInput! ",
+                                            "requestStr": "$UpdateAccountRoleInput:UpdateAccountRoleInput! ",
                                             "required": true,
-                                            "responseStr": "role:$updateAccountRoleInput ",
+                                            "responseStr": "role:$UpdateAccountRoleInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -1337,7 +1318,7 @@
                                                 "name": "UpdateAccountRoleInput",
                                                 "non_null": false
                                             },
-                                            "varName": "updateAccountRoleInput"
+                                            "varName": "UpdateAccountRoleInput"
                                         }
                                     },
                                     "interfaces": null,
@@ -1354,7 +1335,7 @@
                                 "name": "UpdateAdminRoleInput",
                                 "non_null": false
                             },
-                            "varName": "updateAdminRoleInput"
+                            "varName": "UpdateAdminRoleInput"
                         },
                         "mfaEnabled": {
                             "defaultValue": null,
@@ -1400,9 +1381,9 @@
                             "id_str": "addAdmin___input___resellerRoles",
                             "name": "resellerRoles",
                             "path": "addAdmin.input.resellerRoles",
-                            "requestStr": "$updateAdminRoleInput:[UpdateAdminRoleInput] ",
+                            "requestStr": "$UpdateAdminRoleInput:[UpdateAdminRoleInput] ",
                             "required": false,
-                            "responseStr": "resellerRoles:$updateAdminRoleInput ",
+                            "responseStr": "resellerRoles:$UpdateAdminRoleInput ",
                             "type": {
                                 "definition": {
                                     "description": null,
@@ -1435,9 +1416,9 @@
                                             "id_str": "addAdmin___input___resellerRoles___allowedEntities",
                                             "name": "allowedEntities",
                                             "path": "addAdmin.input.resellerRoles.allowedEntities",
-                                            "requestStr": "$entityInput:[EntityInput] ",
+                                            "requestStr": "$EntityInput:[EntityInput] ",
                                             "required": false,
-                                            "responseStr": "allowedEntities:$entityInput ",
+                                            "responseStr": "allowedEntities:$EntityInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -1671,7 +1652,7 @@
                                                 "name": "EntityInput",
                                                 "non_null": false
                                             },
-                                            "varName": "entityInput"
+                                            "varName": "EntityInput"
                                         },
                                         "role": {
                                             "defaultValue": null,
@@ -1679,9 +1660,9 @@
                                             "id_str": "addAdmin___input___resellerRoles___role",
                                             "name": "role",
                                             "path": "addAdmin.input.resellerRoles.role",
-                                            "requestStr": "$updateAccountRoleInput:UpdateAccountRoleInput! ",
+                                            "requestStr": "$UpdateAccountRoleInput:UpdateAccountRoleInput! ",
                                             "required": true,
-                                            "responseStr": "role:$updateAccountRoleInput ",
+                                            "responseStr": "role:$UpdateAccountRoleInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -1739,7 +1720,7 @@
                                                 "name": "UpdateAccountRoleInput",
                                                 "non_null": false
                                             },
-                                            "varName": "updateAccountRoleInput"
+                                            "varName": "UpdateAccountRoleInput"
                                         }
                                     },
                                     "interfaces": null,
@@ -1756,7 +1737,7 @@
                                 "name": "UpdateAdminRoleInput",
                                 "non_null": false
                             },
-                            "varName": "updateAdminRoleInput"
+                            "varName": "UpdateAdminRoleInput"
                         }
                     },
                     "interfaces": null,
@@ -1772,7 +1753,26 @@
                 "name": "AddAdminInput",
                 "non_null": false
             },
-            "varName": "addAdminInput"
+            "varName": "AddAdminInput"
+        },
+        "accountId": {
+            "defaultValue": null,
+            "description": null,
+            "id_str": "accountId",
+            "name": "accountId",
+            "path": "accountId",
+            "requestStr": "$accountId:ID! ",
+            "required": true,
+            "responseStr": "accountId:$accountId ",
+            "type": {
+                "kind": [
+                    "NON_NULL",
+                    "SCALAR"
+                ],
+                "name": "ID",
+                "non_null": false
+            },
+            "varName": "accountId"
         }
     },
     "path": "mutation.admin.addAdmin",
@@ -1789,9 +1789,9 @@
                             "id_str": "addAdmin___input",
                             "name": "input",
                             "path": "addAdmin.input",
-                            "requestStr": "$addAdminInput:AddAdminInput! ",
+                            "requestStr": "$AddAdminInput:AddAdminInput! ",
                             "required": true,
-                            "responseStr": "input:$addAdminInput ",
+                            "responseStr": "input:$AddAdminInput ",
                             "type": {
                                 "definition": {
                                     "description": null,
@@ -1861,9 +1861,9 @@
                                             "id_str": "addAdmin___input___managedRoles",
                                             "name": "managedRoles",
                                             "path": "addAdmin.input.managedRoles",
-                                            "requestStr": "$updateAdminRoleInput:[UpdateAdminRoleInput] ",
+                                            "requestStr": "$UpdateAdminRoleInput:[UpdateAdminRoleInput] ",
                                             "required": false,
-                                            "responseStr": "managedRoles:$updateAdminRoleInput ",
+                                            "responseStr": "managedRoles:$UpdateAdminRoleInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -1896,9 +1896,9 @@
                                                             "id_str": "addAdmin___input___managedRoles___allowedEntities",
                                                             "name": "allowedEntities",
                                                             "path": "addAdmin.input.managedRoles.allowedEntities",
-                                                            "requestStr": "$entityInput:[EntityInput] ",
+                                                            "requestStr": "$EntityInput:[EntityInput] ",
                                                             "required": false,
-                                                            "responseStr": "allowedEntities:$entityInput ",
+                                                            "responseStr": "allowedEntities:$EntityInput ",
                                                             "type": {
                                                                 "definition": {
                                                                     "description": null,
@@ -2132,7 +2132,7 @@
                                                                 "name": "EntityInput",
                                                                 "non_null": false
                                                             },
-                                                            "varName": "entityInput"
+                                                            "varName": "EntityInput"
                                                         },
                                                         "role": {
                                                             "defaultValue": null,
@@ -2140,9 +2140,9 @@
                                                             "id_str": "addAdmin___input___managedRoles___role",
                                                             "name": "role",
                                                             "path": "addAdmin.input.managedRoles.role",
-                                                            "requestStr": "$updateAccountRoleInput:UpdateAccountRoleInput! ",
+                                                            "requestStr": "$UpdateAccountRoleInput:UpdateAccountRoleInput! ",
                                                             "required": true,
-                                                            "responseStr": "role:$updateAccountRoleInput ",
+                                                            "responseStr": "role:$UpdateAccountRoleInput ",
                                                             "type": {
                                                                 "definition": {
                                                                     "description": null,
@@ -2200,7 +2200,7 @@
                                                                 "name": "UpdateAccountRoleInput",
                                                                 "non_null": false
                                                             },
-                                                            "varName": "updateAccountRoleInput"
+                                                            "varName": "UpdateAccountRoleInput"
                                                         }
                                                     },
                                                     "interfaces": null,
@@ -2217,7 +2217,7 @@
                                                 "name": "UpdateAdminRoleInput",
                                                 "non_null": false
                                             },
-                                            "varName": "updateAdminRoleInput"
+                                            "varName": "UpdateAdminRoleInput"
                                         },
                                         "mfaEnabled": {
                                             "defaultValue": null,
@@ -2263,9 +2263,9 @@
                                             "id_str": "addAdmin___input___resellerRoles",
                                             "name": "resellerRoles",
                                             "path": "addAdmin.input.resellerRoles",
-                                            "requestStr": "$updateAdminRoleInput:[UpdateAdminRoleInput] ",
+                                            "requestStr": "$UpdateAdminRoleInput:[UpdateAdminRoleInput] ",
                                             "required": false,
-                                            "responseStr": "resellerRoles:$updateAdminRoleInput ",
+                                            "responseStr": "resellerRoles:$UpdateAdminRoleInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -2298,9 +2298,9 @@
                                                             "id_str": "addAdmin___input___resellerRoles___allowedEntities",
                                                             "name": "allowedEntities",
                                                             "path": "addAdmin.input.resellerRoles.allowedEntities",
-                                                            "requestStr": "$entityInput:[EntityInput] ",
+                                                            "requestStr": "$EntityInput:[EntityInput] ",
                                                             "required": false,
-                                                            "responseStr": "allowedEntities:$entityInput ",
+                                                            "responseStr": "allowedEntities:$EntityInput ",
                                                             "type": {
                                                                 "definition": {
                                                                     "description": null,
@@ -2534,7 +2534,7 @@
                                                                 "name": "EntityInput",
                                                                 "non_null": false
                                                             },
-                                                            "varName": "entityInput"
+                                                            "varName": "EntityInput"
                                                         },
                                                         "role": {
                                                             "defaultValue": null,
@@ -2542,9 +2542,9 @@
                                                             "id_str": "addAdmin___input___resellerRoles___role",
                                                             "name": "role",
                                                             "path": "addAdmin.input.resellerRoles.role",
-                                                            "requestStr": "$updateAccountRoleInput:UpdateAccountRoleInput! ",
+                                                            "requestStr": "$UpdateAccountRoleInput:UpdateAccountRoleInput! ",
                                                             "required": true,
-                                                            "responseStr": "role:$updateAccountRoleInput ",
+                                                            "responseStr": "role:$UpdateAccountRoleInput ",
                                                             "type": {
                                                                 "definition": {
                                                                     "description": null,
@@ -2602,7 +2602,7 @@
                                                                 "name": "UpdateAccountRoleInput",
                                                                 "non_null": false
                                                             },
-                                                            "varName": "updateAccountRoleInput"
+                                                            "varName": "UpdateAccountRoleInput"
                                                         }
                                                     },
                                                     "interfaces": null,
@@ -2619,7 +2619,7 @@
                                                 "name": "UpdateAdminRoleInput",
                                                 "non_null": false
                                             },
-                                            "varName": "updateAdminRoleInput"
+                                            "varName": "UpdateAdminRoleInput"
                                         }
                                     },
                                     "interfaces": null,
@@ -2635,7 +2635,7 @@
                                 "name": "AddAdminInput",
                                 "non_null": false
                             },
-                            "varName": "addAdminInput"
+                            "varName": "AddAdminInput"
                         }
                     },
                     "deprecationReason": null,
@@ -2644,9 +2644,9 @@
                     "isDeprecated": false,
                     "name": "addAdmin",
                     "path": "addAdmin",
-                    "requestStr": "$addAdminPayload:AddAdminPayload ",
+                    "requestStr": "$AddAdminPayload:AddAdminPayload ",
                     "required": false,
-                    "responseStr": "addAdmin:$addAdminPayload ",
+                    "responseStr": "addAdmin:$AddAdminPayload ",
                     "type": {
                         "definition": {
                             "description": null,
@@ -2687,7 +2687,7 @@
                         "name": "AddAdminPayload",
                         "non_null": false
                     },
-                    "varName": "addAdminPayload"
+                    "varName": "AddAdminPayload"
                 }
             },
             "inputFields": null,
@@ -2705,23 +2705,8 @@
         "non_null": false
     },
     "variablesPayload": {
-        "addAdminInput": {
-            "email": {
-                "email": "String"
-            },
-            "firstName": {
-                "firstName": "String"
-            },
-            "lastName": {
-                "lastName": "String"
-            },
-            "mfaEnabled": {
-                "mfaEnabled": "Boolean"
-            },
-            "passwordNeverExpires": {
-                "passwordNeverExpires": "Boolean"
-            },
-            "updateAdminRoleInput": {
+        "AddAdminInput": {
+            "UpdateAdminRoleInput": {
                 "allowedAccounts": {
                     "allowedAccounts": [
                         "ID"
@@ -2746,6 +2731,21 @@
                         "name": "String"
                     }
                 }
+            },
+            "email": {
+                "email": "String"
+            },
+            "firstName": {
+                "firstName": "String"
+            },
+            "lastName": {
+                "lastName": "String"
+            },
+            "mfaEnabled": {
+                "mfaEnabled": "Boolean"
+            },
+            "passwordNeverExpires": {
+                "passwordNeverExpires": "Boolean"
             }
         }
     }

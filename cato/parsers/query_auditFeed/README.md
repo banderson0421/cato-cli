@@ -10,11 +10,11 @@
 
 `cato query auditFeed 12345 $(cat < auditFeed.json)`
 
-`cato query auditFeed 12345 '{"accountIDs": ["ID"], "auditFieldFilterInput": {"fieldNameInput": {"AuditFieldName": {"AuditFieldName": "enum(AuditFieldName)"}, "EventFieldName": {"EventFieldName": "enum(EventFieldName)"}}, "operator": {"operator": "enum(ElasticOperator)"}, "values": {"values": ["String"]}}, "fieldNames": "enum(AuditFieldName)", "marker": "String", "timeFrame": "TimeFrame"}'`
+`cato query auditFeed 12345 '{"AuditFieldFilterInput": {"FieldNameInput": {"AuditFieldName": {"AuditFieldName": "enum(AuditFieldName)"}, "EventFieldName": {"EventFieldName": "enum(EventFieldName)"}}, "operator": {"operator": "enum(ElasticOperator)"}, "values": {"values": ["String"]}}, "accountIDs": ["ID"], "fieldNames": "enum(AuditFieldName)", "marker": "String", "timeFrame": "TimeFrame"}'`
 
 #### Operation Arguments for query.auditFeed ####
+`AuditFieldFilterInput` [AuditFieldFilterInput[]] - (optional) N/A 
 `accountIDs` [ID[]] - (optional) List of Unique Account Identifiers. 
-`auditFieldFilterInput` [AuditFieldFilterInput[]] - (optional) N/A 
 `fieldNames` [AuditFieldName[]] - (optional) N/A Default Value: ['admin', 'apiKey', 'model_name', 'admin_id', 'module', 'audit_creation_type', 'insertion_date', 'change_type', 'creation_date', 'model_type', 'account', 'account_id']
 `marker` [String] - (optional) Marker to use to get results from 
 `timeFrame` [TimeFrame] - (required) N/A 

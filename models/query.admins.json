@@ -99,9 +99,9 @@
             "id_str": "sort",
             "name": "sort",
             "path": "sort",
-            "requestStr": "$sortInput:[SortInput] ",
+            "requestStr": "$SortInput:[SortInput] ",
             "required": false,
-            "responseStr": "sort:$sortInput ",
+            "responseStr": "sort:$SortInput ",
             "type": {
                 "definition": {
                     "description": null,
@@ -182,7 +182,7 @@
                 "name": "SortInput",
                 "non_null": false
             },
-            "varName": "sortInput"
+            "varName": "SortInput"
         }
     },
     "deprecationReason": null,
@@ -199,6 +199,97 @@
     "isDeprecated": false,
     "name": "admins",
     "operationArgs": {
+        "SortInput": {
+            "defaultValue": null,
+            "description": null,
+            "id_str": "sort",
+            "name": "sort",
+            "path": "sort",
+            "requestStr": "$SortInput:[SortInput] ",
+            "required": false,
+            "responseStr": "sort:$SortInput ",
+            "type": {
+                "definition": {
+                    "description": null,
+                    "enumValues": null,
+                    "fields": null,
+                    "inputFields": {
+                        "field": {
+                            "defaultValue": null,
+                            "description": null,
+                            "id_str": "sort___field",
+                            "name": "field",
+                            "path": "sort.field",
+                            "requestStr": "$field:String ",
+                            "required": false,
+                            "responseStr": "field:$field ",
+                            "type": {
+                                "kind": [
+                                    "SCALAR"
+                                ],
+                                "name": "String",
+                                "non_null": false
+                            },
+                            "varName": "field"
+                        },
+                        "order": {
+                            "defaultValue": null,
+                            "description": null,
+                            "id_str": "sort___order",
+                            "name": "order",
+                            "path": "sort.order",
+                            "requestStr": "$order:DirectionInput ",
+                            "required": false,
+                            "responseStr": "order:$order ",
+                            "type": {
+                                "definition": {
+                                    "description": null,
+                                    "enumValues": [
+                                        {
+                                            "deprecationReason": null,
+                                            "description": null,
+                                            "isDeprecated": false,
+                                            "name": "asc"
+                                        },
+                                        {
+                                            "deprecationReason": null,
+                                            "description": null,
+                                            "isDeprecated": false,
+                                            "name": "desc"
+                                        }
+                                    ],
+                                    "fields": null,
+                                    "inputFields": null,
+                                    "interfaces": null,
+                                    "kind": "ENUM",
+                                    "name": "DirectionInput",
+                                    "possibleTypes": null
+                                },
+                                "indexType": "enum",
+                                "kind": [
+                                    "ENUM"
+                                ],
+                                "name": "DirectionInput",
+                                "non_null": false
+                            },
+                            "varName": "order"
+                        }
+                    },
+                    "interfaces": null,
+                    "kind": "INPUT_OBJECT",
+                    "name": "SortInput",
+                    "possibleTypes": null
+                },
+                "indexType": "input_object",
+                "kind": [
+                    "LIST",
+                    "INPUT_OBJECT"
+                ],
+                "name": "SortInput",
+                "non_null": false
+            },
+            "varName": "SortInput"
+        },
         "accountID": {
             "defaultValue": null,
             "description": null,
@@ -291,97 +382,6 @@
                 "non_null": false
             },
             "varName": "search"
-        },
-        "sortInput": {
-            "defaultValue": null,
-            "description": null,
-            "id_str": "sort",
-            "name": "sort",
-            "path": "sort",
-            "requestStr": "$sortInput:[SortInput] ",
-            "required": false,
-            "responseStr": "sort:$sortInput ",
-            "type": {
-                "definition": {
-                    "description": null,
-                    "enumValues": null,
-                    "fields": null,
-                    "inputFields": {
-                        "field": {
-                            "defaultValue": null,
-                            "description": null,
-                            "id_str": "sort___field",
-                            "name": "field",
-                            "path": "sort.field",
-                            "requestStr": "$field:String ",
-                            "required": false,
-                            "responseStr": "field:$field ",
-                            "type": {
-                                "kind": [
-                                    "SCALAR"
-                                ],
-                                "name": "String",
-                                "non_null": false
-                            },
-                            "varName": "field"
-                        },
-                        "order": {
-                            "defaultValue": null,
-                            "description": null,
-                            "id_str": "sort___order",
-                            "name": "order",
-                            "path": "sort.order",
-                            "requestStr": "$order:DirectionInput ",
-                            "required": false,
-                            "responseStr": "order:$order ",
-                            "type": {
-                                "definition": {
-                                    "description": null,
-                                    "enumValues": [
-                                        {
-                                            "deprecationReason": null,
-                                            "description": null,
-                                            "isDeprecated": false,
-                                            "name": "asc"
-                                        },
-                                        {
-                                            "deprecationReason": null,
-                                            "description": null,
-                                            "isDeprecated": false,
-                                            "name": "desc"
-                                        }
-                                    ],
-                                    "fields": null,
-                                    "inputFields": null,
-                                    "interfaces": null,
-                                    "kind": "ENUM",
-                                    "name": "DirectionInput",
-                                    "possibleTypes": null
-                                },
-                                "indexType": "enum",
-                                "kind": [
-                                    "ENUM"
-                                ],
-                                "name": "DirectionInput",
-                                "non_null": false
-                            },
-                            "varName": "order"
-                        }
-                    },
-                    "interfaces": null,
-                    "kind": "INPUT_OBJECT",
-                    "name": "SortInput",
-                    "possibleTypes": null
-                },
-                "indexType": "input_object",
-                "kind": [
-                    "LIST",
-                    "INPUT_OBJECT"
-                ],
-                "name": "SortInput",
-                "non_null": false
-            },
-            "varName": "sortInput"
         }
     },
     "path": "query.admins",
@@ -398,16 +398,16 @@
                     "isDeprecated": false,
                     "name": "items",
                     "path": "items",
-                    "requestStr": "$admin:[Admin]! ",
+                    "requestStr": "$Admin:[Admin]! ",
                     "required": true,
-                    "responseStr": "items:$admin ",
+                    "responseStr": "items:$Admin ",
                     "type": {
                         "definition": {
                             "description": "A CC2 administrator",
                             "enumValues": null,
                             "fields": {
                                 "allowedItems": {
-                                    "alias": "entityAllowedItems: allowedItems",
+                                    "alias": "EntityAllowedItems: allowedItems",
                                     "args": {},
                                     "deprecationReason": null,
                                     "description": null,
@@ -415,9 +415,9 @@
                                     "isDeprecated": false,
                                     "name": "allowedItems",
                                     "path": "items.allowedItems",
-                                    "requestStr": "$entity:[Entity] ",
+                                    "requestStr": "$Entity:[Entity] ",
                                     "required": false,
-                                    "responseStr": "allowedItems:$entity ",
+                                    "responseStr": "allowedItems:$Entity ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -465,7 +465,7 @@
                                                     "varName": "name"
                                                 },
                                                 "type": {
-                                                    "alias": "entityTypeType: type",
+                                                    "alias": "EntityTypeType: type",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": null,
@@ -658,7 +658,7 @@
                                         "name": "Entity",
                                         "non_null": false
                                     },
-                                    "varName": "entity"
+                                    "varName": "Entity"
                                 },
                                 "creationDate": {
                                     "args": {},
@@ -762,7 +762,7 @@
                                     "varName": "lastName"
                                 },
                                 "managedRoles": {
-                                    "alias": "adminRoleManagedRoles: managedRoles",
+                                    "alias": "AdminRoleManagedRoles: managedRoles",
                                     "args": {},
                                     "deprecationReason": null,
                                     "description": null,
@@ -770,9 +770,9 @@
                                     "isDeprecated": false,
                                     "name": "managedRoles",
                                     "path": "items.managedRoles",
-                                    "requestStr": "$adminRole:[AdminRole] ",
+                                    "requestStr": "$AdminRole:[AdminRole] ",
                                     "required": false,
-                                    "responseStr": "managedRoles:$adminRole ",
+                                    "responseStr": "managedRoles:$AdminRole ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -801,7 +801,7 @@
                                                     "varName": "allowedAccounts"
                                                 },
                                                 "allowedEntities": {
-                                                    "alias": "entityAllowedEntities: allowedEntities",
+                                                    "alias": "EntityAllowedEntities: allowedEntities",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": null,
@@ -809,9 +809,9 @@
                                                     "isDeprecated": false,
                                                     "name": "allowedEntities",
                                                     "path": "items.managedRoles.allowedEntities",
-                                                    "requestStr": "$entity:[Entity] ",
+                                                    "requestStr": "$Entity:[Entity] ",
                                                     "required": false,
-                                                    "responseStr": "allowedEntities:$entity ",
+                                                    "responseStr": "allowedEntities:$Entity ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -859,7 +859,7 @@
                                                                     "varName": "name"
                                                                 },
                                                                 "type": {
-                                                                    "alias": "entityTypeType: type",
+                                                                    "alias": "EntityTypeType: type",
                                                                     "args": {},
                                                                     "deprecationReason": null,
                                                                     "description": null,
@@ -1052,10 +1052,10 @@
                                                         "name": "Entity",
                                                         "non_null": false
                                                     },
-                                                    "varName": "entity"
+                                                    "varName": "Entity"
                                                 },
                                                 "role": {
-                                                    "alias": "rBACRoleRole: role",
+                                                    "alias": "RBACRoleRole: role",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": null,
@@ -1063,9 +1063,9 @@
                                                     "isDeprecated": false,
                                                     "name": "role",
                                                     "path": "items.managedRoles.role",
-                                                    "requestStr": "$rBACRole:RBACRole! ",
+                                                    "requestStr": "$RBACRole:RBACRole! ",
                                                     "required": true,
-                                                    "responseStr": "role:$rBACRole ",
+                                                    "responseStr": "role:$RBACRole ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -1169,7 +1169,7 @@
                                                         "name": "RBACRole",
                                                         "non_null": false
                                                     },
-                                                    "varName": "rBACRole"
+                                                    "varName": "RBACRole"
                                                 }
                                             },
                                             "inputFields": null,
@@ -1187,7 +1187,7 @@
                                         "name": "AdminRole",
                                         "non_null": false
                                     },
-                                    "varName": "adminRole"
+                                    "varName": "AdminRole"
                                 },
                                 "mfaEnabled": {
                                     "args": {},
@@ -1290,7 +1290,7 @@
                                     "varName": "presentUsageAndEvents"
                                 },
                                 "resellerRoles": {
-                                    "alias": "adminRoleResellerRoles: resellerRoles",
+                                    "alias": "AdminRoleResellerRoles: resellerRoles",
                                     "args": {},
                                     "deprecationReason": null,
                                     "description": null,
@@ -1298,9 +1298,9 @@
                                     "isDeprecated": false,
                                     "name": "resellerRoles",
                                     "path": "items.resellerRoles",
-                                    "requestStr": "$adminRole:[AdminRole] ",
+                                    "requestStr": "$AdminRole:[AdminRole] ",
                                     "required": false,
-                                    "responseStr": "resellerRoles:$adminRole ",
+                                    "responseStr": "resellerRoles:$AdminRole ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -1329,7 +1329,7 @@
                                                     "varName": "allowedAccounts"
                                                 },
                                                 "allowedEntities": {
-                                                    "alias": "entityAllowedEntities: allowedEntities",
+                                                    "alias": "EntityAllowedEntities: allowedEntities",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": null,
@@ -1337,9 +1337,9 @@
                                                     "isDeprecated": false,
                                                     "name": "allowedEntities",
                                                     "path": "items.resellerRoles.allowedEntities",
-                                                    "requestStr": "$entity:[Entity] ",
+                                                    "requestStr": "$Entity:[Entity] ",
                                                     "required": false,
-                                                    "responseStr": "allowedEntities:$entity ",
+                                                    "responseStr": "allowedEntities:$Entity ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -1387,7 +1387,7 @@
                                                                     "varName": "name"
                                                                 },
                                                                 "type": {
-                                                                    "alias": "entityTypeType: type",
+                                                                    "alias": "EntityTypeType: type",
                                                                     "args": {},
                                                                     "deprecationReason": null,
                                                                     "description": null,
@@ -1580,10 +1580,10 @@
                                                         "name": "Entity",
                                                         "non_null": false
                                                     },
-                                                    "varName": "entity"
+                                                    "varName": "Entity"
                                                 },
                                                 "role": {
-                                                    "alias": "rBACRoleRole: role",
+                                                    "alias": "RBACRoleRole: role",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": null,
@@ -1591,9 +1591,9 @@
                                                     "isDeprecated": false,
                                                     "name": "role",
                                                     "path": "items.resellerRoles.role",
-                                                    "requestStr": "$rBACRole:RBACRole! ",
+                                                    "requestStr": "$RBACRole:RBACRole! ",
                                                     "required": true,
-                                                    "responseStr": "role:$rBACRole ",
+                                                    "responseStr": "role:$RBACRole ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -1697,7 +1697,7 @@
                                                         "name": "RBACRole",
                                                         "non_null": false
                                                     },
-                                                    "varName": "rBACRole"
+                                                    "varName": "RBACRole"
                                                 }
                                             },
                                             "inputFields": null,
@@ -1715,10 +1715,10 @@
                                         "name": "AdminRole",
                                         "non_null": false
                                     },
-                                    "varName": "adminRole"
+                                    "varName": "AdminRole"
                                 },
                                 "role": {
-                                    "alias": "userRoleRole: role",
+                                    "alias": "UserRoleRole: role",
                                     "args": {},
                                     "deprecationReason": null,
                                     "description": null,
@@ -1793,7 +1793,7 @@
                                     "varName": "role"
                                 },
                                 "status": {
-                                    "alias": "operationalStatusStatus: status",
+                                    "alias": "OperationalStatusStatus: status",
                                     "args": {},
                                     "deprecationReason": null,
                                     "description": null,
@@ -1905,7 +1905,7 @@
                         "name": "Admin",
                         "non_null": false
                     },
-                    "varName": "admin"
+                    "varName": "Admin"
                 },
                 "total": {
                     "args": {},
@@ -1943,19 +1943,19 @@
         "non_null": false
     },
     "variablesPayload": {
-        "adminIDs": [
-            "ID"
-        ],
-        "from": "Int",
-        "limit": "Int",
-        "search": "String",
-        "sortInput": {
+        "SortInput": {
             "field": {
                 "field": "String"
             },
             "order": {
                 "order": "enum(DirectionInput)"
             }
-        }
+        },
+        "adminIDs": [
+            "ID"
+        ],
+        "from": "Int",
+        "limit": "Int",
+        "search": "String"
     }
 }

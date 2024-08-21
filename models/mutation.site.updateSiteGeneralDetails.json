@@ -29,9 +29,9 @@
                     "id_str": "updateSiteGeneralDetails___input",
                     "name": "input",
                     "path": "updateSiteGeneralDetails.input",
-                    "requestStr": "$updateSiteGeneralDetailsInput:UpdateSiteGeneralDetailsInput! ",
+                    "requestStr": "$UpdateSiteGeneralDetailsInput:UpdateSiteGeneralDetailsInput! ",
                     "required": true,
-                    "responseStr": "input:$updateSiteGeneralDetailsInput ",
+                    "responseStr": "input:$UpdateSiteGeneralDetailsInput ",
                     "type": {
                         "definition": {
                             "description": null,
@@ -80,9 +80,9 @@
                                     "id_str": "updateSiteGeneralDetails___input___siteLocation",
                                     "name": "siteLocation",
                                     "path": "updateSiteGeneralDetails.input.siteLocation",
-                                    "requestStr": "$updateSiteLocationInput:UpdateSiteLocationInput ",
+                                    "requestStr": "$UpdateSiteLocationInput:UpdateSiteLocationInput ",
                                     "required": false,
-                                    "responseStr": "siteLocation:$updateSiteLocationInput ",
+                                    "responseStr": "siteLocation:$UpdateSiteLocationInput ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -174,7 +174,7 @@
                                         "name": "UpdateSiteLocationInput",
                                         "non_null": false
                                     },
-                                    "varName": "updateSiteLocationInput"
+                                    "varName": "UpdateSiteLocationInput"
                                 },
                                 "siteType": {
                                     "defaultValue": null,
@@ -244,7 +244,7 @@
                         "name": "UpdateSiteGeneralDetailsInput",
                         "non_null": false
                     },
-                    "varName": "updateSiteGeneralDetailsInput"
+                    "varName": "UpdateSiteGeneralDetailsInput"
                 },
                 "updateSiteGeneralDetails___siteId": {
                     "defaultValue": null,
@@ -287,53 +287,15 @@
     "isDeprecated": false,
     "name": "site",
     "operationArgs": {
-        "accountId": {
-            "defaultValue": null,
-            "description": null,
-            "id_str": "accountId",
-            "name": "accountId",
-            "path": "accountId",
-            "requestStr": "$accountId:ID! ",
-            "required": true,
-            "responseStr": "accountId:$accountId ",
-            "type": {
-                "kind": [
-                    "NON_NULL",
-                    "SCALAR"
-                ],
-                "name": "ID",
-                "non_null": false
-            },
-            "varName": "accountId"
-        },
-        "siteId": {
-            "defaultValue": null,
-            "description": null,
-            "id_str": "updateSiteGeneralDetails___siteId",
-            "name": "siteId",
-            "path": "updateSiteGeneralDetails.siteId",
-            "requestStr": "$siteId:ID! ",
-            "required": true,
-            "responseStr": "siteId:$siteId ",
-            "type": {
-                "kind": [
-                    "NON_NULL",
-                    "SCALAR"
-                ],
-                "name": "ID",
-                "non_null": false
-            },
-            "varName": "siteId"
-        },
-        "updateSiteGeneralDetailsInput": {
+        "UpdateSiteGeneralDetailsInput": {
             "defaultValue": null,
             "description": null,
             "id_str": "updateSiteGeneralDetails___input",
             "name": "input",
             "path": "updateSiteGeneralDetails.input",
-            "requestStr": "$updateSiteGeneralDetailsInput:UpdateSiteGeneralDetailsInput! ",
+            "requestStr": "$UpdateSiteGeneralDetailsInput:UpdateSiteGeneralDetailsInput! ",
             "required": true,
-            "responseStr": "input:$updateSiteGeneralDetailsInput ",
+            "responseStr": "input:$UpdateSiteGeneralDetailsInput ",
             "type": {
                 "definition": {
                     "description": null,
@@ -382,9 +344,9 @@
                             "id_str": "updateSiteGeneralDetails___input___siteLocation",
                             "name": "siteLocation",
                             "path": "updateSiteGeneralDetails.input.siteLocation",
-                            "requestStr": "$updateSiteLocationInput:UpdateSiteLocationInput ",
+                            "requestStr": "$UpdateSiteLocationInput:UpdateSiteLocationInput ",
                             "required": false,
-                            "responseStr": "siteLocation:$updateSiteLocationInput ",
+                            "responseStr": "siteLocation:$UpdateSiteLocationInput ",
                             "type": {
                                 "definition": {
                                     "description": null,
@@ -476,7 +438,7 @@
                                 "name": "UpdateSiteLocationInput",
                                 "non_null": false
                             },
-                            "varName": "updateSiteLocationInput"
+                            "varName": "UpdateSiteLocationInput"
                         },
                         "siteType": {
                             "defaultValue": null,
@@ -546,7 +508,45 @@
                 "name": "UpdateSiteGeneralDetailsInput",
                 "non_null": false
             },
-            "varName": "updateSiteGeneralDetailsInput"
+            "varName": "UpdateSiteGeneralDetailsInput"
+        },
+        "accountId": {
+            "defaultValue": null,
+            "description": null,
+            "id_str": "accountId",
+            "name": "accountId",
+            "path": "accountId",
+            "requestStr": "$accountId:ID! ",
+            "required": true,
+            "responseStr": "accountId:$accountId ",
+            "type": {
+                "kind": [
+                    "NON_NULL",
+                    "SCALAR"
+                ],
+                "name": "ID",
+                "non_null": false
+            },
+            "varName": "accountId"
+        },
+        "siteId": {
+            "defaultValue": null,
+            "description": null,
+            "id_str": "updateSiteGeneralDetails___siteId",
+            "name": "siteId",
+            "path": "updateSiteGeneralDetails.siteId",
+            "requestStr": "$siteId:ID! ",
+            "required": true,
+            "responseStr": "siteId:$siteId ",
+            "type": {
+                "kind": [
+                    "NON_NULL",
+                    "SCALAR"
+                ],
+                "name": "ID",
+                "non_null": false
+            },
+            "varName": "siteId"
         }
     },
     "path": "mutation.site.updateSiteGeneralDetails",
@@ -563,9 +563,9 @@
                             "id_str": "updateSiteGeneralDetails___input",
                             "name": "input",
                             "path": "updateSiteGeneralDetails.input",
-                            "requestStr": "$updateSiteGeneralDetailsInput:UpdateSiteGeneralDetailsInput! ",
+                            "requestStr": "$UpdateSiteGeneralDetailsInput:UpdateSiteGeneralDetailsInput! ",
                             "required": true,
-                            "responseStr": "input:$updateSiteGeneralDetailsInput ",
+                            "responseStr": "input:$UpdateSiteGeneralDetailsInput ",
                             "type": {
                                 "definition": {
                                     "description": null,
@@ -614,9 +614,9 @@
                                             "id_str": "updateSiteGeneralDetails___input___siteLocation",
                                             "name": "siteLocation",
                                             "path": "updateSiteGeneralDetails.input.siteLocation",
-                                            "requestStr": "$updateSiteLocationInput:UpdateSiteLocationInput ",
+                                            "requestStr": "$UpdateSiteLocationInput:UpdateSiteLocationInput ",
                                             "required": false,
-                                            "responseStr": "siteLocation:$updateSiteLocationInput ",
+                                            "responseStr": "siteLocation:$UpdateSiteLocationInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -708,7 +708,7 @@
                                                 "name": "UpdateSiteLocationInput",
                                                 "non_null": false
                                             },
-                                            "varName": "updateSiteLocationInput"
+                                            "varName": "UpdateSiteLocationInput"
                                         },
                                         "siteType": {
                                             "defaultValue": null,
@@ -778,7 +778,7 @@
                                 "name": "UpdateSiteGeneralDetailsInput",
                                 "non_null": false
                             },
-                            "varName": "updateSiteGeneralDetailsInput"
+                            "varName": "UpdateSiteGeneralDetailsInput"
                         },
                         "updateSiteGeneralDetails___siteId": {
                             "defaultValue": null,
@@ -806,9 +806,9 @@
                     "isDeprecated": false,
                     "name": "updateSiteGeneralDetails",
                     "path": "updateSiteGeneralDetails",
-                    "requestStr": "$updateSiteGeneralDetailsPayload:UpdateSiteGeneralDetailsPayload ",
+                    "requestStr": "$UpdateSiteGeneralDetailsPayload:UpdateSiteGeneralDetailsPayload ",
                     "required": false,
-                    "responseStr": "updateSiteGeneralDetails:$updateSiteGeneralDetailsPayload ",
+                    "responseStr": "updateSiteGeneralDetails:$UpdateSiteGeneralDetailsPayload ",
                     "type": {
                         "definition": {
                             "description": null,
@@ -849,7 +849,7 @@
                         "name": "UpdateSiteGeneralDetailsPayload",
                         "non_null": false
                     },
-                    "varName": "updateSiteGeneralDetailsPayload"
+                    "varName": "UpdateSiteGeneralDetailsPayload"
                 }
             },
             "inputFields": null,
@@ -867,18 +867,8 @@
         "non_null": false
     },
     "variablesPayload": {
-        "siteId": "ID",
-        "updateSiteGeneralDetailsInput": {
-            "description": {
-                "description": "String"
-            },
-            "name": {
-                "name": "String"
-            },
-            "siteType": {
-                "siteType": "enum(SiteType)"
-            },
-            "updateSiteLocationInput": {
+        "UpdateSiteGeneralDetailsInput": {
+            "UpdateSiteLocationInput": {
                 "address": {
                     "address": "String"
                 },
@@ -891,7 +881,17 @@
                 "timezone": {
                     "timezone": "String"
                 }
+            },
+            "description": {
+                "description": "String"
+            },
+            "name": {
+                "name": "String"
+            },
+            "siteType": {
+                "siteType": "enum(SiteType)"
             }
-        }
+        },
+        "siteId": "ID"
     }
 }

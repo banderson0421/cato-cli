@@ -42,34 +42,15 @@
     "isDeprecated": false,
     "name": "hardwareManagement",
     "operationArgs": {
-        "accountId": {
-            "defaultValue": null,
-            "description": null,
-            "id_str": "accountId",
-            "name": "accountId",
-            "path": "accountId",
-            "requestStr": "$accountId:ID! ",
-            "required": true,
-            "responseStr": "accountId:$accountId ",
-            "type": {
-                "kind": [
-                    "NON_NULL",
-                    "SCALAR"
-                ],
-                "name": "ID",
-                "non_null": false
-            },
-            "varName": "accountId"
-        },
-        "socketInventoryInput": {
+        "SocketInventoryInput": {
             "defaultValue": null,
             "description": null,
             "id_str": "socketInventory___input",
             "name": "input",
             "path": "socketInventory.input",
-            "requestStr": "$socketInventoryInput:SocketInventoryInput ",
+            "requestStr": "$SocketInventoryInput:SocketInventoryInput ",
             "required": false,
-            "responseStr": "input:$socketInventoryInput ",
+            "responseStr": "input:$SocketInventoryInput ",
             "type": {
                 "definition": {
                     "description": null,
@@ -82,9 +63,9 @@
                             "id_str": "socketInventory___input___filter",
                             "name": "filter",
                             "path": "socketInventory.input.filter",
-                            "requestStr": "$socketInventoryFilterInput:SocketInventoryFilterInput ",
+                            "requestStr": "$SocketInventoryFilterInput:SocketInventoryFilterInput ",
                             "required": false,
-                            "responseStr": "filter:$socketInventoryFilterInput ",
+                            "responseStr": "filter:$SocketInventoryFilterInput ",
                             "type": {
                                 "definition": {
                                     "description": null,
@@ -97,9 +78,9 @@
                                             "id_str": "socketInventory___input___filter___freeText",
                                             "name": "freeText",
                                             "path": "socketInventory.input.filter.freeText",
-                                            "requestStr": "$freeTextFilterInput:FreeTextFilterInput ",
+                                            "requestStr": "$FreeTextFilterInput:FreeTextFilterInput ",
                                             "required": false,
-                                            "responseStr": "freeText:$freeTextFilterInput ",
+                                            "responseStr": "freeText:$FreeTextFilterInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -138,7 +119,7 @@
                                                 "name": "FreeTextFilterInput",
                                                 "non_null": false
                                             },
-                                            "varName": "freeTextFilterInput"
+                                            "varName": "FreeTextFilterInput"
                                         }
                                     },
                                     "interfaces": null,
@@ -153,7 +134,7 @@
                                 "name": "SocketInventoryFilterInput",
                                 "non_null": false
                             },
-                            "varName": "socketInventoryFilterInput"
+                            "varName": "SocketInventoryFilterInput"
                         },
                         "paging": {
                             "defaultValue": null,
@@ -161,9 +142,9 @@
                             "id_str": "socketInventory___input___paging",
                             "name": "paging",
                             "path": "socketInventory.input.paging",
-                            "requestStr": "$pagingInput:PagingInput ",
+                            "requestStr": "$PagingInput:PagingInput ",
                             "required": false,
-                            "responseStr": "paging:$pagingInput ",
+                            "responseStr": "paging:$PagingInput ",
                             "type": {
                                 "definition": {
                                     "description": null,
@@ -221,7 +202,7 @@
                                 "name": "PagingInput",
                                 "non_null": false
                             },
-                            "varName": "pagingInput"
+                            "varName": "PagingInput"
                         },
                         "sort": {
                             "defaultValue": null,
@@ -229,9 +210,9 @@
                             "id_str": "socketInventory___input___sort",
                             "name": "sort",
                             "path": "socketInventory.input.sort",
-                            "requestStr": "$socketInventoryOrderInput:SocketInventoryOrderInput ",
+                            "requestStr": "$SocketInventoryOrderInput:SocketInventoryOrderInput ",
                             "required": false,
-                            "responseStr": "sort:$socketInventoryOrderInput ",
+                            "responseStr": "sort:$SocketInventoryOrderInput ",
                             "type": {
                                 "definition": {
                                     "description": null,
@@ -244,9 +225,9 @@
                                             "id_str": "socketInventory___input___sort___deliverySiteName",
                                             "name": "deliverySiteName",
                                             "path": "socketInventory.input.sort.deliverySiteName",
-                                            "requestStr": "$sortOrderInput:SortOrderInput ",
+                                            "requestStr": "$SortOrderInput:SortOrderInput ",
                                             "required": false,
-                                            "responseStr": "deliverySiteName:$sortOrderInput ",
+                                            "responseStr": "deliverySiteName:$SortOrderInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -328,7 +309,7 @@
                                                 "name": "SortOrderInput",
                                                 "non_null": false
                                             },
-                                            "varName": "sortOrderInput"
+                                            "varName": "SortOrderInput"
                                         },
                                         "description": {
                                             "defaultValue": null,
@@ -336,9 +317,9 @@
                                             "id_str": "socketInventory___input___sort___description",
                                             "name": "description",
                                             "path": "socketInventory.input.sort.description",
-                                            "requestStr": "$sortOrderInput:SortOrderInput ",
+                                            "requestStr": "$SortOrderInput:SortOrderInput ",
                                             "required": false,
-                                            "responseStr": "description:$sortOrderInput ",
+                                            "responseStr": "description:$SortOrderInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -420,7 +401,7 @@
                                                 "name": "SortOrderInput",
                                                 "non_null": false
                                             },
-                                            "varName": "sortOrderInput"
+                                            "varName": "SortOrderInput"
                                         },
                                         "installedSite": {
                                             "defaultValue": null,
@@ -428,9 +409,9 @@
                                             "id_str": "socketInventory___input___sort___installedSite",
                                             "name": "installedSite",
                                             "path": "socketInventory.input.sort.installedSite",
-                                            "requestStr": "$sortOrderInput:SortOrderInput ",
+                                            "requestStr": "$SortOrderInput:SortOrderInput ",
                                             "required": false,
-                                            "responseStr": "installedSite:$sortOrderInput ",
+                                            "responseStr": "installedSite:$SortOrderInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -512,7 +493,7 @@
                                                 "name": "SortOrderInput",
                                                 "non_null": false
                                             },
-                                            "varName": "sortOrderInput"
+                                            "varName": "SortOrderInput"
                                         },
                                         "serialNumber": {
                                             "defaultValue": null,
@@ -520,9 +501,9 @@
                                             "id_str": "socketInventory___input___sort___serialNumber",
                                             "name": "serialNumber",
                                             "path": "socketInventory.input.sort.serialNumber",
-                                            "requestStr": "$sortOrderInput:SortOrderInput ",
+                                            "requestStr": "$SortOrderInput:SortOrderInput ",
                                             "required": false,
-                                            "responseStr": "serialNumber:$sortOrderInput ",
+                                            "responseStr": "serialNumber:$SortOrderInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -604,7 +585,7 @@
                                                 "name": "SortOrderInput",
                                                 "non_null": false
                                             },
-                                            "varName": "sortOrderInput"
+                                            "varName": "SortOrderInput"
                                         },
                                         "shippingCompany": {
                                             "defaultValue": null,
@@ -612,9 +593,9 @@
                                             "id_str": "socketInventory___input___sort___shippingCompany",
                                             "name": "shippingCompany",
                                             "path": "socketInventory.input.sort.shippingCompany",
-                                            "requestStr": "$sortOrderInput:SortOrderInput ",
+                                            "requestStr": "$SortOrderInput:SortOrderInput ",
                                             "required": false,
-                                            "responseStr": "shippingCompany:$sortOrderInput ",
+                                            "responseStr": "shippingCompany:$SortOrderInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -696,7 +677,7 @@
                                                 "name": "SortOrderInput",
                                                 "non_null": false
                                             },
-                                            "varName": "sortOrderInput"
+                                            "varName": "SortOrderInput"
                                         },
                                         "shippingDate": {
                                             "defaultValue": null,
@@ -704,9 +685,9 @@
                                             "id_str": "socketInventory___input___sort___shippingDate",
                                             "name": "shippingDate",
                                             "path": "socketInventory.input.sort.shippingDate",
-                                            "requestStr": "$sortOrderInput:SortOrderInput ",
+                                            "requestStr": "$SortOrderInput:SortOrderInput ",
                                             "required": false,
-                                            "responseStr": "shippingDate:$sortOrderInput ",
+                                            "responseStr": "shippingDate:$SortOrderInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -788,7 +769,7 @@
                                                 "name": "SortOrderInput",
                                                 "non_null": false
                                             },
-                                            "varName": "sortOrderInput"
+                                            "varName": "SortOrderInput"
                                         },
                                         "socketType": {
                                             "defaultValue": null,
@@ -796,9 +777,9 @@
                                             "id_str": "socketInventory___input___sort___socketType",
                                             "name": "socketType",
                                             "path": "socketInventory.input.sort.socketType",
-                                            "requestStr": "$sortOrderInput:SortOrderInput ",
+                                            "requestStr": "$SortOrderInput:SortOrderInput ",
                                             "required": false,
-                                            "responseStr": "socketType:$sortOrderInput ",
+                                            "responseStr": "socketType:$SortOrderInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -880,7 +861,7 @@
                                                 "name": "SortOrderInput",
                                                 "non_null": false
                                             },
-                                            "varName": "sortOrderInput"
+                                            "varName": "SortOrderInput"
                                         },
                                         "status": {
                                             "defaultValue": null,
@@ -888,9 +869,9 @@
                                             "id_str": "socketInventory___input___sort___status",
                                             "name": "status",
                                             "path": "socketInventory.input.sort.status",
-                                            "requestStr": "$sortOrderInput:SortOrderInput ",
+                                            "requestStr": "$SortOrderInput:SortOrderInput ",
                                             "required": false,
-                                            "responseStr": "status:$sortOrderInput ",
+                                            "responseStr": "status:$SortOrderInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -972,7 +953,7 @@
                                                 "name": "SortOrderInput",
                                                 "non_null": false
                                             },
-                                            "varName": "sortOrderInput"
+                                            "varName": "SortOrderInput"
                                         }
                                     },
                                     "interfaces": null,
@@ -987,7 +968,7 @@
                                 "name": "SocketInventoryOrderInput",
                                 "non_null": false
                             },
-                            "varName": "socketInventoryOrderInput"
+                            "varName": "SocketInventoryOrderInput"
                         }
                     },
                     "interfaces": null,
@@ -1002,7 +983,26 @@
                 "name": "SocketInventoryInput",
                 "non_null": false
             },
-            "varName": "socketInventoryInput"
+            "varName": "SocketInventoryInput"
+        },
+        "accountId": {
+            "defaultValue": null,
+            "description": null,
+            "id_str": "accountId",
+            "name": "accountId",
+            "path": "accountId",
+            "requestStr": "$accountId:ID! ",
+            "required": true,
+            "responseStr": "accountId:$accountId ",
+            "type": {
+                "kind": [
+                    "NON_NULL",
+                    "SCALAR"
+                ],
+                "name": "ID",
+                "non_null": false
+            },
+            "varName": "accountId"
         }
     },
     "path": "query.hardwareManagement",
@@ -1019,9 +1019,9 @@
                             "id_str": "socketInventory___input",
                             "name": "input",
                             "path": "socketInventory.input",
-                            "requestStr": "$socketInventoryInput:SocketInventoryInput ",
+                            "requestStr": "$SocketInventoryInput:SocketInventoryInput ",
                             "required": false,
-                            "responseStr": "input:$socketInventoryInput ",
+                            "responseStr": "input:$SocketInventoryInput ",
                             "type": {
                                 "definition": {
                                     "description": null,
@@ -1034,9 +1034,9 @@
                                             "id_str": "socketInventory___input___filter",
                                             "name": "filter",
                                             "path": "socketInventory.input.filter",
-                                            "requestStr": "$socketInventoryFilterInput:SocketInventoryFilterInput ",
+                                            "requestStr": "$SocketInventoryFilterInput:SocketInventoryFilterInput ",
                                             "required": false,
-                                            "responseStr": "filter:$socketInventoryFilterInput ",
+                                            "responseStr": "filter:$SocketInventoryFilterInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -1049,9 +1049,9 @@
                                                             "id_str": "socketInventory___input___filter___freeText",
                                                             "name": "freeText",
                                                             "path": "socketInventory.input.filter.freeText",
-                                                            "requestStr": "$freeTextFilterInput:FreeTextFilterInput ",
+                                                            "requestStr": "$FreeTextFilterInput:FreeTextFilterInput ",
                                                             "required": false,
-                                                            "responseStr": "freeText:$freeTextFilterInput ",
+                                                            "responseStr": "freeText:$FreeTextFilterInput ",
                                                             "type": {
                                                                 "definition": {
                                                                     "description": null,
@@ -1090,7 +1090,7 @@
                                                                 "name": "FreeTextFilterInput",
                                                                 "non_null": false
                                                             },
-                                                            "varName": "freeTextFilterInput"
+                                                            "varName": "FreeTextFilterInput"
                                                         }
                                                     },
                                                     "interfaces": null,
@@ -1105,7 +1105,7 @@
                                                 "name": "SocketInventoryFilterInput",
                                                 "non_null": false
                                             },
-                                            "varName": "socketInventoryFilterInput"
+                                            "varName": "SocketInventoryFilterInput"
                                         },
                                         "paging": {
                                             "defaultValue": null,
@@ -1113,9 +1113,9 @@
                                             "id_str": "socketInventory___input___paging",
                                             "name": "paging",
                                             "path": "socketInventory.input.paging",
-                                            "requestStr": "$pagingInput:PagingInput ",
+                                            "requestStr": "$PagingInput:PagingInput ",
                                             "required": false,
-                                            "responseStr": "paging:$pagingInput ",
+                                            "responseStr": "paging:$PagingInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -1173,7 +1173,7 @@
                                                 "name": "PagingInput",
                                                 "non_null": false
                                             },
-                                            "varName": "pagingInput"
+                                            "varName": "PagingInput"
                                         },
                                         "sort": {
                                             "defaultValue": null,
@@ -1181,9 +1181,9 @@
                                             "id_str": "socketInventory___input___sort",
                                             "name": "sort",
                                             "path": "socketInventory.input.sort",
-                                            "requestStr": "$socketInventoryOrderInput:SocketInventoryOrderInput ",
+                                            "requestStr": "$SocketInventoryOrderInput:SocketInventoryOrderInput ",
                                             "required": false,
-                                            "responseStr": "sort:$socketInventoryOrderInput ",
+                                            "responseStr": "sort:$SocketInventoryOrderInput ",
                                             "type": {
                                                 "definition": {
                                                     "description": null,
@@ -1196,9 +1196,9 @@
                                                             "id_str": "socketInventory___input___sort___deliverySiteName",
                                                             "name": "deliverySiteName",
                                                             "path": "socketInventory.input.sort.deliverySiteName",
-                                                            "requestStr": "$sortOrderInput:SortOrderInput ",
+                                                            "requestStr": "$SortOrderInput:SortOrderInput ",
                                                             "required": false,
-                                                            "responseStr": "deliverySiteName:$sortOrderInput ",
+                                                            "responseStr": "deliverySiteName:$SortOrderInput ",
                                                             "type": {
                                                                 "definition": {
                                                                     "description": null,
@@ -1280,7 +1280,7 @@
                                                                 "name": "SortOrderInput",
                                                                 "non_null": false
                                                             },
-                                                            "varName": "sortOrderInput"
+                                                            "varName": "SortOrderInput"
                                                         },
                                                         "description": {
                                                             "defaultValue": null,
@@ -1288,9 +1288,9 @@
                                                             "id_str": "socketInventory___input___sort___description",
                                                             "name": "description",
                                                             "path": "socketInventory.input.sort.description",
-                                                            "requestStr": "$sortOrderInput:SortOrderInput ",
+                                                            "requestStr": "$SortOrderInput:SortOrderInput ",
                                                             "required": false,
-                                                            "responseStr": "description:$sortOrderInput ",
+                                                            "responseStr": "description:$SortOrderInput ",
                                                             "type": {
                                                                 "definition": {
                                                                     "description": null,
@@ -1372,7 +1372,7 @@
                                                                 "name": "SortOrderInput",
                                                                 "non_null": false
                                                             },
-                                                            "varName": "sortOrderInput"
+                                                            "varName": "SortOrderInput"
                                                         },
                                                         "installedSite": {
                                                             "defaultValue": null,
@@ -1380,9 +1380,9 @@
                                                             "id_str": "socketInventory___input___sort___installedSite",
                                                             "name": "installedSite",
                                                             "path": "socketInventory.input.sort.installedSite",
-                                                            "requestStr": "$sortOrderInput:SortOrderInput ",
+                                                            "requestStr": "$SortOrderInput:SortOrderInput ",
                                                             "required": false,
-                                                            "responseStr": "installedSite:$sortOrderInput ",
+                                                            "responseStr": "installedSite:$SortOrderInput ",
                                                             "type": {
                                                                 "definition": {
                                                                     "description": null,
@@ -1464,7 +1464,7 @@
                                                                 "name": "SortOrderInput",
                                                                 "non_null": false
                                                             },
-                                                            "varName": "sortOrderInput"
+                                                            "varName": "SortOrderInput"
                                                         },
                                                         "serialNumber": {
                                                             "defaultValue": null,
@@ -1472,9 +1472,9 @@
                                                             "id_str": "socketInventory___input___sort___serialNumber",
                                                             "name": "serialNumber",
                                                             "path": "socketInventory.input.sort.serialNumber",
-                                                            "requestStr": "$sortOrderInput:SortOrderInput ",
+                                                            "requestStr": "$SortOrderInput:SortOrderInput ",
                                                             "required": false,
-                                                            "responseStr": "serialNumber:$sortOrderInput ",
+                                                            "responseStr": "serialNumber:$SortOrderInput ",
                                                             "type": {
                                                                 "definition": {
                                                                     "description": null,
@@ -1556,7 +1556,7 @@
                                                                 "name": "SortOrderInput",
                                                                 "non_null": false
                                                             },
-                                                            "varName": "sortOrderInput"
+                                                            "varName": "SortOrderInput"
                                                         },
                                                         "shippingCompany": {
                                                             "defaultValue": null,
@@ -1564,9 +1564,9 @@
                                                             "id_str": "socketInventory___input___sort___shippingCompany",
                                                             "name": "shippingCompany",
                                                             "path": "socketInventory.input.sort.shippingCompany",
-                                                            "requestStr": "$sortOrderInput:SortOrderInput ",
+                                                            "requestStr": "$SortOrderInput:SortOrderInput ",
                                                             "required": false,
-                                                            "responseStr": "shippingCompany:$sortOrderInput ",
+                                                            "responseStr": "shippingCompany:$SortOrderInput ",
                                                             "type": {
                                                                 "definition": {
                                                                     "description": null,
@@ -1648,7 +1648,7 @@
                                                                 "name": "SortOrderInput",
                                                                 "non_null": false
                                                             },
-                                                            "varName": "sortOrderInput"
+                                                            "varName": "SortOrderInput"
                                                         },
                                                         "shippingDate": {
                                                             "defaultValue": null,
@@ -1656,9 +1656,9 @@
                                                             "id_str": "socketInventory___input___sort___shippingDate",
                                                             "name": "shippingDate",
                                                             "path": "socketInventory.input.sort.shippingDate",
-                                                            "requestStr": "$sortOrderInput:SortOrderInput ",
+                                                            "requestStr": "$SortOrderInput:SortOrderInput ",
                                                             "required": false,
-                                                            "responseStr": "shippingDate:$sortOrderInput ",
+                                                            "responseStr": "shippingDate:$SortOrderInput ",
                                                             "type": {
                                                                 "definition": {
                                                                     "description": null,
@@ -1740,7 +1740,7 @@
                                                                 "name": "SortOrderInput",
                                                                 "non_null": false
                                                             },
-                                                            "varName": "sortOrderInput"
+                                                            "varName": "SortOrderInput"
                                                         },
                                                         "socketType": {
                                                             "defaultValue": null,
@@ -1748,9 +1748,9 @@
                                                             "id_str": "socketInventory___input___sort___socketType",
                                                             "name": "socketType",
                                                             "path": "socketInventory.input.sort.socketType",
-                                                            "requestStr": "$sortOrderInput:SortOrderInput ",
+                                                            "requestStr": "$SortOrderInput:SortOrderInput ",
                                                             "required": false,
-                                                            "responseStr": "socketType:$sortOrderInput ",
+                                                            "responseStr": "socketType:$SortOrderInput ",
                                                             "type": {
                                                                 "definition": {
                                                                     "description": null,
@@ -1832,7 +1832,7 @@
                                                                 "name": "SortOrderInput",
                                                                 "non_null": false
                                                             },
-                                                            "varName": "sortOrderInput"
+                                                            "varName": "SortOrderInput"
                                                         },
                                                         "status": {
                                                             "defaultValue": null,
@@ -1840,9 +1840,9 @@
                                                             "id_str": "socketInventory___input___sort___status",
                                                             "name": "status",
                                                             "path": "socketInventory.input.sort.status",
-                                                            "requestStr": "$sortOrderInput:SortOrderInput ",
+                                                            "requestStr": "$SortOrderInput:SortOrderInput ",
                                                             "required": false,
-                                                            "responseStr": "status:$sortOrderInput ",
+                                                            "responseStr": "status:$SortOrderInput ",
                                                             "type": {
                                                                 "definition": {
                                                                     "description": null,
@@ -1924,7 +1924,7 @@
                                                                 "name": "SortOrderInput",
                                                                 "non_null": false
                                                             },
-                                                            "varName": "sortOrderInput"
+                                                            "varName": "SortOrderInput"
                                                         }
                                                     },
                                                     "interfaces": null,
@@ -1939,7 +1939,7 @@
                                                 "name": "SocketInventoryOrderInput",
                                                 "non_null": false
                                             },
-                                            "varName": "socketInventoryOrderInput"
+                                            "varName": "SocketInventoryOrderInput"
                                         }
                                     },
                                     "interfaces": null,
@@ -1954,7 +1954,7 @@
                                 "name": "SocketInventoryInput",
                                 "non_null": false
                             },
-                            "varName": "socketInventoryInput"
+                            "varName": "SocketInventoryInput"
                         }
                     },
                     "deprecationReason": null,
@@ -1963,16 +1963,16 @@
                     "isDeprecated": false,
                     "name": "socketInventory",
                     "path": "socketInventory",
-                    "requestStr": "$socketInventoryPayload:SocketInventoryPayload! ",
+                    "requestStr": "$SocketInventoryPayload:SocketInventoryPayload! ",
                     "required": true,
-                    "responseStr": "socketInventory:$socketInventoryPayload ",
+                    "responseStr": "socketInventory:$SocketInventoryPayload ",
                     "type": {
                         "definition": {
                             "description": null,
                             "enumValues": null,
                             "fields": {
                                 "items": {
-                                    "alias": "socketInventoryItemItems: items",
+                                    "alias": "SocketInventoryItemItems: items",
                                     "args": {},
                                     "deprecationReason": null,
                                     "description": null,
@@ -1980,16 +1980,16 @@
                                     "isDeprecated": false,
                                     "name": "items",
                                     "path": "socketInventory.items",
-                                    "requestStr": "$socketInventoryItem:[SocketInventoryItem]! ",
+                                    "requestStr": "$SocketInventoryItem:[SocketInventoryItem]! ",
                                     "required": true,
-                                    "responseStr": "items:$socketInventoryItem ",
+                                    "responseStr": "items:$SocketInventoryItem ",
                                     "type": {
                                         "definition": {
                                             "description": null,
                                             "enumValues": null,
                                             "fields": {
                                                 "account": {
-                                                    "alias": "accountRefAccount: account",
+                                                    "alias": "AccountRefAccount: account",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": "Socket account",
@@ -1997,9 +1997,9 @@
                                                     "isDeprecated": false,
                                                     "name": "account",
                                                     "path": "socketInventory.items.account",
-                                                    "requestStr": "$accountRef:AccountRef! ",
+                                                    "requestStr": "$AccountRef:AccountRef! ",
                                                     "required": true,
-                                                    "responseStr": "account:$accountRef ",
+                                                    "responseStr": "account:$AccountRef ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -2062,7 +2062,7 @@
                                                         "name": "AccountRef",
                                                         "non_null": false
                                                     },
-                                                    "varName": "accountRef"
+                                                    "varName": "AccountRef"
                                                 },
                                                 "availableUpgradeVersions": {
                                                     "args": {},
@@ -2170,7 +2170,7 @@
                                                     "varName": "isPrimary"
                                                 },
                                                 "registrationStatus": {
-                                                    "alias": "socketRegistrationStatusRegistrationStatus: registrationStatus",
+                                                    "alias": "SocketRegistrationStatusRegistrationStatus: registrationStatus",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": "Registration status",
@@ -2305,7 +2305,7 @@
                                                     "varName": "shippingDate"
                                                 },
                                                 "site": {
-                                                    "alias": "siteRefSite: site",
+                                                    "alias": "SiteRefSite: site",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": "Socket's site",
@@ -2313,9 +2313,9 @@
                                                     "isDeprecated": false,
                                                     "name": "site",
                                                     "path": "socketInventory.items.site",
-                                                    "requestStr": "$siteRef:SiteRef ",
+                                                    "requestStr": "$SiteRef:SiteRef ",
                                                     "required": false,
-                                                    "responseStr": "site:$siteRef ",
+                                                    "responseStr": "site:$SiteRef ",
                                                     "type": {
                                                         "definition": {
                                                             "description": null,
@@ -2377,7 +2377,7 @@
                                                         "name": "SiteRef",
                                                         "non_null": false
                                                     },
-                                                    "varName": "siteRef"
+                                                    "varName": "SiteRef"
                                                 },
                                                 "socketMac": {
                                                     "args": {},
@@ -2400,7 +2400,7 @@
                                                     "varName": "socketMac"
                                                 },
                                                 "socketType": {
-                                                    "alias": "socketPlatformSocketType: socketType",
+                                                    "alias": "SocketPlatformSocketType: socketType",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": "Socket Type",
@@ -2513,7 +2513,7 @@
                                                     "varName": "socketVersion"
                                                 },
                                                 "status": {
-                                                    "alias": "socketInventoryItemStatusStatus: status",
+                                                    "alias": "SocketInventoryItemStatusStatus: status",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": "Socket status (see SocketInventoryItemStatus)",
@@ -2616,7 +2616,7 @@
                                                     "varName": "trackingUrl"
                                                 },
                                                 "upgradeStatus": {
-                                                    "alias": "socketUpgradeStatusUpgradeStatus: upgradeStatus",
+                                                    "alias": "SocketUpgradeStatusUpgradeStatus: upgradeStatus",
                                                     "args": {},
                                                     "deprecationReason": null,
                                                     "description": "Upgrade status",
@@ -2746,10 +2746,10 @@
                                         "name": "SocketInventoryItem",
                                         "non_null": false
                                     },
-                                    "varName": "socketInventoryItem"
+                                    "varName": "SocketInventoryItem"
                                 },
                                 "pageInfo": {
-                                    "alias": "pageInfoPageInfo: pageInfo",
+                                    "alias": "PageInfoPageInfo: pageInfo",
                                     "args": {},
                                     "deprecationReason": null,
                                     "description": null,
@@ -2757,9 +2757,9 @@
                                     "isDeprecated": false,
                                     "name": "pageInfo",
                                     "path": "socketInventory.pageInfo",
-                                    "requestStr": "$pageInfo:PageInfo! ",
+                                    "requestStr": "$PageInfo:PageInfo! ",
                                     "required": true,
-                                    "responseStr": "pageInfo:$pageInfo ",
+                                    "responseStr": "pageInfo:$PageInfo ",
                                     "type": {
                                         "definition": {
                                             "description": null,
@@ -2801,7 +2801,7 @@
                                         "name": "PageInfo",
                                         "non_null": false
                                     },
-                                    "varName": "pageInfo"
+                                    "varName": "PageInfo"
                                 }
                             },
                             "inputFields": null,
@@ -2818,7 +2818,7 @@
                         "name": "SocketInventoryPayload",
                         "non_null": false
                     },
-                    "varName": "socketInventoryPayload"
+                    "varName": "SocketInventoryPayload"
                 }
             },
             "inputFields": null,
@@ -2835,8 +2835,8 @@
         "non_null": false
     },
     "variablesPayload": {
-        "socketInventoryInput": {
-            "pagingInput": {
+        "SocketInventoryInput": {
+            "PagingInput": {
                 "from": {
                     "from": "Int"
                 },
@@ -2844,14 +2844,14 @@
                     "limit": "Int"
                 }
             },
-            "socketInventoryFilterInput": {
+            "SocketInventoryFilterInput": {
                 "freeText": {
                     "search": {
                         "search": "String"
                     }
                 }
             },
-            "socketInventoryOrderInput": {
+            "SocketInventoryOrderInput": {
                 "deliverySiteName": {
                     "direction": {
                         "direction": "enum(SortOrder)"

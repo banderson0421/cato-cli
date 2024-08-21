@@ -10,9 +10,9 @@
 
 `cato mutation site updateHa 12345 $(cat < updateHa.json)`
 
-`cato mutation site updateHa 12345 '{"siteId": "ID", "updateHaInput": {"primaryManagementIp": {"primaryManagementIp": "IPAddress"}, "secondaryManagementIp": {"secondaryManagementIp": "IPAddress"}, "vrid": {"vrid": "Int"}}}'`
+`cato mutation site updateHa 12345 '{"UpdateHaInput": {"primaryManagementIp": {"primaryManagementIp": "IPAddress"}, "secondaryManagementIp": {"secondaryManagementIp": "IPAddress"}, "vrid": {"vrid": "Int"}}, "siteId": "ID"}'`
 
 #### Operation Arguments for mutation.site.updateHa ####
+`UpdateHaInput` [UpdateHaInput] - (required) N/A 
 `accountId` [ID] - (required) N/A 
 `siteId` [ID] - (required) N/A 
-`updateHaInput` [UpdateHaInput] - (required) N/A 

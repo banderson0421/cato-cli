@@ -1,5 +1,7 @@
 import codecs
 import json
+import os
+import sys
 from graphql_client import ApiClient, CallApi
 from graphql_client.api_client import ApiException
 import logging

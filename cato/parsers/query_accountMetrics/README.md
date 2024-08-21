@@ -19,10 +19,7 @@
 Sockets (usually two in high availability) are aggregated as one result.
 
 For the best results for aggregated Sockets, we recommend that there is consistent
-names and functionality (for example Destination) for the links on both Sockets.
-
-__Note:__ This argument is mandatory for queries of multiple sites and the only valid value
-for groupDevices value is __true__. 
+names and functionality (for example Destination) for the links on both Sockets. 
 `groupInterfaces` [Boolean] - (optional) When the boolean argument groupInterfaces is set to __true__, then the data for all the
 interfaces are aggregated to a single interface. 
 `labels` [TimeseriesMetricType[]] - (optional) N/A Default Value: ['bytesUpstream', 'bytesDownstream', 'bytesUpstreamMax', 'bytesDownstreamMax', 'packetsUpstream', 'packetsDownstream', 'lostUpstream', 'lostDownstream', 'lostUpstreamPcnt', 'lostDownstreamPcnt', 'packetsDiscardedDownstream', 'packetsDiscardedUpstream', 'packetsDiscardedUpstreamPcnt', 'packetsDiscardedDownstreamPcnt', 'jitterUpstream', 'jitterDownstream', 'bytesTotal', 'rtt', 'health', 'tunnelAge', 'lastMilePacketLoss', 'lastMileLatency']
