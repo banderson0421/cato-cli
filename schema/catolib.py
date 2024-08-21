@@ -126,7 +126,7 @@ def parseSchema(schema):
 				parsedOperation["operationArgs"][arg["varName"]] = arg
 			parsedOperation["variablesPayload"] = generateExampleVariables(parsedOperation)
 			writeFile("../models/"+operationName+".json",json.dumps(parsedOperation, indent=4, sort_keys=True))
-			# writeFile("../queryPayloads/"+operationName+".json",json.dumps(generateGraphqlPayload(parsedOperation["variablesPayload"],parsedOperation,operationName),indent=4,sort_keys=True))
+			writeFile("../queryPayloads/"+operationName+".json",json.dumps(generateGraphqlPayload(parsedOperation["variablesPayload"],parsedOperation,operationName),indent=4,sort_keys=True))
 			payload = generateGraphqlPayload(parsedOperation["variablesPayload"],parsedOperation,operationName)
 			writeFile("../queryPayloads/"+operationName+".txt",payload["query"])
 
