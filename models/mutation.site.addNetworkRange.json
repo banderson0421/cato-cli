@@ -213,6 +213,24 @@
                                     },
                                     "varName": "localIp"
                                 },
+                                "mdnsReflector": {
+                                    "defaultValue": null,
+                                    "description": "BETA - Only relevant for NATIVE, DIRECT_ROUTE and VLAN rangeType",
+                                    "id_str": "addNetworkRange___input___mdnsReflector",
+                                    "name": "mdnsReflector",
+                                    "path": "addNetworkRange.input.mdnsReflector",
+                                    "requestStr": "$mdnsReflector:Boolean ",
+                                    "required": false,
+                                    "responseStr": "mdnsReflector:$mdnsReflector ",
+                                    "type": {
+                                        "kind": [
+                                            "SCALAR"
+                                        ],
+                                        "name": "Boolean",
+                                        "non_null": false
+                                    },
+                                    "varName": "mdnsReflector"
+                                },
                                 "name": {
                                     "defaultValue": null,
                                     "description": null,
@@ -595,6 +613,24 @@
                                 "non_null": false
                             },
                             "varName": "localIp"
+                        },
+                        "mdnsReflector": {
+                            "defaultValue": null,
+                            "description": "BETA - Only relevant for NATIVE, DIRECT_ROUTE and VLAN rangeType",
+                            "id_str": "addNetworkRange___input___mdnsReflector",
+                            "name": "mdnsReflector",
+                            "path": "addNetworkRange.input.mdnsReflector",
+                            "requestStr": "$mdnsReflector:Boolean ",
+                            "required": false,
+                            "responseStr": "mdnsReflector:$mdnsReflector ",
+                            "type": {
+                                "kind": [
+                                    "SCALAR"
+                                ],
+                                "name": "Boolean",
+                                "non_null": false
+                            },
+                            "varName": "mdnsReflector"
                         },
                         "name": {
                             "defaultValue": null,
@@ -984,6 +1020,24 @@
                                             },
                                             "varName": "localIp"
                                         },
+                                        "mdnsReflector": {
+                                            "defaultValue": null,
+                                            "description": "BETA - Only relevant for NATIVE, DIRECT_ROUTE and VLAN rangeType",
+                                            "id_str": "addNetworkRange___input___mdnsReflector",
+                                            "name": "mdnsReflector",
+                                            "path": "addNetworkRange.input.mdnsReflector",
+                                            "requestStr": "$mdnsReflector:Boolean ",
+                                            "required": false,
+                                            "responseStr": "mdnsReflector:$mdnsReflector ",
+                                            "type": {
+                                                "kind": [
+                                                    "SCALAR"
+                                                ],
+                                                "name": "Boolean",
+                                                "non_null": false
+                                            },
+                                            "varName": "mdnsReflector"
+                                        },
                                         "name": {
                                             "defaultValue": null,
                                             "description": null,
@@ -1242,6 +1296,9 @@
             },
             "localIp": {
                 "localIp": "IPAddress"
+            },
+            "mdnsReflector": {
+                "mdnsReflector": "Boolean"
             },
             "name": {
                 "name": "String"

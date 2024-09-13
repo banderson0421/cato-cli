@@ -215,7 +215,7 @@
                 }
             },
             "deprecationReason": null,
-            "description": null,
+            "description": "Update policy section attributes",
             "isDeprecated": false,
             "name": "updateSection",
             "type": {
@@ -647,7 +647,7 @@
                                         }
                                     },
                                     "deprecationReason": null,
-                                    "description": null,
+                                    "description": "Update policy section attributes",
                                     "id_str": "internetFirewall___updateSection",
                                     "isDeprecated": false,
                                     "name": "updateSection",
@@ -875,7 +875,7 @@
                                                                                 },
                                                                                 {
                                                                                     "deprecationReason": null,
-                                                                                    "description": null,
+                                                                                    "description": "An object can not be moved, or referenced when moving other objects.\nHowever its properties and content can be modified.",
                                                                                     "isDeprecated": false,
                                                                                     "name": "ANCHORED"
                                                                                 },

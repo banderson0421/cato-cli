@@ -386,7 +386,7 @@
                                                     "varName": "description"
                                                 },
                                                 "destination": {
-                                                    "defaultValue": "{application: [], customApp: [], appCategory: [], customCategory: [], sanctionedAppsCategory: [], country: [], domain: [], fqdn: [], ip: [], subnet: [], ipRange: [], globalIpRange: [], remoteAsn: []}",
+                                                    "defaultValue": "{application: [], customApp: [], appCategory: [], customCategory: [], sanctionedAppsCategory: [], country: [], domain: [], fqdn: [], ip: [], subnet: [], ipRange: [], globalIpRange: [], remoteAsn: [], container: []}",
                                                     "description": "Destination traffic matching criteria.\nLogical \u2018OR\u2019 is applied within the criteria set.\nLogical \u2018AND\u2019 is applied between criteria sets.",
                                                     "id_str": "addRule___input___rule___destination",
                                                     "name": "destination",
@@ -589,6 +589,101 @@
                                                                         "non_null": false
                                                                     },
                                                                     "varName": "ApplicationRefInput"
+                                                                },
+                                                                "container": {
+                                                                    "defaultValue": "[]",
+                                                                    "description": null,
+                                                                    "id_str": "addRule___input___rule___destination___container",
+                                                                    "name": "container",
+                                                                    "path": "addRule.input.rule.destination.container",
+                                                                    "requestStr": "$ContainerRefInput:[ContainerRefInput]! ",
+                                                                    "required": true,
+                                                                    "responseStr": "container:$ContainerRefInput ",
+                                                                    "type": {
+                                                                        "definition": {
+                                                                            "description": "Add a container by ID or name",
+                                                                            "enumValues": null,
+                                                                            "fields": null,
+                                                                            "inputFields": {
+                                                                                "by": {
+                                                                                    "defaultValue": "ID",
+                                                                                    "description": "Defines the object identification method \u2013 by ID (default) or by name",
+                                                                                    "id_str": "addRule___input___rule___destination___container___by",
+                                                                                    "name": "by",
+                                                                                    "path": "addRule.input.rule.destination.container.by",
+                                                                                    "requestStr": "$by:ObjectRefBy! ",
+                                                                                    "required": true,
+                                                                                    "responseStr": "by:$by ",
+                                                                                    "type": {
+                                                                                        "definition": {
+                                                                                            "description": null,
+                                                                                            "enumValues": [
+                                                                                                {
+                                                                                                    "deprecationReason": null,
+                                                                                                    "description": null,
+                                                                                                    "isDeprecated": false,
+                                                                                                    "name": "ID"
+                                                                                                },
+                                                                                                {
+                                                                                                    "deprecationReason": null,
+                                                                                                    "description": null,
+                                                                                                    "isDeprecated": false,
+                                                                                                    "name": "NAME"
+                                                                                                }
+                                                                                            ],
+                                                                                            "fields": null,
+                                                                                            "inputFields": null,
+                                                                                            "interfaces": null,
+                                                                                            "kind": "ENUM",
+                                                                                            "name": "ObjectRefBy",
+                                                                                            "possibleTypes": null
+                                                                                        },
+                                                                                        "indexType": "enum",
+                                                                                        "kind": [
+                                                                                            "NON_NULL",
+                                                                                            "ENUM"
+                                                                                        ],
+                                                                                        "name": "ObjectRefBy",
+                                                                                        "non_null": false
+                                                                                    },
+                                                                                    "varName": "by"
+                                                                                },
+                                                                                "input": {
+                                                                                    "defaultValue": null,
+                                                                                    "description": "The object identification (ID or name) value",
+                                                                                    "id_str": "addRule___input___rule___destination___container___input",
+                                                                                    "name": "input",
+                                                                                    "path": "addRule.input.rule.destination.container.input",
+                                                                                    "requestStr": "$input:String! ",
+                                                                                    "required": true,
+                                                                                    "responseStr": "input:$input ",
+                                                                                    "type": {
+                                                                                        "kind": [
+                                                                                            "NON_NULL",
+                                                                                            "SCALAR"
+                                                                                        ],
+                                                                                        "name": "String",
+                                                                                        "non_null": false
+                                                                                    },
+                                                                                    "varName": "input"
+                                                                                }
+                                                                            },
+                                                                            "interfaces": null,
+                                                                            "kind": "INPUT_OBJECT",
+                                                                            "name": "ContainerRefInput",
+                                                                            "possibleTypes": null
+                                                                        },
+                                                                        "indexType": "input_object",
+                                                                        "kind": [
+                                                                            "NON_NULL",
+                                                                            "LIST",
+                                                                            "NON_NULL",
+                                                                            "INPUT_OBJECT"
+                                                                        ],
+                                                                        "name": "ContainerRefInput",
+                                                                        "non_null": false
+                                                                    },
+                                                                    "varName": "ContainerRefInput"
                                                                 },
                                                                 "country": {
                                                                     "defaultValue": "[]",
@@ -1106,7 +1201,7 @@
                                                                 },
                                                                 "remoteAsn": {
                                                                     "defaultValue": "[]",
-                                                                    "description": null,
+                                                                    "description": "Remote Autonomous System Number (ASN)",
                                                                     "id_str": "addRule___input___rule___destination___remoteAsn",
                                                                     "name": "remoteAsn",
                                                                     "path": "addRule.input.rule.destination.remoteAsn",
@@ -1127,7 +1222,7 @@
                                                                 },
                                                                 "sanctionedAppsCategory": {
                                                                     "defaultValue": "[]",
-                                                                    "description": null,
+                                                                    "description": "Sanctioned Cloud Applications - apps that are approved and generally represent an understood and acceptable level of risk in your organization.",
                                                                     "id_str": "addRule___input___rule___destination___sanctionedAppsCategory",
                                                                     "name": "sanctionedAppsCategory",
                                                                     "path": "addRule.input.rule.destination.sanctionedAppsCategory",
@@ -1600,7 +1695,7 @@
                                                                     "varName": "CountryRefInput"
                                                                 },
                                                                 "destination": {
-                                                                    "defaultValue": "{application: [], customApp: [], appCategory: [], customCategory: [], sanctionedAppsCategory: [], country: [], domain: [], fqdn: [], ip: [], subnet: [], ipRange: [], globalIpRange: [], remoteAsn: []}",
+                                                                    "defaultValue": "{application: [], customApp: [], appCategory: [], customCategory: [], sanctionedAppsCategory: [], country: [], domain: [], fqdn: [], ip: [], subnet: [], ipRange: [], globalIpRange: [], remoteAsn: [], container: []}",
                                                                     "description": "Destination matching criteria for the exception.",
                                                                     "id_str": "addRule___input___rule___exceptions___destination",
                                                                     "name": "destination",
@@ -1803,6 +1898,101 @@
                                                                                         "non_null": false
                                                                                     },
                                                                                     "varName": "ApplicationRefInput"
+                                                                                },
+                                                                                "container": {
+                                                                                    "defaultValue": "[]",
+                                                                                    "description": null,
+                                                                                    "id_str": "addRule___input___rule___exceptions___destination___container",
+                                                                                    "name": "container",
+                                                                                    "path": "addRule.input.rule.exceptions.destination.container",
+                                                                                    "requestStr": "$ContainerRefInput:[ContainerRefInput]! ",
+                                                                                    "required": true,
+                                                                                    "responseStr": "container:$ContainerRefInput ",
+                                                                                    "type": {
+                                                                                        "definition": {
+                                                                                            "description": "Add a container by ID or name",
+                                                                                            "enumValues": null,
+                                                                                            "fields": null,
+                                                                                            "inputFields": {
+                                                                                                "by": {
+                                                                                                    "defaultValue": "ID",
+                                                                                                    "description": "Defines the object identification method \u2013 by ID (default) or by name",
+                                                                                                    "id_str": "addRule___input___rule___exceptions___destination___container___by",
+                                                                                                    "name": "by",
+                                                                                                    "path": "addRule.input.rule.exceptions.destination.container.by",
+                                                                                                    "requestStr": "$by:ObjectRefBy! ",
+                                                                                                    "required": true,
+                                                                                                    "responseStr": "by:$by ",
+                                                                                                    "type": {
+                                                                                                        "definition": {
+                                                                                                            "description": null,
+                                                                                                            "enumValues": [
+                                                                                                                {
+                                                                                                                    "deprecationReason": null,
+                                                                                                                    "description": null,
+                                                                                                                    "isDeprecated": false,
+                                                                                                                    "name": "ID"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "deprecationReason": null,
+                                                                                                                    "description": null,
+                                                                                                                    "isDeprecated": false,
+                                                                                                                    "name": "NAME"
+                                                                                                                }
+                                                                                                            ],
+                                                                                                            "fields": null,
+                                                                                                            "inputFields": null,
+                                                                                                            "interfaces": null,
+                                                                                                            "kind": "ENUM",
+                                                                                                            "name": "ObjectRefBy",
+                                                                                                            "possibleTypes": null
+                                                                                                        },
+                                                                                                        "indexType": "enum",
+                                                                                                        "kind": [
+                                                                                                            "NON_NULL",
+                                                                                                            "ENUM"
+                                                                                                        ],
+                                                                                                        "name": "ObjectRefBy",
+                                                                                                        "non_null": false
+                                                                                                    },
+                                                                                                    "varName": "by"
+                                                                                                },
+                                                                                                "input": {
+                                                                                                    "defaultValue": null,
+                                                                                                    "description": "The object identification (ID or name) value",
+                                                                                                    "id_str": "addRule___input___rule___exceptions___destination___container___input",
+                                                                                                    "name": "input",
+                                                                                                    "path": "addRule.input.rule.exceptions.destination.container.input",
+                                                                                                    "requestStr": "$input:String! ",
+                                                                                                    "required": true,
+                                                                                                    "responseStr": "input:$input ",
+                                                                                                    "type": {
+                                                                                                        "kind": [
+                                                                                                            "NON_NULL",
+                                                                                                            "SCALAR"
+                                                                                                        ],
+                                                                                                        "name": "String",
+                                                                                                        "non_null": false
+                                                                                                    },
+                                                                                                    "varName": "input"
+                                                                                                }
+                                                                                            },
+                                                                                            "interfaces": null,
+                                                                                            "kind": "INPUT_OBJECT",
+                                                                                            "name": "ContainerRefInput",
+                                                                                            "possibleTypes": null
+                                                                                        },
+                                                                                        "indexType": "input_object",
+                                                                                        "kind": [
+                                                                                            "NON_NULL",
+                                                                                            "LIST",
+                                                                                            "NON_NULL",
+                                                                                            "INPUT_OBJECT"
+                                                                                        ],
+                                                                                        "name": "ContainerRefInput",
+                                                                                        "non_null": false
+                                                                                    },
+                                                                                    "varName": "ContainerRefInput"
                                                                                 },
                                                                                 "country": {
                                                                                     "defaultValue": "[]",
@@ -2320,7 +2510,7 @@
                                                                                 },
                                                                                 "remoteAsn": {
                                                                                     "defaultValue": "[]",
-                                                                                    "description": null,
+                                                                                    "description": "Remote Autonomous System Number (ASN)",
                                                                                     "id_str": "addRule___input___rule___exceptions___destination___remoteAsn",
                                                                                     "name": "remoteAsn",
                                                                                     "path": "addRule.input.rule.exceptions.destination.remoteAsn",
@@ -2341,7 +2531,7 @@
                                                                                 },
                                                                                 "sanctionedAppsCategory": {
                                                                                     "defaultValue": "[]",
-                                                                                    "description": null,
+                                                                                    "description": "Sanctioned Cloud Applications - apps that are approved and generally represent an understood and acceptable level of risk in your organization.",
                                                                                     "id_str": "addRule___input___rule___exceptions___destination___sanctionedAppsCategory",
                                                                                     "name": "sanctionedAppsCategory",
                                                                                     "path": "addRule.input.rule.exceptions.destination.sanctionedAppsCategory",
@@ -6410,6 +6600,8 @@
         "ApplicationRef": true,
         "ApplicationRefInput": true,
         "ConnectionOriginEnum": true,
+        "ContainerRef": true,
+        "ContainerRefInput": true,
         "CountryRef": true,
         "CountryRefInput": true,
         "CustomApplicationRef": true,
@@ -6861,7 +7053,7 @@
                                             "varName": "description"
                                         },
                                         "destination": {
-                                            "defaultValue": "{application: [], customApp: [], appCategory: [], customCategory: [], sanctionedAppsCategory: [], country: [], domain: [], fqdn: [], ip: [], subnet: [], ipRange: [], globalIpRange: [], remoteAsn: []}",
+                                            "defaultValue": "{application: [], customApp: [], appCategory: [], customCategory: [], sanctionedAppsCategory: [], country: [], domain: [], fqdn: [], ip: [], subnet: [], ipRange: [], globalIpRange: [], remoteAsn: [], container: []}",
                                             "description": "Destination traffic matching criteria.\nLogical \u2018OR\u2019 is applied within the criteria set.\nLogical \u2018AND\u2019 is applied between criteria sets.",
                                             "id_str": "addRule___input___rule___destination",
                                             "name": "destination",
@@ -7064,6 +7256,101 @@
                                                                 "non_null": false
                                                             },
                                                             "varName": "ApplicationRefInput"
+                                                        },
+                                                        "container": {
+                                                            "defaultValue": "[]",
+                                                            "description": null,
+                                                            "id_str": "addRule___input___rule___destination___container",
+                                                            "name": "container",
+                                                            "path": "addRule.input.rule.destination.container",
+                                                            "requestStr": "$ContainerRefInput:[ContainerRefInput]! ",
+                                                            "required": true,
+                                                            "responseStr": "container:$ContainerRefInput ",
+                                                            "type": {
+                                                                "definition": {
+                                                                    "description": "Add a container by ID or name",
+                                                                    "enumValues": null,
+                                                                    "fields": null,
+                                                                    "inputFields": {
+                                                                        "by": {
+                                                                            "defaultValue": "ID",
+                                                                            "description": "Defines the object identification method \u2013 by ID (default) or by name",
+                                                                            "id_str": "addRule___input___rule___destination___container___by",
+                                                                            "name": "by",
+                                                                            "path": "addRule.input.rule.destination.container.by",
+                                                                            "requestStr": "$by:ObjectRefBy! ",
+                                                                            "required": true,
+                                                                            "responseStr": "by:$by ",
+                                                                            "type": {
+                                                                                "definition": {
+                                                                                    "description": null,
+                                                                                    "enumValues": [
+                                                                                        {
+                                                                                            "deprecationReason": null,
+                                                                                            "description": null,
+                                                                                            "isDeprecated": false,
+                                                                                            "name": "ID"
+                                                                                        },
+                                                                                        {
+                                                                                            "deprecationReason": null,
+                                                                                            "description": null,
+                                                                                            "isDeprecated": false,
+                                                                                            "name": "NAME"
+                                                                                        }
+                                                                                    ],
+                                                                                    "fields": null,
+                                                                                    "inputFields": null,
+                                                                                    "interfaces": null,
+                                                                                    "kind": "ENUM",
+                                                                                    "name": "ObjectRefBy",
+                                                                                    "possibleTypes": null
+                                                                                },
+                                                                                "indexType": "enum",
+                                                                                "kind": [
+                                                                                    "NON_NULL",
+                                                                                    "ENUM"
+                                                                                ],
+                                                                                "name": "ObjectRefBy",
+                                                                                "non_null": false
+                                                                            },
+                                                                            "varName": "by"
+                                                                        },
+                                                                        "input": {
+                                                                            "defaultValue": null,
+                                                                            "description": "The object identification (ID or name) value",
+                                                                            "id_str": "addRule___input___rule___destination___container___input",
+                                                                            "name": "input",
+                                                                            "path": "addRule.input.rule.destination.container.input",
+                                                                            "requestStr": "$input:String! ",
+                                                                            "required": true,
+                                                                            "responseStr": "input:$input ",
+                                                                            "type": {
+                                                                                "kind": [
+                                                                                    "NON_NULL",
+                                                                                    "SCALAR"
+                                                                                ],
+                                                                                "name": "String",
+                                                                                "non_null": false
+                                                                            },
+                                                                            "varName": "input"
+                                                                        }
+                                                                    },
+                                                                    "interfaces": null,
+                                                                    "kind": "INPUT_OBJECT",
+                                                                    "name": "ContainerRefInput",
+                                                                    "possibleTypes": null
+                                                                },
+                                                                "indexType": "input_object",
+                                                                "kind": [
+                                                                    "NON_NULL",
+                                                                    "LIST",
+                                                                    "NON_NULL",
+                                                                    "INPUT_OBJECT"
+                                                                ],
+                                                                "name": "ContainerRefInput",
+                                                                "non_null": false
+                                                            },
+                                                            "varName": "ContainerRefInput"
                                                         },
                                                         "country": {
                                                             "defaultValue": "[]",
@@ -7581,7 +7868,7 @@
                                                         },
                                                         "remoteAsn": {
                                                             "defaultValue": "[]",
-                                                            "description": null,
+                                                            "description": "Remote Autonomous System Number (ASN)",
                                                             "id_str": "addRule___input___rule___destination___remoteAsn",
                                                             "name": "remoteAsn",
                                                             "path": "addRule.input.rule.destination.remoteAsn",
@@ -7602,7 +7889,7 @@
                                                         },
                                                         "sanctionedAppsCategory": {
                                                             "defaultValue": "[]",
-                                                            "description": null,
+                                                            "description": "Sanctioned Cloud Applications - apps that are approved and generally represent an understood and acceptable level of risk in your organization.",
                                                             "id_str": "addRule___input___rule___destination___sanctionedAppsCategory",
                                                             "name": "sanctionedAppsCategory",
                                                             "path": "addRule.input.rule.destination.sanctionedAppsCategory",
@@ -8075,7 +8362,7 @@
                                                             "varName": "CountryRefInput"
                                                         },
                                                         "destination": {
-                                                            "defaultValue": "{application: [], customApp: [], appCategory: [], customCategory: [], sanctionedAppsCategory: [], country: [], domain: [], fqdn: [], ip: [], subnet: [], ipRange: [], globalIpRange: [], remoteAsn: []}",
+                                                            "defaultValue": "{application: [], customApp: [], appCategory: [], customCategory: [], sanctionedAppsCategory: [], country: [], domain: [], fqdn: [], ip: [], subnet: [], ipRange: [], globalIpRange: [], remoteAsn: [], container: []}",
                                                             "description": "Destination matching criteria for the exception.",
                                                             "id_str": "addRule___input___rule___exceptions___destination",
                                                             "name": "destination",
@@ -8278,6 +8565,101 @@
                                                                                 "non_null": false
                                                                             },
                                                                             "varName": "ApplicationRefInput"
+                                                                        },
+                                                                        "container": {
+                                                                            "defaultValue": "[]",
+                                                                            "description": null,
+                                                                            "id_str": "addRule___input___rule___exceptions___destination___container",
+                                                                            "name": "container",
+                                                                            "path": "addRule.input.rule.exceptions.destination.container",
+                                                                            "requestStr": "$ContainerRefInput:[ContainerRefInput]! ",
+                                                                            "required": true,
+                                                                            "responseStr": "container:$ContainerRefInput ",
+                                                                            "type": {
+                                                                                "definition": {
+                                                                                    "description": "Add a container by ID or name",
+                                                                                    "enumValues": null,
+                                                                                    "fields": null,
+                                                                                    "inputFields": {
+                                                                                        "by": {
+                                                                                            "defaultValue": "ID",
+                                                                                            "description": "Defines the object identification method \u2013 by ID (default) or by name",
+                                                                                            "id_str": "addRule___input___rule___exceptions___destination___container___by",
+                                                                                            "name": "by",
+                                                                                            "path": "addRule.input.rule.exceptions.destination.container.by",
+                                                                                            "requestStr": "$by:ObjectRefBy! ",
+                                                                                            "required": true,
+                                                                                            "responseStr": "by:$by ",
+                                                                                            "type": {
+                                                                                                "definition": {
+                                                                                                    "description": null,
+                                                                                                    "enumValues": [
+                                                                                                        {
+                                                                                                            "deprecationReason": null,
+                                                                                                            "description": null,
+                                                                                                            "isDeprecated": false,
+                                                                                                            "name": "ID"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "deprecationReason": null,
+                                                                                                            "description": null,
+                                                                                                            "isDeprecated": false,
+                                                                                                            "name": "NAME"
+                                                                                                        }
+                                                                                                    ],
+                                                                                                    "fields": null,
+                                                                                                    "inputFields": null,
+                                                                                                    "interfaces": null,
+                                                                                                    "kind": "ENUM",
+                                                                                                    "name": "ObjectRefBy",
+                                                                                                    "possibleTypes": null
+                                                                                                },
+                                                                                                "indexType": "enum",
+                                                                                                "kind": [
+                                                                                                    "NON_NULL",
+                                                                                                    "ENUM"
+                                                                                                ],
+                                                                                                "name": "ObjectRefBy",
+                                                                                                "non_null": false
+                                                                                            },
+                                                                                            "varName": "by"
+                                                                                        },
+                                                                                        "input": {
+                                                                                            "defaultValue": null,
+                                                                                            "description": "The object identification (ID or name) value",
+                                                                                            "id_str": "addRule___input___rule___exceptions___destination___container___input",
+                                                                                            "name": "input",
+                                                                                            "path": "addRule.input.rule.exceptions.destination.container.input",
+                                                                                            "requestStr": "$input:String! ",
+                                                                                            "required": true,
+                                                                                            "responseStr": "input:$input ",
+                                                                                            "type": {
+                                                                                                "kind": [
+                                                                                                    "NON_NULL",
+                                                                                                    "SCALAR"
+                                                                                                ],
+                                                                                                "name": "String",
+                                                                                                "non_null": false
+                                                                                            },
+                                                                                            "varName": "input"
+                                                                                        }
+                                                                                    },
+                                                                                    "interfaces": null,
+                                                                                    "kind": "INPUT_OBJECT",
+                                                                                    "name": "ContainerRefInput",
+                                                                                    "possibleTypes": null
+                                                                                },
+                                                                                "indexType": "input_object",
+                                                                                "kind": [
+                                                                                    "NON_NULL",
+                                                                                    "LIST",
+                                                                                    "NON_NULL",
+                                                                                    "INPUT_OBJECT"
+                                                                                ],
+                                                                                "name": "ContainerRefInput",
+                                                                                "non_null": false
+                                                                            },
+                                                                            "varName": "ContainerRefInput"
                                                                         },
                                                                         "country": {
                                                                             "defaultValue": "[]",
@@ -8795,7 +9177,7 @@
                                                                         },
                                                                         "remoteAsn": {
                                                                             "defaultValue": "[]",
-                                                                            "description": null,
+                                                                            "description": "Remote Autonomous System Number (ASN)",
                                                                             "id_str": "addRule___input___rule___exceptions___destination___remoteAsn",
                                                                             "name": "remoteAsn",
                                                                             "path": "addRule.input.rule.exceptions.destination.remoteAsn",
@@ -8816,7 +9198,7 @@
                                                                         },
                                                                         "sanctionedAppsCategory": {
                                                                             "defaultValue": "[]",
-                                                                            "description": null,
+                                                                            "description": "Sanctioned Cloud Applications - apps that are approved and generally represent an understood and acceptable level of risk in your organization.",
                                                                             "id_str": "addRule___input___rule___exceptions___destination___sanctionedAppsCategory",
                                                                             "name": "sanctionedAppsCategory",
                                                                             "path": "addRule.input.rule.exceptions.destination.sanctionedAppsCategory",
@@ -13334,7 +13716,7 @@
                                                                             "varName": "description"
                                                                         },
                                                                         "destination": {
-                                                                            "defaultValue": "{application: [], customApp: [], appCategory: [], customCategory: [], sanctionedAppsCategory: [], country: [], domain: [], fqdn: [], ip: [], subnet: [], ipRange: [], globalIpRange: [], remoteAsn: []}",
+                                                                            "defaultValue": "{application: [], customApp: [], appCategory: [], customCategory: [], sanctionedAppsCategory: [], country: [], domain: [], fqdn: [], ip: [], subnet: [], ipRange: [], globalIpRange: [], remoteAsn: [], container: []}",
                                                                             "description": "Destination traffic matching criteria.\nLogical \u2018OR\u2019 is applied within the criteria set.\nLogical \u2018AND\u2019 is applied between criteria sets.",
                                                                             "id_str": "addRule___input___rule___destination",
                                                                             "name": "destination",
@@ -13537,6 +13919,101 @@
                                                                                                 "non_null": false
                                                                                             },
                                                                                             "varName": "ApplicationRefInput"
+                                                                                        },
+                                                                                        "container": {
+                                                                                            "defaultValue": "[]",
+                                                                                            "description": null,
+                                                                                            "id_str": "addRule___input___rule___destination___container",
+                                                                                            "name": "container",
+                                                                                            "path": "addRule.input.rule.destination.container",
+                                                                                            "requestStr": "$ContainerRefInput:[ContainerRefInput]! ",
+                                                                                            "required": true,
+                                                                                            "responseStr": "container:$ContainerRefInput ",
+                                                                                            "type": {
+                                                                                                "definition": {
+                                                                                                    "description": "Add a container by ID or name",
+                                                                                                    "enumValues": null,
+                                                                                                    "fields": null,
+                                                                                                    "inputFields": {
+                                                                                                        "by": {
+                                                                                                            "defaultValue": "ID",
+                                                                                                            "description": "Defines the object identification method \u2013 by ID (default) or by name",
+                                                                                                            "id_str": "addRule___input___rule___destination___container___by",
+                                                                                                            "name": "by",
+                                                                                                            "path": "addRule.input.rule.destination.container.by",
+                                                                                                            "requestStr": "$by:ObjectRefBy! ",
+                                                                                                            "required": true,
+                                                                                                            "responseStr": "by:$by ",
+                                                                                                            "type": {
+                                                                                                                "definition": {
+                                                                                                                    "description": null,
+                                                                                                                    "enumValues": [
+                                                                                                                        {
+                                                                                                                            "deprecationReason": null,
+                                                                                                                            "description": null,
+                                                                                                                            "isDeprecated": false,
+                                                                                                                            "name": "ID"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "deprecationReason": null,
+                                                                                                                            "description": null,
+                                                                                                                            "isDeprecated": false,
+                                                                                                                            "name": "NAME"
+                                                                                                                        }
+                                                                                                                    ],
+                                                                                                                    "fields": null,
+                                                                                                                    "inputFields": null,
+                                                                                                                    "interfaces": null,
+                                                                                                                    "kind": "ENUM",
+                                                                                                                    "name": "ObjectRefBy",
+                                                                                                                    "possibleTypes": null
+                                                                                                                },
+                                                                                                                "indexType": "enum",
+                                                                                                                "kind": [
+                                                                                                                    "NON_NULL",
+                                                                                                                    "ENUM"
+                                                                                                                ],
+                                                                                                                "name": "ObjectRefBy",
+                                                                                                                "non_null": false
+                                                                                                            },
+                                                                                                            "varName": "by"
+                                                                                                        },
+                                                                                                        "input": {
+                                                                                                            "defaultValue": null,
+                                                                                                            "description": "The object identification (ID or name) value",
+                                                                                                            "id_str": "addRule___input___rule___destination___container___input",
+                                                                                                            "name": "input",
+                                                                                                            "path": "addRule.input.rule.destination.container.input",
+                                                                                                            "requestStr": "$input:String! ",
+                                                                                                            "required": true,
+                                                                                                            "responseStr": "input:$input ",
+                                                                                                            "type": {
+                                                                                                                "kind": [
+                                                                                                                    "NON_NULL",
+                                                                                                                    "SCALAR"
+                                                                                                                ],
+                                                                                                                "name": "String",
+                                                                                                                "non_null": false
+                                                                                                            },
+                                                                                                            "varName": "input"
+                                                                                                        }
+                                                                                                    },
+                                                                                                    "interfaces": null,
+                                                                                                    "kind": "INPUT_OBJECT",
+                                                                                                    "name": "ContainerRefInput",
+                                                                                                    "possibleTypes": null
+                                                                                                },
+                                                                                                "indexType": "input_object",
+                                                                                                "kind": [
+                                                                                                    "NON_NULL",
+                                                                                                    "LIST",
+                                                                                                    "NON_NULL",
+                                                                                                    "INPUT_OBJECT"
+                                                                                                ],
+                                                                                                "name": "ContainerRefInput",
+                                                                                                "non_null": false
+                                                                                            },
+                                                                                            "varName": "ContainerRefInput"
                                                                                         },
                                                                                         "country": {
                                                                                             "defaultValue": "[]",
@@ -14054,7 +14531,7 @@
                                                                                         },
                                                                                         "remoteAsn": {
                                                                                             "defaultValue": "[]",
-                                                                                            "description": null,
+                                                                                            "description": "Remote Autonomous System Number (ASN)",
                                                                                             "id_str": "addRule___input___rule___destination___remoteAsn",
                                                                                             "name": "remoteAsn",
                                                                                             "path": "addRule.input.rule.destination.remoteAsn",
@@ -14075,7 +14552,7 @@
                                                                                         },
                                                                                         "sanctionedAppsCategory": {
                                                                                             "defaultValue": "[]",
-                                                                                            "description": null,
+                                                                                            "description": "Sanctioned Cloud Applications - apps that are approved and generally represent an understood and acceptable level of risk in your organization.",
                                                                                             "id_str": "addRule___input___rule___destination___sanctionedAppsCategory",
                                                                                             "name": "sanctionedAppsCategory",
                                                                                             "path": "addRule.input.rule.destination.sanctionedAppsCategory",
@@ -14548,7 +15025,7 @@
                                                                                             "varName": "CountryRefInput"
                                                                                         },
                                                                                         "destination": {
-                                                                                            "defaultValue": "{application: [], customApp: [], appCategory: [], customCategory: [], sanctionedAppsCategory: [], country: [], domain: [], fqdn: [], ip: [], subnet: [], ipRange: [], globalIpRange: [], remoteAsn: []}",
+                                                                                            "defaultValue": "{application: [], customApp: [], appCategory: [], customCategory: [], sanctionedAppsCategory: [], country: [], domain: [], fqdn: [], ip: [], subnet: [], ipRange: [], globalIpRange: [], remoteAsn: [], container: []}",
                                                                                             "description": "Destination matching criteria for the exception.",
                                                                                             "id_str": "addRule___input___rule___exceptions___destination",
                                                                                             "name": "destination",
@@ -14751,6 +15228,101 @@
                                                                                                                 "non_null": false
                                                                                                             },
                                                                                                             "varName": "ApplicationRefInput"
+                                                                                                        },
+                                                                                                        "container": {
+                                                                                                            "defaultValue": "[]",
+                                                                                                            "description": null,
+                                                                                                            "id_str": "addRule___input___rule___exceptions___destination___container",
+                                                                                                            "name": "container",
+                                                                                                            "path": "addRule.input.rule.exceptions.destination.container",
+                                                                                                            "requestStr": "$ContainerRefInput:[ContainerRefInput]! ",
+                                                                                                            "required": true,
+                                                                                                            "responseStr": "container:$ContainerRefInput ",
+                                                                                                            "type": {
+                                                                                                                "definition": {
+                                                                                                                    "description": "Add a container by ID or name",
+                                                                                                                    "enumValues": null,
+                                                                                                                    "fields": null,
+                                                                                                                    "inputFields": {
+                                                                                                                        "by": {
+                                                                                                                            "defaultValue": "ID",
+                                                                                                                            "description": "Defines the object identification method \u2013 by ID (default) or by name",
+                                                                                                                            "id_str": "addRule___input___rule___exceptions___destination___container___by",
+                                                                                                                            "name": "by",
+                                                                                                                            "path": "addRule.input.rule.exceptions.destination.container.by",
+                                                                                                                            "requestStr": "$by:ObjectRefBy! ",
+                                                                                                                            "required": true,
+                                                                                                                            "responseStr": "by:$by ",
+                                                                                                                            "type": {
+                                                                                                                                "definition": {
+                                                                                                                                    "description": null,
+                                                                                                                                    "enumValues": [
+                                                                                                                                        {
+                                                                                                                                            "deprecationReason": null,
+                                                                                                                                            "description": null,
+                                                                                                                                            "isDeprecated": false,
+                                                                                                                                            "name": "ID"
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "deprecationReason": null,
+                                                                                                                                            "description": null,
+                                                                                                                                            "isDeprecated": false,
+                                                                                                                                            "name": "NAME"
+                                                                                                                                        }
+                                                                                                                                    ],
+                                                                                                                                    "fields": null,
+                                                                                                                                    "inputFields": null,
+                                                                                                                                    "interfaces": null,
+                                                                                                                                    "kind": "ENUM",
+                                                                                                                                    "name": "ObjectRefBy",
+                                                                                                                                    "possibleTypes": null
+                                                                                                                                },
+                                                                                                                                "indexType": "enum",
+                                                                                                                                "kind": [
+                                                                                                                                    "NON_NULL",
+                                                                                                                                    "ENUM"
+                                                                                                                                ],
+                                                                                                                                "name": "ObjectRefBy",
+                                                                                                                                "non_null": false
+                                                                                                                            },
+                                                                                                                            "varName": "by"
+                                                                                                                        },
+                                                                                                                        "input": {
+                                                                                                                            "defaultValue": null,
+                                                                                                                            "description": "The object identification (ID or name) value",
+                                                                                                                            "id_str": "addRule___input___rule___exceptions___destination___container___input",
+                                                                                                                            "name": "input",
+                                                                                                                            "path": "addRule.input.rule.exceptions.destination.container.input",
+                                                                                                                            "requestStr": "$input:String! ",
+                                                                                                                            "required": true,
+                                                                                                                            "responseStr": "input:$input ",
+                                                                                                                            "type": {
+                                                                                                                                "kind": [
+                                                                                                                                    "NON_NULL",
+                                                                                                                                    "SCALAR"
+                                                                                                                                ],
+                                                                                                                                "name": "String",
+                                                                                                                                "non_null": false
+                                                                                                                            },
+                                                                                                                            "varName": "input"
+                                                                                                                        }
+                                                                                                                    },
+                                                                                                                    "interfaces": null,
+                                                                                                                    "kind": "INPUT_OBJECT",
+                                                                                                                    "name": "ContainerRefInput",
+                                                                                                                    "possibleTypes": null
+                                                                                                                },
+                                                                                                                "indexType": "input_object",
+                                                                                                                "kind": [
+                                                                                                                    "NON_NULL",
+                                                                                                                    "LIST",
+                                                                                                                    "NON_NULL",
+                                                                                                                    "INPUT_OBJECT"
+                                                                                                                ],
+                                                                                                                "name": "ContainerRefInput",
+                                                                                                                "non_null": false
+                                                                                                            },
+                                                                                                            "varName": "ContainerRefInput"
                                                                                                         },
                                                                                                         "country": {
                                                                                                             "defaultValue": "[]",
@@ -15268,7 +15840,7 @@
                                                                                                         },
                                                                                                         "remoteAsn": {
                                                                                                             "defaultValue": "[]",
-                                                                                                            "description": null,
+                                                                                                            "description": "Remote Autonomous System Number (ASN)",
                                                                                                             "id_str": "addRule___input___rule___exceptions___destination___remoteAsn",
                                                                                                             "name": "remoteAsn",
                                                                                                             "path": "addRule.input.rule.exceptions.destination.remoteAsn",
@@ -15289,7 +15861,7 @@
                                                                                                         },
                                                                                                         "sanctionedAppsCategory": {
                                                                                                             "defaultValue": "[]",
-                                                                                                            "description": null,
+                                                                                                            "description": "Sanctioned Cloud Applications - apps that are approved and generally represent an understood and acceptable level of risk in your organization.",
                                                                                                             "id_str": "addRule___input___rule___exceptions___destination___sanctionedAppsCategory",
                                                                                                             "name": "sanctionedAppsCategory",
                                                                                                             "path": "addRule.input.rule.exceptions.destination.sanctionedAppsCategory",
@@ -19473,7 +20045,7 @@
                                                                                 },
                                                                                 {
                                                                                     "deprecationReason": null,
-                                                                                    "description": null,
+                                                                                    "description": "An object can not be moved, or referenced when moving other objects.\nHowever its properties and content can be modified.",
                                                                                     "isDeprecated": false,
                                                                                     "name": "ANCHORED"
                                                                                 },
@@ -19900,6 +20472,84 @@
                                                                                                         "non_null": false
                                                                                                     },
                                                                                                     "varName": "ApplicationRef"
+                                                                                                },
+                                                                                                "container": {
+                                                                                                    "alias": "ContainerRefContainer: container",
+                                                                                                    "args": {},
+                                                                                                    "deprecationReason": null,
+                                                                                                    "description": null,
+                                                                                                    "id_str": "internetFirewall___addRule___rule___rule___destination___container",
+                                                                                                    "isDeprecated": false,
+                                                                                                    "name": "container",
+                                                                                                    "path": "internetFirewall.addRule.rule.rule.destination.container",
+                                                                                                    "requestStr": "$ContainerRef:[ContainerRef]! ",
+                                                                                                    "required": true,
+                                                                                                    "responseStr": "container:$ContainerRef ",
+                                                                                                    "type": {
+                                                                                                        "definition": {
+                                                                                                            "description": "A group with members of a single type of entity (for example: IP, FQDN)",
+                                                                                                            "enumValues": null,
+                                                                                                            "fields": {
+                                                                                                                "id": {
+                                                                                                                    "args": {},
+                                                                                                                    "deprecationReason": null,
+                                                                                                                    "description": "Unique container ID",
+                                                                                                                    "id_str": "internetFirewall___addRule___rule___rule___destination___container___id",
+                                                                                                                    "isDeprecated": false,
+                                                                                                                    "name": "id",
+                                                                                                                    "path": "internetFirewall.addRule.rule.rule.destination.container.id",
+                                                                                                                    "requestStr": "$id:ID! ",
+                                                                                                                    "required": true,
+                                                                                                                    "responseStr": "id:$id ",
+                                                                                                                    "type": {
+                                                                                                                        "kind": [
+                                                                                                                            "NON_NULL",
+                                                                                                                            "SCALAR"
+                                                                                                                        ],
+                                                                                                                        "name": "ID",
+                                                                                                                        "non_null": false
+                                                                                                                    },
+                                                                                                                    "varName": "id"
+                                                                                                                },
+                                                                                                                "name": {
+                                                                                                                    "args": {},
+                                                                                                                    "deprecationReason": null,
+                                                                                                                    "description": "Name for the container",
+                                                                                                                    "id_str": "internetFirewall___addRule___rule___rule___destination___container___name",
+                                                                                                                    "isDeprecated": false,
+                                                                                                                    "name": "name",
+                                                                                                                    "path": "internetFirewall.addRule.rule.rule.destination.container.name",
+                                                                                                                    "requestStr": "$name:String! ",
+                                                                                                                    "required": true,
+                                                                                                                    "responseStr": "name:$name ",
+                                                                                                                    "type": {
+                                                                                                                        "kind": [
+                                                                                                                            "NON_NULL",
+                                                                                                                            "SCALAR"
+                                                                                                                        ],
+                                                                                                                        "name": "String",
+                                                                                                                        "non_null": false
+                                                                                                                    },
+                                                                                                                    "varName": "name"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            "inputFields": null,
+                                                                                                            "interfaces": {},
+                                                                                                            "kind": "OBJECT",
+                                                                                                            "name": "ContainerRef",
+                                                                                                            "possibleTypes": null
+                                                                                                        },
+                                                                                                        "indexType": "object",
+                                                                                                        "kind": [
+                                                                                                            "NON_NULL",
+                                                                                                            "LIST",
+                                                                                                            "NON_NULL",
+                                                                                                            "OBJECT"
+                                                                                                        ],
+                                                                                                        "name": "ContainerRef",
+                                                                                                        "non_null": false
+                                                                                                    },
+                                                                                                    "varName": "ContainerRef"
                                                                                                 },
                                                                                                 "country": {
                                                                                                     "alias": "CountryRefCountry: country",
@@ -20363,7 +21013,7 @@
                                                                                                 "remoteAsn": {
                                                                                                     "args": {},
                                                                                                     "deprecationReason": null,
-                                                                                                    "description": null,
+                                                                                                    "description": "Remote Autonomous System Number (ASN)",
                                                                                                     "id_str": "internetFirewall___addRule___rule___rule___destination___remoteAsn",
                                                                                                     "isDeprecated": false,
                                                                                                     "name": "remoteAsn",
@@ -20387,7 +21037,7 @@
                                                                                                     "alias": "SanctionedAppsCategoryRefSanctionedAppsCategory: sanctionedAppsCategory",
                                                                                                     "args": {},
                                                                                                     "deprecationReason": null,
-                                                                                                    "description": null,
+                                                                                                    "description": "Sanctioned Cloud Applications - apps that are approved and generally represent an understood and acceptable level of risk in your organization.",
                                                                                                     "id_str": "internetFirewall___addRule___rule___rule___destination___sanctionedAppsCategory",
                                                                                                     "isDeprecated": false,
                                                                                                     "name": "sanctionedAppsCategory",
@@ -20992,6 +21642,84 @@
                                                                                                                     },
                                                                                                                     "varName": "ApplicationRef"
                                                                                                                 },
+                                                                                                                "container": {
+                                                                                                                    "alias": "ContainerRefContainer: container",
+                                                                                                                    "args": {},
+                                                                                                                    "deprecationReason": null,
+                                                                                                                    "description": null,
+                                                                                                                    "id_str": "internetFirewall___addRule___rule___rule___exceptions___destination___container",
+                                                                                                                    "isDeprecated": false,
+                                                                                                                    "name": "container",
+                                                                                                                    "path": "internetFirewall.addRule.rule.rule.exceptions.destination.container",
+                                                                                                                    "requestStr": "$ContainerRef:[ContainerRef]! ",
+                                                                                                                    "required": true,
+                                                                                                                    "responseStr": "container:$ContainerRef ",
+                                                                                                                    "type": {
+                                                                                                                        "definition": {
+                                                                                                                            "description": "A group with members of a single type of entity (for example: IP, FQDN)",
+                                                                                                                            "enumValues": null,
+                                                                                                                            "fields": {
+                                                                                                                                "id": {
+                                                                                                                                    "args": {},
+                                                                                                                                    "deprecationReason": null,
+                                                                                                                                    "description": "Unique container ID",
+                                                                                                                                    "id_str": "internetFirewall___addRule___rule___rule___exceptions___destination___container___id",
+                                                                                                                                    "isDeprecated": false,
+                                                                                                                                    "name": "id",
+                                                                                                                                    "path": "internetFirewall.addRule.rule.rule.exceptions.destination.container.id",
+                                                                                                                                    "requestStr": "$id:ID! ",
+                                                                                                                                    "required": true,
+                                                                                                                                    "responseStr": "id:$id ",
+                                                                                                                                    "type": {
+                                                                                                                                        "kind": [
+                                                                                                                                            "NON_NULL",
+                                                                                                                                            "SCALAR"
+                                                                                                                                        ],
+                                                                                                                                        "name": "ID",
+                                                                                                                                        "non_null": false
+                                                                                                                                    },
+                                                                                                                                    "varName": "id"
+                                                                                                                                },
+                                                                                                                                "name": {
+                                                                                                                                    "args": {},
+                                                                                                                                    "deprecationReason": null,
+                                                                                                                                    "description": "Name for the container",
+                                                                                                                                    "id_str": "internetFirewall___addRule___rule___rule___exceptions___destination___container___name",
+                                                                                                                                    "isDeprecated": false,
+                                                                                                                                    "name": "name",
+                                                                                                                                    "path": "internetFirewall.addRule.rule.rule.exceptions.destination.container.name",
+                                                                                                                                    "requestStr": "$name:String! ",
+                                                                                                                                    "required": true,
+                                                                                                                                    "responseStr": "name:$name ",
+                                                                                                                                    "type": {
+                                                                                                                                        "kind": [
+                                                                                                                                            "NON_NULL",
+                                                                                                                                            "SCALAR"
+                                                                                                                                        ],
+                                                                                                                                        "name": "String",
+                                                                                                                                        "non_null": false
+                                                                                                                                    },
+                                                                                                                                    "varName": "name"
+                                                                                                                                }
+                                                                                                                            },
+                                                                                                                            "inputFields": null,
+                                                                                                                            "interfaces": {},
+                                                                                                                            "kind": "OBJECT",
+                                                                                                                            "name": "ContainerRef",
+                                                                                                                            "possibleTypes": null
+                                                                                                                        },
+                                                                                                                        "indexType": "object",
+                                                                                                                        "kind": [
+                                                                                                                            "NON_NULL",
+                                                                                                                            "LIST",
+                                                                                                                            "NON_NULL",
+                                                                                                                            "OBJECT"
+                                                                                                                        ],
+                                                                                                                        "name": "ContainerRef",
+                                                                                                                        "non_null": false
+                                                                                                                    },
+                                                                                                                    "varName": "ContainerRef"
+                                                                                                                },
                                                                                                                 "country": {
                                                                                                                     "alias": "CountryRefCountry: country",
                                                                                                                     "args": {},
@@ -21454,7 +22182,7 @@
                                                                                                                 "remoteAsn": {
                                                                                                                     "args": {},
                                                                                                                     "deprecationReason": null,
-                                                                                                                    "description": null,
+                                                                                                                    "description": "Remote Autonomous System Number (ASN)",
                                                                                                                     "id_str": "internetFirewall___addRule___rule___rule___exceptions___destination___remoteAsn",
                                                                                                                     "isDeprecated": false,
                                                                                                                     "name": "remoteAsn",
@@ -21478,7 +22206,7 @@
                                                                                                                     "alias": "SanctionedAppsCategoryRefSanctionedAppsCategory: sanctionedAppsCategory",
                                                                                                                     "args": {},
                                                                                                                     "deprecationReason": null,
-                                                                                                                    "description": null,
+                                                                                                                    "description": "Sanctioned Cloud Applications - apps that are approved and generally represent an understood and acceptable level of risk in your organization.",
                                                                                                                     "id_str": "internetFirewall___addRule___rule___rule___exceptions___destination___sanctionedAppsCategory",
                                                                                                                     "isDeprecated": false,
                                                                                                                     "name": "sanctionedAppsCategory",
@@ -25333,6 +26061,14 @@
                             "input": "String"
                         }
                     },
+                    "container": {
+                        "by": {
+                            "by": "enum(ObjectRefBy)"
+                        },
+                        "input": {
+                            "input": "String"
+                        }
+                    },
                     "country": {
                         "by": {
                             "by": "enum(ObjectRefBy)"
@@ -25443,6 +26179,14 @@
                             }
                         },
                         "application": {
+                            "by": {
+                                "by": "enum(ObjectRefBy)"
+                            },
+                            "input": {
+                                "input": "String"
+                            }
+                        },
+                        "container": {
                             "by": {
                                 "by": "enum(ObjectRefBy)"
                             },

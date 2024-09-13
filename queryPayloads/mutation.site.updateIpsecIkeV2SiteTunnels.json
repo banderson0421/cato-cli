@@ -18,14 +18,8 @@
                         "downstream": {
                             "downstream": "Int"
                         },
-                        "downstreamMbpsPrecision": {
-                            "downstreamMbpsPrecision": "Float"
-                        },
                         "upstream": {
                             "upstream": "Int"
-                        },
-                        "upstreamMbpsPrecision": {
-                            "upstreamMbpsPrecision": "Float"
                         }
                     },
                     "privateCatoIp": {

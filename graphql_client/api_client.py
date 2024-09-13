@@ -120,7 +120,7 @@ class QUERYClientObject(object):
 
 		if 'Content-Type' not in headers:
 			headers['Content-Type'] = 'application/json'
-		headers['User-Agent'] = "Cato-GraphQL-Client/1.0"
+		headers['User-Agent'] = "Cato-CLI"
 
 		try:
 			if re.search('json', headers['Content-Type'], re.IGNORECASE):

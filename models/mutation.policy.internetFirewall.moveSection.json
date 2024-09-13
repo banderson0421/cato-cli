@@ -263,7 +263,7 @@
                 }
             },
             "deprecationReason": null,
-            "description": null,
+            "description": "Move a section to a new position within the policy.\n The section will be anchored in the new position, i.e. other admins will not be able to move it, or reference it when moving other sections, until the modified policy revision is published.",
             "isDeprecated": false,
             "name": "moveSection",
             "type": {
@@ -792,7 +792,7 @@
                                         }
                                     },
                                     "deprecationReason": null,
-                                    "description": null,
+                                    "description": "Move a section to a new position within the policy.\n The section will be anchored in the new position, i.e. other admins will not be able to move it, or reference it when moving other sections, until the modified policy revision is published.",
                                     "id_str": "internetFirewall___moveSection",
                                     "isDeprecated": false,
                                     "name": "moveSection",
@@ -1020,7 +1020,7 @@
                                                                                 },
                                                                                 {
                                                                                     "deprecationReason": null,
-                                                                                    "description": null,
+                                                                                    "description": "An object can not be moved, or referenced when moving other objects.\nHowever its properties and content can be modified.",
                                                                                     "isDeprecated": false,
                                                                                     "name": "ANCHORED"
                                                                                 },

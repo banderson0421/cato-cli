@@ -166,7 +166,7 @@
                 }
             },
             "deprecationReason": null,
-            "description": null,
+            "description": "Delete an existing section. The first section in policy cannot be deleted.",
             "isDeprecated": false,
             "name": "removeSection",
             "type": {
@@ -499,7 +499,7 @@
                                         }
                                     },
                                     "deprecationReason": null,
-                                    "description": null,
+                                    "description": "Delete an existing section. The first section in policy cannot be deleted.",
                                     "id_str": "internetFirewall___removeSection",
                                     "isDeprecated": false,
                                     "name": "removeSection",
@@ -727,7 +727,7 @@
                                                                                 },
                                                                                 {
                                                                                     "deprecationReason": null,
-                                                                                    "description": null,
+                                                                                    "description": "An object can not be moved, or referenced when moving other objects.\nHowever its properties and content can be modified.",
                                                                                     "isDeprecated": false,
                                                                                     "name": "ANCHORED"
                                                                                 },

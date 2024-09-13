@@ -300,6 +300,7 @@
         "ApplicationCategoryRef": true,
         "ApplicationRef": true,
         "ConnectionOriginEnum": true,
+        "ContainerRef": true,
         "CountryRef": true,
         "CustomApplicationRef": true,
         "CustomCategoryRef": true,
@@ -1113,7 +1114,7 @@
                                                                                 },
                                                                                 {
                                                                                     "deprecationReason": null,
-                                                                                    "description": null,
+                                                                                    "description": "An object can not be moved, or referenced when moving other objects.\nHowever its properties and content can be modified.",
                                                                                     "isDeprecated": false,
                                                                                     "name": "ANCHORED"
                                                                                 },
@@ -1540,6 +1541,84 @@
                                                                                                         "non_null": false
                                                                                                     },
                                                                                                     "varName": "ApplicationRef"
+                                                                                                },
+                                                                                                "container": {
+                                                                                                    "alias": "ContainerRefContainer: container",
+                                                                                                    "args": {},
+                                                                                                    "deprecationReason": null,
+                                                                                                    "description": null,
+                                                                                                    "id_str": "internetFirewall___moveRule___rule___rule___destination___container",
+                                                                                                    "isDeprecated": false,
+                                                                                                    "name": "container",
+                                                                                                    "path": "internetFirewall.moveRule.rule.rule.destination.container",
+                                                                                                    "requestStr": "$ContainerRef:[ContainerRef]! ",
+                                                                                                    "required": true,
+                                                                                                    "responseStr": "container:$ContainerRef ",
+                                                                                                    "type": {
+                                                                                                        "definition": {
+                                                                                                            "description": "A group with members of a single type of entity (for example: IP, FQDN)",
+                                                                                                            "enumValues": null,
+                                                                                                            "fields": {
+                                                                                                                "id": {
+                                                                                                                    "args": {},
+                                                                                                                    "deprecationReason": null,
+                                                                                                                    "description": "Unique container ID",
+                                                                                                                    "id_str": "internetFirewall___moveRule___rule___rule___destination___container___id",
+                                                                                                                    "isDeprecated": false,
+                                                                                                                    "name": "id",
+                                                                                                                    "path": "internetFirewall.moveRule.rule.rule.destination.container.id",
+                                                                                                                    "requestStr": "$id:ID! ",
+                                                                                                                    "required": true,
+                                                                                                                    "responseStr": "id:$id ",
+                                                                                                                    "type": {
+                                                                                                                        "kind": [
+                                                                                                                            "NON_NULL",
+                                                                                                                            "SCALAR"
+                                                                                                                        ],
+                                                                                                                        "name": "ID",
+                                                                                                                        "non_null": false
+                                                                                                                    },
+                                                                                                                    "varName": "id"
+                                                                                                                },
+                                                                                                                "name": {
+                                                                                                                    "args": {},
+                                                                                                                    "deprecationReason": null,
+                                                                                                                    "description": "Name for the container",
+                                                                                                                    "id_str": "internetFirewall___moveRule___rule___rule___destination___container___name",
+                                                                                                                    "isDeprecated": false,
+                                                                                                                    "name": "name",
+                                                                                                                    "path": "internetFirewall.moveRule.rule.rule.destination.container.name",
+                                                                                                                    "requestStr": "$name:String! ",
+                                                                                                                    "required": true,
+                                                                                                                    "responseStr": "name:$name ",
+                                                                                                                    "type": {
+                                                                                                                        "kind": [
+                                                                                                                            "NON_NULL",
+                                                                                                                            "SCALAR"
+                                                                                                                        ],
+                                                                                                                        "name": "String",
+                                                                                                                        "non_null": false
+                                                                                                                    },
+                                                                                                                    "varName": "name"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            "inputFields": null,
+                                                                                                            "interfaces": {},
+                                                                                                            "kind": "OBJECT",
+                                                                                                            "name": "ContainerRef",
+                                                                                                            "possibleTypes": null
+                                                                                                        },
+                                                                                                        "indexType": "object",
+                                                                                                        "kind": [
+                                                                                                            "NON_NULL",
+                                                                                                            "LIST",
+                                                                                                            "NON_NULL",
+                                                                                                            "OBJECT"
+                                                                                                        ],
+                                                                                                        "name": "ContainerRef",
+                                                                                                        "non_null": false
+                                                                                                    },
+                                                                                                    "varName": "ContainerRef"
                                                                                                 },
                                                                                                 "country": {
                                                                                                     "alias": "CountryRefCountry: country",
@@ -2003,7 +2082,7 @@
                                                                                                 "remoteAsn": {
                                                                                                     "args": {},
                                                                                                     "deprecationReason": null,
-                                                                                                    "description": null,
+                                                                                                    "description": "Remote Autonomous System Number (ASN)",
                                                                                                     "id_str": "internetFirewall___moveRule___rule___rule___destination___remoteAsn",
                                                                                                     "isDeprecated": false,
                                                                                                     "name": "remoteAsn",
@@ -2027,7 +2106,7 @@
                                                                                                     "alias": "SanctionedAppsCategoryRefSanctionedAppsCategory: sanctionedAppsCategory",
                                                                                                     "args": {},
                                                                                                     "deprecationReason": null,
-                                                                                                    "description": null,
+                                                                                                    "description": "Sanctioned Cloud Applications - apps that are approved and generally represent an understood and acceptable level of risk in your organization.",
                                                                                                     "id_str": "internetFirewall___moveRule___rule___rule___destination___sanctionedAppsCategory",
                                                                                                     "isDeprecated": false,
                                                                                                     "name": "sanctionedAppsCategory",
@@ -2632,6 +2711,84 @@
                                                                                                                     },
                                                                                                                     "varName": "ApplicationRef"
                                                                                                                 },
+                                                                                                                "container": {
+                                                                                                                    "alias": "ContainerRefContainer: container",
+                                                                                                                    "args": {},
+                                                                                                                    "deprecationReason": null,
+                                                                                                                    "description": null,
+                                                                                                                    "id_str": "internetFirewall___moveRule___rule___rule___exceptions___destination___container",
+                                                                                                                    "isDeprecated": false,
+                                                                                                                    "name": "container",
+                                                                                                                    "path": "internetFirewall.moveRule.rule.rule.exceptions.destination.container",
+                                                                                                                    "requestStr": "$ContainerRef:[ContainerRef]! ",
+                                                                                                                    "required": true,
+                                                                                                                    "responseStr": "container:$ContainerRef ",
+                                                                                                                    "type": {
+                                                                                                                        "definition": {
+                                                                                                                            "description": "A group with members of a single type of entity (for example: IP, FQDN)",
+                                                                                                                            "enumValues": null,
+                                                                                                                            "fields": {
+                                                                                                                                "id": {
+                                                                                                                                    "args": {},
+                                                                                                                                    "deprecationReason": null,
+                                                                                                                                    "description": "Unique container ID",
+                                                                                                                                    "id_str": "internetFirewall___moveRule___rule___rule___exceptions___destination___container___id",
+                                                                                                                                    "isDeprecated": false,
+                                                                                                                                    "name": "id",
+                                                                                                                                    "path": "internetFirewall.moveRule.rule.rule.exceptions.destination.container.id",
+                                                                                                                                    "requestStr": "$id:ID! ",
+                                                                                                                                    "required": true,
+                                                                                                                                    "responseStr": "id:$id ",
+                                                                                                                                    "type": {
+                                                                                                                                        "kind": [
+                                                                                                                                            "NON_NULL",
+                                                                                                                                            "SCALAR"
+                                                                                                                                        ],
+                                                                                                                                        "name": "ID",
+                                                                                                                                        "non_null": false
+                                                                                                                                    },
+                                                                                                                                    "varName": "id"
+                                                                                                                                },
+                                                                                                                                "name": {
+                                                                                                                                    "args": {},
+                                                                                                                                    "deprecationReason": null,
+                                                                                                                                    "description": "Name for the container",
+                                                                                                                                    "id_str": "internetFirewall___moveRule___rule___rule___exceptions___destination___container___name",
+                                                                                                                                    "isDeprecated": false,
+                                                                                                                                    "name": "name",
+                                                                                                                                    "path": "internetFirewall.moveRule.rule.rule.exceptions.destination.container.name",
+                                                                                                                                    "requestStr": "$name:String! ",
+                                                                                                                                    "required": true,
+                                                                                                                                    "responseStr": "name:$name ",
+                                                                                                                                    "type": {
+                                                                                                                                        "kind": [
+                                                                                                                                            "NON_NULL",
+                                                                                                                                            "SCALAR"
+                                                                                                                                        ],
+                                                                                                                                        "name": "String",
+                                                                                                                                        "non_null": false
+                                                                                                                                    },
+                                                                                                                                    "varName": "name"
+                                                                                                                                }
+                                                                                                                            },
+                                                                                                                            "inputFields": null,
+                                                                                                                            "interfaces": {},
+                                                                                                                            "kind": "OBJECT",
+                                                                                                                            "name": "ContainerRef",
+                                                                                                                            "possibleTypes": null
+                                                                                                                        },
+                                                                                                                        "indexType": "object",
+                                                                                                                        "kind": [
+                                                                                                                            "NON_NULL",
+                                                                                                                            "LIST",
+                                                                                                                            "NON_NULL",
+                                                                                                                            "OBJECT"
+                                                                                                                        ],
+                                                                                                                        "name": "ContainerRef",
+                                                                                                                        "non_null": false
+                                                                                                                    },
+                                                                                                                    "varName": "ContainerRef"
+                                                                                                                },
                                                                                                                 "country": {
                                                                                                                     "alias": "CountryRefCountry: country",
                                                                                                                     "args": {},
@@ -3094,7 +3251,7 @@
                                                                                                                 "remoteAsn": {
                                                                                                                     "args": {},
                                                                                                                     "deprecationReason": null,
-                                                                                                                    "description": null,
+                                                                                                                    "description": "Remote Autonomous System Number (ASN)",
                                                                                                                     "id_str": "internetFirewall___moveRule___rule___rule___exceptions___destination___remoteAsn",
                                                                                                                     "isDeprecated": false,
                                                                                                                     "name": "remoteAsn",
@@ -3118,7 +3275,7 @@
                                                                                                                     "alias": "SanctionedAppsCategoryRefSanctionedAppsCategory: sanctionedAppsCategory",
                                                                                                                     "args": {},
                                                                                                                     "deprecationReason": null,
-                                                                                                                    "description": null,
+                                                                                                                    "description": "Sanctioned Cloud Applications - apps that are approved and generally represent an understood and acceptable level of risk in your organization.",
                                                                                                                     "id_str": "internetFirewall___moveRule___rule___rule___exceptions___destination___sanctionedAppsCategory",
                                                                                                                     "isDeprecated": false,
                                                                                                                     "name": "sanctionedAppsCategory",

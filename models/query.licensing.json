@@ -538,7 +538,7 @@
                                                                     "deprecationReason": null,
                                                                     "description": "Cato NOCaaS service SKU",
                                                                     "isDeprecated": false,
-                                                                    "name": "CATO_NOC"
+                                                                    "name": "CATO_NOCAAS_HF"
                                                                 },
                                                                 {
                                                                     "deprecationReason": null,
@@ -581,6 +581,12 @@
                                                                     "description": "Cato XDR service SKUs",
                                                                     "isDeprecated": false,
                                                                     "name": "CATO_XDR_PRO"
+                                                                },
+                                                                {
+                                                                    "deprecationReason": null,
+                                                                    "description": "Cato DEM Pro service SKU",
+                                                                    "isDeprecated": false,
+                                                                    "name": "CATO_DEM_PRO"
                                                                 },
                                                                 {
                                                                     "deprecationReason": null,
@@ -944,7 +950,7 @@
                                                                             "deprecationReason": null,
                                                                             "description": "Cato NOCaaS service SKU",
                                                                             "isDeprecated": false,
-                                                                            "name": "CATO_NOC"
+                                                                            "name": "CATO_NOCAAS_HF"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -987,6 +993,12 @@
                                                                             "description": "Cato XDR service SKUs",
                                                                             "isDeprecated": false,
                                                                             "name": "CATO_XDR_PRO"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato DEM Pro service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_DEM_PRO"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -1424,7 +1436,7 @@
                                                                             "deprecationReason": null,
                                                                             "description": "Cato NOCaaS service SKU",
                                                                             "isDeprecated": false,
-                                                                            "name": "CATO_NOC"
+                                                                            "name": "CATO_NOCAAS_HF"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -1467,6 +1479,12 @@
                                                                             "description": "Cato XDR service SKUs",
                                                                             "isDeprecated": false,
                                                                             "name": "CATO_XDR_PRO"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato DEM Pro service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_DEM_PRO"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -1633,6 +1651,441 @@
                                                     "interfaces": {},
                                                     "kind": "OBJECT",
                                                     "name": "DataLakeLicense",
+                                                    "possibleTypes": null
+                                                },
+                                                "DemProLicense": {
+                                                    "description": "DEM Pro service license details",
+                                                    "enumValues": null,
+                                                    "fields": {
+                                                        "description": {
+                                                            "alias": "DemProLicenseDescription: description",
+                                                            "args": {},
+                                                            "deprecationReason": null,
+                                                            "description": null,
+                                                            "id_str": "licensingInfo___licenses___DemProLicense___description",
+                                                            "isDeprecated": false,
+                                                            "name": "description",
+                                                            "path": "licensingInfo.licenses.DemProLicense.description",
+                                                            "requestStr": "$description:String ",
+                                                            "required": false,
+                                                            "responseStr": "description:$description ",
+                                                            "type": {
+                                                                "kind": [
+                                                                    "SCALAR"
+                                                                ],
+                                                                "name": "String",
+                                                                "non_null": false
+                                                            },
+                                                            "varName": "description"
+                                                        },
+                                                        "expirationDate": {
+                                                            "alias": "DemProLicenseExpirationDate: expirationDate",
+                                                            "args": {},
+                                                            "deprecationReason": null,
+                                                            "description": "License expiration date",
+                                                            "id_str": "licensingInfo___licenses___DemProLicense___expirationDate",
+                                                            "isDeprecated": false,
+                                                            "name": "expirationDate",
+                                                            "path": "licensingInfo.licenses.DemProLicense.expirationDate",
+                                                            "requestStr": "$expirationDate:DateTime! ",
+                                                            "required": true,
+                                                            "responseStr": "expirationDate:$expirationDate ",
+                                                            "type": {
+                                                                "kind": [
+                                                                    "NON_NULL",
+                                                                    "SCALAR"
+                                                                ],
+                                                                "name": "DateTime",
+                                                                "non_null": false
+                                                            },
+                                                            "varName": "expirationDate"
+                                                        },
+                                                        "lastUpdated": {
+                                                            "alias": "DemProLicenseLastUpdated: lastUpdated",
+                                                            "args": {},
+                                                            "deprecationReason": null,
+                                                            "description": "The date of the last update to the license",
+                                                            "id_str": "licensingInfo___licenses___DemProLicense___lastUpdated",
+                                                            "isDeprecated": false,
+                                                            "name": "lastUpdated",
+                                                            "path": "licensingInfo.licenses.DemProLicense.lastUpdated",
+                                                            "requestStr": "$lastUpdated:DateTime ",
+                                                            "required": false,
+                                                            "responseStr": "lastUpdated:$lastUpdated ",
+                                                            "type": {
+                                                                "kind": [
+                                                                    "SCALAR"
+                                                                ],
+                                                                "name": "DateTime",
+                                                                "non_null": false
+                                                            },
+                                                            "varName": "lastUpdated"
+                                                        },
+                                                        "plan": {
+                                                            "alias": "DemProLicensePlan: plan",
+                                                            "args": {},
+                                                            "deprecationReason": null,
+                                                            "description": "License plan type",
+                                                            "id_str": "licensingInfo___licenses___DemProLicense___plan",
+                                                            "isDeprecated": false,
+                                                            "name": "plan",
+                                                            "path": "licensingInfo.licenses.DemProLicense.plan",
+                                                            "requestStr": "$plan:LicensePlan! ",
+                                                            "required": true,
+                                                            "responseStr": "plan:$plan ",
+                                                            "type": {
+                                                                "definition": {
+                                                                    "description": "enum for license plan type (site license, service license, etc...)",
+                                                                    "enumValues": [
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": null,
+                                                                            "isDeprecated": false,
+                                                                            "name": "COMMERCIAL"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": null,
+                                                                            "isDeprecated": false,
+                                                                            "name": "TRIAL"
+                                                                        }
+                                                                    ],
+                                                                    "fields": null,
+                                                                    "inputFields": null,
+                                                                    "interfaces": null,
+                                                                    "kind": "ENUM",
+                                                                    "name": "LicensePlan",
+                                                                    "possibleTypes": null
+                                                                },
+                                                                "indexType": "enum",
+                                                                "kind": [
+                                                                    "NON_NULL",
+                                                                    "ENUM"
+                                                                ],
+                                                                "name": "LicensePlan",
+                                                                "non_null": false
+                                                            },
+                                                            "varName": "plan"
+                                                        },
+                                                        "sku": {
+                                                            "alias": "DemProLicenseSku: sku",
+                                                            "args": {},
+                                                            "deprecationReason": null,
+                                                            "description": "The license SKU",
+                                                            "id_str": "licensingInfo___licenses___DemProLicense___sku",
+                                                            "isDeprecated": false,
+                                                            "name": "sku",
+                                                            "path": "licensingInfo.licenses.DemProLicense.sku",
+                                                            "requestStr": "$sku:LicenseSku! ",
+                                                            "required": true,
+                                                            "responseStr": "sku:$sku ",
+                                                            "type": {
+                                                                "definition": {
+                                                                    "description": null,
+                                                                    "enumValues": [
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Site bandwidth SASE SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_SITE"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Site bandwidth SSE SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_SSE_SITE"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Site pooled bandwidth SASE SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_PB"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Site pooled bandwidth SSE SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_PB_SSE"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": "replaced with CATO_ZTNA_USERS",
+                                                                            "description": "ZTNA remote users SKUs",
+                                                                            "isDeprecated": true,
+                                                                            "name": "MOBILE_USERS"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "ZTNA remote users SKUs",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_ZTNA_USERS"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato EPP service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_EPP"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato IPS (legacy) service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_IPS"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato Anti Malware (legacy) service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_ANTI_MALWARE"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato Anti Malware Next Generation (legacy) service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_ANTI_MALWARE_NG"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato CASB service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_CASB"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato DLP service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_DLP"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato ILMM service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_ILMM"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato MDR (XDR Pro) service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_MDR"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato NOCaaS service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_NOCAAS_HF"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato Remote Browser Isolation (RBI) service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_RBI"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato SAAS Group SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_SAAS"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato SAAS Security API with one application integration (legacy) service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_SAAS_SECURITY_API_ONE_APP"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato SAAS Security API with two applications integration (legacy) service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_SAAS_SECURITY_API_TWO_APPS"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato SAAS Security API with more than two Applications integration (legacy) service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_SAAS_SECURITY_API_ALL_APPS"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": null,
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_SAAS_SECURITY_API"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato XDR service SKUs",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_XDR_PRO"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato DEM Pro service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_DEM_PRO"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato Threat Prevention (legacy) service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_THREAT_PREVENTION"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Public IPs SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_IP_ADD"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato datalake Group SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_DATALAKE"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "3 months data retention SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_DATALAKE_3M"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "6 months data retention SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_DATALAKE_6M"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "12 months data retention SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_DATALAKE_12M"
+                                                                        }
+                                                                    ],
+                                                                    "fields": null,
+                                                                    "inputFields": null,
+                                                                    "interfaces": null,
+                                                                    "kind": "ENUM",
+                                                                    "name": "LicenseSku",
+                                                                    "possibleTypes": null
+                                                                },
+                                                                "indexType": "enum",
+                                                                "kind": [
+                                                                    "NON_NULL",
+                                                                    "ENUM"
+                                                                ],
+                                                                "name": "LicenseSku",
+                                                                "non_null": false
+                                                            },
+                                                            "varName": "sku"
+                                                        },
+                                                        "startDate": {
+                                                            "alias": "DemProLicenseStartDate: startDate",
+                                                            "args": {},
+                                                            "deprecationReason": null,
+                                                            "description": "License start date",
+                                                            "id_str": "licensingInfo___licenses___DemProLicense___startDate",
+                                                            "isDeprecated": false,
+                                                            "name": "startDate",
+                                                            "path": "licensingInfo.licenses.DemProLicense.startDate",
+                                                            "requestStr": "$startDate:DateTime ",
+                                                            "required": false,
+                                                            "responseStr": "startDate:$startDate ",
+                                                            "type": {
+                                                                "kind": [
+                                                                    "SCALAR"
+                                                                ],
+                                                                "name": "DateTime",
+                                                                "non_null": false
+                                                            },
+                                                            "varName": "startDate"
+                                                        },
+                                                        "status": {
+                                                            "alias": "DemProLicenseStatus: status",
+                                                            "args": {},
+                                                            "deprecationReason": null,
+                                                            "description": "License activation status",
+                                                            "id_str": "licensingInfo___licenses___DemProLicense___status",
+                                                            "isDeprecated": false,
+                                                            "name": "status",
+                                                            "path": "licensingInfo.licenses.DemProLicense.status",
+                                                            "requestStr": "$status:LicenseStatus! ",
+                                                            "required": true,
+                                                            "responseStr": "status:$status ",
+                                                            "type": {
+                                                                "definition": {
+                                                                    "description": "enum for account plan status \u2013 the current license status within the license lifecycle",
+                                                                    "enumValues": [
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "A license that is currently active",
+                                                                            "isDeprecated": false,
+                                                                            "name": "ACTIVE"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "An existing license with a future start date that is not currently active",
+                                                                            "isDeprecated": false,
+                                                                            "name": "SCHEDULED"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "A license that is active before its start date, for partners and customers to verify the relevant configurations",
+                                                                            "isDeprecated": false,
+                                                                            "name": "STAGING"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "A license in a grace period",
+                                                                            "isDeprecated": false,
+                                                                            "name": "LOCKED"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "An expired license is no longer active",
+                                                                            "isDeprecated": false,
+                                                                            "name": "DISABLED"
+                                                                        }
+                                                                    ],
+                                                                    "fields": null,
+                                                                    "inputFields": null,
+                                                                    "interfaces": null,
+                                                                    "kind": "ENUM",
+                                                                    "name": "LicenseStatus",
+                                                                    "possibleTypes": null
+                                                                },
+                                                                "indexType": "enum",
+                                                                "kind": [
+                                                                    "NON_NULL",
+                                                                    "ENUM"
+                                                                ],
+                                                                "name": "LicenseStatus",
+                                                                "non_null": false
+                                                            },
+                                                            "varName": "status"
+                                                        },
+                                                        "total": {
+                                                            "args": {},
+                                                            "deprecationReason": null,
+                                                            "description": "License quantity",
+                                                            "id_str": "licensingInfo___licenses___DemProLicense___total",
+                                                            "isDeprecated": false,
+                                                            "name": "total",
+                                                            "path": "licensingInfo.licenses.DemProLicense.total",
+                                                            "requestStr": "$total:Int! ",
+                                                            "required": true,
+                                                            "responseStr": "total:$total ",
+                                                            "type": {
+                                                                "kind": [
+                                                                    "NON_NULL",
+                                                                    "SCALAR"
+                                                                ],
+                                                                "name": "Int",
+                                                                "non_null": false
+                                                            },
+                                                            "varName": "total"
+                                                        }
+                                                    },
+                                                    "inputFields": null,
+                                                    "interfaces": {},
+                                                    "kind": "OBJECT",
+                                                    "name": "DemProLicense",
                                                     "possibleTypes": null
                                                 },
                                                 "DlpLicense": {
@@ -1853,7 +2306,7 @@
                                                                             "deprecationReason": null,
                                                                             "description": "Cato NOCaaS service SKU",
                                                                             "isDeprecated": false,
-                                                                            "name": "CATO_NOC"
+                                                                            "name": "CATO_NOCAAS_HF"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -1896,6 +2349,12 @@
                                                                             "description": "Cato XDR service SKUs",
                                                                             "isDeprecated": false,
                                                                             "name": "CATO_XDR_PRO"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato DEM Pro service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_DEM_PRO"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -2261,7 +2720,7 @@
                                                                             "deprecationReason": null,
                                                                             "description": "Cato NOCaaS service SKU",
                                                                             "isDeprecated": false,
-                                                                            "name": "CATO_NOC"
+                                                                            "name": "CATO_NOCAAS_HF"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -2304,6 +2763,12 @@
                                                                             "description": "Cato XDR service SKUs",
                                                                             "isDeprecated": false,
                                                                             "name": "CATO_XDR_PRO"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato DEM Pro service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_DEM_PRO"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -2690,7 +3155,7 @@
                                                                             "deprecationReason": null,
                                                                             "description": "Cato NOCaaS service SKU",
                                                                             "isDeprecated": false,
-                                                                            "name": "CATO_NOC"
+                                                                            "name": "CATO_NOCAAS_HF"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -2733,6 +3198,12 @@
                                                                             "description": "Cato XDR service SKUs",
                                                                             "isDeprecated": false,
                                                                             "name": "CATO_XDR_PRO"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato DEM Pro service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_DEM_PRO"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -3119,7 +3590,7 @@
                                                                             "deprecationReason": null,
                                                                             "description": "Cato NOCaaS service SKU",
                                                                             "isDeprecated": false,
-                                                                            "name": "CATO_NOC"
+                                                                            "name": "CATO_NOCAAS_HF"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -3162,6 +3633,12 @@
                                                                             "description": "Cato XDR service SKUs",
                                                                             "isDeprecated": false,
                                                                             "name": "CATO_XDR_PRO"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato DEM Pro service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_DEM_PRO"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -3527,7 +4004,7 @@
                                                                             "deprecationReason": null,
                                                                             "description": "Cato NOCaaS service SKU",
                                                                             "isDeprecated": false,
-                                                                            "name": "CATO_NOC"
+                                                                            "name": "CATO_NOCAAS_HF"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -3570,6 +4047,12 @@
                                                                             "description": "Cato XDR service SKUs",
                                                                             "isDeprecated": false,
                                                                             "name": "CATO_XDR_PRO"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato DEM Pro service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_DEM_PRO"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -3935,7 +4418,7 @@
                                                                             "deprecationReason": null,
                                                                             "description": "Cato NOCaaS service SKU",
                                                                             "isDeprecated": false,
-                                                                            "name": "CATO_NOC"
+                                                                            "name": "CATO_NOCAAS_HF"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -3978,6 +4461,12 @@
                                                                             "description": "Cato XDR service SKUs",
                                                                             "isDeprecated": false,
                                                                             "name": "CATO_XDR_PRO"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato DEM Pro service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_DEM_PRO"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -4343,7 +4832,7 @@
                                                                             "deprecationReason": null,
                                                                             "description": "Cato NOCaaS service SKU",
                                                                             "isDeprecated": false,
-                                                                            "name": "CATO_NOC"
+                                                                            "name": "CATO_NOCAAS_HF"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -4386,6 +4875,12 @@
                                                                             "description": "Cato XDR service SKUs",
                                                                             "isDeprecated": false,
                                                                             "name": "CATO_XDR_PRO"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato DEM Pro service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_DEM_PRO"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -4751,7 +5246,7 @@
                                                                             "deprecationReason": null,
                                                                             "description": "Cato NOCaaS service SKU",
                                                                             "isDeprecated": false,
-                                                                            "name": "CATO_NOC"
+                                                                            "name": "CATO_NOCAAS_HF"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -4794,6 +5289,12 @@
                                                                             "description": "Cato XDR service SKUs",
                                                                             "isDeprecated": false,
                                                                             "name": "CATO_XDR_PRO"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato DEM Pro service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_DEM_PRO"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -5600,7 +6101,7 @@
                                                                             "deprecationReason": null,
                                                                             "description": "Cato NOCaaS service SKU",
                                                                             "isDeprecated": false,
-                                                                            "name": "CATO_NOC"
+                                                                            "name": "CATO_NOCAAS_HF"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -5643,6 +6144,12 @@
                                                                             "description": "Cato XDR service SKUs",
                                                                             "isDeprecated": false,
                                                                             "name": "CATO_XDR_PRO"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato DEM Pro service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_DEM_PRO"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -6029,7 +6536,7 @@
                                                                             "deprecationReason": null,
                                                                             "description": "Cato NOCaaS service SKU",
                                                                             "isDeprecated": false,
-                                                                            "name": "CATO_NOC"
+                                                                            "name": "CATO_NOCAAS_HF"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -6072,6 +6579,12 @@
                                                                             "description": "Cato XDR service SKUs",
                                                                             "isDeprecated": false,
                                                                             "name": "CATO_XDR_PRO"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato DEM Pro service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_DEM_PRO"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -6458,7 +6971,7 @@
                                                                             "deprecationReason": null,
                                                                             "description": "Cato NOCaaS service SKU",
                                                                             "isDeprecated": false,
-                                                                            "name": "CATO_NOC"
+                                                                            "name": "CATO_NOCAAS_HF"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -6501,6 +7014,12 @@
                                                                             "description": "Cato XDR service SKUs",
                                                                             "isDeprecated": false,
                                                                             "name": "CATO_XDR_PRO"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato DEM Pro service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_DEM_PRO"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -6866,7 +7385,7 @@
                                                                             "deprecationReason": null,
                                                                             "description": "Cato NOCaaS service SKU",
                                                                             "isDeprecated": false,
-                                                                            "name": "CATO_NOC"
+                                                                            "name": "CATO_NOCAAS_HF"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -6909,6 +7428,12 @@
                                                                             "description": "Cato XDR service SKUs",
                                                                             "isDeprecated": false,
                                                                             "name": "CATO_XDR_PRO"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato DEM Pro service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_DEM_PRO"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -7569,7 +8094,7 @@
                                                                             "deprecationReason": null,
                                                                             "description": "Cato NOCaaS service SKU",
                                                                             "isDeprecated": false,
-                                                                            "name": "CATO_NOC"
+                                                                            "name": "CATO_NOCAAS_HF"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -7612,6 +8137,12 @@
                                                                             "description": "Cato XDR service SKUs",
                                                                             "isDeprecated": false,
                                                                             "name": "CATO_XDR_PRO"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato DEM Pro service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_DEM_PRO"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -7998,7 +8529,7 @@
                                                                             "deprecationReason": null,
                                                                             "description": "Cato NOCaaS service SKU",
                                                                             "isDeprecated": false,
-                                                                            "name": "CATO_NOC"
+                                                                            "name": "CATO_NOCAAS_HF"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -8041,6 +8572,12 @@
                                                                             "description": "Cato XDR service SKUs",
                                                                             "isDeprecated": false,
                                                                             "name": "CATO_XDR_PRO"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato DEM Pro service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_DEM_PRO"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -8406,7 +8943,7 @@
                                                                             "deprecationReason": null,
                                                                             "description": "Cato NOCaaS service SKU",
                                                                             "isDeprecated": false,
-                                                                            "name": "CATO_NOC"
+                                                                            "name": "CATO_NOCAAS_HF"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -8449,6 +8986,12 @@
                                                                             "description": "Cato XDR service SKUs",
                                                                             "isDeprecated": false,
                                                                             "name": "CATO_XDR_PRO"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato DEM Pro service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_DEM_PRO"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -8835,7 +9378,7 @@
                                                                             "deprecationReason": null,
                                                                             "description": "Cato NOCaaS service SKU",
                                                                             "isDeprecated": false,
-                                                                            "name": "CATO_NOC"
+                                                                            "name": "CATO_NOCAAS_HF"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,
@@ -8878,6 +9421,12 @@
                                                                             "description": "Cato XDR service SKUs",
                                                                             "isDeprecated": false,
                                                                             "name": "CATO_XDR_PRO"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": "Cato DEM Pro service SKU",
+                                                                            "isDeprecated": false,
+                                                                            "name": "CATO_DEM_PRO"
                                                                         },
                                                                         {
                                                                             "deprecationReason": null,

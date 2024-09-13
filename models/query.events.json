@@ -769,6 +769,12 @@
                                         },
                                         {
                                             "deprecationReason": null,
+                                            "description": "For SaaS Security API, status of the connector",
+                                            "isDeprecated": false,
+                                            "name": "connector_status"
+                                        },
+                                        {
+                                            "deprecationReason": null,
                                             "description": "For SaaS Security API, parent Microsoft 365 connector",
                                             "isDeprecated": false,
                                             "name": "parent_connector_name"
@@ -2082,6 +2088,12 @@
                                             "description": "For SaaS Security API, name of the connector",
                                             "isDeprecated": false,
                                             "name": "connector_name"
+                                        },
+                                        {
+                                            "deprecationReason": null,
+                                            "description": "For SaaS Security API, status of the connector",
+                                            "isDeprecated": false,
+                                            "name": "connector_status"
                                         },
                                         {
                                             "deprecationReason": null,
@@ -3617,6 +3629,12 @@
                                         },
                                         {
                                             "deprecationReason": null,
+                                            "description": "For SaaS Security API, status of the connector",
+                                            "isDeprecated": false,
+                                            "name": "connector_status"
+                                        },
+                                        {
+                                            "deprecationReason": null,
                                             "description": "For SaaS Security API, parent Microsoft 365 connector",
                                             "isDeprecated": false,
                                             "name": "parent_connector_name"
@@ -4948,6 +4966,12 @@
                                             "description": "For SaaS Security API, name of the connector",
                                             "isDeprecated": false,
                                             "name": "connector_name"
+                                        },
+                                        {
+                                            "deprecationReason": null,
+                                            "description": "For SaaS Security API, status of the connector",
+                                            "isDeprecated": false,
+                                            "name": "connector_status"
                                         },
                                         {
                                             "deprecationReason": null,
@@ -6339,6 +6363,12 @@
                                         },
                                         {
                                             "deprecationReason": null,
+                                            "description": "For SaaS Security API, status of the connector",
+                                            "isDeprecated": false,
+                                            "name": "connector_status"
+                                        },
+                                        {
+                                            "deprecationReason": null,
                                             "description": "For SaaS Security API, parent Microsoft 365 connector",
                                             "isDeprecated": false,
                                             "name": "parent_connector_name"
@@ -7652,6 +7682,12 @@
                                             "description": "For SaaS Security API, name of the connector",
                                             "isDeprecated": false,
                                             "name": "connector_name"
+                                        },
+                                        {
+                                            "deprecationReason": null,
+                                            "description": "For SaaS Security API, status of the connector",
+                                            "isDeprecated": false,
+                                            "name": "connector_status"
                                         },
                                         {
                                             "deprecationReason": null,
@@ -9187,6 +9223,12 @@
                                         },
                                         {
                                             "deprecationReason": null,
+                                            "description": "For SaaS Security API, status of the connector",
+                                            "isDeprecated": false,
+                                            "name": "connector_status"
+                                        },
+                                        {
+                                            "deprecationReason": null,
                                             "description": "For SaaS Security API, parent Microsoft 365 connector",
                                             "isDeprecated": false,
                                             "name": "parent_connector_name"
@@ -10518,6 +10560,12 @@
                                             "description": "For SaaS Security API, name of the connector",
                                             "isDeprecated": false,
                                             "name": "connector_name"
+                                        },
+                                        {
+                                            "deprecationReason": null,
+                                            "description": "For SaaS Security API, status of the connector",
+                                            "isDeprecated": false,
+                                            "name": "connector_status"
                                         },
                                         {
                                             "deprecationReason": null,

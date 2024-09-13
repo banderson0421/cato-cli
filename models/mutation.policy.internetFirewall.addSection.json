@@ -204,7 +204,7 @@
                 }
             },
             "deprecationReason": null,
-            "description": null,
+            "description": "Add a new section to the policy.\nFirst section behaves as follows:\nWhen the first section is created,  all the rules in the policy, including the default system rules, are automatically added to it.\nThe first section containing the default system rules can be modified but not deleted.\nThe first section will always remain first-in-policy, i.e. it cannot be moved, and not other sections can be moved or created before it.",
             "isDeprecated": false,
             "name": "addSection",
             "type": {
@@ -889,7 +889,7 @@
                                         }
                                     },
                                     "deprecationReason": null,
-                                    "description": null,
+                                    "description": "Add a new section to the policy.\nFirst section behaves as follows:\nWhen the first section is created,  all the rules in the policy, including the default system rules, are automatically added to it.\nThe first section containing the default system rules can be modified but not deleted.\nThe first section will always remain first-in-policy, i.e. it cannot be moved, and not other sections can be moved or created before it.",
                                     "id_str": "internetFirewall___addSection",
                                     "isDeprecated": false,
                                     "name": "addSection",
@@ -1117,7 +1117,7 @@
                                                                                 },
                                                                                 {
                                                                                     "deprecationReason": null,
-                                                                                    "description": null,
+                                                                                    "description": "An object can not be moved, or referenced when moving other objects.\nHowever its properties and content can be modified.",
                                                                                     "isDeprecated": false,
                                                                                     "name": "ANCHORED"
                                                                                 },

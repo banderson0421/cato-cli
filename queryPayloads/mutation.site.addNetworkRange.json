@@ -23,6 +23,9 @@
             "localIp": {
                 "localIp": "IPAddress"
             },
+            "mdnsReflector": {
+                "mdnsReflector": "Boolean"
+            },
             "name": {
                 "name": "String"
             },
