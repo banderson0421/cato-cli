@@ -8,7 +8,7 @@
 
 `cato query siteLocation <accountID> <json>`
 
-`cato query siteLocation 12345 $(cat < siteLocation.json)`
+`cato query siteLocation 12345 "$(cat < siteLocation.json)"`
 
 `cato query siteLocation 12345 '{"filters":[{"search": "Your city here","field":"city","operation":"exact"}]}'`
 

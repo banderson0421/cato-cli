@@ -8,7 +8,7 @@
 
 `cato mutation policy internetFirewall addSection <accountID> <json>`
 
-`cato mutation policy internetFirewall addSection 12345 $(cat < addSection.json)`
+`cato mutation policy internetFirewall addSection 12345 "$(cat < addSection.json)"`
 
 `cato mutation policy internetFirewall addSection 12345 '{"InternetFirewallPolicyMutationInput": {"PolicyMutationRevisionInput": {"id": {"id": "ID"}}}, "PolicyAddSectionInput": {"PolicyAddSectionInfoInput": {"name": {"name": "String"}}, "PolicySectionPositionInput": {"position": {"position": "enum(PolicySectionPositionEnum)"}, "ref": {"ref": "ID"}}}}'`
 

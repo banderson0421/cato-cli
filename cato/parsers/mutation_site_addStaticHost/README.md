@@ -8,7 +8,7 @@
 
 `cato mutation site addStaticHost <accountID> <json>`
 
-`cato mutation site addStaticHost 12345 $(cat < addStaticHost.json)`
+`cato mutation site addStaticHost 12345 "$(cat < addStaticHost.json)"`
 
 `cato mutation site addStaticHost 12345 '{"AddStaticHostInput": {"ip": {"ip": "IPAddress"}, "macAddress": {"macAddress": "String"}, "name": {"name": "String"}}, "siteId": "ID"}'`
 

@@ -8,7 +8,7 @@
 
 `cato raw <json>`
 
-`cato raw $(cat < rawGraphqQL.json)`
+`cato raw "$(cat < rawGraphqQL.json)"`
 
 `cato raw '{ "query": "query operationNameHere($yourArgument:String!) { field1 field2 }", "variables": { "yourArgument": "string", "accountID": "10949" }, "operationName": "operationNameHere" } '`
 

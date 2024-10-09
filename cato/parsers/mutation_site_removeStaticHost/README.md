@@ -8,7 +8,7 @@
 
 `cato mutation site removeStaticHost <accountID> <json>`
 
-`cato mutation site removeStaticHost 12345 $(cat < removeStaticHost.json)`
+`cato mutation site removeStaticHost 12345 "$(cat < removeStaticHost.json)"`
 
 `cato mutation site removeStaticHost 12345 '{"hostId": "ID"}'`
 

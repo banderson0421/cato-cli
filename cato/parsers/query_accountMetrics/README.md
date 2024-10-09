@@ -8,7 +8,7 @@
 
 `cato query accountMetrics <accountID> <json>`
 
-`cato query accountMetrics 12345 $(cat < accountMetrics.json)`
+`cato query accountMetrics 12345 "$(cat < accountMetrics.json)"`
 
 `cato query accountMetrics 12345 '{"buckets": "Int", "groupDevices": "Boolean", "groupInterfaces": "Boolean", "labels": "enum(TimeseriesMetricType)", "perSecond": "Boolean", "siteIDs": ["ID"], "timeFrame": "TimeFrame", "toRate": "Boolean", "types": ["String"], "userIDs": ["ID"], "withMissingData": "Boolean"}'`
 

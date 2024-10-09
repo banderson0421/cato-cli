@@ -3,7 +3,7 @@ from ..parserApiClient import createRequest, get_help
 
 def query_hardwareManagement_parse(query_subparsers):
 	query_hardwareManagement_parser = query_subparsers.add_parser('hardwareManagement', 
-			help='hardwareManagement', 
+			help='hardwareManagement() query operation', 
 			usage=get_help("query_hardwareManagement"))
 
 	query_hardwareManagement_parser.add_argument('accountID', help='The Account ID.')

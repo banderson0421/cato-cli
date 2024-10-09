@@ -8,7 +8,7 @@
 
 `cato query xdr story <accountID> <json>`
 
-`cato query xdr story 12345 $(cat < story.json)`
+`cato query xdr story 12345 "$(cat < story.json)"`
 
 `cato query xdr story 12345 '{"incidentId": "ID", "perSecond": "Boolean", "producer": "enum(StoryProducerEnum)", "storyId": "ID"}'`
 
@@ -16,5 +16,5 @@
 `accountID` [ID] - (required) N/A 
 `incidentId` [ID] - (optional) N/A 
 `perSecond` [Boolean] - (optional) whether to normalize the data into per second (i.e. divide by granularity) 
-`producer` [StoryProducerEnum] - (optional) N/A Default Value: ['AnomalyStats', 'AnomalyEvents', 'ThreatHunt', 'ThreatPrevention', 'NetworkMonitor', 'NetworkXDR', 'MicrosoftEndpointDefender', 'CatoEndpointAlert']
+`producer` [StoryProducerEnum] - (optional) N/A Default Value: ['AnomalyStats', 'AnomalyEvents', 'ThreatHunt', 'ThreatPrevention', 'NetworkMonitor', 'NetworkXDR', 'MicrosoftEndpointDefender', 'CatoEndpointAlert', 'EntraIdAlert']
 `storyId` [ID] - (optional) N/A 

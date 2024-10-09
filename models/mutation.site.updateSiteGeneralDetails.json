@@ -277,14 +277,14 @@
             }
         }
     },
-    "deprecationReason": null,
+    "deprecationReason": "in favor of sites",
     "description": null,
     "fieldTypes": {
         "SiteType": true,
         "UpdateSiteGeneralDetailsPayload": true,
         "UpdateSiteLocationInput": true
     },
-    "isDeprecated": false,
+    "isDeprecated": true,
     "name": "site",
     "operationArgs": {
         "UpdateSiteGeneralDetailsInput": {

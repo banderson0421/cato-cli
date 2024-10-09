@@ -194,10 +194,12 @@
         "DayOfWeek": true,
         "DeviceProfileRef": true,
         "FloatingSubnetRef": true,
+        "FqdnContainerRef": true,
         "GlobalIpRangeRef": true,
         "GroupRef": true,
         "HostRef": true,
         "InternetFirewallActionEnum": true,
+        "InternetFirewallContainer": true,
         "InternetFirewallDestination": true,
         "InternetFirewallPolicyMutations": true,
         "InternetFirewallRule": true,
@@ -207,6 +209,7 @@
         "InternetFirewallServiceType": true,
         "InternetFirewallSource": true,
         "IpAddressRange": true,
+        "IpAddressRangeContainerRef": true,
         "IpProtocol": true,
         "NetworkInterfaceRef": true,
         "OperatingSystem": true,
@@ -1275,6 +1278,196 @@
                                                                                                         "non_null": false
                                                                                                     },
                                                                                                     "varName": "ContainerRef"
+                                                                                                },
+                                                                                                "containers": {
+                                                                                                    "alias": "InternetFirewallContainerContainers: containers",
+                                                                                                    "args": {},
+                                                                                                    "deprecationReason": null,
+                                                                                                    "description": null,
+                                                                                                    "id_str": "internetFirewall___removeRule___rule___rule___destination___containers",
+                                                                                                    "isDeprecated": false,
+                                                                                                    "name": "containers",
+                                                                                                    "path": "internetFirewall.removeRule.rule.rule.destination.containers",
+                                                                                                    "requestStr": "$InternetFirewallContainer:InternetFirewallContainer! ",
+                                                                                                    "required": true,
+                                                                                                    "responseStr": "containers:$InternetFirewallContainer ",
+                                                                                                    "type": {
+                                                                                                        "definition": {
+                                                                                                            "description": null,
+                                                                                                            "enumValues": null,
+                                                                                                            "fields": {
+                                                                                                                "fqdnContainer": {
+                                                                                                                    "alias": "FqdnContainerRefFqdnContainer: fqdnContainer",
+                                                                                                                    "args": {},
+                                                                                                                    "deprecationReason": null,
+                                                                                                                    "description": null,
+                                                                                                                    "id_str": "internetFirewall___removeRule___rule___rule___destination___containers___fqdnContainer",
+                                                                                                                    "isDeprecated": false,
+                                                                                                                    "name": "fqdnContainer",
+                                                                                                                    "path": "internetFirewall.removeRule.rule.rule.destination.containers.fqdnContainer",
+                                                                                                                    "requestStr": "$FqdnContainerRef:[FqdnContainerRef]! ",
+                                                                                                                    "required": true,
+                                                                                                                    "responseStr": "fqdnContainer:$FqdnContainerRef ",
+                                                                                                                    "type": {
+                                                                                                                        "definition": {
+                                                                                                                            "description": "A group with members of FQDN type",
+                                                                                                                            "enumValues": null,
+                                                                                                                            "fields": {
+                                                                                                                                "id": {
+                                                                                                                                    "args": {},
+                                                                                                                                    "deprecationReason": null,
+                                                                                                                                    "description": "Unique container ID",
+                                                                                                                                    "id_str": "internetFirewall___removeRule___rule___rule___destination___containers___fqdnContainer___id",
+                                                                                                                                    "isDeprecated": false,
+                                                                                                                                    "name": "id",
+                                                                                                                                    "path": "internetFirewall.removeRule.rule.rule.destination.containers.fqdnContainer.id",
+                                                                                                                                    "requestStr": "$id:ID! ",
+                                                                                                                                    "required": true,
+                                                                                                                                    "responseStr": "id:$id ",
+                                                                                                                                    "type": {
+                                                                                                                                        "kind": [
+                                                                                                                                            "NON_NULL",
+                                                                                                                                            "SCALAR"
+                                                                                                                                        ],
+                                                                                                                                        "name": "ID",
+                                                                                                                                        "non_null": false
+                                                                                                                                    },
+                                                                                                                                    "varName": "id"
+                                                                                                                                },
+                                                                                                                                "name": {
+                                                                                                                                    "args": {},
+                                                                                                                                    "deprecationReason": null,
+                                                                                                                                    "description": "Name for the container",
+                                                                                                                                    "id_str": "internetFirewall___removeRule___rule___rule___destination___containers___fqdnContainer___name",
+                                                                                                                                    "isDeprecated": false,
+                                                                                                                                    "name": "name",
+                                                                                                                                    "path": "internetFirewall.removeRule.rule.rule.destination.containers.fqdnContainer.name",
+                                                                                                                                    "requestStr": "$name:String! ",
+                                                                                                                                    "required": true,
+                                                                                                                                    "responseStr": "name:$name ",
+                                                                                                                                    "type": {
+                                                                                                                                        "kind": [
+                                                                                                                                            "NON_NULL",
+                                                                                                                                            "SCALAR"
+                                                                                                                                        ],
+                                                                                                                                        "name": "String",
+                                                                                                                                        "non_null": false
+                                                                                                                                    },
+                                                                                                                                    "varName": "name"
+                                                                                                                                }
+                                                                                                                            },
+                                                                                                                            "inputFields": null,
+                                                                                                                            "interfaces": {},
+                                                                                                                            "kind": "OBJECT",
+                                                                                                                            "name": "FqdnContainerRef",
+                                                                                                                            "possibleTypes": null
+                                                                                                                        },
+                                                                                                                        "indexType": "object",
+                                                                                                                        "kind": [
+                                                                                                                            "NON_NULL",
+                                                                                                                            "LIST",
+                                                                                                                            "NON_NULL",
+                                                                                                                            "OBJECT"
+                                                                                                                        ],
+                                                                                                                        "name": "FqdnContainerRef",
+                                                                                                                        "non_null": false
+                                                                                                                    },
+                                                                                                                    "varName": "FqdnContainerRef"
+                                                                                                                },
+                                                                                                                "ipAddressRangeContainer": {
+                                                                                                                    "alias": "IpAddressRangeContainerRefIpAddressRangeContainer: ipAddressRangeContainer",
+                                                                                                                    "args": {},
+                                                                                                                    "deprecationReason": null,
+                                                                                                                    "description": null,
+                                                                                                                    "id_str": "internetFirewall___removeRule___rule___rule___destination___containers___ipAddressRangeContainer",
+                                                                                                                    "isDeprecated": false,
+                                                                                                                    "name": "ipAddressRangeContainer",
+                                                                                                                    "path": "internetFirewall.removeRule.rule.rule.destination.containers.ipAddressRangeContainer",
+                                                                                                                    "requestStr": "$IpAddressRangeContainerRef:[IpAddressRangeContainerRef]! ",
+                                                                                                                    "required": true,
+                                                                                                                    "responseStr": "ipAddressRangeContainer:$IpAddressRangeContainerRef ",
+                                                                                                                    "type": {
+                                                                                                                        "definition": {
+                                                                                                                            "description": "A group with members of IPAddressRange type",
+                                                                                                                            "enumValues": null,
+                                                                                                                            "fields": {
+                                                                                                                                "id": {
+                                                                                                                                    "args": {},
+                                                                                                                                    "deprecationReason": null,
+                                                                                                                                    "description": "Unique container ID",
+                                                                                                                                    "id_str": "internetFirewall___removeRule___rule___rule___destination___containers___ipAddressRangeContainer___id",
+                                                                                                                                    "isDeprecated": false,
+                                                                                                                                    "name": "id",
+                                                                                                                                    "path": "internetFirewall.removeRule.rule.rule.destination.containers.ipAddressRangeContainer.id",
+                                                                                                                                    "requestStr": "$id:ID! ",
+                                                                                                                                    "required": true,
+                                                                                                                                    "responseStr": "id:$id ",
+                                                                                                                                    "type": {
+                                                                                                                                        "kind": [
+                                                                                                                                            "NON_NULL",
+                                                                                                                                            "SCALAR"
+                                                                                                                                        ],
+                                                                                                                                        "name": "ID",
+                                                                                                                                        "non_null": false
+                                                                                                                                    },
+                                                                                                                                    "varName": "id"
+                                                                                                                                },
+                                                                                                                                "name": {
+                                                                                                                                    "args": {},
+                                                                                                                                    "deprecationReason": null,
+                                                                                                                                    "description": "Name for the container",
+                                                                                                                                    "id_str": "internetFirewall___removeRule___rule___rule___destination___containers___ipAddressRangeContainer___name",
+                                                                                                                                    "isDeprecated": false,
+                                                                                                                                    "name": "name",
+                                                                                                                                    "path": "internetFirewall.removeRule.rule.rule.destination.containers.ipAddressRangeContainer.name",
+                                                                                                                                    "requestStr": "$name:String! ",
+                                                                                                                                    "required": true,
+                                                                                                                                    "responseStr": "name:$name ",
+                                                                                                                                    "type": {
+                                                                                                                                        "kind": [
+                                                                                                                                            "NON_NULL",
+                                                                                                                                            "SCALAR"
+                                                                                                                                        ],
+                                                                                                                                        "name": "String",
+                                                                                                                                        "non_null": false
+                                                                                                                                    },
+                                                                                                                                    "varName": "name"
+                                                                                                                                }
+                                                                                                                            },
+                                                                                                                            "inputFields": null,
+                                                                                                                            "interfaces": {},
+                                                                                                                            "kind": "OBJECT",
+                                                                                                                            "name": "IpAddressRangeContainerRef",
+                                                                                                                            "possibleTypes": null
+                                                                                                                        },
+                                                                                                                        "indexType": "object",
+                                                                                                                        "kind": [
+                                                                                                                            "NON_NULL",
+                                                                                                                            "LIST",
+                                                                                                                            "NON_NULL",
+                                                                                                                            "OBJECT"
+                                                                                                                        ],
+                                                                                                                        "name": "IpAddressRangeContainerRef",
+                                                                                                                        "non_null": false
+                                                                                                                    },
+                                                                                                                    "varName": "IpAddressRangeContainerRef"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            "inputFields": null,
+                                                                                                            "interfaces": {},
+                                                                                                            "kind": "OBJECT",
+                                                                                                            "name": "InternetFirewallContainer",
+                                                                                                            "possibleTypes": null
+                                                                                                        },
+                                                                                                        "indexType": "object",
+                                                                                                        "kind": [
+                                                                                                            "NON_NULL",
+                                                                                                            "OBJECT"
+                                                                                                        ],
+                                                                                                        "name": "InternetFirewallContainer",
+                                                                                                        "non_null": false
+                                                                                                    },
+                                                                                                    "varName": "InternetFirewallContainer"
                                                                                                 },
                                                                                                 "country": {
                                                                                                     "alias": "CountryRefCountry: country",
@@ -2444,6 +2637,196 @@
                                                                                                                         "non_null": false
                                                                                                                     },
                                                                                                                     "varName": "ContainerRef"
+                                                                                                                },
+                                                                                                                "containers": {
+                                                                                                                    "alias": "InternetFirewallContainerContainers: containers",
+                                                                                                                    "args": {},
+                                                                                                                    "deprecationReason": null,
+                                                                                                                    "description": null,
+                                                                                                                    "id_str": "internetFirewall___removeRule___rule___rule___exceptions___destination___containers",
+                                                                                                                    "isDeprecated": false,
+                                                                                                                    "name": "containers",
+                                                                                                                    "path": "internetFirewall.removeRule.rule.rule.exceptions.destination.containers",
+                                                                                                                    "requestStr": "$InternetFirewallContainer:InternetFirewallContainer! ",
+                                                                                                                    "required": true,
+                                                                                                                    "responseStr": "containers:$InternetFirewallContainer ",
+                                                                                                                    "type": {
+                                                                                                                        "definition": {
+                                                                                                                            "description": null,
+                                                                                                                            "enumValues": null,
+                                                                                                                            "fields": {
+                                                                                                                                "fqdnContainer": {
+                                                                                                                                    "alias": "FqdnContainerRefFqdnContainer: fqdnContainer",
+                                                                                                                                    "args": {},
+                                                                                                                                    "deprecationReason": null,
+                                                                                                                                    "description": null,
+                                                                                                                                    "id_str": "internetFirewall___removeRule___rule___rule___exceptions___destination___containers___fqdnContainer",
+                                                                                                                                    "isDeprecated": false,
+                                                                                                                                    "name": "fqdnContainer",
+                                                                                                                                    "path": "internetFirewall.removeRule.rule.rule.exceptions.destination.containers.fqdnContainer",
+                                                                                                                                    "requestStr": "$FqdnContainerRef:[FqdnContainerRef]! ",
+                                                                                                                                    "required": true,
+                                                                                                                                    "responseStr": "fqdnContainer:$FqdnContainerRef ",
+                                                                                                                                    "type": {
+                                                                                                                                        "definition": {
+                                                                                                                                            "description": "A group with members of FQDN type",
+                                                                                                                                            "enumValues": null,
+                                                                                                                                            "fields": {
+                                                                                                                                                "id": {
+                                                                                                                                                    "args": {},
+                                                                                                                                                    "deprecationReason": null,
+                                                                                                                                                    "description": "Unique container ID",
+                                                                                                                                                    "id_str": "internetFirewall___removeRule___rule___rule___exceptions___destination___containers___fqdnContainer___id",
+                                                                                                                                                    "isDeprecated": false,
+                                                                                                                                                    "name": "id",
+                                                                                                                                                    "path": "internetFirewall.removeRule.rule.rule.exceptions.destination.containers.fqdnContainer.id",
+                                                                                                                                                    "requestStr": "$id:ID! ",
+                                                                                                                                                    "required": true,
+                                                                                                                                                    "responseStr": "id:$id ",
+                                                                                                                                                    "type": {
+                                                                                                                                                        "kind": [
+                                                                                                                                                            "NON_NULL",
+                                                                                                                                                            "SCALAR"
+                                                                                                                                                        ],
+                                                                                                                                                        "name": "ID",
+                                                                                                                                                        "non_null": false
+                                                                                                                                                    },
+                                                                                                                                                    "varName": "id"
+                                                                                                                                                },
+                                                                                                                                                "name": {
+                                                                                                                                                    "args": {},
+                                                                                                                                                    "deprecationReason": null,
+                                                                                                                                                    "description": "Name for the container",
+                                                                                                                                                    "id_str": "internetFirewall___removeRule___rule___rule___exceptions___destination___containers___fqdnContainer___name",
+                                                                                                                                                    "isDeprecated": false,
+                                                                                                                                                    "name": "name",
+                                                                                                                                                    "path": "internetFirewall.removeRule.rule.rule.exceptions.destination.containers.fqdnContainer.name",
+                                                                                                                                                    "requestStr": "$name:String! ",
+                                                                                                                                                    "required": true,
+                                                                                                                                                    "responseStr": "name:$name ",
+                                                                                                                                                    "type": {
+                                                                                                                                                        "kind": [
+                                                                                                                                                            "NON_NULL",
+                                                                                                                                                            "SCALAR"
+                                                                                                                                                        ],
+                                                                                                                                                        "name": "String",
+                                                                                                                                                        "non_null": false
+                                                                                                                                                    },
+                                                                                                                                                    "varName": "name"
+                                                                                                                                                }
+                                                                                                                                            },
+                                                                                                                                            "inputFields": null,
+                                                                                                                                            "interfaces": {},
+                                                                                                                                            "kind": "OBJECT",
+                                                                                                                                            "name": "FqdnContainerRef",
+                                                                                                                                            "possibleTypes": null
+                                                                                                                                        },
+                                                                                                                                        "indexType": "object",
+                                                                                                                                        "kind": [
+                                                                                                                                            "NON_NULL",
+                                                                                                                                            "LIST",
+                                                                                                                                            "NON_NULL",
+                                                                                                                                            "OBJECT"
+                                                                                                                                        ],
+                                                                                                                                        "name": "FqdnContainerRef",
+                                                                                                                                        "non_null": false
+                                                                                                                                    },
+                                                                                                                                    "varName": "FqdnContainerRef"
+                                                                                                                                },
+                                                                                                                                "ipAddressRangeContainer": {
+                                                                                                                                    "alias": "IpAddressRangeContainerRefIpAddressRangeContainer: ipAddressRangeContainer",
+                                                                                                                                    "args": {},
+                                                                                                                                    "deprecationReason": null,
+                                                                                                                                    "description": null,
+                                                                                                                                    "id_str": "internetFirewall___removeRule___rule___rule___exceptions___destination___containers___ipAddressRangeContainer",
+                                                                                                                                    "isDeprecated": false,
+                                                                                                                                    "name": "ipAddressRangeContainer",
+                                                                                                                                    "path": "internetFirewall.removeRule.rule.rule.exceptions.destination.containers.ipAddressRangeContainer",
+                                                                                                                                    "requestStr": "$IpAddressRangeContainerRef:[IpAddressRangeContainerRef]! ",
+                                                                                                                                    "required": true,
+                                                                                                                                    "responseStr": "ipAddressRangeContainer:$IpAddressRangeContainerRef ",
+                                                                                                                                    "type": {
+                                                                                                                                        "definition": {
+                                                                                                                                            "description": "A group with members of IPAddressRange type",
+                                                                                                                                            "enumValues": null,
+                                                                                                                                            "fields": {
+                                                                                                                                                "id": {
+                                                                                                                                                    "args": {},
+                                                                                                                                                    "deprecationReason": null,
+                                                                                                                                                    "description": "Unique container ID",
+                                                                                                                                                    "id_str": "internetFirewall___removeRule___rule___rule___exceptions___destination___containers___ipAddressRangeContainer___id",
+                                                                                                                                                    "isDeprecated": false,
+                                                                                                                                                    "name": "id",
+                                                                                                                                                    "path": "internetFirewall.removeRule.rule.rule.exceptions.destination.containers.ipAddressRangeContainer.id",
+                                                                                                                                                    "requestStr": "$id:ID! ",
+                                                                                                                                                    "required": true,
+                                                                                                                                                    "responseStr": "id:$id ",
+                                                                                                                                                    "type": {
+                                                                                                                                                        "kind": [
+                                                                                                                                                            "NON_NULL",
+                                                                                                                                                            "SCALAR"
+                                                                                                                                                        ],
+                                                                                                                                                        "name": "ID",
+                                                                                                                                                        "non_null": false
+                                                                                                                                                    },
+                                                                                                                                                    "varName": "id"
+                                                                                                                                                },
+                                                                                                                                                "name": {
+                                                                                                                                                    "args": {},
+                                                                                                                                                    "deprecationReason": null,
+                                                                                                                                                    "description": "Name for the container",
+                                                                                                                                                    "id_str": "internetFirewall___removeRule___rule___rule___exceptions___destination___containers___ipAddressRangeContainer___name",
+                                                                                                                                                    "isDeprecated": false,
+                                                                                                                                                    "name": "name",
+                                                                                                                                                    "path": "internetFirewall.removeRule.rule.rule.exceptions.destination.containers.ipAddressRangeContainer.name",
+                                                                                                                                                    "requestStr": "$name:String! ",
+                                                                                                                                                    "required": true,
+                                                                                                                                                    "responseStr": "name:$name ",
+                                                                                                                                                    "type": {
+                                                                                                                                                        "kind": [
+                                                                                                                                                            "NON_NULL",
+                                                                                                                                                            "SCALAR"
+                                                                                                                                                        ],
+                                                                                                                                                        "name": "String",
+                                                                                                                                                        "non_null": false
+                                                                                                                                                    },
+                                                                                                                                                    "varName": "name"
+                                                                                                                                                }
+                                                                                                                                            },
+                                                                                                                                            "inputFields": null,
+                                                                                                                                            "interfaces": {},
+                                                                                                                                            "kind": "OBJECT",
+                                                                                                                                            "name": "IpAddressRangeContainerRef",
+                                                                                                                                            "possibleTypes": null
+                                                                                                                                        },
+                                                                                                                                        "indexType": "object",
+                                                                                                                                        "kind": [
+                                                                                                                                            "NON_NULL",
+                                                                                                                                            "LIST",
+                                                                                                                                            "NON_NULL",
+                                                                                                                                            "OBJECT"
+                                                                                                                                        ],
+                                                                                                                                        "name": "IpAddressRangeContainerRef",
+                                                                                                                                        "non_null": false
+                                                                                                                                    },
+                                                                                                                                    "varName": "IpAddressRangeContainerRef"
+                                                                                                                                }
+                                                                                                                            },
+                                                                                                                            "inputFields": null,
+                                                                                                                            "interfaces": {},
+                                                                                                                            "kind": "OBJECT",
+                                                                                                                            "name": "InternetFirewallContainer",
+                                                                                                                            "possibleTypes": null
+                                                                                                                        },
+                                                                                                                        "indexType": "object",
+                                                                                                                        "kind": [
+                                                                                                                            "NON_NULL",
+                                                                                                                            "OBJECT"
+                                                                                                                        ],
+                                                                                                                        "name": "InternetFirewallContainer",
+                                                                                                                        "non_null": false
+                                                                                                                    },
+                                                                                                                    "varName": "InternetFirewallContainer"
                                                                                                                 },
                                                                                                                 "country": {
                                                                                                                     "alias": "CountryRefCountry: country",

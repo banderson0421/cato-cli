@@ -1523,6 +1523,54 @@
                         },
                         {
                             "deprecationReason": null,
+                            "description": "Matched network rule",
+                            "isDeprecated": false,
+                            "name": "network_rule"
+                        },
+                        {
+                            "deprecationReason": null,
+                            "description": "The algorithm that is used (CUBIC /NewReno / BBR)",
+                            "isDeprecated": false,
+                            "name": "congestion_algorithm"
+                        },
+                        {
+                            "deprecationReason": null,
+                            "description": "Shows if traffic was TCP accelerated or not",
+                            "isDeprecated": false,
+                            "name": "tcp_acceleration"
+                        },
+                        {
+                            "deprecationReason": null,
+                            "description": "Shows if traffic was TLS inspected or not",
+                            "isDeprecated": false,
+                            "name": "tls_inspection"
+                        },
+                        {
+                            "deprecationReason": null,
+                            "description": "Used Public IP",
+                            "isDeprecated": false,
+                            "name": "public_ip"
+                        },
+                        {
+                            "deprecationReason": null,
+                            "description": "Egress Site Name for backhauling traffic",
+                            "isDeprecated": false,
+                            "name": "egress_site_name"
+                        },
+                        {
+                            "deprecationReason": null,
+                            "description": "Egress PoP Name",
+                            "isDeprecated": false,
+                            "name": "egress_pop_name"
+                        },
+                        {
+                            "deprecationReason": null,
+                            "description": "QoS Priority value",
+                            "isDeprecated": false,
+                            "name": "qos_priority"
+                        },
+                        {
+                            "deprecationReason": null,
                             "description": "Split Tunnel Configuration",
                             "isDeprecated": false,
                             "name": "split_tunnel_configuration"
@@ -2896,6 +2944,54 @@
                                                             "description": "Trigger",
                                                             "isDeprecated": false,
                                                             "name": "trigger"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "Matched network rule",
+                                                            "isDeprecated": false,
+                                                            "name": "network_rule"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "The algorithm that is used (CUBIC /NewReno / BBR)",
+                                                            "isDeprecated": false,
+                                                            "name": "congestion_algorithm"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "Shows if traffic was TCP accelerated or not",
+                                                            "isDeprecated": false,
+                                                            "name": "tcp_acceleration"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "Shows if traffic was TLS inspected or not",
+                                                            "isDeprecated": false,
+                                                            "name": "tls_inspection"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "Used Public IP",
+                                                            "isDeprecated": false,
+                                                            "name": "public_ip"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "Egress Site Name for backhauling traffic",
+                                                            "isDeprecated": false,
+                                                            "name": "egress_site_name"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "Egress PoP Name",
+                                                            "isDeprecated": false,
+                                                            "name": "egress_pop_name"
+                                                        },
+                                                        {
+                                                            "deprecationReason": null,
+                                                            "description": "QoS Priority value",
+                                                            "isDeprecated": false,
+                                                            "name": "qos_priority"
                                                         },
                                                         {
                                                             "deprecationReason": null,

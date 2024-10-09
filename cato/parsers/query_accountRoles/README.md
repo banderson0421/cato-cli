@@ -8,7 +8,7 @@
 
 `cato query accountRoles <accountID> <json>`
 
-`cato query accountRoles 12345 $(cat < accountRoles.json)`
+`cato query accountRoles 12345 "$(cat < accountRoles.json)"`
 
 `cato query accountRoles 12345 '{"accountType": "enum(AccountType)"}'`
 

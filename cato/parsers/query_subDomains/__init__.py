@@ -3,7 +3,7 @@ from ..parserApiClient import createRequest, get_help
 
 def query_subDomains_parse(query_subparsers):
 	query_subDomains_parser = query_subparsers.add_parser('subDomains', 
-			help='subDomains', 
+			help='subDomains() query operation', 
 			usage=get_help("query_subDomains"))
 
 	query_subDomains_parser.add_argument('accountID', help='The Account ID.')

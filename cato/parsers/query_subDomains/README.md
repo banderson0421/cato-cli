@@ -8,7 +8,7 @@
 
 `cato query subDomains <accountID> <json>`
 
-`cato query subDomains 12345 $(cat < subDomains.json)`
+`cato query subDomains 12345 "$(cat < subDomains.json)"`
 
 `cato query subDomains 12345 '{"managedAccount": "Boolean"}'`
 

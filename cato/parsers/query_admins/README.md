@@ -8,7 +8,7 @@
 
 `cato query admins <accountID> <json>`
 
-`cato query admins 12345 $(cat < admins.json)`
+`cato query admins 12345 "$(cat < admins.json)"`
 
 `cato query admins 12345 '{"SortInput": {"field": {"field": "String"}, "order": {"order": "enum(DirectionInput)"}}, "adminIDs": ["ID"], "from": "Int", "limit": "Int", "search": "String"}'`
 

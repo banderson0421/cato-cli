@@ -8,7 +8,7 @@
 
 `cato query entityLookup <accountID> <json>`
 
-`cato query entityLookup 12345 $(cat < entityLookup.json)`
+`cato query entityLookup 12345 "$(cat < entityLookup.json)"`
 
 `cato query entityLookup 12345 '{"EntityInput": {"id": {"id": "ID"}, "name": {"name": "String"}, "type": {"type": "enum(EntityType)"}}, "LookupFilterInput": {"filter": {"filter": "enum(LookupFilterType)"}, "value": {"value": "String"}}, "SortInput": {"field": {"field": "String"}, "order": {"order": "enum(DirectionInput)"}}, "entityIDs": ["ID"], "from": "Int", "helperFields": ["String"], "limit": "Int", "search": "String", "type": "enum(EntityType)"}'`
 
@@ -28,4 +28,4 @@ type, an error will be generated.
 `search` [String] - (optional) Adds additional search parameters for the lookup. Available options:
 country lookup: "removeExcluded" to return only allowed countries
 countryState lookup: country code ("US", "CN", etc) to get country's states 
-`type` [EntityType] - (required) Type of entity to lookup for Default Value: ['site', 'vpnUser', 'country', 'countryState', 'timezone', 'host', 'any', 'networkInterface', 'location', 'admin', 'localRouting', 'lanFirewall', 'allocatedIP', 'siteRange', 'simpleService', 'availableSiteUsage', 'availablePooledUsage', 'dhcpRelayGroup', 'portProtocol', 'city', 'groupSubscription', 'mailingListSubscription', 'webhookSubscription', 'account']
+`type` [EntityType] - (required) Type of entity to lookup for Default Value: ['account', 'site', 'vpnUser', 'country', 'countryState', 'timezone', 'host', 'any', 'networkInterface', 'location', 'admin', 'localRouting', 'lanFirewall', 'allocatedIP', 'siteRange', 'simpleService', 'availableSiteUsage', 'availablePooledUsage', 'dhcpRelayGroup', 'portProtocol', 'city', 'groupSubscription', 'mailingListSubscription', 'webhookSubscription']

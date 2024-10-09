@@ -8,7 +8,7 @@
 
 `cato mutation policy internetFirewall moveRule <accountID> <json>`
 
-`cato mutation policy internetFirewall moveRule 12345 $(cat < moveRule.json)`
+`cato mutation policy internetFirewall moveRule 12345 "$(cat < moveRule.json)"`
 
 `cato mutation policy internetFirewall moveRule 12345 '{"InternetFirewallPolicyMutationInput": {"PolicyMutationRevisionInput": {"id": {"id": "ID"}}}, "PolicyMoveRuleInput": {"PolicyRulePositionInput": {"position": {"position": "enum(PolicyRulePositionEnum)"}, "ref": {"ref": "ID"}}, "id": {"id": "ID"}}}'`
 

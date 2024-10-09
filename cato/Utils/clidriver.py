@@ -6,6 +6,8 @@ import cato
 from graphql_client import Configuration
 from graphql_client.api_client import ApiException
 from ..parsers.parserApiClient import get_help
+import sys
+sys.path.insert(0, 'vendor')
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 if "CATO_TOKEN" not in os.environ:
@@ -17,8 +19,10 @@ from ..parsers.raw import raw_parse
 #from ..parsers.custom import custom_parse
 from ..parsers.query_siteLocation import query_siteLocation_parse
 from ..parsers.mutation_admin import mutation_admin_parse
+from ..parsers.mutation_container import mutation_container_parse
 from ..parsers.mutation_policy import mutation_policy_parse
 from ..parsers.mutation_site import mutation_site_parse
+from ..parsers.mutation_sites import mutation_sites_parse
 from ..parsers.query_accountBySubdomain import query_accountBySubdomain_parse
 from ..parsers.query_accountMetrics import query_accountMetrics_parse
 from ..parsers.query_accountRoles import query_accountRoles_parse
@@ -28,6 +32,7 @@ from ..parsers.query_admins import query_admins_parse
 from ..parsers.query_appStats import query_appStats_parse
 from ..parsers.query_appStatsTimeSeries import query_appStatsTimeSeries_parse
 from ..parsers.query_auditFeed import query_auditFeed_parse
+from ..parsers.query_container import query_container_parse
 from ..parsers.query_entityLookup import query_entityLookup_parse
 from ..parsers.query_events import query_events_parse
 from ..parsers.query_eventsFeed import query_eventsFeed_parse
@@ -43,6 +48,7 @@ configuration.verify_ssl = False
 configuration.api_key["x-api-key"] = CATO_TOKEN
 configuration.host = "{}".format(cato.__cato_host__)
 configuration.debug = CATO_DEBUG
+configuration.version = "{}".format(cato.__version__)
 
 parser = argparse.ArgumentParser(prog='cato', usage='%(prog)s <operationType> <operationName> [options]', description="CLI for query on CATO via API.")
 parser.add_argument('--version', action='version', version=cato.__version__)
@@ -57,8 +63,10 @@ mutation_parser = subparsers.add_parser('mutation', help='Mutation', usage='cato
 mutation_subparsers = mutation_parser.add_subparsers(description='valid subcommands', help='additional help')
 
 mutation_admin_parser = mutation_admin_parse(mutation_subparsers)
+mutation_container_parser = mutation_container_parse(mutation_subparsers)
 mutation_policy_parser = mutation_policy_parse(mutation_subparsers)
 mutation_site_parser = mutation_site_parse(mutation_subparsers)
+mutation_sites_parser = mutation_sites_parse(mutation_subparsers)
 query_accountBySubdomain_parser = query_accountBySubdomain_parse(query_subparsers)
 query_accountMetrics_parser = query_accountMetrics_parse(query_subparsers)
 query_accountRoles_parser = query_accountRoles_parse(query_subparsers)
@@ -68,6 +76,7 @@ query_admins_parser = query_admins_parse(query_subparsers)
 query_appStats_parser = query_appStats_parse(query_subparsers)
 query_appStatsTimeSeries_parser = query_appStatsTimeSeries_parse(query_subparsers)
 query_auditFeed_parser = query_auditFeed_parse(query_subparsers)
+query_container_parser = query_container_parse(query_subparsers)
 query_entityLookup_parser = query_entityLookup_parse(query_subparsers)
 query_events_parser = query_events_parse(query_subparsers)
 query_eventsFeed_parser = query_eventsFeed_parse(query_subparsers)

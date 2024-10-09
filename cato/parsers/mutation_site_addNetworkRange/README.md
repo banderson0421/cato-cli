@@ -8,7 +8,7 @@
 
 `cato mutation site addNetworkRange <accountID> <json>`
 
-`cato mutation site addNetworkRange 12345 $(cat < addNetworkRange.json)`
+`cato mutation site addNetworkRange 12345 "$(cat < addNetworkRange.json)"`
 
 `cato mutation site addNetworkRange 12345 '{"AddNetworkRangeInput": {"NetworkDhcpSettingsInput": {"dhcpType": {"dhcpType": "enum(DhcpType)"}, "ipRange": {"ipRange": "IPRange"}, "relayGroupId": {"relayGroupId": "ID"}}, "azureFloatingIp": {"azureFloatingIp": "IPAddress"}, "gateway": {"gateway": "IPAddress"}, "localIp": {"localIp": "IPAddress"}, "mdnsReflector": {"mdnsReflector": "Boolean"}, "name": {"name": "String"}, "rangeType": {"rangeType": "enum(SubnetType)"}, "subnet": {"subnet": "IPSubnet"}, "translatedSubnet": {"translatedSubnet": "IPSubnet"}, "vlan": {"vlan": "Int"}}, "lanSocketInterfaceId": "ID"}'`
 

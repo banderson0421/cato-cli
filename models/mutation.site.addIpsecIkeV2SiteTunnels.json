@@ -645,7 +645,7 @@
             }
         }
     },
-    "deprecationReason": null,
+    "deprecationReason": "in favor of sites",
     "description": null,
     "fieldTypes": {
         "AddIpsecIkeV2SiteMultiTunnelPayload": true,
@@ -657,7 +657,7 @@
         "IPSecV2InterfaceId": true,
         "LastMileBwInput": true
     },
-    "isDeprecated": false,
+    "isDeprecated": true,
     "name": "site",
     "operationArgs": {
         "AddIpsecIkeV2SiteTunnelsInput": {

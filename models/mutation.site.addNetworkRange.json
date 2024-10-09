@@ -413,7 +413,7 @@
             }
         }
     },
-    "deprecationReason": null,
+    "deprecationReason": "in favor of sites",
     "description": null,
     "fieldTypes": {
         "AddNetworkRangePayload": true,
@@ -421,7 +421,7 @@
         "NetworkDhcpSettingsInput": true,
         "SubnetType": true
     },
-    "isDeprecated": false,
+    "isDeprecated": true,
     "name": "site",
     "operationArgs": {
         "AddNetworkRangeInput": {

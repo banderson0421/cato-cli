@@ -54,12 +54,12 @@
             }
         }
     },
-    "deprecationReason": null,
+    "deprecationReason": "in favor of sites",
     "description": null,
     "fieldTypes": {
         "RemoveSitePayload": true
     },
-    "isDeprecated": false,
+    "isDeprecated": true,
     "name": "site",
     "operationArgs": {
         "accountId": {

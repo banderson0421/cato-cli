@@ -3,7 +3,7 @@ from ..parserApiClient import createRequest, get_help
 
 def query_accountMetrics_parse(query_subparsers):
 	query_accountMetrics_parser = query_subparsers.add_parser('accountMetrics', 
-			help='accountMetrics', 
+			help='accountMetrics() query operation', 
 			usage=get_help("query_accountMetrics"))
 
 	query_accountMetrics_parser.add_argument('accountID', help='The Account ID.')

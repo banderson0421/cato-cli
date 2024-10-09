@@ -5,8 +5,9 @@ import re
 import json
 
 # python 2 and python 3 compatibility library
+import sys
+sys.path.insert(0, 'vendor')
 import six
-
 from graphql_client.api_client_types import ApiClient
 
 class CallApi(object):
@@ -50,16 +51,13 @@ class CallApi(object):
 		body_params = None
 		if 'body' in params:
 			body_params = params['body']
-		# HTTP header `Accept`
-		header_params['Accept'] = self.api_client.select_header_accept(
-			['application/json'])
-		# HTTP header `Content-Type`
-		header_params['Content-Type'] = self.api_client.select_header_content_type(  
-			['application/json'])
+		header_params['Accept'] = self.api_client.select_header_accept(['application/json'])
+		header_params['Content-Type'] = self.api_client.select_header_content_type(['application/json'])
 		header_params['x-api-key'] = self.api_client.configuration.api_key['x-api-key']
+		header_params['User-Agent'] = "Cato-CLI-v"+self.api_client.configuration.version
 
 		if args.get("v")==True:
-			# print("Host: ",self.api_client.configuration.__cato_host__)
+			print("Host: ",self.api_client.configuration.host)
 			print("Request Headers:",json.dumps(header_params,indent=4,sort_keys=True))
 			print("Request Data:",json.dumps(body_params,indent=4,sort_keys=True),"\n\n")
 		

@@ -8,7 +8,7 @@
 
 `cato mutation site removeNetworkRange <accountID> <json>`
 
-`cato mutation site removeNetworkRange 12345 $(cat < removeNetworkRange.json)`
+`cato mutation site removeNetworkRange 12345 "$(cat < removeNetworkRange.json)"`
 
 `cato mutation site removeNetworkRange 12345 '{"networkRangeId": "ID"}'`
 

@@ -10,12 +10,14 @@ import os
 import re
 import tempfile
 
-# python 2 and python 3 compatibility library
-import six
-
 from graphql_client.configuration import Configuration
 import graphql_client.models
 from graphql_client import api_client
+
+# python 2 and python 3 compatibility library
+import sys
+sys.path.insert(0, 'vendor')
+import six
 
 class ApiClient(object):
 	PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
@@ -42,8 +44,7 @@ class ApiClient(object):
 		if header_name is not None:
 			self.default_headers[header_name] = header_value
 		self.cookie = cookie
-		# Set default User-Agent.
-		self.user_agent = 'python'
+		self.user_agent = "Cato-CLI-v"+self.configuration.version
 
 	def __del__(self):
 		self.pool.close()

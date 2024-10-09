@@ -3,7 +3,7 @@ from ..parserApiClient import createRequest, get_help
 
 def query_admins_parse(query_subparsers):
 	query_admins_parser = query_subparsers.add_parser('admins', 
-			help='admins', 
+			help='admins() query operation', 
 			usage=get_help("query_admins"))
 
 	query_admins_parser.add_argument('accountID', help='The Account ID.')

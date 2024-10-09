@@ -8,7 +8,7 @@
 
 `cato query licensing <accountID> <json>`
 
-`cato query licensing 12345 $(cat < licensing.json)`
+`cato query licensing 12345 "$(cat < licensing.json)"`
 
 `cato query licensing 12345 '{}'`
 

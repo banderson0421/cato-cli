@@ -3,7 +3,7 @@ from ..parserApiClient import createRequest, get_help
 
 def query_accountSnapshot_parse(query_subparsers):
 	query_accountSnapshot_parser = query_subparsers.add_parser('accountSnapshot', 
-			help='accountSnapshot', 
+			help='accountSnapshot() query operation', 
 			usage=get_help("query_accountSnapshot"))
 
 	query_accountSnapshot_parser.add_argument('accountID', help='The Account ID.')

@@ -777,7 +777,7 @@
             }
         }
     },
-    "deprecationReason": null,
+    "deprecationReason": "in favor of sites",
     "description": null,
     "fieldTypes": {
         "DestinationType": true,
@@ -789,7 +789,7 @@
         "UpdateIpsecIkeV2TunnelInput": true,
         "UpdateIpsecIkeV2TunnelsInput": true
     },
-    "isDeprecated": false,
+    "isDeprecated": true,
     "name": "site",
     "operationArgs": {
         "UpdateIpsecIkeV2SiteTunnelsInput": {

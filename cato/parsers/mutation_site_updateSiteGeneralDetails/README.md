@@ -8,7 +8,7 @@
 
 `cato mutation site updateSiteGeneralDetails <accountID> <json>`
 
-`cato mutation site updateSiteGeneralDetails 12345 $(cat < updateSiteGeneralDetails.json)`
+`cato mutation site updateSiteGeneralDetails 12345 "$(cat < updateSiteGeneralDetails.json)"`
 
 `cato mutation site updateSiteGeneralDetails 12345 '{"UpdateSiteGeneralDetailsInput": {"UpdateSiteLocationInput": {"address": {"address": "String"}, "countryCode": {"countryCode": "String"}, "stateCode": {"stateCode": "String"}, "timezone": {"timezone": "String"}}, "description": {"description": "String"}, "name": {"name": "String"}, "siteType": {"siteType": "enum(SiteType)"}}, "siteId": "ID"}'`
 

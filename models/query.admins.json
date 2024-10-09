@@ -482,6 +482,12 @@
                                                             "enumValues": [
                                                                 {
                                                                     "deprecationReason": null,
+                                                                    "description": "A reference to a configured Account under reseller",
+                                                                    "isDeprecated": false,
+                                                                    "name": "account"
+                                                                },
+                                                                {
+                                                                    "deprecationReason": null,
                                                                     "description": "A reference to a configured Site within Account",
                                                                     "isDeprecated": false,
                                                                     "name": "site"
@@ -617,12 +623,6 @@
                                                                     "description": null,
                                                                     "isDeprecated": false,
                                                                     "name": "webhookSubscription"
-                                                                },
-                                                                {
-                                                                    "deprecationReason": null,
-                                                                    "description": "A reference to a configured Account under reseller",
-                                                                    "isDeprecated": false,
-                                                                    "name": "account"
                                                                 }
                                                             ],
                                                             "fields": null,
@@ -876,6 +876,12 @@
                                                                             "enumValues": [
                                                                                 {
                                                                                     "deprecationReason": null,
+                                                                                    "description": "A reference to a configured Account under reseller",
+                                                                                    "isDeprecated": false,
+                                                                                    "name": "account"
+                                                                                },
+                                                                                {
+                                                                                    "deprecationReason": null,
                                                                                     "description": "A reference to a configured Site within Account",
                                                                                     "isDeprecated": false,
                                                                                     "name": "site"
@@ -1011,12 +1017,6 @@
                                                                                     "description": null,
                                                                                     "isDeprecated": false,
                                                                                     "name": "webhookSubscription"
-                                                                                },
-                                                                                {
-                                                                                    "deprecationReason": null,
-                                                                                    "description": "A reference to a configured Account under reseller",
-                                                                                    "isDeprecated": false,
-                                                                                    "name": "account"
                                                                                 }
                                                                             ],
                                                                             "fields": null,
@@ -1404,6 +1404,12 @@
                                                                             "enumValues": [
                                                                                 {
                                                                                     "deprecationReason": null,
+                                                                                    "description": "A reference to a configured Account under reseller",
+                                                                                    "isDeprecated": false,
+                                                                                    "name": "account"
+                                                                                },
+                                                                                {
+                                                                                    "deprecationReason": null,
                                                                                     "description": "A reference to a configured Site within Account",
                                                                                     "isDeprecated": false,
                                                                                     "name": "site"
@@ -1539,12 +1545,6 @@
                                                                                     "description": null,
                                                                                     "isDeprecated": false,
                                                                                     "name": "webhookSubscription"
-                                                                                },
-                                                                                {
-                                                                                    "deprecationReason": null,
-                                                                                    "description": "A reference to a configured Account under reseller",
-                                                                                    "isDeprecated": false,
-                                                                                    "name": "account"
                                                                                 }
                                                                             ],
                                                                             "fields": null,

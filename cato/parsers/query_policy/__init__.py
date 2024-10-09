@@ -3,7 +3,7 @@ from ..parserApiClient import createRequest, get_help
 
 def query_policy_parse(query_subparsers):
 	query_policy_parser = query_subparsers.add_parser('policy', 
-			help='policy', 
+			help='policy() query operation', 
 			usage=get_help("query_policy"))
 
 	query_policy_parser.add_argument('accountID', help='The Account ID.')

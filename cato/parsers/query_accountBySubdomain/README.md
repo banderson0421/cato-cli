@@ -8,7 +8,7 @@
 
 `cato query accountBySubdomain <accountID> <json>`
 
-`cato query accountBySubdomain 12345 $(cat < accountBySubdomain.json)`
+`cato query accountBySubdomain 12345 "$(cat < accountBySubdomain.json)"`
 
 `cato query accountBySubdomain 12345 '{"subdomains": ["String"]}'`
 

@@ -3,7 +3,7 @@ from ..parserApiClient import createRequest, get_help
 
 def query_eventsTimeSeries_parse(query_subparsers):
 	query_eventsTimeSeries_parser = query_subparsers.add_parser('eventsTimeSeries', 
-			help='eventsTimeSeries', 
+			help='eventsTimeSeries() query operation', 
 			usage=get_help("query_eventsTimeSeries"))
 
 	query_eventsTimeSeries_parser.add_argument('accountID', help='The Account ID.')

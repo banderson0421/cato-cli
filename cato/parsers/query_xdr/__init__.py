@@ -3,13 +3,13 @@ from ..parserApiClient import createRequest, get_help
 
 def query_xdr_parse(query_subparsers):
 	query_xdr_parser = query_subparsers.add_parser('xdr', 
-			help='xdr', 
+			help='xdr() query operation', 
 			usage=get_help("query_xdr"))
 
 	query_xdr_subparsers = query_xdr_parser.add_subparsers()
 
 	query_xdr_stories_parser = query_xdr_subparsers.add_parser('stories', 
-			help='stories', 
+			help='stories() xdr operation', 
 			usage=get_help("query_xdr_stories"))
 
 	query_xdr_stories_parser.add_argument('accountID', help='The Account ID.')
@@ -23,7 +23,7 @@ def query_xdr_parse(query_subparsers):
 	query_xdr_stories_parser.set_defaults(func=createRequest,operation_name='query.xdr.stories')
 
 	query_xdr_story_parser = query_xdr_subparsers.add_parser('story', 
-			help='story', 
+			help='story() xdr operation', 
 			usage=get_help("query_xdr_story"))
 
 	query_xdr_story_parser.add_argument('accountID', help='The Account ID.')

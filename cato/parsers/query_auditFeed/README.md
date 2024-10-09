@@ -8,7 +8,7 @@
 
 `cato query auditFeed <accountID> <json>`
 
-`cato query auditFeed 12345 $(cat < auditFeed.json)`
+`cato query auditFeed 12345 "$(cat < auditFeed.json)"`
 
 `cato query auditFeed 12345 '{"AuditFieldFilterInput": {"FieldNameInput": {"AuditFieldName": {"AuditFieldName": "enum(AuditFieldName)"}, "EventFieldName": {"EventFieldName": "enum(EventFieldName)"}}, "operator": {"operator": "enum(ElasticOperator)"}, "values": {"values": ["String"]}}, "accountIDs": ["ID"], "fieldNames": "enum(AuditFieldName)", "marker": "String", "timeFrame": "TimeFrame"}'`
 

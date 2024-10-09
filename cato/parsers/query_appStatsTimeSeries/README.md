@@ -8,7 +8,7 @@
 
 `cato query appStatsTimeSeries <accountID> <json>`
 
-`cato query appStatsTimeSeries 12345 $(cat < appStatsTimeSeries.json)`
+`cato query appStatsTimeSeries 12345 "$(cat < appStatsTimeSeries.json)"`
 
 `cato query appStatsTimeSeries 12345 '{"AppStatsFilter": {"fieldName": {"fieldName": "enum(AppStatsFieldName)"}, "operator": {"operator": "enum(FilterOperator)"}, "values": {"values": ["String"]}}, "Dimension": {"fieldName": {"fieldName": "enum(AppStatsFieldName)"}}, "Measure": {"aggType": {"aggType": "enum(AggregationType)"}, "fieldName": {"fieldName": "enum(AppStatsFieldName)"}, "trend": {"trend": "Boolean"}}, "buckets": "Int", "perSecond": "Boolean", "timeFrame": "TimeFrame", "withMissingData": "Boolean"}'`
 

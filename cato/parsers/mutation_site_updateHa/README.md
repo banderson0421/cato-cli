@@ -8,7 +8,7 @@
 
 `cato mutation site updateHa <accountID> <json>`
 
-`cato mutation site updateHa 12345 $(cat < updateHa.json)`
+`cato mutation site updateHa 12345 "$(cat < updateHa.json)"`
 
 `cato mutation site updateHa 12345 '{"UpdateHaInput": {"primaryManagementIp": {"primaryManagementIp": "IPAddress"}, "secondaryManagementIp": {"secondaryManagementIp": "IPAddress"}, "vrid": {"vrid": "Int"}}, "siteId": "ID"}'`
 

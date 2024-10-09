@@ -3,7 +3,7 @@ from ..parserApiClient import createRequest, get_help
 
 def query_accountRoles_parse(query_subparsers):
 	query_accountRoles_parser = query_subparsers.add_parser('accountRoles', 
-			help='accountRoles', 
+			help='accountRoles() query operation', 
 			usage=get_help("query_accountRoles"))
 
 	query_accountRoles_parser.add_argument('accountID', help='The Account ID.')

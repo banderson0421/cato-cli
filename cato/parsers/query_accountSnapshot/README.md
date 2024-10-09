@@ -8,7 +8,7 @@
 
 `cato query accountSnapshot <accountID> <json>`
 
-`cato query accountSnapshot 12345 $(cat < accountSnapshot.json)`
+`cato query accountSnapshot 12345 "$(cat < accountSnapshot.json)"`
 
 `cato query accountSnapshot 12345 '{"siteIDs": ["ID"], "userIDs": ["ID"]}'`
 

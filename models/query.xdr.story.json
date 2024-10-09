@@ -101,6 +101,12 @@
                                     "description": null,
                                     "isDeprecated": false,
                                     "name": "CatoEndpointAlert"
+                                },
+                                {
+                                    "deprecationReason": null,
+                                    "description": null,
+                                    "isDeprecated": false,
+                                    "name": "EntraIdAlert"
                                 }
                             ],
                             "fields": null,
@@ -347,6 +353,12 @@
                             "description": null,
                             "isDeprecated": false,
                             "name": "CatoEndpointAlert"
+                        },
+                        {
+                            "deprecationReason": null,
+                            "description": null,
+                            "isDeprecated": false,
+                            "name": "EntraIdAlert"
                         }
                     ],
                     "fields": null,
@@ -470,6 +482,12 @@
                                             "description": null,
                                             "isDeprecated": false,
                                             "name": "CatoEndpointAlert"
+                                        },
+                                        {
+                                            "deprecationReason": null,
+                                            "description": null,
+                                            "isDeprecated": false,
+                                            "name": "EntraIdAlert"
                                         }
                                     ],
                                     "fields": null,
@@ -1061,6 +1079,12 @@
                                                                     "description": null,
                                                                     "isDeprecated": false,
                                                                     "name": "NETWORK"
+                                                                },
+                                                                {
+                                                                    "deprecationReason": null,
+                                                                    "description": null,
+                                                                    "isDeprecated": false,
+                                                                    "name": "IDENTITY"
                                                                 }
                                                             ],
                                                             "fields": null,
@@ -1303,6 +1327,12 @@
                                                                     "description": null,
                                                                     "isDeprecated": false,
                                                                     "name": "CatoEndpointAlert"
+                                                                },
+                                                                {
+                                                                    "deprecationReason": null,
+                                                                    "description": null,
+                                                                    "isDeprecated": false,
+                                                                    "name": "EntraIdAlert"
                                                                 }
                                                             ],
                                                             "fields": null,
@@ -1568,7 +1598,7 @@
                                                                     "deprecationReason": null,
                                                                     "description": null,
                                                                     "isDeprecated": false,
-                                                                    "name": "Reopen"
+                                                                    "name": "Reopened"
                                                                 }
                                                             ],
                                                             "fields": null,
@@ -2319,6 +2349,12 @@
                                                                             "description": null,
                                                                             "isDeprecated": false,
                                                                             "name": "NETWORK"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": null,
+                                                                            "isDeprecated": false,
+                                                                            "name": "IDENTITY"
                                                                         }
                                                                     ],
                                                                     "fields": null,
@@ -3077,6 +3113,12 @@
                                                                             "description": null,
                                                                             "isDeprecated": false,
                                                                             "name": "CatoEndpointAlert"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": null,
+                                                                            "isDeprecated": false,
+                                                                            "name": "EntraIdAlert"
                                                                         }
                                                                     ],
                                                                     "fields": null,
@@ -3545,7 +3587,7 @@
                                                                             "deprecationReason": null,
                                                                             "description": null,
                                                                             "isDeprecated": false,
-                                                                            "name": "Reopen"
+                                                                            "name": "Reopened"
                                                                         }
                                                                     ],
                                                                     "fields": null,
@@ -5329,6 +5371,12 @@
                                                                             "description": null,
                                                                             "isDeprecated": false,
                                                                             "name": "NETWORK"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": null,
+                                                                            "isDeprecated": false,
+                                                                            "name": "IDENTITY"
                                                                         }
                                                                     ],
                                                                     "fields": null,
@@ -6087,6 +6135,12 @@
                                                                             "description": null,
                                                                             "isDeprecated": false,
                                                                             "name": "CatoEndpointAlert"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": null,
+                                                                            "isDeprecated": false,
+                                                                            "name": "EntraIdAlert"
                                                                         }
                                                                     ],
                                                                     "fields": null,
@@ -6555,7 +6609,7 @@
                                                                             "deprecationReason": null,
                                                                             "description": null,
                                                                             "isDeprecated": false,
-                                                                            "name": "Reopen"
+                                                                            "name": "Reopened"
                                                                         }
                                                                     ],
                                                                     "fields": null,
@@ -10684,6 +10738,12 @@
                                                                             "description": null,
                                                                             "isDeprecated": false,
                                                                             "name": "NETWORK"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": null,
+                                                                            "isDeprecated": false,
+                                                                            "name": "IDENTITY"
                                                                         }
                                                                     ],
                                                                     "fields": null,
@@ -10931,6 +10991,12 @@
                                                                             "description": null,
                                                                             "isDeprecated": false,
                                                                             "name": "CatoEndpointAlert"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": null,
+                                                                            "isDeprecated": false,
+                                                                            "name": "EntraIdAlert"
                                                                         }
                                                                     ],
                                                                     "fields": null,
@@ -11357,7 +11423,7 @@
                                                                             "deprecationReason": null,
                                                                             "description": null,
                                                                             "isDeprecated": false,
-                                                                            "name": "Reopen"
+                                                                            "name": "Reopened"
                                                                         }
                                                                     ],
                                                                     "fields": null,
@@ -16426,6 +16492,12 @@
                                                                             "description": null,
                                                                             "isDeprecated": false,
                                                                             "name": "NETWORK"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": null,
+                                                                            "isDeprecated": false,
+                                                                            "name": "IDENTITY"
                                                                         }
                                                                     ],
                                                                     "fields": null,
@@ -16673,6 +16745,12 @@
                                                                             "description": null,
                                                                             "isDeprecated": false,
                                                                             "name": "CatoEndpointAlert"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": null,
+                                                                            "isDeprecated": false,
+                                                                            "name": "EntraIdAlert"
                                                                         }
                                                                     ],
                                                                     "fields": null,
@@ -17099,7 +17177,7 @@
                                                                             "deprecationReason": null,
                                                                             "description": null,
                                                                             "isDeprecated": false,
-                                                                            "name": "Reopen"
+                                                                            "name": "Reopened"
                                                                         }
                                                                     ],
                                                                     "fields": null,
@@ -17890,6 +17968,12 @@
                                                                             "description": null,
                                                                             "isDeprecated": false,
                                                                             "name": "NETWORK"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": null,
+                                                                            "isDeprecated": false,
+                                                                            "name": "IDENTITY"
                                                                         }
                                                                     ],
                                                                     "fields": null,
@@ -19903,6 +19987,12 @@
                                                                             "description": null,
                                                                             "isDeprecated": false,
                                                                             "name": "CatoEndpointAlert"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": null,
+                                                                            "isDeprecated": false,
+                                                                            "name": "EntraIdAlert"
                                                                         }
                                                                     ],
                                                                     "fields": null,
@@ -20390,7 +20480,7 @@
                                                                             "deprecationReason": null,
                                                                             "description": null,
                                                                             "isDeprecated": false,
-                                                                            "name": "Reopen"
+                                                                            "name": "Reopened"
                                                                         }
                                                                     ],
                                                                     "fields": null,
@@ -21069,6 +21159,12 @@
                                                                             "description": null,
                                                                             "isDeprecated": false,
                                                                             "name": "NETWORK"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": null,
+                                                                            "isDeprecated": false,
+                                                                            "name": "IDENTITY"
                                                                         }
                                                                     ],
                                                                     "fields": null,
@@ -22313,6 +22409,12 @@
                                                                             "description": null,
                                                                             "isDeprecated": false,
                                                                             "name": "CatoEndpointAlert"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": null,
+                                                                            "isDeprecated": false,
+                                                                            "name": "EntraIdAlert"
                                                                         }
                                                                     ],
                                                                     "fields": null,
@@ -22833,7 +22935,7 @@
                                                                             "deprecationReason": null,
                                                                             "description": null,
                                                                             "isDeprecated": false,
-                                                                            "name": "Reopen"
+                                                                            "name": "Reopened"
                                                                         }
                                                                     ],
                                                                     "fields": null,
@@ -24501,6 +24603,12 @@
                                                                             "description": null,
                                                                             "isDeprecated": false,
                                                                             "name": "NETWORK"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": null,
+                                                                            "isDeprecated": false,
+                                                                            "name": "IDENTITY"
                                                                         }
                                                                     ],
                                                                     "fields": null,
@@ -25231,6 +25339,12 @@
                                                                             "description": null,
                                                                             "isDeprecated": false,
                                                                             "name": "CatoEndpointAlert"
+                                                                        },
+                                                                        {
+                                                                            "deprecationReason": null,
+                                                                            "description": null,
+                                                                            "isDeprecated": false,
+                                                                            "name": "EntraIdAlert"
                                                                         }
                                                                     ],
                                                                     "fields": null,
@@ -25751,7 +25865,7 @@
                                                                             "deprecationReason": null,
                                                                             "description": null,
                                                                             "isDeprecated": false,
-                                                                            "name": "Reopen"
+                                                                            "name": "Reopened"
                                                                         }
                                                                     ],
                                                                     "fields": null,

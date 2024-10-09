@@ -511,6 +511,8 @@ import cato
 from graphql_client import Configuration
 from graphql_client.api_client import ApiException
 from ..parsers.parserApiClient import get_help
+import sys
+sys.path.insert(0, 'vendor')
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 if "CATO_TOKEN" not in os.environ:
@@ -531,6 +533,7 @@ configuration.verify_ssl = False
 configuration.api_key["x-api-key"] = CATO_TOKEN
 configuration.host = "{}".format(cato.__cato_host__)
 configuration.debug = CATO_DEBUG
+configuration.version = "{}".format(cato.__version__)
 
 parser = argparse.ArgumentParser(prog='cato', usage='%(prog)s <operationType> <operationName> [options]', description="CLI for query on CATO via API.")
 parser.add_argument('--version', action='version', version=cato.__version__)
@@ -590,7 +593,7 @@ from ..parserApiClient import querySiteLocation, get_help
 
 def query_siteLocation_parse(query_subparsers):
 	query_siteLocation_parser = query_subparsers.add_parser('siteLocation', 
-			help='siteLocation', 
+			help='siteLocation local cli query', 
 			usage=get_help("query_siteLocation"))
 
 	query_siteLocation_parser.add_argument('accountID', help='The Account ID.')
@@ -623,7 +626,7 @@ from ..parserApiClient import createRequest, get_help
 
 def {parserName}_parse({operationType}_subparsers):
 	{parserName}_parser = {operationType}_subparsers.add_parser('{operationName}', 
-			help='{operationName}', 
+			help='{operationName}() {operationType} operation', 
 			usage=get_help("{operationType}_{operationName}"))
 """
 			if "path" in parser:
@@ -654,7 +657,7 @@ def renderSubParser(subParser,parentParserPath):
 		subParserPath = parentParserPath.replace(".","_")+"_"+subOperationName
 		cliDriverStr += f"""
 	{subParserPath}_parser = {parentParserPath}_subparsers.add_parser('{subOperationName}', 
-			help='{subOperationName}', 
+			help='{subOperationName}() {parentParserPath.split('_').pop()} operation', 
 			usage=get_help("{subParserPath}"))
 """
 		if "path" in subOperation:
@@ -688,7 +691,7 @@ def writeReadmes(catoApiSchema):
 
 `cato raw <json>`
 
-`cato raw $(cat < rawGraphqQL.json)`
+`cato raw "$(cat < rawGraphqQL.json)"`
 
 `cato raw '{ "query": "query operationNameHere($yourArgument:String!) { field1 field2 }", "variables": { "yourArgument": "string", "accountID": "10949" }, "operationName": "operationNameHere" } '`
 
@@ -710,7 +713,7 @@ def writeReadmes(catoApiSchema):
 
 `cato query siteLocation <accountID> <json>`
 
-`cato query siteLocation 12345 $(cat < siteLocation.json)`
+`cato query siteLocation 12345 "$(cat < siteLocation.json)"`
 
 `cato query siteLocation 12345 '{"filters":[{"search": "Your city here","field":"city","operation":"exact"}]}'`
 
@@ -754,7 +757,7 @@ def writeReadmes(catoApiSchema):
 				readmeStr += f"""
 `cato {operationCmd} <accountID> <json>`
 
-`cato {operationCmd} 12345 $(cat < {operationName}.json)`
+`cato {operationCmd} 12345 "$(cat < {operationName}.json)"`
 
 `cato {operationCmd} 12345 '{json.dumps(parser["example"])}'`
 
@@ -795,7 +798,7 @@ def renderSubReadme(subParser,operationType,parentOperationPath):
 			readmeStr += f"""
 `cato {subOperationCmd} <accountID> <json>`
 
-`cato {subOperationCmd} 12345 $(cat < {subOperationName}.json)`
+`cato {subOperationCmd} 12345 "$(cat < {subOperationName}.json)"`
 
 `cato {subOperationCmd} 12345 '{json.dumps(subOperation["example"])}'`
 

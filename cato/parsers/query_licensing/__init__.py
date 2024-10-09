@@ -3,7 +3,7 @@ from ..parserApiClient import createRequest, get_help
 
 def query_licensing_parse(query_subparsers):
 	query_licensing_parser = query_subparsers.add_parser('licensing', 
-			help='licensing', 
+			help='licensing() query operation', 
 			usage=get_help("query_licensing"))
 
 	query_licensing_parser.add_argument('accountID', help='The Account ID.')

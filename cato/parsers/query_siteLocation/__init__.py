@@ -3,7 +3,7 @@ from ..parserApiClient import querySiteLocation, get_help
 
 def query_siteLocation_parse(query_subparsers):
 	query_siteLocation_parser = query_subparsers.add_parser('siteLocation', 
-			help='siteLocation', 
+			help='siteLocation local cli query', 
 			usage=get_help("query_siteLocation"))
 
 	query_siteLocation_parser.add_argument('accountID', help='The Account ID.')

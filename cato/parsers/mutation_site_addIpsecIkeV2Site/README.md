@@ -8,7 +8,7 @@
 
 `cato mutation site addIpsecIkeV2Site <accountID> <json>`
 
-`cato mutation site addIpsecIkeV2Site 12345 $(cat < addIpsecIkeV2Site.json)`
+`cato mutation site addIpsecIkeV2Site 12345 "$(cat < addIpsecIkeV2Site.json)"`
 
 `cato mutation site addIpsecIkeV2Site 12345 '{"AddIpsecIkeV2SiteInput": {"AddSiteLocationInput": {"address": {"address": "String"}, "city": {"city": "String"}, "countryCode": {"countryCode": "String"}, "stateCode": {"stateCode": "String"}, "timezone": {"timezone": "String"}}, "description": {"description": "String"}, "name": {"name": "String"}, "nativeNetworkRange": {"nativeNetworkRange": "IPSubnet"}, "siteType": {"siteType": "enum(SiteType)"}}}'`
 

@@ -8,7 +8,7 @@
 
 `cato mutation policy internetFirewall removeRule <accountID> <json>`
 
-`cato mutation policy internetFirewall removeRule 12345 $(cat < removeRule.json)`
+`cato mutation policy internetFirewall removeRule 12345 "$(cat < removeRule.json)"`
 
 `cato mutation policy internetFirewall removeRule 12345 '{"InternetFirewallPolicyMutationInput": {"PolicyMutationRevisionInput": {"id": {"id": "ID"}}}, "InternetFirewallRemoveRuleInput": {"id": {"id": "ID"}}}'`
 

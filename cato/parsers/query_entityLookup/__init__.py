@@ -3,7 +3,7 @@ from ..parserApiClient import createRequest, get_help
 
 def query_entityLookup_parse(query_subparsers):
 	query_entityLookup_parser = query_subparsers.add_parser('entityLookup', 
-			help='entityLookup', 
+			help='entityLookup() query operation', 
 			usage=get_help("query_entityLookup"))
 
 	query_entityLookup_parser.add_argument('accountID', help='The Account ID.')

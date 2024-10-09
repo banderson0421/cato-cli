@@ -8,7 +8,7 @@
 
 `cato mutation admin removeAdmin <accountID> <json>`
 
-`cato mutation admin removeAdmin 12345 $(cat < removeAdmin.json)`
+`cato mutation admin removeAdmin 12345 "$(cat < removeAdmin.json)"`
 
 `cato mutation admin removeAdmin 12345 '{"adminID": "ID"}'`
 

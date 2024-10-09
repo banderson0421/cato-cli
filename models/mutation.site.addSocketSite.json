@@ -391,7 +391,7 @@
             }
         }
     },
-    "deprecationReason": null,
+    "deprecationReason": "in favor of sites",
     "description": null,
     "fieldTypes": {
         "AddSiteLocationInput": true,
@@ -399,7 +399,7 @@
         "SiteConnectionTypeEnum": true,
         "SiteType": true
     },
-    "isDeprecated": false,
+    "isDeprecated": true,
     "name": "site",
     "operationArgs": {
         "AddSocketSiteInput": {

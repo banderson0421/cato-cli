@@ -8,8 +8,10 @@ import logging
 import re
 import ssl
 
-import certifi
 # python 2 and python 3 compatibility library
+import sys
+sys.path.insert(0, 'vendor')
+import certifi
 import six
 from six.moves.urllib.parse import urlencode
 
@@ -120,7 +122,6 @@ class QUERYClientObject(object):
 
 		if 'Content-Type' not in headers:
 			headers['Content-Type'] = 'application/json'
-		headers['User-Agent'] = "Cato-CLI"
 
 		try:
 			if re.search('json', headers['Content-Type'], re.IGNORECASE):

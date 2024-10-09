@@ -8,7 +8,7 @@
 
 `cato query admin <accountID> <json>`
 
-`cato query admin 12345 $(cat < admin.json)`
+`cato query admin 12345 "$(cat < admin.json)"`
 
 `cato query admin 12345 '{"adminID": "ID"}'`
 

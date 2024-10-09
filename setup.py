@@ -12,9 +12,12 @@ setuptools.setup(
         ]
     },
     install_requires=['urllib3', 'certifi', 'six'],
+    package_data={
+        '': ['vendor/*'],
+    },
     python_requires='>=3.6',
     url='https://github.com/banderson0421/cato-cli',
-    license='Cato Networks Developer License',
+    license='Apache-2.0 license',
     author='Brian Anderson',
     author_email='brian.anderson@catonetworks.com',
     description="Cato Networks cli wrapper for the GraphQL API.",
@@ -23,7 +26,7 @@ setuptools.setup(
                      '(https://api.catonetworks.com/api/v1/graphql2) easily integrating into '
                      'configurations management, orchestration or automation frameworks to support the DevOps model.',
     classifiers=[
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: Apache-2.0 license",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
